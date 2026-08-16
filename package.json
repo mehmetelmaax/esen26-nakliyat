@@ -1,0 +1,35 @@
+{
+  "name": "eskisehir-esenler-nakliyat",
+  "description": "Esen Nakliyat & Temizlik & Kolileme - Sabit Fiyatlı Asansörlü Taşımacılık",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "audit": "npm run build && npm run verify:metadata && npm run verify:sitemap && npm run verify:schema",
+    "verify:sitemap": "node scripts/verify-sitemap.mjs",
+    "verify:metadata": "node scripts/check-metadata.mjs",
+    "verify:schema": "node scripts/check-schema.mjs",
+    "optimize:images": "node scripts/optimize-images.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.30.0",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5"
+  }
+}
