@@ -40,7 +40,7 @@ export default function ChecklistWidget() {
     {
       title: 'Taşınmaya 7 Gün Kala (Ambalajlama ve Hazırlık)',
       items: [
-        { id: '12', task: 'Eğer paketleme hizmetini kendiniz yapacaksanız, kaliteli karton koliler, koli bantları and havalı patpatları temin edin.', checked: false },
+        { id: '12', task: 'Eğer paketleme hizmetini kendiniz yapacaksanız, kaliteli karton koliler, koli bantları ve havalı patpatları temin edin.', checked: false },
         { id: '13', task: 'Kırılacak mutfak eşyalarını gazete kağıtları yerine asitsiz ambalaj kağıtlarına sararak kolileyin ve üzerini etiketleyin.', checked: false },
         { id: '14', task: 'Yeni evdeki odalara göre kolilerin üzerine belirgin renkli etiketler yapıştırın (Örn: Mutfak, Salon vb.).', checked: false },
         { id: '15', task: 'Buzdolabı ve derin dondurucudaki donmuş gıdaları tüketmeye özen gösterin, yeni alışveriş yapmayın.', checked: false },

@@ -6,6 +6,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingCTAs from '@/components/FloatingCTAs';
 import Analytics from '@/components/Analytics';
+import CookieBanner from '@/components/CookieBanner';
+import StickyMobileCTA from '@/components/StickyMobileCTA';
 import JsonLd from '@/components/JsonLd';
 import { organizationSchema, websiteSchema } from '@/lib/schema';
 
@@ -130,6 +132,8 @@ export default function RootLayout({
         <Footer />
         <FloatingCTAs />
         <Analytics />
+        <CookieBanner />
+        <StickyMobileCTA />
       </body>
     </html>
   );

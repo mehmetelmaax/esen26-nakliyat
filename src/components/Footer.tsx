@@ -3,9 +3,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, Clock } from 'lucide-react';
 import { SITE } from '@/lib/site-config';
+import { FACTS } from '@/lib/facts';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const experienceYears = currentYear - FACTS.foundedYear;
 
   const allRegions = [
     { name: 'Eskişehir Merkez', href: '/bolgeler/eskisehir-merkez-evden-eve-nakliyat' },
@@ -44,7 +46,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
-              20 yıldır Eskişehir'de evden eve nakliyat, ofis taşımacılığı ve asansörlü nakliye hizmetleri vermekte olan yerel ve güvenilir taşımacılık ortağınız.
+              {experienceYears} yıldır Eskişehir'de evden eve nakliyat, ofis taşımacılığı ve asansörlü nakliye hizmetleri vermekte olan yerel ve güvenilir taşımacılık ortağınız.
             </p>
           </div>
 
@@ -90,6 +92,9 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link href="/hizmetler/sehirlerarasi-evden-eve-nakliyat#rotalar" className="text-orange hover:text-white transition-colors">➔ Şehirlerarası Lojistik Rotalar</Link>
+                </li>
+                <li>
+                  <Link href="/eskisehir-nakliyat-firmalari" className="text-orange hover:text-white transition-colors">➔ Eskişehir Nakliyat Firmaları</Link>
                 </li>
               </ul>
             </nav>

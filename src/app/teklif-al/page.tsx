@@ -43,7 +43,7 @@ export default function TeklifAlPage() {
       <main className="pt-24 min-h-screen bg-navy text-white flex flex-col justify-between">
         <Breadcrumb items={[{ name: 'Teklif Al', url: '/teklif-al' }]} className="pt-4 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full" dark={true} />
         
-        {/* Title and Intro */}
+        {/* Title ve Intro */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16 space-y-6">
           <h1 className="font-display font-black text-3xl md:text-5xl tracking-tight leading-tight text-white">
             Eskişehir Evden Eve Nakliyat Ücretsiz Fiyat Teklifi

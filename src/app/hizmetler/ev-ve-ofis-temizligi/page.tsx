@@ -59,10 +59,10 @@ export default function TemizlikHizmetiPage() {
                 Esen 26 Temizlik ekibi olarak Eskişehir'de sunduğumuz temizlik hizmeti, 2 ana aşamadan oluşan ve zeminlerin yıkanmasından kapı kollarının dezenfekte edilmesine kadar uzanan derinlemesine bir hijyen çalışmasını kapsar. Taşınma öncesi boş ev temizliği ve taşınma sonrası yerleşim temizliği olarak ikiye ayrılan bu süreçlerde kullandığımız tüm deterjanlar TSE standartlarına uygundur.
               </p>
               <p className="text-charcoal text-sm leading-relaxed">
-                Hizmet kapsamımız, evin her bir köşesini ayrıntılı olarak ele alacak şekilde planlanmıştır. Mutfak alanında fayanslar, dolap içi ve dışı yüzeyler, davlumbaz and ocak çevresi yağ arındırıcı kimyasallarla ovulur. Banyo and tuvaletlerde derz araları dezenfekte edilerek kireç çözücü özel solüsyonlar yardımıyla parlatılır. Armatürler, lavabolar ve duşakabin camları su lekesi kalmayacak biçimde mikrofiber bezlerle kurulanarak teslim edilir.
+                Hizmet kapsamımız, evin her bir köşesini ayrıntılı olarak ele alacak şekilde planlanmıştır. Mutfak alanında fayanslar, dolap içi ve dışı yüzeyler, davlumbaz ve ocak çevresi yağ arındırıcı kimyasallarla ovulur. Banyo ve tuvaletlerde derz araları dezenfekte edilerek kireç çözücü özel solüsyonlar yardımıyla parlatılır. Armatürler, lavabolar ve duşakabin camları su lekesi kalmayacak biçimde mikrofiber bezlerle kurulanarak teslim edilir.
               </p>
               <p className="text-charcoal text-sm leading-relaxed">
-                Salon and oda temizliklerinde ise süpürgeliklerin tozları alınır, pencereler içten ve dıştan silinir, varsa jaluzi and stor perdelerin tozları vakumlanır. Kapılar, prizler ve elektrik anahtarları gibi sık temas edilen noktalar alkol bazlı yüzey dezenfektanlarıyla sterilize edilir. Zemin kaplamasına (laminat parke, mermer veya seramik) en uygun ph derecesine sahip temizlik sıvıları tercih edilerek ahşapların şişmesi veya mermerin matlaşması önlenir.
+                Salon ve oda temizliklerinde ise süpürgeliklerin tozları alınır, pencereler içten ve dıştan silinir, varsa jaluzi ve stor perdelerin tozları vakumlanır. Kapılar, prizler ve elektrik anahtarları gibi sık temas edilen noktalar alkol bazlı yüzey dezenfektanlarıyla sterilize edilir. Zemin kaplamasına (laminat parke, mermer veya seramik) en uygun ph derecesine sahip temizlik sıvıları tercih edilerek ahşapların şişmesi veya mermerin matlaşması önlenir.
               </p>
               <p className="text-charcoal text-sm leading-relaxed">
                 Taşıma öncesi veya sonrasında gerçekleştirdiğimiz hizmetlerimizin detaylı listesi şunları içermektedir:
@@ -105,10 +105,10 @@ export default function TemizlikHizmetiPage() {
                 Yeni tamamlanan binalarda veya tadilat gören evlerde 2026 yılı temizlik standartlarına uygun özel ekipmanlar ve endüstriyel vakum makineleri yardımıyla temizlik yapmaktayız. Alçı lekeleri, boya kalıntıları, harç artıkları ve yoğun inşaat tozu, yüzeylere zarar vermeyen özel kimyasal çözücüler kullanılarak temizlenir.
               </p>
               <p className="text-charcoal text-sm leading-relaxed">
-                İnşaat sonrası oluşan moloz and kaba pislikler yüzeylerden kazınmadan önce yumuşatıcı köpüklerle kaplanır. Camlarda biriken bant and harç lekeleri için özel aparatlı cam jiletleri ve çizilmeyi önleyici keçeler kullanılır. Duvarlardaki ince alçı tozlarının temizlenmesi için yüksek çekim gücüne sahip hepa filtreli kuru vakum makineleri devreye sokulur. Bu sayede tozların havaya yayılarak tekrar yüzeylere çökmesi önlenmiş olur.
+                İnşaat sonrası oluşan moloz ve kaba pislikler yüzeylerden kazınmadan önce yumuşatıcı köpüklerle kaplanır. Camlarda biriken bant ve harç lekeleri için özel aparatlı cam jiletleri ve çizilmeyi önleyici keçeler kullanılır. Duvarlardaki ince alçı tozlarının temizlenmesi için yüksek çekim gücüne sahip hepa filtreli kuru vakum makineleri devreye sokulur. Bu sayede tozların havaya yayılarak tekrar yüzeylere çökmesi önlenmiş olur.
               </p>
               <p className="text-charcoal text-sm leading-relaxed">
-                Banyo fayanslarındaki çimento and derz dolgu lekeleri asit içermeyen özel temizleyicilerle ovulur. Mutfak tezgahı ve dolap raylarındaki talaş tozları ince uçlu vakum aparatlarıyla çekildikten sonra nemli bezlerle sterilize edilir. Zeminlerin temizliğinde ise endüstriyel zemin yıkama and cilalama makineleri kullanılarak harç lekeleri tamamen sökülür, pırıl pırıl bir yüzey teslim edilir.
+                Banyo fayanslarındaki çimento ve derz dolgu lekeleri asit içermeyen özel temizleyicilerle ovulur. Mutfak tezgahı ve dolap raylarındaki talaş tozları ince uçlu vakum aparatlarıyla çekildikten sonra nemli bezlerle sterilize edilir. Zeminlerin temizliğinde ise endüstriyel zemin yıkama ve cilalama makineleri kullanılarak harç lekeleri tamamen sökülür, pırıl pırıl bir yüzey teslim edilir.
               </p>
               <p className="text-charcoal text-sm leading-relaxed">
                 İnşaat sonrası temizlikte işleyiş şu adımları izler:
@@ -131,7 +131,7 @@ export default function TemizlikHizmetiPage() {
                 Eşyalarınızın yerleşiminden önce yapılacak boş ev temizliği, 1 gün öncesinden tamamlanarak taşınma günü mobilyaların tozlu zeminlerle temas etmesini önler. Eşyalı bir evde dip bucak temizlik yapmak çok daha fazla iş gücü gerektirdiğinden, boş ev temizliği hem zamandan tasarruf sağlar hem de maliyet olarak daha uygundur.
               </p>
               <p className="text-charcoal text-sm leading-relaxed">
-                Boş ev temizliğinin bir diğer önemli avantajı, tüm dolap içi and raf yüzeylerinin engelsiz bir şekilde dezenfekte edilebilmesidir. Mutfak and gardırop dolaplarının kapakları açılarak iç kısımları anti-alerjenik sıvılarla silinir ve havalandırılır. Bu sayede taşınma günü kamyondan indirilen giysileriniz ve mutfak gereçleriniz hiçbir ek işleme gerek kalmadan doğrudan temiz dolaplara yerleştirilebilir.
+                Boş ev temizliğinin bir diğer önemli avantajı, tüm dolap içi ve raf yüzeylerinin engelsiz bir şekilde dezenfekte edilebilmesidir. Mutfak ve gardırop dolaplarının kapakları açılarak iç kısımları anti-alerjenik sıvılarla silinir ve havalandırılır. Bu sayede taşınma günü kamyondan indirilen giysileriniz ve mutfak gereçleriniz hiçbir ek işleme gerek kalmadan doğrudan temiz dolaplara yerleştirilebilir.
               </p>
               <p className="text-charcoal text-sm leading-relaxed">
                 Eşyasız evlerin temizlenmesi, yeni evinizde sağlıklı bir başlangıç yapabilmeniz için astım ve alerji gibi solunum yolları rahatsızlıklarına karşı da koruyucu bir önlemdir. Ekiplerimiz evinizin tüm odalarını havalandırarak teslim eder.
@@ -168,7 +168,7 @@ export default function TemizlikHizmetiPage() {
                 Eskişehir'de ev temizliği fiyatlarımız, dairenin metrekaresine, oda sayısına ve inşaat sonrası / eşyasız boş daire durumuna göre 2.000 TL ile 6.000 TL arasında değişmektedir. Eşyalı dairelerin temizliği ve detaylı koltuk yıkama gibi ek talepler fiyat listemize ayrıca yansıtılır.
               </p>
               <p className="text-charcoal text-sm leading-relaxed">
-                Temizlik fiyatlarını belirlerken binanın asansör durumu, cam adedi, ek dezenfeksiyon talepleri and gerekli personel sayısı analiz edilir. Örneğin, dubleks veya villa tarzı geniş konutların temizliğinde en az 4 kişilik bir ekibin görev yapması gerekir, bu da iş gücü maliyetini belirler. Aşağıdaki tablomuzda Eskişehir genelinde uygulanan ortalama fiyat aralıklarını görebilirsiniz:
+                Temizlik fiyatlarını belirlerken binanın asansör durumu, cam adedi, ek dezenfeksiyon talepleri ve gerekli personel sayısı analiz edilir. Örneğin, dubleks veya villa tarzı geniş konutların temizliğinde en az 4 kişilik bir ekibin görev yapması gerekir, bu da iş gücü maliyetini belirler. Aşağıdaki tablomuzda Eskişehir genelinde uygulanan ortalama fiyat aralıklarını görebilirsiniz:
               </p>
               
               <div className="overflow-x-auto">

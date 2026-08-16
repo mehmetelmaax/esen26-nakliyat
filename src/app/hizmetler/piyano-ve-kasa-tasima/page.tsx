@@ -15,7 +15,7 @@ import { ArrowRight, HelpCircle, Shield, Truck, Coins, CheckCircle2, AlertOctago
 
 export const metadata: Metadata = {
   title: 'Eskişehir Piyano ve Kasa Taşıma | Esen 26 Nakliyat',
-  description: "Eskişehir'de kuyruklu/duvar piyanosu, çelik para kasası ve hassas ağır yük taşımacılığı. Özel liftli araçlar and askı sistemleriyle hasarsız transfer.",
+  description: "Eskişehir'de kuyruklu/duvar piyanosu, çelik para kasası ve hassas ağır yük taşımacılığı. Özel liftli araçlar ve askı sistemleriyle hasarsız transfer.",
   alternates: {
     canonical: '/hizmetler/piyano-ve-kasa-tasima',
   },
@@ -25,7 +25,7 @@ export default function PiyanoVeKasaTasimaPage() {
   const piyanoFaqs = [
     {
       question: 'Kuyruklu veya duvar piyanolarını taşırken nasıl önlemler alıyorsunuz?',
-      answer: 'Piyanoları kalın koruyucu kadife keçeler and çizilmeyi önleyici balonlu naylon ambalaj malzemeleriyle sarıyoruz. Taşımada özel yapım piyano askı takımları, kaydırmaz tekerlekli kızaklar ve merdiven tırmanıcı özel transpalet aparatları kullanıyoruz.'
+      answer: 'Piyanoları kalın koruyucu kadife keçeler ve çizilmeyi önleyici balonlu naylon ambalaj malzemeleriyle sarıyoruz. Taşımada özel yapım piyano askı takımları, kaydırmaz tekerlekli kızaklar ve merdiven tırmanıcı özel transpalet aparatları kullanıyoruz.'
     },
     {
       question: 'Çelik para kasası taşımacılığı kaç personel ile yapılıyor?',
@@ -33,7 +33,7 @@ export default function PiyanoVeKasaTasimaPage() {
     },
     {
       question: 'Dev boyutlu ev akvaryumlarını da taşıyor musunuz?',
-      answer: 'Evet. Kalın camlı, ağır tonajlı büyük ev akvaryumlarının de-montajını yapıyor, taşınırken çatlama and esneme risklerini sıfırlayan vakumlu endüstriyel vantuzlar and özel ahşap palet destekleri yardımıyla hizmet vermektedir.'
+      answer: 'Evet. Kalın camlı, ağır tonajlı büyük ev akvaryumlarının de-montajını yapıyor, taşınırken çatlama ve esneme risklerini sıfırlayan vakumlu endüstriyel vantuzlar ve özel ahşap palet destekleri yardımıyla hizmet vermektedir.'
     },
     {
       question: 'Antika mobilya ve sanat eserlerinin ambalajlama standardı nasıldır?',
@@ -54,7 +54,7 @@ export default function PiyanoVeKasaTasimaPage() {
     '@graph': [
       serviceSchema({
         name: 'Eskişehir Piyano ve Kasa Taşıma',
-        description: "Eskişehir'de kuyruklu/duvar piyanosu, çelik para kasası ve hassas ağır yük taşımacılığı. Özel liftli araçlar and askı sistemleriyle hasarsız transfer.",
+        description: "Eskişehir'de kuyruklu/duvar piyanosu, çelik para kasası ve hassas ağır yük taşımacılığı. Özel liftli araçlar ve askı sistemleriyle hasarsız transfer.",
         slug: 'hizmetler/piyano-ve-kasa-tasima',
         areaName: 'Eskişehir'
       }),
@@ -82,7 +82,7 @@ export default function PiyanoVeKasaTasimaPage() {
             Eskişehir Piyano ve Kasa Taşıma
           </h1>
           <p className="text-gray-300 text-sm md:text-base max-w-2xl mx-auto leading-relaxed px-4">
-            Kuyruklu piyanolar, ağır çelik para kasaları, dev akvaryumlar, tarihi antika mobilyalar ve değerli sanat eserlerinizi özel donanımlı askı takımları and transpaletlerle hasarsız hizmet vermektedir.
+            Kuyruklu piyanolar, ağır çelik para kasaları, dev akvaryumlar, tarihi antika mobilyalar ve değerli sanat eserlerinizi özel donanımlı askı takımları ve transpaletlerle hasarsız hizmet vermektedir.
           </p>
         </section>
 
@@ -96,7 +96,7 @@ export default function PiyanoVeKasaTasimaPage() {
               <span>Ağır Yük ve Hassas Eşya Taşıma Uzmanlığı Nedir?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Ev veya iş yerlerindeki standart mobilyaların dışındaki ağır ve değerli eşyaların taşınması, sıradan nakliye yöntemleriyle kesinlikle yapılmamalıdır. Yüzlerce kilogram ağırlığa sahip çelik kasalar veya hassas mekanik aksamı olan piyanoların taşınması hem ciddi fiziki güç hem de profesyonel ekipman (kızaklar, transpaletler, vinç sistemleri, liftli araçlar) gerektirir. Esen 26 Nakliyat olarak, Eskişehir genelinde kurduğumuz özel ağır yük taşıma ekibimizle, piyanolarınızı ve çelik kasalarınızı milimetrik hesaplamalar and tam güvenlik tedbirleri altında yeni adresine hasarsız ulaştırıyoruz.
+              Ev veya iş yerlerindeki standart mobilyaların dışındaki ağır ve değerli eşyaların taşınması, sıradan nakliye yöntemleriyle kesinlikle yapılmamalıdır. Yüzlerce kilogram ağırlığa sahip çelik kasalar veya hassas mekanik aksamı olan piyanoların taşınması hem ciddi fiziki güç hem de profesyonel ekipman (kızaklar, transpaletler, vinç sistemleri, liftli araçlar) gerektirir. Esen 26 Nakliyat olarak, Eskişehir genelinde kurduğumuz özel ağır yük taşıma ekibimizle, piyanolarınızı ve çelik kasalarınızı milimetrik hesaplamalar ve tam güvenlik tedbirleri altında yeni adresine hasarsız ulaştırıyoruz.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ export default function PiyanoVeKasaTasimaPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-charcoal">
               <div className="bg-off-white p-5 rounded-lg border border-gray-light/60 space-y-2">
-                <span className="font-bold text-navy text-sm block">1. Duvar and Kuyruklu Piyano</span>
+                <span className="font-bold text-navy text-sm block">1. Duvar ve Kuyruklu Piyano</span>
                 <p className="text-xs leading-relaxed text-charcoal/90">Akort mekanizmasının bozulmaması ve dış cilasının çizilmemesi için özel kadife kılıflarla ambalajlanan, askı takımıyla taşınan piyanolar.</p>
               </div>
               <div className="bg-off-white p-5 rounded-lg border border-gray-light/60 space-y-2">
@@ -120,11 +120,11 @@ export default function PiyanoVeKasaTasimaPage() {
               </div>
               <div className="bg-off-white p-5 rounded-lg border border-gray-light/60 space-y-2">
                 <span className="font-bold text-navy text-sm block">3. Tarihi Antika Mobilyalar</span>
-                <p className="text-xs leading-relaxed text-charcoal/90">Eski el oyması, vernikli veya tarihi değeri olan mobilyaların, asitsiz beyaz ambalaj kağıtları and sert köpük kalıplarla korunarak nakledilmesi.</p>
+                <p className="text-xs leading-relaxed text-charcoal/90">Eski el oyması, vernikli veya tarihi değeri olan mobilyaların, asitsiz beyaz ambalaj kağıtları ve sert köpük kalıplarla korunarak nakledilmesi.</p>
               </div>
               <div className="bg-off-white p-5 rounded-lg border border-gray-light/60 space-y-2">
-                <span className="font-bold text-navy text-sm block">4. Dev Akvaryumlar and Camlar</span>
-                <p className="text-xs leading-relaxed text-charcoal/90">Basınç farkı nedeniyle çatlama riski yüksek olan büyük ölçekli akvaryum ünitelerinin, vakumlu ağır hizmet cam vantuzları and paletlerle taşınması.</p>
+                <span className="font-bold text-navy text-sm block">4. Dev Akvaryumlar ve Camlar</span>
+                <p className="text-xs leading-relaxed text-charcoal/90">Basınç farkı nedeniyle çatlama riski yüksek olan büyük ölçekli akvaryum ünitelerinin, vakumlu ağır hizmet cam vantuzları ve paletlerle taşınması.</p>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function PiyanoVeKasaTasimaPage() {
               <span>Ağır Eşya Taşırken Karşılaşılan Riskler ve Çözümlerimiz Nedir?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Ağır ve özel yük taşımacılığında en sık karşılaşılan risk, eşyanın düşürülmesi, merdiven mermerlerinin kırılması, daire kapı kasalarının çizilmesi veya bina asansörünün halat koparmasıdır. Bu riskleri sıfıra indirmek adına bina içi ortak alan asansörlerini kesinlikle ağır yükler için kullanmıyoruz. Bunun yerine bina dış cephesine kurduğumuz 400 kg taşıma kapasiteli mobil teleskopik yük asansörlerimizi veya vinç sistemlerini kullanıyoruz. Eşyanın taşınacağı koridor ve zeminler, tekerlek izi and çizilmeleri önlemek adına kalın sunta levhalar ve kauçuk koruyucu örtülerle kaplanır. Taşıma öncesinde yaptığımız tüm bu hazırlıklar, operasyonumuzun hasarsız geçmesini garanti eder.
+              Ağır ve özel yük taşımacılığında en sık karşılaşılan risk, eşyanın düşürülmesi, merdiven mermerlerinin kırılması, daire kapı kasalarının çizilmesi veya bina asansörünün halat koparmasıdır. Bu riskleri sıfıra indirmek adına bina içi ortak alan asansörlerini kesinlikle ağır yükler için kullanmıyoruz. Bunun yerine bina dış cephesine kurduğumuz 400 kg taşıma kapasiteli mobil teleskopik yük asansörlerimizi veya vinç sistemlerini kullanıyoruz. Eşyanın taşınacağı koridor ve zeminler, tekerlek izi ve çizilmeleri önlemek adına kalın sunta levhalar ve kauçuk koruyucu örtülerle kaplanır. Taşıma öncesinde yaptığımız tüm bu hazırlıklar, operasyonumuzun hasarsız geçmesini garanti eder.
             </p>
           </div>
 
@@ -147,7 +147,7 @@ export default function PiyanoVeKasaTasimaPage() {
               <span>Ağır Yük Nakliye Fiyatları ve Sigorta Detayları Nedir?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Piyano, kasa and antika gibi değerli eşya taşımacılığı yüksek marjlı ve özel yetkinlik gerektiren bir alandır. Fiyatlar belirlenirken eşyanın tam ağırlığı, de-montaj gereksinimi, kat seviyeleri (asansör açısı veya kaç kat merdiven kullanılacağı) and sigorta emtia değeri esas alınır. Esen 26 Nakliyat olarak, taşınma öncesinde poliçe detaylarını hazırlayıp eşyanın gerçek değerini teminat altına alan taşıma sigortasını ücretsiz olarak hizmet vermektedir. Müşterilerimize yazılı sözleşmeyle verdiğimiz fiyatlar sabit kalmakta, taşınma sonrasında ek maliyet çıkarılmamaktadır.
+              Piyano, kasa ve antika gibi değerli eşya taşımacılığı yüksek marjlı ve özel yetkinlik gerektiren bir alandır. Fiyatlar belirlenirken eşyanın tam ağırlığı, de-montaj gereksinimi, kat seviyeleri (asansör açısı veya kaç kat merdiven kullanılacağı) ve sigorta emtia değeri esas alınır. Esen 26 Nakliyat olarak, taşınma öncesinde poliçe detaylarını hazırlayıp eşyanın gerçek değerini teminat altına alan taşıma sigortasını ücretsiz olarak hizmet vermektedir. Müşterilerimize yazılı sözleşmeyle verdiğimiz fiyatlar sabit kalmakta, taşınma sonrasında ek maliyet çıkarılmamaktadır.
             </p>
           </div>
 
@@ -158,7 +158,7 @@ export default function PiyanoVeKasaTasimaPage() {
               <span>Piyano Taşımacılığı Sonrası Akort ve Bakım Süreci Nedir?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Piyanolar, son derece hassas ahşap, çelik tel ve keçe mekanizmalarına sahip enstrümanlardır. Taşınma esnasında ne kadar sarsıntısız and askılı sistemlerle taşınsa dahi, ortamdaki nem oranı, sıcaklık değişimi and taşınma hareketi piyanoların akort ayarlarının bozulmasına yol açar. Bu nedenle piyanonuz yeni yerine taşındıktan sonra akort ayarının hemen yapılması doğru değildir. Piyanonun yeni odanın nem ve hava koşullarına uyum sağlayabilmesi için en az 10-15 gün beklenmesi ve ardından profesyonel bir akort ustası (tuner) tarafından kalibre edilmesi gerekmektedir.
+              Piyanolar, son derece hassas ahşap, çelik tel ve keçe mekanizmalarına sahip enstrümanlardır. Taşınma esnasında ne kadar sarsıntısız ve askılı sistemlerle taşınsa dahi, ortamdaki nem oranı, sıcaklık değişimi ve taşınma hareketi piyanoların akort ayarlarının bozulmasına yol açar. Bu nedenle piyanonuz yeni yerine taşındıktan sonra akort ayarının hemen yapılması doğru değildir. Piyanonun yeni odanın nem ve hava koşullarına uyum sağlayabilmesi için en az 10-15 gün beklenmesi ve ardından profesyonel bir akort ustası (tuner) tarafından kalibre edilmesi gerekmektedir.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ export default function PiyanoVeKasaTasimaPage() {
               <span>Ağır Kasa Taşımacılığında Zemin Koruma Önlemleri Nedir?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              300 kg ile 800 kg arasında değişen çelik kasaların taşınması sırasında en büyük risk bina içi koridor zeminlerinin, mermerlerin ve laminat parkelerin ezilmesi, kırılması veya derin çiziklerle hasar görmesidir. Esen 26 Nakliyat olarak, ağır kasa taşımacılığında zeminleri korumak amacıyla taşıma güzergahının tamamına kalın kauçuk zemin matları ve özel dağıtıcı kontrplak levhalar yerleştiriyoruz. Kasa bu levhalar üzerinde hidrolik transpaletler yardımıyla kaydırılarak taşındığı için bina zeminlerine and daire içi laminat parkelere sıfır baskı uygulanır ve çizilmelerin önüne kesin olarak geçilir.
+              300 kg ile 800 kg arasında değişen çelik kasaların taşınması sırasında en büyük risk bina içi koridor zeminlerinin, mermerlerin ve laminat parkelerin ezilmesi, kırılması veya derin çiziklerle hasar görmesidir. Esen 26 Nakliyat olarak, ağır kasa taşımacılığında zeminleri korumak amacıyla taşıma güzergahının tamamına kalın kauçuk zemin matları ve özel dağıtıcı kontrplak levhalar yerleştiriyoruz. Kasa bu levhalar üzerinde hidrolik transpaletler yardımıyla kaydırılarak taşındığı için bina zeminlerine ve daire içi laminat parkelere sıfır baskı uygulanır ve çizilmelerin önüne kesin olarak geçilir.
             </p>
           </div>
 
@@ -179,7 +179,7 @@ export default function PiyanoVeKasaTasimaPage() {
               <CheckCircle2 className="w-6 h-6 text-orange" />
               <span>Sanat Eseri, Sergi ve Galeri Lojistiği Nedir?</span>
             </h2>
-            <p className="text-charcoal text-sm md:text-base leading-relaxed">Esen 26 Nakliyat, Müzeler, sanat galerileri ve kişisel koleksiyoncular için resim tabloları, heykeller ve antikaların taşınması yüksek hassasiyet gerektirir. Bu tarz eserlerin nakliyesinde iklimlendirmeli (ısı ve nem ayarlı) kapalı kasa araçlar kullanmaktayız. Eserlerin ambalajlanmasında doğrudan asitsiz müzecilik kağıtları and darbeleri yutan özel şok emici polietilen köpükler tercih edilmektedir. Taşınma süreci baştan sona özel sigorta poliçesiyle korunarak uzman gözetiminde tamamlanır.</p>
+            <p className="text-charcoal text-sm md:text-base leading-relaxed">Esen 26 Nakliyat, Müzeler, sanat galerileri ve kişisel koleksiyoncular için resim tabloları, heykeller ve antikaların taşınması yüksek hassasiyet gerektirir. Bu tarz eserlerin nakliyesinde iklimlendirmeli (ısı ve nem ayarlı) kapalı kasa araçlar kullanmaktayız. Eserlerin ambalajlanmasında doğrudan asitsiz müzecilik kağıtları ve darbeleri yutan özel şok emici polietilen köpükler tercih edilmektedir. Taşınma süreci baştan sona özel sigorta poliçesiyle korunarak uzman gözetiminde tamamlanır.</p>
           </div>
 
           {/* Internal Links Navigation Area */}

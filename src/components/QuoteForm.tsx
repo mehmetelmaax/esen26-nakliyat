@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { SITE } from '@/lib/site-config';
 import { QuoteFormSchema } from '@/lib/validation';
 import { trackEvent } from '@/lib/analytics';
+import { calculateEstimateFromForm } from '@/lib/pricing';
 
 interface QuoteFormProps {
   isInline?: boolean;
@@ -20,6 +21,7 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
     rooms: '',
     elevator: 'evet',
     website: '', // honeypot
+    kvkkOnay: false,
   });
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -46,8 +48,12 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    const { name, value, type } = e.target;
+    const checked = (e.target as HTMLInputElement).checked;
+    setFormData((prev) => ({ 
+      ...prev, 
+      [name]: type === 'checkbox' ? checked : value 
+    }));
     
     // Clear error
     if (errors[name]) {
@@ -66,22 +72,7 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
   };
 
   const calculateEstimate = () => {
-    let basePrice = 8000;
-    
-    if (formData.rooms === '2+1') basePrice = 11000;
-    if (formData.rooms === '3+1') basePrice = 14000;
-    if (formData.rooms === '4+1+') basePrice = 18000;
-    if (formData.rooms === 'ofis') basePrice = 12000;
-
-    if (formData.elevator === 'evet') {
-      basePrice += 2500;
-    }
-
-    if (formData.toDistrict === 'Şehirlerarası (İl Dışı)' || formData.fromDistrict === 'Şehirlerarası (İl Dışı)') {
-      return { min: basePrice + 12000, max: basePrice + 35000 };
-    }
-
-    return { min: basePrice, max: basePrice + 4000 };
+    return calculateEstimateFromForm(formData.rooms, formData.elevator, formData.fromDistrict, formData.toDistrict);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -316,6 +307,28 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
         </div>
       </div>
 
+      {/* KVKK Consent Checkbox */}
+      <div className="space-y-1">
+        <label className="flex items-start gap-2 text-xs font-semibold cursor-pointer select-none">
+          <input
+            type="checkbox"
+            id="kvkkOnay"
+            name="kvkkOnay"
+            checked={formData.kvkkOnay}
+            onChange={handleInputChange}
+            className="w-4 h-4 text-orange-text focus:ring-orange border-gray-light rounded mt-0.5 cursor-pointer"
+          />
+          <span className="leading-tight text-charcoal/80 text-[10px]">
+            <Link href="/yasal/kvkk" target="_blank" className="text-orange hover:underline font-bold">KVKK Aydınlatma Metnini</Link> okudum, kişisel verilerimin işlenmesini ve e-posta/telefon ile iletişime geçilmesini kabul ediyorum. *
+          </span>
+        </label>
+        {errors.kvkkOnay && (
+          <span id="err-kvkkOnay" role="alert" className="text-[10px] text-rose-500 font-semibold block">
+            {errors.kvkkOnay}
+          </span>
+        )}
+      </div>
+
       {/* Submit button */}
       <button
         type="submit"
@@ -421,7 +434,7 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
     </div>
   );
 
-  // If inline (rendered inside Hero card), skip the section styling wrapper and headings
+  // If inline (rendered inside Hero card), skip the section styling wrapper ve headings
   if (isInline) {
     return (
       <div className="text-charcoal text-left">

@@ -12,7 +12,7 @@ export default function ContractChecklist() {
     },
     {
       title: 'Emtia Nakliyat Sigortası Poliçe Detayı',
-      reason: 'Yol kazaları, yangın and hırsızlık durumunda eşyalarınızın sigorta şirketi tarafından tazmin edileceğinin sözleşmeyle tespiti gereklidir.'
+      reason: 'Yol kazaları, yangın ve hırsızlık durumunda eşyalarınızın sigorta şirketi tarafından tazmin edileceğinin sözleşmeyle tespiti gereklidir.'
     },
     {
       title: 'Marangozluk ve Tesisat İşlerinin Tanımı',

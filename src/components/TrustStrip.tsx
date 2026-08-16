@@ -1,7 +1,9 @@
 import React from 'react';
 import { ShieldCheck, CalendarRange, ArrowUpCircle } from 'lucide-react';
+import { FACTS } from '@/lib/facts';
 
 export default function TrustStrip() {
+  const experienceYears = new Date().getFullYear() - FACTS.foundedYear;
   return (
     <section className="py-12 bg-white border-b border-gray-light" id="hakkimizda">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,10 +31,10 @@ export default function TrustStrip() {
               <CalendarRange className="w-8 h-8 text-navy" />
             </div>
             <div>
-              <div className="font-display font-black text-navy text-2xl md:text-3xl">20 Yıl</div>
+              <div className="font-display font-black text-navy text-2xl md:text-3xl">{experienceYears} Yıl</div>
               <div className="text-orange-text font-bold text-xs uppercase tracking-wider mt-1">Eskişehir Yerel Tecrübesi</div>
               <p className="text-charcoal text-sm leading-relaxed mt-2">
-                2006 yılından beri Tepebaşı merkezli olarak Eskişehir'in tüm bölgelerinde güvenli taşıma yapıyoruz.
+                {FACTS.foundedYear} yılından beri Tepebaşı merkezli olarak Eskişehir'in tüm bölgelerinde güvenli taşıma yapıyoruz.
               </p>
             </div>
           </div>
@@ -43,7 +45,7 @@ export default function TrustStrip() {
               <ArrowUpCircle className="w-8 h-8 text-navy" />
             </div>
             <div>
-              <div className="font-display font-black text-navy text-2xl md:text-3xl">25. Kat</div>
+              <div className="font-display font-black text-navy text-2xl md:text-3xl">{FACTS.maxFloor}. Kat</div>
               <div className="text-orange-text font-bold text-xs uppercase tracking-wider mt-1">Mobil Asansör Ulaşımı</div>
               <p className="text-charcoal text-sm leading-relaxed mt-2">
                 Dış cephe asansör araçlarımızla, dar sokaklarda bile yüksek katlara hasarsız kurulum sağlıyoruz.

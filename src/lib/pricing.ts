@@ -1,7 +1,8 @@
 import { FACTS } from './facts';
+import { DISTRICTS } from './site-config';
 
 export interface PriceInput {
-  rooms: '1+1' | '2+1' | '3+1' | '4+1+';
+  rooms: '1+1' | '2+1' | '3+1' | '4+1+' | 'ofis';
   fromFloor: number;
   toFloor: number;
   fromElevator: boolean;
@@ -38,6 +39,7 @@ export function estimatePrice(input: PriceInput): PriceEstimate {
   // 2+1: 18000 - 23000
   // 3+1: 23000 - 32000
   // 4+1+: 32000 - 42000
+  // ofis: 12000 - 16000
   let baseMin = 12000;
   let baseMax = 18000;
 
@@ -50,6 +52,9 @@ export function estimatePrice(input: PriceInput): PriceEstimate {
   } else if (input.rooms === '4+1+') {
     baseMin = 32000;
     baseMax = 42000;
+  } else if (input.rooms === 'ofis') {
+    baseMin = 12000;
+    baseMax = 16000;
   }
 
   // Kat artış yevmiyesi: Her kat yükseldiğinde personelin iş gücü katlandığı için kat başına 150 TL ek maliyet eklenir.
@@ -106,3 +111,40 @@ export function estimatePrice(input: PriceInput): PriceEstimate {
     disclaimer
   };
 }
+
+export function calculateEstimateFromForm(rooms: string, elevator: string, fromDistrict: string, toDistrict: string) {
+  const isIntercity = 
+    fromDistrict.includes('İl Dışı') || 
+    toDistrict.includes('İl Dışı') || 
+    fromDistrict.includes('Şehirlerarası') || 
+    toDistrict.includes('Şehirlerarası');
+
+  let distanceType: 'sehirici' | 'ilceler' | 'sehirlerarasi' = 'sehirici';
+  if (isIntercity) {
+    distanceType = 'sehirlerarasi';
+  } else {
+    // Check if either is an outer district (requires checking DISTRICTS)
+    const fromConfig = DISTRICTS.find((d: any) => fromDistrict.includes(d.name));
+    const toConfig = DISTRICTS.find((d: any) => toDistrict.includes(d.name));
+    if ((fromConfig && fromConfig.tier === 'ilce') || (toConfig && toConfig.tier === 'ilce')) {
+      distanceType = 'ilceler';
+    }
+  }
+
+  const priceInput: PriceInput = {
+    rooms: (rooms === 'ofis' || rooms === '1+1' || rooms === '2+1' || rooms === '3+1' || rooms === '4+1+') ? rooms as any : '2+1',
+    fromFloor: 3, // average floor surcharge estimation
+    toFloor: 3,
+    fromElevator: elevator === 'evet',
+    toElevator: elevator === 'evet',
+    distanceType,
+    packing: true,
+    carpentry: true,
+    storage: false,
+    distanceKm: distanceType === 'sehirlerarasi' ? 300 : undefined
+  };
+
+  const estimate = estimatePrice(priceInput);
+  return { min: estimate.min, max: estimate.max };
+}
+

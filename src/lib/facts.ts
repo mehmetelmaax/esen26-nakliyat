@@ -1,9 +1,9 @@
 export const FACTS = {
-  maxFloor: 15,
+  maxFloor: 25,
   cityMoveHours: '6-8',
   priceMin: 12000,
   priceMax: 32000,
   foundedYear: 2015,
   insurer: 'Anadolu Sigorta',
-  districtCount: 14,
+  districtCount: 15,
 } as const;

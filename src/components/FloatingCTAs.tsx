@@ -2,63 +2,35 @@
 import { SITE } from '@/lib/site-config';
 
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, MapPin, X } from 'lucide-react';
+import { MessageCircle, X } from 'lucide-react';
 import { trackEvent } from '@/lib/analytics';
 
+// Keep closed state in a module-level variable to persist across page navigations in the SPA session
+let sessionClosed = false;
+
 export default function FloatingCTAs() {
-  const [showLocationPopup, setShowLocationPopup] = useState(false);
   const [showWhatsappPopup, setShowWhatsappPopup] = useState(false);
 
   useEffect(() => {
-    // Show popups after a slight delay to trigger user visual attraction
+    if (sessionClosed) return;
+    
     const timer = setTimeout(() => {
-      setShowLocationPopup(true);
       setShowWhatsappPopup(true);
     }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <div className="fixed bottom-6 right-6 z-40 hidden md:flex flex-col gap-4 items-end select-none">
-      
-      {/* 1. Location / Yol Tarifi Popup Card */}
-      {showLocationPopup && (
-        <div className="bg-navy border border-white/10 text-white rounded-2xl p-4 shadow-2xl max-w-[260px] relative animate-bounce-subtle">
-          <button 
-            onClick={() => setShowLocationPopup(false)}
-            className="absolute top-2 right-2 text-white/50 hover:text-white cursor-pointer"
-            aria-label="Kapat"
-          >
-            <X className="w-3.5 h-3.5" />
-          </button>
-          
-          <div className="flex gap-3 items-start pr-2">
-            <div className="bg-orange/20 text-orange p-2 rounded-lg flex-shrink-0 mt-0.5">
-              <MapPin className="w-5 h-5" />
-            </div>
-            <div className="space-y-1">
-              <span className="text-[10px] font-bold text-orange tracking-wider block">MERKEZ OFİSİMİZ</span>
-              <h4 className="font-display font-bold text-xs leading-snug">Yol Tarifi Alın</h4>
-              <p className="text-[10px] text-gray-300 leading-relaxed">Fatih Mh. Tepebaşı/Eskişehir adresimize Google Haritalar ile ulaşın.</p>
-              <a 
-                href="https://maps.app.goo.gl/oZBkztaiuicPXVQT8"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackEvent('harita_tikla', { konum: 'floating', sayfa: window.location.pathname })}
-                className="text-orange hover:underline text-[10px] font-bold block pt-1.5"
-              >
-                Haritada Göster &rarr;
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
+  const handleClose = () => {
+    setShowWhatsappPopup(false);
+    sessionClosed = true;
+  };
 
-      {/* 2. WhatsApp Popup Card */}
+  return (
+    <div className="fixed bottom-24 right-6 z-50 flex flex-col gap-4 items-end pointer-events-none md:flex">
       {showWhatsappPopup && (
-        <div className="bg-white border border-gray-light text-charcoal rounded-2xl p-4 shadow-2xl max-w-[260px] relative animate-fade-in">
+        <div className="bg-white border border-gray-light text-charcoal rounded-2xl p-4 shadow-2xl max-w-[260px] relative animate-fade-in pointer-events-auto">
           <button 
-            onClick={() => setShowWhatsappPopup(false)}
+            onClick={handleClose}
             className="absolute top-2 right-2 text-charcoal/40 hover:text-charcoal cursor-pointer"
             aria-label="Kapat"
           >
@@ -77,7 +49,10 @@ export default function FloatingCTAs() {
                 href={`${SITE.whatsappHref}?text=Merhaba,%20evimi%20taşımak%20istiyorum.%20Fiyat%20teklifi%20alabilir%20miyim?`}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackEvent('whatsapp_tikla', { konum: 'floating', sayfa: window.location.pathname })}
+                onClick={() => {
+                  trackEvent('whatsapp_tikla', { konum: 'floating', sayfa: window.location.pathname });
+                  handleClose();
+                }}
                 className="text-emerald-600 hover:underline text-[10px] font-bold block pt-1.5"
               >
                 Şimdi Yaz &rarr;
@@ -86,7 +61,6 @@ export default function FloatingCTAs() {
           </div>
         </div>
       )}
-
     </div>
   );
 }

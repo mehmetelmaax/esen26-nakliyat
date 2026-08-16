@@ -31,10 +31,10 @@ export default function GalleryGrid({ items }: GalleryGridProps) {
           >
             {/* Image / Placeholder wrapper */}
             <div className="relative aspect-video bg-navy/5 flex items-center justify-center overflow-hidden">
-              {/* Graceful CSS Placeholder if image is loading */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-navy/20">
-                <ImageIcon className="w-12 h-12" />
-                <span className="text-xs font-semibold mt-2">[Görsel: {item.src.split('/').pop()}]</span>
+              {/* Graceful CSS Shimmer Skeleton Placeholder if image is loading */}
+              <div className="absolute inset-0 bg-gray-100 animate-pulse flex flex-col items-center justify-center text-navy/20">
+                <ImageIcon className="w-10 h-10 animate-bounce duration-1000" />
+                <span className="text-[9px] font-bold mt-2 tracking-widest text-navy/40 uppercase">Yükleniyor...</span>
               </div>
               {/* Real Image */}
               <Image

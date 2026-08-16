@@ -15,7 +15,18 @@ const photos = [
   'paketleme-detay-v3',
   'esen-slayt-1',
   'esen-slayt-2',
-  'esen-slayt-3'
+  'esen-slayt-3',
+  'arac-filosu-v3',
+  'ekip-v3',
+  'esen-galeri-1',
+  'esen-galeri-2',
+  'eskisehir-nakliyat-faaliyet-1',
+  'eskisehir-nakliyat-faaliyet-2',
+  'eskisehir-nakliyat-faaliyet-3',
+  'eskisehir-nakliyat-faaliyet-4',
+  'eskisehir-nakliyat-faaliyet-5',
+  'eskisehir-nakliyat-faaliyet-6',
+  'eskisehir-nakliyat-faaliyet-7'
 ];
 
 async function run() {

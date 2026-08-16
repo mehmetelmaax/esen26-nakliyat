@@ -14,9 +14,9 @@ const CHECKLIST_ITEMS: ChecklistItem[] = [
   { id: '3', timeframe: '30_days', text: 'Evde kullanılmayan fazla eşyaları tespit edip ayırın veya bağışlayın.' },
   { id: '4', timeframe: '15_days', text: 'Eski adresteki aboneliklerin (ASKİ, Enerjisa, Aksa) kapatılması için başvuruları yapın.' },
   { id: '5', timeframe: '15_days', text: 'Çocukların okul nakil ve kayıt taşıma işlemlerini e-Okul üzerinden başlatın.' },
-  { id: '6', timeframe: '15_days', text: 'Değerli eşyalar, tapu, altın and mücevherat için güvenli çanta hazırlayın.' },
+  { id: '6', timeframe: '15_days', text: 'Değerli eşyalar, tapu, altın ve mücevherat için güvenli çanta hazırlayın.' },
   { id: '7', timeframe: '7_days', text: 'Kendiniz paketleyecekseniz koli ve bant tedarik edip mutfak kolilemelerine başlayın.' },
-  { id: '8', timeframe: '7_days', text: 'Apartman yönetimine haber vererek taşınma günü asansör and kamyon park yerini ayırtın.' },
+  { id: '8', timeframe: '7_days', text: 'Apartman yönetimine haber vererek taşınma günü asansör ve kamyon park yerini ayırtın.' },
   { id: '9', timeframe: '7_days', text: 'Abonelik nakil işlemlerinde yeni evin sayaç numaralarını sisteme kaydettirin.' },
   { id: '10', timeframe: '1_day', text: 'Buzdolabındaki yiyecekleri tüketin veya taşıma için termal kutular hazırlayın.' },
   { id: '11', timeframe: '1_day', text: 'Buzdolabını de-frost edin (eritin) ve taşınmadan en az 4 saat önce kapatın.' },
@@ -27,7 +27,7 @@ const CHECKLIST_ITEMS: ChecklistItem[] = [
 ];
 
 export default function MovingChecklist() {
-  // State only, no localStorage to avoid hydration issues and comply with guidelines
+  // State only, no localStorage to avoid hydration issues ve comply with guidelines
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({});
 
   const handleToggle = (id: string) => {

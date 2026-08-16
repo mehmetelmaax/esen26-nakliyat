@@ -4,8 +4,9 @@ import Link from 'next/link';
 import PriceCalculator from '@/components/PriceCalculator';
 import JsonLd from '@/components/JsonLd';
 import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
-import { SITE } from '@/lib/site-config';
+import { SITE, ROUTES } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
+import { estimatePrice } from '@/lib/pricing';
 import { ArrowRight, HelpCircle, ShieldAlert, BadgeInfo, Coins, Scale, CheckCircle2 } from 'lucide-react';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
@@ -51,9 +52,33 @@ export default function FiyatlarPage() {
     },
     {
       question: "Eşyaların kolilenmesini kendim yaparsam fiyatta indirim yapılır mı?",
-      answer: "Evet. Mutfak kırılacakları, giysiler and ufak tefek kişisel eşyaların kolilenmesi işlemini kendiniz yaptığınızda, nakliye ekibimizin iş yükü ve ambalaj malzemesi sarfiyatı düşeceği için toplam teklif fiyatından ortalama 1.500 TL ile 3.000 TL arasında indirim uygulanır."
+      answer: "Evet. Mutfak kırılacakları, giysiler ve ufak tefek kişisel eşyaların kolilenmesi işlemini kendiniz yaptığınızda, nakliye ekibimizin iş yükü ve ambalaj malzemesi sarfiyatı düşeceği için toplam teklif fiyatından ortalama 1.500 TL ile 3.000 TL arasında indirim uygulanır."
     }
   ];
+
+  const minPrice = estimatePrice({
+    rooms: '1+1',
+    fromFloor: 1,
+    toFloor: 1,
+    fromElevator: false,
+    toElevator: false,
+    distanceType: 'sehirici',
+    packing: false,
+    carpentry: false,
+    storage: false
+  }).min;
+
+  const maxPrice = estimatePrice({
+    rooms: '4+1+',
+    fromFloor: 1,
+    toFloor: 1,
+    fromElevator: false,
+    toElevator: false,
+    distanceType: 'sehirici',
+    packing: false,
+    carpentry: false,
+    storage: false
+  }).max;
 
   const schemas = {
     '@context': 'https://schema.org',
@@ -71,10 +96,10 @@ export default function FiyatlarPage() {
       faqSchema(pricingFaqs),
       {
         '@context': 'https://schema.org',
-        '@type': 'Offer',
+        '@type': 'AggregateOffer',
         'priceCurrency': 'TRY',
-        'lowPrice': FACTS.priceMin.toString(),
-        'highPrice': FACTS.priceMax.toString(),
+        'lowPrice': minPrice.toString(),
+        'highPrice': maxPrice.toString(),
         'offerCount': '4',
         'valueAddedTaxIncluded': 'false',
         'url': `${SITE.url}/eskisehir-nakliyat-fiyatlari`
@@ -109,7 +134,7 @@ export default function FiyatlarPage() {
             <ul className="list-disc list-inside text-xs text-charcoal space-y-1.5 pl-2">
               <li><strong>K3 Yetki Belgesi:</strong> Ev ve ofis eşyalarının ticari araçlarla karayolunda taşınması için Ulaştırma Bakanlığı tarafından zorunlu kılınan yasal yetki belgesidir.</li>
               <li><strong>Mobil dış cephe asansörü:</strong> Yüksek katlı binalardaki eşyaların bina içi merdivenlere sokulmadan pencere veya balkondan nakliye aracına transfer edilmesini sağlayan teleskopik platform sistemidir.</li>
-              <li><strong>Emtia nakliyat sigortası:</strong> Eşyaların taşıma esnasında karşılaşabileceği kaza, yangın and hırsızlık gibi riskleri yasal teminat altına alan poliçe türüdür.</li>
+              <li><strong>Emtia nakliyat sigortası:</strong> Eşyaların taşıma esnasında karşılaşabileceği kaza, yangın ve hırsızlık gibi riskleri yasal teminat altına alan poliçe türüdür.</li>
               <li><strong>Ekspertiz:</strong> Taşınma öncesinde eşya hacmi, kat durumu ve asansör gereksinimlerinin yerinde incelenerek net bütçenin belirlenmesi sürecidir.</li>
               <li><strong>Demontaj:</strong> Gardırop ve yatak odası takımı gibi büyük mobilyaların taşınabilir parçalara ayrılması işlemidir.</li>
             </ul>
@@ -165,7 +190,7 @@ export default function FiyatlarPage() {
               <div className="space-y-2">
                 <h3 className="font-display font-bold text-navy text-base">2. Bulunulan Kat Yükseklikleri (Etki Oranı: %15)</h3>
                 <p className="text-charcoal text-sm leading-relaxed">
-                  Eşyaların taşınacağı çıkış ve varış kat durumları yükseldikçe personelin eşya taşıma süresi and harcayacağı efor katlanır. Asansörsüz yüksek katlar ek beden işçiliği yevmiyesi gerektirmektedir.
+                  Eşyaların taşınacağı çıkış ve varış kat durumları yükseldikçe personelin eşya taşıma süresi ve harcayacağı efor katlanır. Asansörsüz yüksek katlar ek beden işçiliği yevmiyesi gerektirmektedir.
                 </p>
               </div>
 
@@ -179,14 +204,14 @@ export default function FiyatlarPage() {
               <div className="space-y-2">
                 <h3 className="font-display font-bold text-navy text-base">4. Güzergah ve Karayolu Mesafesi (Etki Oranı: %15)</h3>
                 <p className="text-charcoal text-sm leading-relaxed">
-                  Yükleme noktası ile teslimat adresi arasındaki kilometre farkı, kamyon veya tırlarımızın yakıt tüketimini ve amortisman giderlerini belirler. Eskişehir şehiriçi, çevre ilçeler and şehirlerarası taşımalarda km katsayıları farklıdır.
+                  Yükleme noktası ile teslimat adresi arasındaki kilometre farkı, kamyon veya tırlarımızın yakıt tüketimini ve amortisman giderlerini belirler. Eskişehir şehiriçi, çevre ilçeler ve şehirlerarası taşımalarda km katsayıları farklıdır.
                 </p>
               </div>
 
               <div className="space-y-2">
                 <h3 className="font-display font-bold text-navy text-base">5. Ambalajlama ve Kolileme Kapsamı (Etki Oranı: %10)</h3>
                 <p className="text-charcoal text-sm leading-relaxed">
-                  Mutfak kırılacak eşyalarının, bardakların, porselenlerin and giysilerin koli içine yerleştirilmesi işini nakliye firmasının yapması durumunda ek işçilik ve sarf malzemesi gideri bütçeye eklenmektedir.
+                  Mutfak kırılacak eşyalarının, bardakların, porselenlerin ve giysilerin koli içine yerleştirilmesi işini nakliye firmasının yapması durumunda ek işçilik ve sarf malzemesi gideri bütçeye eklenmektedir.
                 </p>
               </div>
 
@@ -231,7 +256,7 @@ export default function FiyatlarPage() {
               Paketleme Hizmeti Fiyatı Nedir?
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Profesyonel eşya paketleme ve ambalajlama hizmetlerimiz, mobilya ve beyaz eşyaların kalın havalı ambalaj naylonları ile sarılması and mutfak kırılacaklarının kolilenmesini kapsar. Paketleme hizmetimiz daire büyüklüğüne göre 1.500 TL ile 4.500 TL arasında bir maliyet oluşturur. Bu bedel, kullanılan Kraft kutu, koli bandı, balonlu patpat naylon rulo maliyeti ve paketleme işçilik yevmiyesini karşılamaktadır. Eşyaların kolilenmesini kendiniz yaptığınızda bu bedelden tasarruf edebilirsiniz.
+              Profesyonel eşya paketleme ve ambalajlama hizmetlerimiz, mobilya ve beyaz eşyaların kalın havalı ambalaj naylonları ile sarılması ve mutfak kırılacaklarının kolilenmesini kapsar. Paketleme hizmetimiz daire büyüklüğüne göre 1.500 TL ile 4.500 TL arasında bir maliyet oluşturur. Bu bedel, kullanılan Kraft kutu, koli bandı, balonlu patpat naylon rulo maliyeti ve paketleme işçilik yevmiyesini karşılamaktadır. Eşyaların kolilenmesini kendiniz yaptığınızda bu bedelden tasarruf edebilirsiniz.
             </p>
           </div>
 
@@ -246,7 +271,7 @@ export default function FiyatlarPage() {
               Mesafe Ücreti = [Gidilecek Yol Mesafesi (Km) × Yakıt Katsayısı (₺12)] + Otoban/Köprü Geçiş Giderleri + Sürücü Harcırahları
             </div>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Esen 26 Nakliyat tarafından sıkça taşıma yapılan bazı şehirlerarası hatlar and tahmini taşıma fiyatları tablosu:
+              Esen 26 Nakliyat tarafından sıkça taşıma yapılan bazı şehirlerarası hatlar ve tahmini taşıma fiyatları tablosu:
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse text-xs md:text-sm">
@@ -393,6 +418,31 @@ export default function FiyatlarPage() {
                   <span className="font-bold text-navy block mb-1">{item.question}</span>
                   <p className="text-charcoal/95 leading-relaxed">{item.answer}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section 7: Intercity Routes Link List */}
+        <section className="py-8 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="bg-white p-8 rounded-xl border border-gray-light shadow-sm space-y-4">
+            <h2 className="font-display font-bold text-navy text-xl flex items-center gap-2">
+              <ArrowRight className="w-5 h-5 text-orange" />
+              <span>Eskişehir Şehirlerarası Nakliyat Popüler Rotaları Nelerdir?</span>
+            </h2>
+            <p className="text-sm text-charcoal/90 leading-relaxed">
+              Esen 26 Nakliyat olarak, Eskişehir merkezli olarak Türkiye genelindeki tüm illere sigortalı nakliye seferleri düzenliyoruz. En sık taşıma yaptığımız popüler şehirlerarası rotalarımızın detaylarına, kilometre ve fiyat aralıklarına aşağıdaki bağlantılardan ulaşabilirsiniz:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm">
+              {ROUTES.map((route) => (
+                <Link
+                  key={route.slug}
+                  href={`/rotalar/${route.slug}`}
+                  className="flex justify-between items-center bg-off-white p-3 rounded-lg border border-gray-light/60 text-navy hover:text-orange hover:border-orange/60 transition-all font-semibold"
+                >
+                  <span>Eskişehir &rarr; {route.city} Evden Eve Nakliyat</span>
+                  <span className="text-[10px] text-gray-400 font-normal">{route.distanceKm} Km</span>
+                </Link>
               ))}
             </div>
           </div>

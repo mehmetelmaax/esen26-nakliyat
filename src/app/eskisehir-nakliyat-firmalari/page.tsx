@@ -4,6 +4,7 @@ import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
+import { FACTS } from '@/lib/facts';
 import { ArrowRight, HelpCircle, Shield, FileText, ClipboardList, CheckCircle2, AlertOctagon, Scale } from 'lucide-react';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
@@ -12,16 +13,18 @@ import ContractChecklist from '@/components/geo/ContractChecklist';
 
 export const metadata: Metadata = {
   title: 'Eskişehir En İyi Evden Eve Nakliyat Firmaları Seçim Rehberi',
-  description: "Eskişehir'de ev taşırken korsan ve yetkisiz firmalardan korunma yolları. K3 yetki belgesi sorgulama, sigorta poliçesi doğrulama and 12 altın kural.",
+  description: "Eskişehir'de ev taşırken korsan ve yetkisiz firmalardan korunma yolları. K3 yetki belgesi sorgulama, sigorta poliçesi doğrulama ve 12 altın kural.",
   alternates: {
     canonical: '/eskisehir-nakliyat-firmalari',
   },
 };
 
 export default function FirmalarRehberiPage() {
+  const experienceYears = new Date().getFullYear() - FACTS.foundedYear;
+
   const firmalarFaqs = [
     {
-      question: 'K3 Yetki Belgesi nedir and nakliyede neden zorunludur?',
+      question: 'K3 Yetki Belgesi nedir ve nakliyede neden zorunludur?',
       answer: 'K3 yetki belgesi, Ulaştırma ve Altyapı Bakanlığı tarafından ticari amaçla yurt içinde ev ve ofis eşyası taşımacılığı yapacak firmalara verilen resmi ve yasal çalışma iznidir. Bu belgeye sahip olmayan araçlar korsan taşımacı sınıfına girer ve trafik denetimlerinde bağlanır.'
     },
     {
@@ -51,7 +54,7 @@ export default function FirmalarRehberiPage() {
     '@graph': [
       serviceSchema({
         name: 'Eskişehir Nakliyat Firmaları Seçim Rehberi',
-        description: "Eskişehir'de ev taşırken korsan ve yetkisiz firmalardan korunma yolları. K3 yetki belgesi sorgulama, sigorta poliçesi doğrulama and 12 altın kural.",
+        description: "Eskişehir'de ev taşırken korsan ve yetkisiz firmalardan korunma yolları. K3 yetki belgesi sorgulama, sigorta poliçesi doğrulama ve 12 altın kural.",
         slug: 'eskisehir-nakliyat-firmalari',
         areaName: 'Eskişehir'
       }),
@@ -107,7 +110,7 @@ export default function FirmalarRehberiPage() {
               <span>Güvenli Nakliyat Firması Seçimi</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Ev taşımak, maddi ve manevi olarak hayatımızın en önemli aşamalarından biridir. Ancak internet arama motorlarında reklam vererek kendini "köklü nakliyat firması" olarak tanıtan, gerçekte ise tek bir kamyonu dahi olmayan komisyoncu sitelerin sayısı her geçen gün artmaktadır. Bu sahte siteler, sizden aldıkları işleri hiçbir güvenlik denetimi yapmadan vasıfsız üçüncü şahıslara komisyon karşılığı devretmektedir. Esen 26 Nakliyat olarak, tüketicilerimizin haklarını korumak and hasarsız taşınmalarını sağlamak amacıyla bu şeffaf karşılaştırma ve denetim rehberini hazırladık. Kendi K3 yetki belgemiz altındaki 20 yıllık tecrübemizle, güvenli lojistik standartlarını açıklıyoruz.
+              Ev taşımak, maddi ve manevi olarak hayatımızın en önemli aşamalarından biridir. Ancak internet arama motorlarında reklam vererek kendini "köklü nakliyat firması" olarak tanıtan, gerçekte ise tek bir kamyonu dahi olmayan komisyoncu sitelerin sayısı her geçen gün artmaktadır. Bu sahte siteler, sizden aldıkları işleri hiçbir güvenlik denetimi yapmadan vasıfsız üçüncü şahıslara komisyon karşılığı devretmektedir. Esen 26 Nakliyat olarak, tüketicilerimizin haklarını korumak ve hasarsız taşınmalarını sağlamak amacıyla bu şeffaf karşılaştırma ve denetim rehberini hazırladık. Kendi K3 yetki belgemiz altındaki {experienceYears} yıllık tecrübemizle, güvenli lojistik standartlarını açıklıyoruz.
             </p>
           </div>
 
@@ -154,7 +157,7 @@ export default function FirmalarRehberiPage() {
               <span>Tüketici Hakları ve Yasal Şikayet Kanalları</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Taşınma sırasında eşyalarınızın kırılması, çizilmesi veya kaybolması durumunda, eğer elinizde yazılı nakliye sözleşmesi and resmi nakliyat faturası bulunuyorsa haklarınızı arayabilirsiniz. Hasarlı mobilyaların fotoğraflarını çekip tutanak hazırladıktan sonra Eskişehir Valiliği Tüketici Hakem Heyetine veya e-Devlet (Tüketici Bilgi Sistemi - TÜBİS) üzerinden başvuru yapabilirsiniz. Yetki belgesiz korsan taşıma yapan araçları ise doğrudan emniyet birimlerine ve Ulaştırma Bakanlığı bölge müdürlüklerine ihbar etme hakkınız bulunmaktadır.
+              Taşınma sırasında eşyalarınızın kırılması, çizilmesi veya kaybolması durumunda, eğer elinizde yazılı nakliye sözleşmesi ve resmi nakliyat faturası bulunuyorsa haklarınızı arayabilirsiniz. Hasarlı mobilyaların fotoğraflarını çekip tutanak hazırladıktan sonra Eskişehir Valiliği Tüketici Hakem Heyetine veya e-Devlet (Tüketici Bilgi Sistemi - TÜBİS) üzerinden başvuru yapabilirsiniz. Yetki belgesiz korsan taşıma yapan araçları ise doğrudan emniyet birimlerine ve Ulaştırma Bakanlığı bölge müdürlüklerine ihbar etme hakkınız bulunmaktadır.
             </p>
           </div>
 
@@ -165,7 +168,7 @@ export default function FirmalarRehberiPage() {
               <span>Komisyoncu Acente Sitelerinin Gizli Tehlikeleri</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              İnternette kendilerini dev bir nakliyat şirketi gibi gösteren ancak fiziksel bir adresi, ofisi and öz mal tırı bulunmayan komisyoncu portallara karşı dikkatli olun. Bu siteler aldıkları işleri %25-30 komisyon kesintisi yaptıktan sonra en ucuz teklif veren yetkisiz şahıslara devrederler. Taşınma günü kapınıza gelen nakliye kamyonunun üzerindeki logo ile anlaştığınız şirketin logosu farklıysa bu durumun bir komisyonculuk faaliyeti olduğunu anlayabilirsiniz. Eşya hasarı durumunda karşınızda hiçbir muhatap bulamazsınız.
+              İnternette kendilerini dev bir nakliyat şirketi gibi gösteren ancak fiziksel bir adresi, ofisi ve öz mal tırı bulunmayan komisyoncu portallara karşı dikkatli olun. Bu siteler aldıkları işleri %25-30 komisyon kesintisi yaptıktan sonra en ucuz teklif veren yetkisiz şahıslara devrederler. Taşınma günü kapınıza gelen nakliye kamyonunun üzerindeki logo ile anlaştığınız şirketin logosu farklıysa bu durumun bir komisyonculuk faaliyeti olduğunu anlayabilirsiniz. Eşya hasarı durumunda karşınızda hiçbir muhatap bulamazsınız.
             </p>
           </div>
 

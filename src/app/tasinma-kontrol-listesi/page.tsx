@@ -122,7 +122,7 @@ export default function TasinmaListesiPage() {
               <div className="border-l-4 border-orange pl-4 space-y-2">
                 <span className="font-bold text-navy text-base block">2. Su Aboneliği (Eskişehir ASKİ Genel Müdürlüğü)</span>
                 <p className="leading-relaxed text-charcoal/90">
-                  ASKİ şubelerine giderek veya e-Devlet ASKİ hizmetleri sekmesinden eski su aboneliğinizin kapatılmasını ve depozito iade talebinizi iletin. Yeni evinizin su sayacının açılması and üzerinize kaydedilmesi için tapu veya kira kontratı örneği ile ASKİ şubelerine başvurarak yeni sözleşme bedelini yatırın.
+                  ASKİ şubelerine giderek veya e-Devlet ASKİ hizmetleri sekmesinden eski su aboneliğinizin kapatılmasını ve depozito iade talebinizi iletin. Yeni evinizin su sayacının açılması ve üzerinize kaydedilmesi için tapu veya kira kontratı örneği ile ASKİ şubelerine başvurarak yeni sözleşme bedelini yatırın.
                 </p>
               </div>
 
@@ -160,13 +160,13 @@ export default function TasinmaListesiPage() {
             </p>
             <div className="space-y-3.5 text-sm text-charcoal pl-2">
               <p>
-                <strong>• Ağır Eşyaları Küçük Kolilere Koyun:</strong> Kitaplar, tabaklar ve kavanozlar gibi ağır eşyaları büyük kolilere doldurursanız kolinin tabanı yırtılabilir and taşıması imkansız hale gelir. Ağır eşyaları küçük kolilere, nevresim and kıyafet gibi hafif yükleri büyük kolilere yerleştirin.
+                <strong>• Ağır Eşyaları Küçük Kolilere Koyun:</strong> Kitaplar, tabaklar ve kavanozlar gibi ağır eşyaları büyük kolilere doldurursanız kolinin tabanı yırtılabilir ve taşıması imkansız hale gelir. Ağır eşyaları küçük kolilere, nevresim ve kıyafet gibi hafif yükleri büyük kolilere yerleştirin.
               </p>
               <p>
                 <strong>• Kolilerde Boşluk Bırakmayın:</strong> Kolilerin içine eşyaları yerleştirdikten sonra kalan boşlukları kırışık gazete kağıtları veya balonlu naylon parçalarıyla doldurun. Boşluk kalan koliler üst üste istiflendiğinde ezilir ve içindeki eşyalar kırılır.
               </p>
               <p>
-                <strong>• Kabloları ve Vidaları Etiketleyin:</strong> Televizyon, bilgisayar kablolarını sökmeden önce fotoğraflarını çekin. Sökülen gardırop and yatak vidalarını küçük kilitli poşetlere koyarak doğrudan o mobilyanın ana gövdesine bantlayın.
+                <strong>• Kabloları ve Vidaları Etiketleyin:</strong> Televizyon, bilgisayar kablolarını sökmeden önce fotoğraflarını çekin. Sökülen gardırop ve yatak vidalarını küçük kilitli poşetlere koyarak doğrudan o mobilyanın ana gövdesine bantlayın.
               </p>
             </div>
           </div>
@@ -188,7 +188,7 @@ export default function TasinmaListesiPage() {
               <span>Evcil Hayvanların Taşınma Günü Stres Yönetimi</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Kedi, köpek veya kuş gibi evcil hayvanlar taşınma sırasındaki yabancı kalabalıktan, gürültüden and eşyaların hareketinden aşırı derecede strese girer ve kaçma eğilimi gösterebilirler. Taşınma gününde evcil dostunuzu içi boşaltılmış, kapısı kapalı sakin bir odaya (örneğin banyoya) taşıma çantası, maması ve suyu ile birlikte kapatın. Odanın kapısına "Evcil Hayvan Var, Açmayın" notu yapıştırın. Tüm eşyalar kamyona yüklendikten sonra dostunuzu kendi özel aracınızla yeni eve nakledin.
+              Kedi, köpek veya kuş gibi evcil hayvanlar taşınma sırasındaki yabancı kalabalıktan, gürültüden ve eşyaların hareketinden aşırı derecede strese girer ve kaçma eğilimi gösterebilirler. Taşınma gününde evcil dostunuzu içi boşaltılmış, kapısı kapalı sakin bir odaya (örneğin banyoya) taşıma çantası, maması ve suyu ile birlikte kapatın. Odanın kapısına "Evcil Hayvan Var, Açmayın" notu yapıştırın. Tüm eşyalar kamyona yüklendikten sonra dostunuzu kendi özel aracınızla yeni eve nakledin.
             </p>
           </div>
 

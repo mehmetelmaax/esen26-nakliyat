@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowUpRight, Truck, Repeat, ArrowRight, Briefcase, Package, FileText, Sparkles } from 'lucide-react';
 import QuoteForm from './QuoteForm';
+import { FACTS } from '@/lib/facts';
 
 interface ServiceItem {
   id: string;
@@ -132,6 +133,7 @@ const services: ServiceItem[] = [
 ];
 
 export default function ServicesGrid() {
+  const experienceYears = new Date().getFullYear() - FACTS.foundedYear;
   return (
     <section className="py-20 bg-gray-light/30" id="hizmetler">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -145,7 +147,7 @@ export default function ServicesGrid() {
             Profesyonel Taşımacılık Hizmetleri
           </h2>
           <p className="text-charcoal text-base md:text-lg leading-relaxed">
-            20 yıllık Eskişehir deneyimimizle sunduğumuz, tüm lojistik ihtiyaçlarınızı karşılayan odaklanmış çözümlerimiz.
+            {experienceYears} yıllık Eskişehir deneyimimizle sunduğumuz, tüm lojistik ihtiyaçlarınızı karşılayan odaklanmış çözümlerimiz.
           </p>
         </div>
 

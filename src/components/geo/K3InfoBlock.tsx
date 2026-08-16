@@ -26,7 +26,7 @@ export default function K3InfoBlock({ licenseNumber }: K3InfoBlockProps) {
           <li>Türkiye Cumhuriyeti e-Devlet kapısı üzerinden "Yetki Belgesi Sorgulama" modülünü aratın.</li>
           <li>Ulaştırma ve Altyapı Bakanlığı "Karayolu Taşıma Yetki Belgesi Sorgulama" sayfasına giriş yapın.</li>
           <li>Taşıma yapacak şirketin tam vergi numarasını veya unvanını sorgulama kutusuna yazın.</li>
-          <li>Firma listesinde "K3" yetki belgesinin aktif and geçerli olduğunu teyit edin.</li>
+          <li>Firma listesinde "K3" yetki belgesinin aktif ve geçerli olduğunu teyit edin.</li>
         </ol>
       </div>
 

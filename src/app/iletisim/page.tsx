@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 import JsonLd from '@/components/JsonLd';
 import { localBusinessSchema } from '@/lib/schema';
 import Breadcrumb from '@/components/Breadcrumb';
+import MapEmbed from '@/components/MapEmbed';
 
 export const metadata: Metadata = {
   title: 'İletişim - Esen 26 Nakliyat Eskişehir',
@@ -50,7 +51,7 @@ export default function IletisimPage() {
                     <MapPin className="w-5 h-5 text-orange flex-shrink-0 mt-0.5" />
                     <div>
                       <span className="font-bold text-navy block mb-0.5">Adres:</span>
-                      <p>Fatih Mahallesi, 73258 Sokak, No:9/1, Tepebaşı / Eskişehir</p>
+                      <p>{`${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.locality} / ${SITE.address.region}`}</p>
                     </div>
                   </div>
 
@@ -98,14 +99,7 @@ export default function IletisimPage() {
 
               {/* Map Iframe */}
               <div className="w-full aspect-video rounded-xl overflow-hidden border border-gray-light shadow-inner bg-navy/5 relative">
-                <iframe
-                  title="Esen 26 Nakliyat Google Harita Konumu"
-                  src="https://maps.google.com/maps?q=Esen%20Nakliyat%20%26%20Temizlik%20%26%20Kolileme&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  className="absolute inset-0 w-full h-full border-0"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <MapEmbed />
               </div>
 
               {/* Yol Tarifi Button */}

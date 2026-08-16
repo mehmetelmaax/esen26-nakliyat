@@ -114,7 +114,7 @@ export default async function RoutePage({ params }: PageProps) {
 
         {/* Detailed Content */}
         <section className="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          {/* Section 1: Distance and Time */}
+          {/* Section 1: Distance ve Time */}
           <div className="bg-white p-8 rounded-xl border border-gray-light shadow-sm space-y-4">
             <h2 className="font-display font-bold text-navy text-xl md:text-2xl flex items-center gap-2">
               <MapPin className="w-6 h-6 text-orange" />
@@ -226,7 +226,7 @@ export default async function RoutePage({ params }: PageProps) {
               {route.insuranceText} Şehirlerarası eşya taşımacılığı yasal olarak da emtia sigortası gerektiren bir süreçtir. Esen 26 Nakliyat, K3 yetki belgesinin zorunlu kıldığı tüm sigortacılık şartlarını eksiksiz yerine getirmektedir. Eşyalarınız araca yüklendiği andan itibaren sevk irsaliyesi ve sigorta poliçesiyle tam güvence altındadır.
             </p>
             <p className="text-charcoal text-sm md:text-base leading-relaxed mt-3 pt-3 border-t border-gray-light/60">
-              Emtia nakliyat sigortası, eşyaların taşıma esnasında karşılaşabileceği kaza, yangın and hırsızlık gibi riskleri yasal teminat altına alan poliçe türüdür. Taşınma gününün sabahında adınıza düzenlenen resmi poliçe evrakını kontrol ederek teslim alabilirsiniz.
+              Emtia nakliyat sigortası, eşyaların taşıma esnasında karşılaşabileceği kaza, yangın ve hırsızlık gibi riskleri yasal teminat altına alan poliçe türüdür. Taşınma gününün sabahında adınıza düzenlenen resmi poliçe evrakını kontrol ederek teslim alabilirsiniz.
             </p>
           </div>
 

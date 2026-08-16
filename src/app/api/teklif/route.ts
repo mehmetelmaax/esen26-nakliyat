@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { QuoteFormSchema } from '@/lib/validation';
+import { calculateEstimateFromForm } from '@/lib/pricing';
 
 // Simple in-memory cache for IP rate limiting
 const ipCache = new Map<string, { count: number; expiresAt: number }>();
@@ -13,27 +14,11 @@ function cleanOldCache() {
   }
 }
 
-function calculateServerEstimate(rooms: string, elevator: string, fromDistrict: string, toDistrict: string) {
-  let basePrice = 8000;
-  if (rooms === '2+1') basePrice = 11000;
-  if (rooms === '3+1') basePrice = 14000;
-  if (rooms === '4+1+') basePrice = 18000;
-  if (rooms === 'ofis') basePrice = 12000;
+// calculateServerEstimate removed in favor of calculateEstimateFromForm
 
-  if (elevator === 'evet') {
-    basePrice += 2500;
-  }
-
-  if (
-    toDistrict.includes('Şehirlerarası') || 
-    fromDistrict.includes('Şehirlerarası') ||
-    toDistrict.includes('İl Dışı') ||
-    fromDistrict.includes('İl Dışı')
-  ) {
-    return { min: basePrice + 12000, max: basePrice + 35000 };
-  }
-
-  return { min: basePrice, max: basePrice + 4000 };
+function sanitizeHtml(str: string): string {
+  if (typeof str !== 'string') return str;
+  return str.replace(/<[^>]*>/g, '').trim();
 }
 
 export async function POST(req: NextRequest) {
@@ -58,18 +43,24 @@ export async function POST(req: NextRequest) {
       ipData.count++;
     }
 
-    // 2. Parse request body
-    const body = await req.json().catch(() => ({}));
+    // 2. Parse request body and sanitize strings
+    const rawBody = await req.json().catch(() => ({}));
+    const sanitizedBody = {
+      ...rawBody,
+      name: rawBody.name ? sanitizeHtml(rawBody.name) : rawBody.name,
+      fromDistrict: rawBody.fromDistrict ? sanitizeHtml(rawBody.fromDistrict) : rawBody.fromDistrict,
+      toDistrict: rawBody.toDistrict ? sanitizeHtml(rawBody.toDistrict) : rawBody.toDistrict,
+    };
 
     // 3. Honeypot check (website must be empty)
-    if (body.website && body.website.trim().length > 0) {
-      console.warn('BOT_DETECTION: Honeypot filled by bot:', body.website);
+    if (sanitizedBody.website && sanitizedBody.website.trim().length > 0) {
+      console.warn('BOT_DETECTION: Honeypot filled by bot:', sanitizedBody.website);
       // Return 200 silently to deceive the bot
       return NextResponse.json({ ok: true });
     }
 
     // 4. Server-side validation using Zod
-    const validationResult = QuoteFormSchema.safeParse(body);
+    const validationResult = QuoteFormSchema.safeParse(sanitizedBody);
     if (!validationResult.success) {
       const fieldErrors = validationResult.error.flatten().fieldErrors;
       // Get the first error message to display
@@ -85,14 +76,15 @@ export async function POST(req: NextRequest) {
     const leadData = validationResult.data;
     const referrer = req.headers.get('referer') || '/teklif-al';
     const timestamp = new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' });
-    const est = calculateServerEstimate(leadData.rooms, leadData.elevator, leadData.fromDistrict, leadData.toDistrict);
+    const est = calculateEstimateFromForm(leadData.rooms, leadData.elevator, leadData.fromDistrict, leadData.toDistrict);
 
     // 5. Log lead as JSON (Vercel backup)
     console.log('LEAD_CAPTURE:', JSON.stringify({
       ...leadData,
       referrer,
       timestamp,
-      estimate: est
+      estimate: est,
+      kvkkConsentTimestamp: timestamp
     }));
 
     // 6. Send email notification via Resend

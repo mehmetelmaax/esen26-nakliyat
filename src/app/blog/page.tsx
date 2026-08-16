@@ -36,6 +36,17 @@ export default function BlogPage() {
         <section className="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <BlogClient posts={posts} />
         </section>
+        {/* Visually hidden list of all blog posts for search engine crawler indexing */}
+        <div className="sr-only" aria-hidden="true">
+          <h2>Tüm Blog Yazılarımız</h2>
+          <ul>
+            {posts.map((post) => (
+              <li key={post.id}>
+                <a href={`/blog/${post.id}`}>{post.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </main>
     </>
   );

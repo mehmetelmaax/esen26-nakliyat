@@ -241,7 +241,7 @@ export default function Header() {
           <Link onClick={toggleMenu} href="/hakkimizda" className="text-white text-base font-bold hover:text-orange transition-colors">Hakkımızda</Link>
           <Link onClick={toggleMenu} href="/galeri" className="text-white text-base font-bold hover:text-orange transition-colors">Galeri</Link>
           
-          {/* Collapsible Mobile Dropdown for Services and Regions */}
+          {/* Collapsible Mobile Dropdown for Services ve Regions */}
           <div className="w-full max-w-xs text-center border-t border-b border-white/10 py-3.5 space-y-2">
             <button
               onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}

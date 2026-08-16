@@ -149,6 +149,7 @@ export default function HeroSlider() {
                 alt={slide.imageAlt}
                 fill
                 priority={idx === 0}
+                loading={idx === 0 ? undefined : 'lazy'}
                 fetchPriority={idx === 0 ? ("high" as any) : undefined}
                 sizes="100vw"
                 quality={80}

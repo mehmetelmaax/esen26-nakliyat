@@ -224,6 +224,7 @@ export default function Home() {
                 muted
                 playsInline
                 loop
+                preload="none"
                 className="w-full h-full object-cover"
                 poster="/img/esen-slayt-1.jpg"
               />

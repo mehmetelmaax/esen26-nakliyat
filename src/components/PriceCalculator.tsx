@@ -5,6 +5,7 @@ import { estimatePrice, PriceInput, PriceEstimate } from '@/lib/pricing';
 import { SITE } from '@/lib/site-config';
 import { Calculator, MessageCircle, Phone, ArrowRight, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { trackEvent } from '@/lib/analytics';
+import { FACTS } from '@/lib/facts';
 
 export default function PriceCalculator() {
   const [step, setStep] = useState<1 | 2 | 3>(1);
@@ -197,9 +198,9 @@ Bu tahmini hesaplama üzerinden detayları netleştirmek ve net teklif almak ist
                   <input
                     type="number"
                     min="0"
-                    max="25"
+                    max={FACTS.maxFloor}
                     value={fromFloor}
-                    onChange={(e) => setFromFloor(Math.max(0, parseInt(e.target.value) || 0))}
+                    onChange={(e) => setFromFloor(Math.min(FACTS.maxFloor, Math.max(0, parseInt(e.target.value) || 0)))}
                     className="w-full bg-white border border-gray-light rounded-xl px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange/30 focus:border-orange transition-all"
                   />
                 </div>
@@ -225,9 +226,9 @@ Bu tahmini hesaplama üzerinden detayları netleştirmek ve net teklif almak ist
                   <input
                     type="number"
                     min="0"
-                    max="25"
+                    max={FACTS.maxFloor}
                     value={toFloor}
-                    onChange={(e) => setToFloor(Math.max(0, parseInt(e.target.value) || 0))}
+                    onChange={(e) => setToFloor(Math.min(FACTS.maxFloor, Math.max(0, parseInt(e.target.value) || 0)))}
                     className="w-full bg-white border border-gray-light rounded-xl px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-orange/30 focus:border-orange transition-all"
                   />
                 </div>

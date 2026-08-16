@@ -24,7 +24,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
     faqs: [
       {
         question: 'Taşıma fiyatına marangozluk hizmetleri dahil midir?',
-        answer: 'Evet. Gardırop söküm and kurulum işlemleri fiyatlarımıza dahildir ve uzman marangoz personelimiz tarafından gerçekleştirilir.'
+        answer: 'Evet. Gardırop söküm ve kurulum işlemleri fiyatlarımıza dahildir ve uzman marangoz personelimiz tarafından gerçekleştirilir.'
       },
       {
         question: 'Şehir içi taşınmalarda mesafe fiyatı çok etkiler mi?',
@@ -205,7 +205,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <h2>4. Ekstra Hizmetlerin Fiyatlandırması (Opsiyonel)</h2>
       <p>Taşınma konforunuzu artırmak için talep edebileceğiniz ek hizmetlerin de piyasa rayiçleri bulunmaktadır:</p>
       <ul>
-        <li><strong>Anahtar Teslim Paketleme:</strong> Mutfak eşyaları, kıyafetler ve tüm ufak tefeklerin nakliyat firması personeli tarafından özel Kraft kağıt and kutularla toplanması hizmetidir. 2+1 daire için bu hizmetin bedeli ortalama 3.000 TL - 4.500 TL arasındadır. <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızdan detaylara ulaşabilirsiniz.</li>
+        <li><strong>Anahtar Teslim Paketleme:</strong> Mutfak eşyaları, kıyafetler ve tüm ufak tefeklerin nakliyat firması personeli tarafından özel Kraft kağıt ve kutularla toplanması hizmetidir. 2+1 daire için bu hizmetin bedeli ortalama 3.000 TL - 4.500 TL arasındadır. <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızdan detaylara ulaşabilirsiniz.</li>
         <li><strong>Klima Söküm ve Montaj Hizmeti:</strong> Nakliyat firmalarının standart marangozu klimalara müdahale etmez. Yetkili klima teknisyeninin gelip klima söküm, boru toplama ve montaj yapması daire başına 1.500 TL - 2.500 TL ek ücret demektir.</li>
         <li><strong>Avize ve Stor Perde Montajı:</strong> Elektrik işçiliği gerektiren montaj hizmetleri genellikle standart teklif dışıdır. Talep edilmesi halinde elektrikçi personel ücreti eklenir.</li>
       </ul>
@@ -289,7 +289,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
         <li><strong>Bina İçi Taşıma Hasarları:</strong> Eşyaların apartman merdiveninden indirilirken duvara çarpması, asansör kabinine sığdırılmaya çalışılırken çizilmesi veya personelin elinden kayarak düşmesi yol sigortasının kapsamı dışındadır. Bu tür operasyonel hasarların önüne geçmek için asansörlü sistemler kullanılmalıdır. <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> bu riskleri azaltır.</li>
         <li><strong>Elektronik Cihazların İç Mekanik Hataları:</strong> Taşınma sonrasında televizyonun, buzdolabının veya çamaşır makinesinin dış kasasında hiçbir darbe izi olmadığı halde çalışmaması durumu sigorta kapsamına girmez. Sigorta şirketleri cihazın taşınmadan önce de bozuk olabileceğini varsayar. Beyaz eşya taşıma kuralları için <a href="/blog/esya-paketleme-rehberi">Eşya Paketleme Rehberi</a> yazımızı okuyabilirsiniz.</li>
         <li><strong>Müşteri Tarafından Hazırlanan Koliler:</strong> İçeriği müşteri tarafından paketlenen kolilerin içinden çıkan kırık bardak ve tabaklar sigorta kapsamı dışındadır. Sigorta şirketisi kolilemenin standart dışı yapıldığını beyan eder.</li>
-        <li><strong>Değerli Eşyalar (Altın, Para, Ziynet):</strong> Nakliye kamyonuna yüklenen ziynet eşyaları, nakit paralar, tapu and kıymetli evraklar yasal olarak kamyonda taşınamaz ve sigorta teminatı altına alınamaz. Bu eşyalar müşteri tarafından şahsi araçta taşınmalıdır.</li>
+        <li><strong>Değerli Eşyalar (Altın, Para, Ziynet):</strong> Nakliye kamyonuna yüklenen ziynet eşyaları, nakit paralar, tapu ve kıymetli evraklar yasal olarak kamyonda taşınamaz ve sigorta teminatı altına alınamaz. Bu eşyalar müşteri tarafından şahsi araçta taşınmalıdır.</li>
       </ul>
 
       <h2>4. Hasar İhbarında Dikkat Edilecek Süreler ve Yasal Haklar</h2>
@@ -363,7 +363,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       </ul>
 
       <h2>3. Korsan (Belgesiz) Nakliyat Firmalarıyla Çalışmanın Yasal Riskleri</h2>
-      <p>K3 yetki belgesi bulunmayan nakliyat kamyonları, trafik polisleri and ulaştırma bakanlığı denetleme ekipleri tarafından durdurulduğunda ağır yasal işlemler uygulanır. Araç plakasına karayolu taşıma kanununa muhalefetten yüksek miktarda para cezası kesilir ve araç en yakın emniyet otoparkına çekilerek bağlanır. Araç içindeki ev eşyaları ise yediemin deposuna alınabilir veya müşterinin yol kenarında kendi imkanlarıyla yeni bir yasal kamyon bulması istenir. Bu durum taşınma sürecinizi kabusa çevirebilir. Aladağ ve diğer çevre ilçelere yaptığımız yasal operasyonlar hakkında bilgi edinmek için <a href="/bolgeler/alpu-evden-eve-nakliyat">Aladağ Evden Eve Nakliyat</a> sayfamıza göz atabilirsiniz.</p>
+      <p>K3 yetki belgesi bulunmayan nakliyat kamyonları, trafik polisleri ve ulaştırma bakanlığı denetleme ekipleri tarafından durdurulduğunda ağır yasal işlemler uygulanır. Araç plakasına karayolu taşıma kanununa muhalefetten yüksek miktarda para cezası kesilir ve araç en yakın emniyet otoparkına çekilerek bağlanır. Araç içindeki ev eşyaları ise yediemin deposuna alınabilir veya müşterinin yol kenarında kendi imkanlarıyla yeni bir yasal kamyon bulması istenir. Bu durum taşınma sürecinizi kabusa çevirebilir. Aladağ ve diğer çevre ilçelere yaptığımız yasal operasyonlar hakkında bilgi edinmek için <a href="/bolgeler/alpu-evden-eve-nakliyat">Aladağ Evden Eve Nakliyat</a> sayfamıza göz atabilirsiniz.</p>
 
       <h2>4. e-Devlet Kapısı Üzerinden K3 Belgesi Doğrulama Adımları</h2>
       <p>Bir nakliyat firmasının beyan ettiği K3 belgesini e-Devlet kapısı üzerinden doğrulamak oldukça basittir. e-Devlet'e T.C. kimlik numaranızla giriş yaptıktan sonra arama kısmına "Yetki Belgesi Sorgulama" yazın. Çıkan ekranda nakliyat firmasının resmi unvanını veya ticaret sicil numarasını/vergi numarasını girerek aktif yetki belgesi olup olmadığını, araç sayısını ve araçların plakalarını sorgulayın. Size gönderileceği söylenen kamyon plakasının bu sorgulama listesinde kayıtlı olması yasal bir zorunluluktur.</p>
@@ -435,24 +435,24 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Resmi kurum bildirimlerini ve abonelik işlemlerini bu hafta başlatmalısınız. Eskişehir'deki Toroslar Enerjisa (Elektrik), ASKİ (Su) ve Aksa Doğalgaz müdürlüklerine giderek veya e-Devlet kapısı üzerinden mevcut aboneliklerinizin iptal tarihini (taşınma gününden 1 gün sonrası olarak) belirleyin. Yeni evinizdeki abonelik açma başvurularını da yapın ki taşındığınız gün karanlıkta kalmayın. Resmi adres değişikliği adımları için hazırladığımız <a href="/tasinma-kontrol-listesi">Taşınma Kontrol Listesi</a> sayfasındaki interaktif yönergeleri takip edebilirsiniz.</p>
 
       <h2>4. Taşınmaya 1 Hafta Kala (7 Gün Önce): Son Hazırlıklar ve Koordinasyon</h2>
-      <p>Taşınmaya son 7 gün kala, yeni evinizde boya, beskisehir ve tadilat işleri varsa bunları tamamlayın. Eşyalar girmeden önce evin detaylı temizliğini yapın. Mutfaktaki beyaz eşyaları (buzdolabı, derin dondurucu) boşaltmaya ve tüketmeye başlayın. Taşınma gününden 24 saat önce buzdolabının fişini çekerek içindeki buzların erimesini sağlayın. Nakliyat firmasıyla iletişime geçerek araç plakasını and ekibin varış saatini son kez teyit edin. Esen 26 Nakliyat olarak, müşterilerimize taşınma gününden bir gün önce hazırlık durumlarını kontrol eden bilgilendirici aramalar gerçekleştiriyoruz. Profesyonel ve stressiz bir taşınma planlamak için <a href="/teklif-al">Teklif Al</a> sayfamızdan form doldurarak keşif talebi oluşturabilirsiniz.</p>
+      <p>Taşınmaya son 7 gün kala, yeni evinizde boya, beskisehir ve tadilat işleri varsa bunları tamamlayın. Eşyalar girmeden önce evin detaylı temizliğini yapın. Mutfaktaki beyaz eşyaları (buzdolabı, derin dondurucu) boşaltmaya ve tüketmeye başlayın. Taşınma gününden 24 saat önce buzdolabının fişini çekerek içindeki buzların erimesini sağlayın. Nakliyat firmasıyla iletişime geçerek araç plakasını ve ekibin varış saatini son kez teyit edin. Esen 26 Nakliyat olarak, müşterilerimize taşınma gününden bir gün önce hazırlık durumlarını kontrol eden bilgilendirici aramalar gerçekleştiriyoruz. Profesyonel ve stressiz bir taşınma planlamak için <a href="/teklif-al">Teklif Al</a> sayfamızdan form doldurarak keşif talebi oluşturabilirsiniz.</p>
 
       <h2>5. Taşınma Gününden 1 Gün Önce Yapılacak Son Hazırlıklar</h2>
-      <p>Taşınma gününden önceki gün son derece kritiktir. Yatak odası şifonyerlerinde and gardıroplarda kalan tüm özel eşyaları kolileyin. Ziynet eşyalarınızı, tapu and pasaport gibi evrakları ayırıp şahsi sırt çantanıza yerleştirin. Nakliye ekibine kolaylık sağlamak için apartman önündeki otopark alanını rezerve edin veya duba koyarak kamyonun yanaşma açısını açık tutun.</p>
+      <p>Taşınma gününden önceki gün son derece kritiktir. Yatak odası şifonyerlerinde ve gardıroplarda kalan tüm özel eşyaları kolileyin. Ziynet eşyalarınızı, tapu ve pasaport gibi evrakları ayırıp şahsi sırt çantanıza yerleştirin. Nakliye ekibine kolaylık sağlamak için apartman önündeki otopark alanını rezerve edin veya duba koyarak kamyonun yanaşma açısını açık tutun.</p>
 
       <h2>6. Taşınma Günü Yapılması Gerekenler</h2>
-      <p>Taşınma sabahı ekip gelmeden önce evde son bir tur atın. Gelen nakliye şefine demonte edilecek mobilyaları, hassas and kırılacak kolileri gösterin. Yükleme bittiğinde kamyonun içini kontrol ederek geride eşya kalmadığından emin olun. Eski evin elektrik, su ve doğalgaz vanalarını kapatıp anahtarları teslim edin. Yeni evde ise eşyaların hangi odalara yerleştirileceğini ekibe yönlendirmek üzere daire içinde konum alın.</p>
+      <p>Taşınma sabahı ekip gelmeden önce evde son bir tur atın. Gelen nakliye şefine demonte edilecek mobilyaları, hassas ve kırılacak kolileri gösterin. Yükleme bittiğinde kamyonun içini kontrol ederek geride eşya kalmadığından emin olun. Eski evin elektrik, su ve doğalgaz vanalarını kapatıp anahtarları teslim edin. Yeni evde ise eşyaların hangi odalara yerleştirileceğini ekibe yönlendirmek üzere daire içinde konum alın.</p>
 
       <h2>7. Taşınma Sonrası İlk Haftada Yapılması Gerekenler</h2>
       <p>Taşındıktan sonraki ilk 7 gün içinde, e-Devlet kapısı üzerinden adres beyanınızı (ikametgah değişikliği) tamamlayın. Aile hekimliği kaydınızı yeni mahallenize aldırın. Koli atıklarını geri dönüşüm kutularına vererek evdeki kalabalığı temizleyin. Eşyalarınızın yeni yerindeki montajlarında eksik vida veya gevşeme tespit ederseniz, nakliyat firmasının teknik servisinden marangozluk revizyon desteği talep edin.</p>
 
 
       <h3>7. Yeni Evin Hazırlanması ve Temizlik Aşamaları</h3>
-      <p>Eşyalar taşınmadan önce yeni evin boya, beskisehir ve detaylı temizlik işlerinin bitmiş olması gerekir. Eşyalar girdikten sonra temizlik yapmak oldukça zordur. Ayrıca prizler, musluklar and tesisat boruları kontrol edilerek gerekirse onarılmalıdır. Bu hazırlıklar taşınma günü büyük bir rahatlık sağlar.</p>
+      <p>Eşyalar taşınmadan önce yeni evin boya, beskisehir ve detaylı temizlik işlerinin bitmiş olması gerekir. Eşyalar girdikten sonra temizlik yapmak oldukça zordur. Ayrıca prizler, musluklar ve tesisat boruları kontrol edilerek gerekirse onarılmalıdır. Bu hazırlıklar taşınma günü büyük bir rahatlık sağlar.</p>
       <h3>8. Aboneliklerin Taşınması ve İletişim Hatları</h3>
       <p>İnternet, telefon ve televizyon aboneliklerinizi taşınmadan en az 10 gün önce yeni adresinize nakil ettirin. Altyapı çalışmalarının tamamlanması zaman alabilir. Taşındığınız gün internetinizin aktif olması işlerinizi kolaylaştıracaktır. İlgili rehberler için <a href="/tasinma-kontrol-listesi">Taşınma Kontrol Listesi</a> sayfamıza bakabilirsiniz.</p>
       <h3>9. Taşınma Günü Acil Durum Çantasının Hazırlanması</h3>
-      <p>Taşınma günü elinizin altında olması gereken ilaçlar, yedek kıyafetler, telefon şarj cihazları, kişisel temizlik malzemeleri and değerli evrakları içeren özel bir acil durum çantası hazırlayın. Bu çanta taşınma karmaşasında hayat kurtaracaktır.</p>
+      <p>Taşınma günü elinizin altında olması gereken ilaçlar, yedek kıyafetler, telefon şarj cihazları, kişisel temizlik malzemeleri ve değerli evrakları içeren özel bir acil durum çantası hazırlayın. Bu çanta taşınma karmaşasında hayat kurtaracaktır.</p>
   
 
       <h3>Eskişehir Evden Eve Nakliyat İlçe Kılavuzu (Tepebaşı, Odunpazarı, Sivrihisar)</h3>
@@ -463,7 +463,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Firmamız, Karayolu Taşıma Kanunu kapsamında ulaştırma bakanlığından aldığı yasal yetki belgeleriyle hizmet sunar. Taşıma sırasında kullanılan tüm ambalaj malzemeleri (balonlu naylonlar, Kraft karton koliler, koruyucu köşe profilleri ve mukavva kutular) tek kullanımlık olup hijyen standartlarına uygundur. Mobilyalarınızın demontajı ve montajı, ekibimizde yer alan sertifikalı marangozlar tarafından gerçekleştirilir. Eşyalarınızın güvenle taşınması için Anadolu Sigorta güvencesiyle emtia yol sigortası yapılmakta, olası operasyonel hasarlar ise firmamız tarafından anında tazmin edilmektedir. Taşınma gününüzü planlamak ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilir, asansörlü çözümlerimiz için <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h3>Taşınma Günü Stressiz Geçiş İçin İpuçları</h3>
-      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su and doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu and önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
+      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su ve doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu ve önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
 `,
   },
 
@@ -512,7 +512,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Merdiven boşluklarında eşya taşımak, fiziksel sınırları zorlayan bir süreçtir. Ne kadar dikkat edilirse edilsin, merdivenlerin dönemeçlerinde geniş eşyaların sürtünmesi veya çarpması kaçınılmaz hale gelebilir:</p>
       <ul>
         <li><strong>Merdiven Taşıma Riskleri:</strong> Buzdolabı, gardırop kapakları, büyük koltuklar dönerken duvarlara sürter, köşe kısımları yırtılır veya ezilir. Ayrıca apartman duvarlarında ve tırabzanlarda çizilmeler oluşur, bu da site yönetimiyle sorun yaşamanıza neden olur. Ambalajlama kalitemizi incelemek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyin.</li>
-        <li><strong>Asansörlü Taşıma Güvenliği:</strong> Eşyalar daire içinde paketlendikten sonra doğrudan balkondan asansör platformuna yerleştirilir. Bina içinde hiçbir hareket gerçekleşmediği için sürtünme and çarpma riski tamamen elenir. Eşyalarınız balkondan kamyon kasasına sıfır temasla iner.</li>
+        <li><strong>Asansörlü Taşıma Güvenliği:</strong> Eşyalar daire içinde paketlendikten sonra doğrudan balkondan asansör platformuna yerleştirilir. Bina içinde hiçbir hareket gerçekleşmediği için sürtünme ve çarpma riski tamamen elenir. Eşyalarınız balkondan kamyon kasasına sıfır temasla iner.</li>
       </ul>
 
       <h2>3. Maliyet Karşılaştırması: Hangisi Daha Ekonomik?</h2>
@@ -524,21 +524,21 @@ export const blogDatabase: Record<string, BlogPostData> = {
       </ul>
 
       <h2>4. Modüler Dış Cephe Asansörü Kurulum Kriterleri</h2>
-      <p>Dış cephe asansörlerinin kurulabilmesi için apartman mimarisinin and çevresel faktörlerin uygun olması gerekir. Asansör kamyonunun yanaşacağı zeminin sert olması (toprak zeminlere kurulum yapılamaz), ağaç dallarının veya elektrik tellerinin kurulum açısını engellememesi şarttır. Ayrıca eşya çıkartılacak pencere veya balkon kapısının genişliği en az 80 cm olmalıdır.</p>
+      <p>Dış cephe asansörlerinin kurulabilmesi için apartman mimarisinin ve çevresel faktörlerin uygun olması gerekir. Asansör kamyonunun yanaşacağı zeminin sert olması (toprak zeminlere kurulum yapılamaz), ağaç dallarının veya elektrik tellerinin kurulum açısını engellememesi şarttır. Ayrıca eşya çıkartılacak pencere veya balkon kapısının genişliği en az 80 cm olmalıdır.</p>
 
       <h2>5. Bina Yönetim Planları ve Yasal Engeller</h2>
-      <p>Birçok modern konut sitesi, merdivenlerin yıpranmasını önlemek and bina içi asansörlerin arızalanmasını engellemek amacıyla yönetim planına "bina içi eşya taşımak yasaktır" maddesi eklemiştir. Bu tür sitelerde dış cephe asansörü kullanmak yasal bir zorunluluktur. Aksi halde site yönetimi taşınmayı durdurabilir veya cezai yaptırım uygulayabilir.</p>
+      <p>Birçok modern konut sitesi, merdivenlerin yıpranmasını önlemek ve bina içi asansörlerin arızalanmasını engellemek amacıyla yönetim planına "bina içi eşya taşımak yasaktır" maddesi eklemiştir. Bu tür sitelerde dış cephe asansörü kullanmak yasal bir zorunluluktur. Aksi halde site yönetimi taşınmayı durdurabilir veya cezai yaptırım uygulayabilir.</p>
 
       <h2>6. Esen 26 Nakliyat Asansör Filosu ve Güvenli Hizmet</h2>
-      <p>Esen 26 Nakliyat olarak Eskişehir'de kendi bünyemizde bulunan 15. kattan 25. kata kadar ulaşabilen **mobil dış cephe eşya asansörleri** ile hizmet sunuyoruz. Operatörlerimizin tamamı mesleki eğitim sertifikalıdır. Rüzgar hızı limitlerini sürekli kontrol ederek iş güvenliğini en üst seviyede tutuyoruz. Ücretsiz keşif and yerinde inceleme için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> sayfamızdan talep oluşturabilir, taşınma rezervasyonunuzu yapmak için hemen <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilirsiniz.</p>
+      <p>Esen 26 Nakliyat olarak Eskişehir'de kendi bünyemizde bulunan 15. kattan 25. kata kadar ulaşabilen **mobil dış cephe eşya asansörleri** ile hizmet sunuyoruz. Operatörlerimizin tamamı mesleki eğitim sertifikalıdır. Rüzgar hızı limitlerini sürekli kontrol ederek iş güvenliğini en üst seviyede tutuyoruz. Ücretsiz keşif ve yerinde inceleme için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> sayfamızdan talep oluşturabilir, taşınma rezervasyonunuzu yapmak için hemen <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilirsiniz.</p>
 
 
       <h3>7. Dar Sokaklar ve Asansör Kurulum Açısı</h3>
       <p>Eskişehir'in eski mahallelerinde sokakların dar olması asansör kurulumunu zorlaştırabilir. Teleskopik asansörün güvenli kurulabilmesi için kamyonun doğru açıyla yanaşması gerekir. Bu durumlar için ekiplerimiz önceden yerinde keşif yaparak en uygun kurulum planını belirler. Ayrıntılar için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> hizmetimizi inceleyebilirsiniz.</p>
       <h3>8. Komşuluk İlişkileri ve Apartman Düzeni</h3>
-      <p>Merdivenle eşya taşımak apartman içinde saatlerce süren gürültüye, tozlanmaya and tırabzan çizilmelerine neden olur. Bu durum apartman sakinleriyle aranızda gerginlik yaratabilir. Asansörlü taşımacılık ise tamamen dış cepheden yapıldığı için bina içi düzeni and huzuru korur, komşularınızı rahatsız etmez.</p>
+      <p>Merdivenle eşya taşımak apartman içinde saatlerce süren gürültüye, tozlanmaya ve tırabzan çizilmelerine neden olur. Bu durum apartman sakinleriyle aranızda gerginlik yaratabilir. Asansörlü taşımacılık ise tamamen dış cepheden yapıldığı için bina içi düzeni ve huzuru korur, komşularınızı rahatsız etmez.</p>
       <h3>9. İş Güvenliği Standartları ve Yük Sınırları</h3>
-      <p>Dış cephe asansörlerimiz periyodik olarak bakıma alınmakta and yük testlerinden geçmektedir. Operatörlerimiz iş güvenliği kurallarına tam uyum sağlar. Rüzgarlı havalarda risk almayarak taşıma işlemini erteliyoruz. Bu profesyonel yaklaşım hem çalışanlarımızın hem de eşyalarınızın güvenliğini garanti eder.</p>
+      <p>Dış cephe asansörlerimiz periyodik olarak bakıma alınmakta ve yük testlerinden geçmektedir. Operatörlerimiz iş güvenliği kurallarına tam uyum sağlar. Rüzgarlı havalarda risk almayarak taşıma işlemini erteliyoruz. Bu profesyonel yaklaşım hem çalışanlarımızın hem de eşyalarınızın güvenliğini garanti eder.</p>
   
 
       <h3>Eskişehir Evden Eve Nakliyat İlçe Kılavuzu (Tepebaşı, Odunpazarı, Sivrihisar)</h3>
@@ -547,7 +547,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
 
       <h3>Esen 26 Nakliyat Lojistik Kalite Standartları ve Güvencelerimiz</h3>
       <p>Firmamız, Karayolu Taşıma Kanunu kapsamında ulaştırma bakanlığından aldığı yasal yetki belgeleriyle hizmet sunar. Taşıma sırasında kullanılan tüm ambalaj malzemeleri (balonlu naylonlar, Kraft karton koliler, koruyucu köşe profilleri ve mukavva kutular) tek kullanımlık olup hijyen standartlarına uygundur. Mobilyalarınızın demontajı ve montajı, ekibimizde yer alan sertifikalı marangozlar tarafından gerçekleştirilir. Eşyalarınızın güvenle taşınması için Anadolu Sigorta güvencesiyle emtia yol sigortası yapılmakta, olası operasyonel hasarlar ise firmamız tarafından anında tazmin edilmektedir. Taşınma gününüzü planlamak ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilir, asansörlü çözümlerimiz için <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızı inceleyebilirsiniz.
-<p>Taşınma sırasında dış cephe eşya asansörlerinin tercih edilmesi, hem eşya güvenliğini hem de zaman tasarrufunu garanti eder. Sektördeki modern yük asansörleri sayesinde yüksek katlı binalarda dahi sorunsuz, hızlı and hasarsız nakliye hizmeti sunulmaktadır. Esen 26 Nakliyat güvencesiyle Eskişehir'in tüm bölgelerinde hizmetinizdeyiz.</p>
+<p>Taşınma sırasında dış cephe eşya asansörlerinin tercih edilmesi, hem eşya güvenliğini hem de zaman tasarrufunu garanti eder. Sektördeki modern yük asansörleri sayesinde yüksek katlı binalarda dahi sorunsuz, hızlı ve hasarsız nakliye hizmeti sunulmaktadır. Esen 26 Nakliyat güvencesiyle Eskişehir'in tüm bölgelerinde hizmetinizdeyiz.</p>
 </p>
 `,
   },
@@ -563,11 +563,11 @@ export const blogDatabase: Record<string, BlogPostData> = {
     faqs: [
       {
         question: "Buzdolabı taşındıktan sonra hemen çalıştırılırsa ne olur?",
-        answer: "Buzdolabı taşınırken motor içindeki kompresör yağı soğutucu borulara kaçar. Cihaz hemen çalıştırılırsa yağsız kalan kompresör kilitlenir, motor yanar and soğutma sistemi kalıcı olarak bozulur."
+        answer: "Buzdolabı taşınırken motor içindeki kompresör yağı soğutucu borulara kaçar. Cihaz hemen çalıştırılırsa yağsız kalan kompresör kilitlenir, motor yanar ve soğutma sistemi kalıcı olarak bozulur."
       },
       {
         question: "Çamaşır makinesi taşınırken tambur emniyet cıvatası takılmalı mıdır?",
-        answer: "Evet. Emniyet cıvataları (tambur kilidi) takılmazsa, taşıma esnasındaki sarsıntılardan dolayı makinenin kazanı askı yaylarından çıkar and amortisörleri kırılarak kullanılmaz hale gelir."
+        answer: "Evet. Emniyet cıvataları (tambur kilidi) takılmazsa, taşıma esnasındaki sarsıntılardan dolayı makinenin kazanı askı yaylarından çıkar ve amortisörleri kırılarak kullanılmaz hale gelir."
       },
       {
         question: "Televizyon taşırken orijinal kutusu yoksa ne yapılmalıdır?",
@@ -583,12 +583,12 @@ export const blogDatabase: Record<string, BlogPostData> = {
       }
     ],
     contentHtml: `
-      <p>Ev taşırken en yüksek maddi değere sahip ve aynı zamanda hasara en açık olan eşya grubu beyaz eşyalardır. Buzdolabı, çamaşır makinesi, bulaşık makinesi, televizyon and kurutma makineleri mekanik ve elektronik hassasiyete sahiptir. Bu cihazların sadece ambalajlanması değil, taşınma öncesi hazırlıkları ve taşınma sonrasındaki ilk devreye alma adımları da teknik bilgi gerektirir. Sektörde en sık karşılaşılan hatalardan biri, yeni eve ulaşır ulaşmaz buzdolabının fişini prize takmaktır. Bu yazıda beyaz eşyaların nasıl taşınacağını ve buzdolabının neden en az 4 saat çalıştırılmaması gerektiğini detaylıca açıklayacağız.</p>
+      <p>Ev taşırken en yüksek maddi değere sahip ve aynı zamanda hasara en açık olan eşya grubu beyaz eşyalardır. Buzdolabı, çamaşır makinesi, bulaşık makinesi, televizyon ve kurutma makineleri mekanik ve elektronik hassasiyete sahiptir. Bu cihazların sadece ambalajlanması değil, taşınma öncesi hazırlıkları ve taşınma sonrasındaki ilk devreye alma adımları da teknik bilgi gerektirir. Sektörde en sık karşılaşılan hatalardan biri, yeni eve ulaşır ulaşmaz buzdolabının fişini prize takmaktır. Bu yazıda beyaz eşyaların nasıl taşınacağını ve buzdolabının neden en az 4 saat çalıştırılmaması gerektiğini detaylıca açıklayacağız.</p>
 
       <h2>1. Buzdolabı Taşıma Kuralları ve Dinlendirme Mantığı</h2>
       <p>Buzdolaplarının kalbi kompresördür. Kompresörün içinde motor parçalarının aşınmasını engelleyen özel bir yağ bulunur. Taşıma sırasında buzdolabı hareket ettirildiğinde, sarsıldığında veya eğildiğinde, bu kompresör yağı yerçekiminin etkisiyle soğutucu gaz borularına kaçar:</p>
       <ul>
-        <li>Eğer buzdolabı yeni eve taşınır taşınmaz fişe takılırsa, yağ kompresöre geri dönmediği için motor susuz/yağsız kalmış bir araba motoru gibi çalışır. Sürtünmeden dolayı kompresör aşırı ısınır and kilitlenir. Bu durum motorun yanmasına yol açar.</li>
+        <li>Eğer buzdolabı yeni eve taşınır taşınmaz fişe takılırsa, yağ kompresöre geri dönmediği için motor susuz/yağsız kalmış bir araba motoru gibi çalışır. Sürtünmeden dolayı kompresör aşırı ısınır ve kilitlenir. Bu durum motorun yanmasına yol açar.</li>
         <li>Ayrıca soğutma borularına kaçan yağ, gaz akışını tıkayarak buzdolabının elektrik harcamasına rağmen soğutmamasına neden olur.</li>
         <li><strong>Çözüm:</strong> Buzdolabı dikey olarak taşınmış olsa bile, yeni yerinde en az 4 saat (yan taşındıysa en az 12 saat) fişe takılmadan bekletilmelidir. Bu sürede yağ süzülerek kompresör haznesine geri döner.</li>
       </ul>
@@ -597,28 +597,28 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Çamaşır makinelerinin yıkama kazanı, gövdeye esnek askı yayları ve amortisörlerle bağlıdır. Bu sayede sıkma esnasında sarsıntı sönümlenir. Ancak taşıma esnasında kamyonun çukura girmesi, ani frenler yapılması kazanın kontrolsüzce sallanmasına neden olur:</p>
       <ul>
         <li>Kazanın çarpması sonucu deterjan çekmecesi kırılabilir, kazan delinebilir veya amortisör kolları yerinden çıkabilir.</li>
-        <li>Bu hasarın önüne geçmek için çamaşır makinesinin arkasında bulunan 4 adet nakliye emniyet vidası (tambur kilidi) mutlaka sıkılmalıdır. Bu vidalar kazanı gövdeye sabitler and sarsıntıyı önler. Yeni evde makine çalıştırılmadan önce bu vidalar tekrar sökülmelidir. Paketleme standartlarımızı incelemek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyin.</li>
+        <li>Bu hasarın önüne geçmek için çamaşır makinesinin arkasında bulunan 4 adet nakliye emniyet vidası (tambur kilidi) mutlaka sıkılmalıdır. Bu vidalar kazanı gövdeye sabitler ve sarsıntıyı önler. Yeni evde makine çalıştırılmadan önce bu vidalar tekrar sökülmelidir. Paketleme standartlarımızı incelemek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyin.</li>
       </ul>
 
       <h2>3. Bulaşık Makinesi ve Fırın Taşıma Detayları</h2>
       <p>Bulaşık makinelerinde taşıma öncesinde en önemli adım su tahliyesidir. Makinenin taban filtresi altında ve gider hortumunda kalan sular, taşıma sırasında yan yatırıldığında elektronik karta sızarak kısa devreye neden olabilir. Taşınmadan önce boş bir yıkama programı çalıştırılmalı ve son aşamada su tahliyesi manuel olarak yapılmalıdır. Fırın taşınırken ise içindeki ızgara tepsileri ve cam kapak mukavvalarla sabitlenmeli, düğmelerin kırılmaması için ön panel balonlu naylonla sarılmalıdır. Taşımacılık hizmetlerimiz hakkında genel bilgi için <a href="/hizmetler/sehirici-evden-eve-nakliyat">Şehiriçi Evden Eve Nakliyat</a> sayfamıza göz atabilirsiniz.</p>
 
       <h2>4. Ankastre Cihazlar ve Ocak Tesisatı Güvenliği</h2>
-      <p>Doğalgaz veya tüp ile çalışan ocakların demontajı ve montajı gaz kaçağı riski nedeniyle son derece kritiktir. Gaz bağlantı hortumu mutlaka yetkili bir tesisatçı tarafından sökülmeli, yeni adreste de gaz sızdırmazlık testi yapılarak ocak devreye alınmalıdır. Ankastre fırın and ocaklar ise mobilya dolabından söküldükten sonra köşe koruyucu köpüklerle zırhlanmalıdır.</p>
+      <p>Doğalgaz veya tüp ile çalışan ocakların demontajı ve montajı gaz kaçağı riski nedeniyle son derece kritiktir. Gaz bağlantı hortumu mutlaka yetkili bir tesisatçı tarafından sökülmeli, yeni adreste de gaz sızdırmazlık testi yapılarak ocak devreye alınmalıdır. Ankastre fırın ve ocaklar ise mobilya dolabından söküldükten sonra köşe koruyucu köpüklerle zırhlanmalıdır.</p>
 
       <h2>5. Televizyon (LED/OLED) Paketleme ve Taşıma Hassasiyeti</h2>
-      <p>Büyük ekran televizyonlar, en küçük darbede iç panel çatlaması (piksel kırılması) riski taşır. Orijinal kutusu yoksa, ekran kısmı yumuşak köpük levha veya straforla kapatılmalı, üzerine kalın patpat naylon sarılmalı and sert mukavva plakalarla koruyucu bir kafes oluşturulmalıdır. Kamyon kasasında televizyon kesinlikle dik olarak sabitlenmeli, üzerine başka bir yük konulmamalıdır.</p>
+      <p>Büyük ekran televizyonlar, en küçük darbede iç panel çatlaması (piksel kırılması) riski taşır. Orijinal kutusu yoksa, ekran kısmı yumuşak köpük levha veya straforla kapatılmalı, üzerine kalın patpat naylon sarılmalı ve sert mukavva plakalarla koruyucu bir kafes oluşturulmalıdır. Kamyon kasasında televizyon kesinlikle dik olarak sabitlenmeli, üzerine başka bir yük konulmamalıdır.</p>
 
       <h2>6. Esen 26 Nakliyat Teknik Ekip Desteği</h2>
-      <p>Esen 26 Nakliyat olarak, beyaz eşyalarınızın sadece taşınmasını değil, montaj and kurulum süreçlerini de üstleniyoruz. Ekiplerimizde yer alan tesisat ustalarımız çamaşır ve bulaşık makinenizin hortum bağlantılarını yapar, su terazisiyle düz zemin ayarını gerçekleştirir. Ücretsiz yerinde inceleme desteğimiz için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> sayfamızı ziyaret edebilir, taşınma gününüzü planlamak için <a href="/teklif-al">Teklif Al</a> formumuzdan talep gönderebilirsiniz.</p>
+      <p>Esen 26 Nakliyat olarak, beyaz eşyalarınızın sadece taşınmasını değil, montaj ve kurulum süreçlerini de üstleniyoruz. Ekiplerimizde yer alan tesisat ustalarımız çamaşır ve bulaşık makinenizin hortum bağlantılarını yapar, su terazisiyle düz zemin ayarını gerçekleştirir. Ücretsiz yerinde inceleme desteğimiz için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> sayfamızı ziyaret edebilir, taşınma gününüzü planlamak için <a href="/teklif-al">Teklif Al</a> formumuzdan talep gönderebilirsiniz.</p>
 
 
       <h3>7. Kurutma Makinesi ve Derin Dondurucu Taşıma Kuralları</h3>
-      <p>Kurutma makinelerinin içindeki su haznesi taşınmadan önce tamamen boşaltılmalıdır. Derin dondurucular ise taşınmadan 24 saat önce fişten çekilmeli, içindeki buzların erimesi beklenmeli and tamamen kurulanmalıdır. Islak kalan dondurucular taşıma esnasında koku yapabilir veya elektronik aksamına zarar verebilir.</p>
+      <p>Kurutma makinelerinin içindeki su haznesi taşınmadan önce tamamen boşaltılmalıdır. Derin dondurucular ise taşınmadan 24 saat önce fişten çekilmeli, içindeki buzların erimesi beklenmeli ve tamamen kurulanmalıdır. Islak kalan dondurucular taşıma esnasında koku yapabilir veya elektronik aksamına zarar verebilir.</p>
       <h3>8. Hassas Elektroniklerin Paketleme Standartları</h3>
-      <p>Televizyon, ses sistemleri and oyun konsolları gibi hassas elektronik cihazlar statik elektriği önleyen özel antistatik balonlu naylonlarla sarılmalıdır. Kutulama esnasında cihazların etrafındaki boşluklar köpük veya kağıt dolgularla desteklenerek sarsıntı riski sıfırlanmalıdır. Standartlarımız için <a href="/hizmetler/profesyonel-esya-paketleme">Paketleme Hizmeti</a> sayfamıza bakabilirsiniz.</p>
+      <p>Televizyon, ses sistemleri ve oyun konsolları gibi hassas elektronik cihazlar statik elektriği önleyen özel antistatik balonlu naylonlarla sarılmalıdır. Kutulama esnasında cihazların etrafındaki boşluklar köpük veya kağıt dolgularla desteklenerek sarsıntı riski sıfırlanmalıdır. Standartlarımız için <a href="/hizmetler/profesyonel-esya-paketleme">Paketleme Hizmeti</a> sayfamıza bakabilirsiniz.</p>
       <h3>9. Montaj Sonrası İlk Çalıştırma Kontrolleri</h3>
-      <p>Yeni eve kurulan çamaşır ve bulaşık makinelerinin ilk yıkama programı çamaşırsız and boş olarak çalıştırılmalıdır. Bu sayede borulardaki olası sızıntılar and bağlantı hataları kontrol edilir. Tesisat bağlantılarının sızdırmazlığı onaylandıktan sonra normal kullanıma geçilebilir.</p>
+      <p>Yeni eve kurulan çamaşır ve bulaşık makinelerinin ilk yıkama programı çamaşırsız ve boş olarak çalıştırılmalıdır. Bu sayede borulardaki olası sızıntılar ve bağlantı hataları kontrol edilir. Tesisat bağlantılarının sızdırmazlığı onaylandıktan sonra normal kullanıma geçilebilir.</p>
   
 
       <h3>Eskişehir Evden Eve Nakliyat İlçe Kılavuzu (Tepebaşı, Odunpazarı, Sivrihisar)</h3>
@@ -629,7 +629,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Firmamız, Karayolu Taşıma Kanunu kapsamında ulaştırma bakanlığından aldığı yasal yetki belgeleriyle hizmet sunar. Taşıma sırasında kullanılan tüm ambalaj malzemeleri (balonlu naylonlar, Kraft karton koliler, koruyucu köşe profilleri ve mukavva kutular) tek kullanımlık olup hijyen standartlarına uygundur. Mobilyalarınızın demontajı ve montajı, ekibimizde yer alan sertifikalı marangozlar tarafından gerçekleştirilir. Eşyalarınızın güvenle taşınması için Anadolu Sigorta güvencesiyle emtia yol sigortası yapılmakta, olası operasyonel hasarlar ise firmamız tarafından anında tazmin edilmektedir. Taşınma gününüzü planlamak ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilir, asansörlü çözümlerimiz için <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h3>Taşınma Günü Stressiz Geçiş İçin İpuçları</h3>
-      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su and doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu and önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
+      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su ve doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu ve önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
 `,
   },
   'tasinirken-yapilan-yasal-hatalar': {
@@ -660,11 +660,11 @@ export const blogDatabase: Record<string, BlogPostData> = {
       },
       {
         question: "Ev sahibi habersizce kiracının eşyalarını kapının önüne koyabilir mi?",
-        answer: "Kesinlikle hayır. Mahkeme tarafından verilmiş resmi bir tahliye kararı and icra memuru eşliği olmadan ev sahibinin kiracının eşyalarına müdahale etmesi konut dokunulmazlığını ihlal suçudur."
+        answer: "Kesinlikle hayır. Mahkeme tarafından verilmiş resmi bir tahliye kararı ve icra memuru eşliği olmadan ev sahibinin kiracının eşyalarına müdahale etmesi konut dokunulmazlığını ihlal suçudur."
       }
     ],
     contentHtml: `
-      <p>Ev taşımak sadece kolileri kamyona yükleyip yeni adrese götürmekten ibaret fiziksel bir süreç değildir. Taşınmanın ardında kira hukuku, kat mülkiyeti kanunu and nüfus mevzuatları gibi çok sayıda yasal yükümlülük yatar. Türkiye'deki kiracı ve ev sahiplerinin büyük çoğunluğu, taşınma esnasındaki hak ve sorumluluklarını tam olarak bilmedikleri için ciddi hukuki ihtilaflarla, depozito kayıplarıyla ve idari para cezalarıyla karşı karşıya kalmaktadır. Bu yazımızda, kiracı ve ev sahiplerinin taşınma sürecinde en sık yaptığı 8 yasal hatayı ve bunlardan kaçınmanın yollarını hukuki boyutlarıyla ele alacağız.</p>
+      <p>Ev taşımak sadece kolileri kamyona yükleyip yeni adrese götürmekten ibaret fiziksel bir süreç değildir. Taşınmanın ardında kira hukuku, kat mülkiyeti kanunu ve nüfus mevzuatları gibi çok sayıda yasal yükümlülük yatar. Türkiye'deki kiracı ve ev sahiplerinin büyük çoğunluğu, taşınma esnasındaki hak ve sorumluluklarını tam olarak bilmedikleri için ciddi hukuki ihtilaflarla, depozito kayıplarıyla ve idari para cezalarıyla karşı karşıya kalmaktadır. Bu yazımızda, kiracı ve ev sahiplerinin taşınma sürecinde en sık yaptığı 8 yasal hatayı ve bunlardan kaçınmanın yollarını hukuki boyutlarıyla ele alacağız.</p>
 
       <h2>1. Kira Sözleşmesinin Bildirimsiz veya Usulsüz Feshi</h2>
       <p>Kira sözleşmeleri, kanunda belirtilen süreler içinde feshedilmediğinde otomatik olarak 1 yıl uzar. Kiracıların en sık yaptığı hata, ev sahibine telefonla "Ben haftaya çıkıyorum" diyerek evi boşaltmaktır:</p>
@@ -674,19 +674,19 @@ export const blogDatabase: Record<string, BlogPostData> = {
       </ul>
 
       <h2>2. Depozito İadesinde "Anahtar Teslim Tutanağı" Eksikliği</h2>
-      <p>Evden ayrılırken depozitonun tam alınabilmesi için en kritik evrak "Anahtar Teslim Tutanağı"dır. Evi boşalttıktan sonra ev sahibi ile birlikte evi gezip boya, tesisat and duvarların durumunu tespit eden, evin hasarsız teslim edildiğini onaylayan imzalı bir tutanak hazırlanmalıdır. Bu tutanak olmadığında ev sahibi sonradan oluşan hasarları kiracıya yükleyebilir ve depozitoyu iade etmekten kaçınabilir. Yasal süreçlerimiz ve K3 lisans güvencemiz hakkında bilgi edinmek için <a href="/hizmetler/sehirici-evden-eve-nakliyat">Şehiriçi Evden Eve Nakliyat</a> sayfamıza göz atabilirsiniz.</p>
+      <p>Evden ayrılırken depozitonun tam alınabilmesi için en kritik evrak "Anahtar Teslim Tutanağı"dır. Evi boşalttıktan sonra ev sahibi ile birlikte evi gezip boya, tesisat ve duvarların durumunu tespit eden, evin hasarsız teslim edildiğini onaylayan imzalı bir tutanak hazırlanmalıdır. Bu tutanak olmadığında ev sahibi sonradan oluşan hasarları kiracıya yükleyebilir ve depozitoyu iade etmekten kaçınabilir. Yasal süreçlerimiz ve K3 lisans güvencemiz hakkında bilgi edinmek için <a href="/hizmetler/sehirici-evden-eve-nakliyat">Şehiriçi Evden Eve Nakliyat</a> sayfamıza göz atabilirsiniz.</p>
 
       <h2>3. Nüfus Müdürlüğüne Adres Beyanı Süresinin Aşılması</h2>
       <p>Yeni bir eve taşındığınızda, ikametgah adresinizi devlete bildirmek yasal bir zorunluluktur. Nüfus Hizmetleri Kanunu'na göre taşınma tarihinden itibaren en geç 20 iş günü içerisinde İlçe Nüfus Müdürlüğü'ne gidilmeli veya e-Devlet kapısı üzerinden adres bildirimi yapılmalıdır. Bu 20 günlük yasal süre aşıldığında veya yanlış adres beyan edildiğinde idari para cezası uygulanır. Resmi işlerinizi kolaylaştırmak için interaktif <a href="/tasinma-kontrol-listesi">Taşınma Kontrol Listesi</a> rehberimizi inceleyebilirsiniz.</p>
 
       <h2>4. Apartman Yönetim Planı ve Taşınma Saatleri İhlali</h2>
-      <p>Kat Mülkiyeti Kanunu uyarınca, her apartmanın veya sitenin kat malikleri kurulu tarafından onaylanmış bir "Yönetim Planı" bulunur. Bu planda taşınma saatleri, kamyon giriş kuralları and asansör kullanım koşulları yazılıdır. Hafta sonu sabahın çok erken saatlerinde veya gece geç vakitlerde nakliye kamyonu getirmek site kurallarına aykırıdır and idari yaptırımlara neden olabilir. Tepebaşı ve Odunpazarı gibi apartman yoğun bölgelerdeki yasal saat uygulamaları için <a href="/bolgeler/tepebasi-evden-eve-nakliyat">Tepebaşı Evden Eve Nakliyat</a> sayfamıza bakabilirsiniz.</p>
+      <p>Kat Mülkiyeti Kanunu uyarınca, her apartmanın veya sitenin kat malikleri kurulu tarafından onaylanmış bir "Yönetim Planı" bulunur. Bu planda taşınma saatleri, kamyon giriş kuralları ve asansör kullanım koşulları yazılıdır. Hafta sonu sabahın çok erken saatlerinde veya gece geç vakitlerde nakliye kamyonu getirmek site kurallarına aykırıdır ve idari yaptırımlara neden olabilir. Tepebaşı ve Odunpazarı gibi apartman yoğun bölgelerdeki yasal saat uygulamaları için <a href="/bolgeler/tepebasi-evden-eve-nakliyat">Tepebaşı Evden Eve Nakliyat</a> sayfamıza bakabilirsiniz.</p>
 
       <h2>5. Boya Beskisehir ve Evin Aşınma Durumu (Normal Kullanım)</h2>
       <p>Borçlar Kanunu'na göre kiracı, evi normal kullanımından ötürü oluşan yıpranmalarla teslim etmekle yükümlüdür. Evi boyalı teslim aldıysa boyalı teslim etmek zorundadır; fakat duvarların zamana bağlı olarak kirlenmesi veya mobilya yerlerinin iz yapması "olağan kullanım aşınması" sayılır ve ev sahibi bu sebepten depozitodan kesinti yapamaz.</p>
 
       <h2>6. Elektrik, Su ve Doğalgaz Borçlarının Temizlenmesi</h2>
-      <p>Taşınırken abonelik kapatma dilekçesi verildiğinde, sayaçların son okuması yapılarak son fatura üretilir. Müşterinin bu borçları ödeyip borcu yoktur belgesi alması, yeni kiracının abonelik açtırabilmesi and depozito iadesi için yasal bir zorunluluktur. Esen 26 Nakliyat olarak yasal çerçeveye ve site kurallarına tam uyumlu lojistik hizmeti sunuyoruz. Detaylı bilgi almak and hukuki güvenceli sözleşme ile taşınmak için <a href="/teklif-al">Teklif Al</a> sayfamızı doldurabilirsiniz.</p>
+      <p>Taşınırken abonelik kapatma dilekçesi verildiğinde, sayaçların son okuması yapılarak son fatura üretilir. Müşterinin bu borçları ödeyip borcu yoktur belgesi alması, yeni kiracının abonelik açtırabilmesi ve depozito iadesi için yasal bir zorunluluktur. Esen 26 Nakliyat olarak yasal çerçeveye ve site kurallarına tam uyumlu lojistik hizmeti sunuyoruz. Detaylı bilgi almak ve hukuki güvenceli sözleşme ile taşınmak için <a href="/teklif-al">Teklif Al</a> sayfamızı doldurabilirsiniz.</p>
 
 
       <h3>7. Site Yönetimi Taşınma Ücretleri (Giriş-Çıkış Bedeli)</h3>
@@ -694,7 +694,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <h3>8. Hasar Durumunda Hak Talebi ve Tüketici Hakları</h3>
       <p>Taşıma esnasında apartmanın ortak alanlarına (duvarlar, asansör, tırabzanlar) verilen zararlardan yasal olarak kat maliki sorumludur. Ancak bu zarar profesyonel firmanın hatasıysa, sözleşme maddelerine dayanarak zararı firmaya rücu edebilirsiniz. Detaylar için <a href="/hizmetler/sehirici-evden-eve-nakliyat">Şehiriçi Evden Eve Nakliyat</a> sayfamıza göz atabilirsiniz.</p>
       <h3>9. Resmi Tebligat Adresinin Güncellenmesi</h3>
-      <p>Adres değişikliği sonrasında ikametgah adresinizi güncellemeniz, resmi kurumlardan gelecek tebligatların size ulaşabilmesi için hayati önem taşır. Eski adresinizde kalan tebligatlar yasal olarak tebliğ edilmiş sayılır and hak kaybı yaşamanıza neden olabilir. Bu nedenle 20 günlük süreyi geçirmeden e-Devlet üzerinden adres beyanınızı yapın.</p>
+      <p>Adres değişikliği sonrasında ikametgah adresinizi güncellemeniz, resmi kurumlardan gelecek tebligatların size ulaşabilmesi için hayati önem taşır. Eski adresinizde kalan tebligatlar yasal olarak tebliğ edilmiş sayılır ve hak kaybı yaşamanıza neden olabilir. Bu nedenle 20 günlük süreyi geçirmeden e-Devlet üzerinden adres beyanınızı yapın.</p>
   
 
       <h3>Eskişehir Evden Eve Nakliyat İlçe Kılavuzu (Tepebaşı, Odunpazarı, Sivrihisar)</h3>
@@ -705,7 +705,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Firmamız, Karayolu Taşıma Kanunu kapsamında ulaştırma bakanlığından aldığı yasal yetki belgeleriyle hizmet sunar. Taşıma sırasında kullanılan tüm ambalaj malzemeleri (balonlu naylonlar, Kraft karton koliler, koruyucu köşe profilleri ve mukavva kutular) tek kullanımlık olup hijyen standartlarına uygundur. Mobilyalarınızın demontajı ve montajı, ekibimizde yer alan sertifikalı marangozlar tarafından gerçekleştirilir. Eşyalarınızın güvenle taşınması için Anadolu Sigorta güvencesiyle emtia yol sigortası yapılmakta, olası operasyonel hasarlar ise firmamız tarafından anında tazmin edilmektedir. Taşınma gününüzü planlamak ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilir, asansörlü çözümlerimiz için <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h3>Taşınma Günü Stressiz Geçiş İçin İpuçları</h3>
-      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su and doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu and önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
+      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su ve doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu ve önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
 `,
   },
   'sehirlerarasi-tasimada-esya-hasari': {
@@ -720,7 +720,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
     faqs: [
       {
         question: "Eşyaların kırıldığını taşınma günü fark etmezsek sonradan hak talep edebilir miyiz?",
-        answer: "Zorlaşmakla birlikte evet. Ancak en garantili yol, eşyalar kamyondan indirilirken kontrol etmek and hasar tespit edildiği an kamyon başında tutanak tutmaktır. Teslim sözleşmesi şerhsiz imzalanırsa hak kaybı yaşanabilir."
+        answer: "Zorlaşmakla birlikte evet. Ancak en garantili yol, eşyalar kamyondan indirilirken kontrol etmek ve hasar tespit edildiği an kamyon başında tutanak tutmaktır. Teslim sözleşmesi şerhsiz imzalanırsa hak kaybı yaşanabilir."
       },
       {
         question: "Hasar tespit tutanağı kimler tarafından imzalanmalıdır?",
@@ -740,23 +740,23 @@ export const blogDatabase: Record<string, BlogPostData> = {
       }
     ],
     contentHtml: `
-      <p>Şehirlerarası evden eve nakliyat, yüzlerce kilometrelik uzun yol güzergahlarında gerçekleştirildiği için şehir içi taşımalara kıyasla sarsıntı, kaza and hasar riski daha yüksek olan bir operasyonal süreçtir. Kaliteli ambalajlama ve dikkatli istifleme yapılsa dahi, karayolu şartları nedeniyle nadiren de olsa eşyalarınızın kırılması, çizilmesi veya kaybolması gibi istenmeyen durumlarla karşılaşabilirsiniz. Böyle bir durum başınıza geldiğinde panik yapmak yerine, yasal haklarınızı bilerek soğukkanlılıkla hareket etmeniz hasarınızın tazmin edilmesini sağlar. Bu makalede, şehirlerarası taşınmada eşyanız hasar gördüğünde atmanız gereken hukuki ve operasyonel adımları adım adım açıklayacağız.</p>
+      <p>Şehirlerarası evden eve nakliyat, yüzlerce kilometrelik uzun yol güzergahlarında gerçekleştirildiği için şehir içi taşımalara kıyasla sarsıntı, kaza ve hasar riski daha yüksek olan bir operasyonal süreçtir. Kaliteli ambalajlama ve dikkatli istifleme yapılsa dahi, karayolu şartları nedeniyle nadiren de olsa eşyalarınızın kırılması, çizilmesi veya kaybolması gibi istenmeyen durumlarla karşılaşabilirsiniz. Böyle bir durum başınıza geldiğinde panik yapmak yerine, yasal haklarınızı bilerek soğukkanlılıkla hareket etmeniz hasarınızın tazmin edilmesini sağlar. Bu makalede, şehirlerarası taşınmada eşyanız hasar gördüğünde atmanız gereken hukuki ve operasyonel adımları adım adım açıklayacağız.</p>
 
       <h2>1. Teslim Anında Kontrol ve Hasar Tespit Tutanağı</h2>
       <p>Hasar yönetimindeki en altın kural, eşyaları kamyondan indirilirken kontrol etmektir. Kamyondan indirilen kolilerin ezilmiş olduğunu veya beyaz eşyaların ambalajının yırtıldığını fark ettiğinizde derhal müdahale edin:</p>
       <ul>
-        <li>Hasarlı eşyayı veya koliyi yerinde durdurun. Eşyanın ve kamyonun içindeki pozisyonunun yüksek çözünürlüklü fotoğraflarını and videolarını çekin.</li>
+        <li>Hasarlı eşyayı veya koliyi yerinde durdurun. Eşyanın ve kamyonun içindeki pozisyonunun yüksek çözünürlüklü fotoğraflarını ve videolarını çekin.</li>
         <li><strong>Hasar Tespit Tutanağı Hazırlayın:</strong> Boş bir kağıda taşınma tarihini, araç plakasını, eşyanın ne şekilde hasar gördüğünü (örn. "Buzdolabı sağ yan sacında 15 cm derin ezik") yazın. Bu tutanağı kendiniz ve ekip şefi/şoförle birlikte imzalayın. Ekibin imzadan kaçınması durumunda tutanağa "Firma personeli imzadan imtina etmiştir" notunu düşerek tek taraflı imzalayın.</li>
       </ul>
 
       <h2>2. Teslim Teslim Sözleşmesine Şerh Düşmek</h2>
-      <p>Nakliyat ekipleri iş bitiminde size "Eşyalarımı hasarsız teslim aldım" yazılı bir iş teslim belgesi imzalatmak ister. Eğer hasarlı eşyanız varsa, bu belgeyi kesinlikle olduğu gibi imzalamayın. Belgenin üzerine ıslak kalemle **"Ekteki hasar tespit tutanağında belirtilen hasarlar saklı kalmak kaydıyla teslim aldım"** ibaresini (şerhini) yazarak imzalayın. Şerh düşülmeden atılan imzalar, yasal olarak eşyayı kusursuz kabul ettiğiniz anlamına gelir ve sigorta şirketlerinin tazminat ödemeyi reddetmesine sebep olur. Paketleme and koruma kalitemiz için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz.</p>
+      <p>Nakliyat ekipleri iş bitiminde size "Eşyalarımı hasarsız teslim aldım" yazılı bir iş teslim belgesi imzalatmak ister. Eğer hasarlı eşyanız varsa, bu belgeyi kesinlikle olduğu gibi imzalamayın. Belgenin üzerine ıslak kalemle **"Ekteki hasar tespit tutanağında belirtilen hasarlar saklı kalmak kaydıyla teslim aldım"** ibaresini (şerhini) yazarak imzalayın. Şerh düşülmeden atılan imzalar, yasal olarak eşyayı kusursuz kabul ettiğiniz anlamına gelir ve sigorta şirketlerinin tazminat ödemeyi reddetmesine sebep olur. Paketleme ve koruma kalitemiz için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h2>3. Sigorta Şirketine İhbar ve Dosya Açma Süreci</h2>
-      <p>Şehirlerarası taşımalarda eşyalarınız Anadolu Sigorta emtia poliçesiyle korunur. Kamyonun seyir halindeyken kaza yapması, devrilmesi veya yanması sonucu oluşan hasarların karşılanması için kaza tarihinden itibaren en geç 5 iş günü içerisinde sigorta acentesine ihbarda bulunulmalıdır. İhbar için kaza raporu, hasar fotoğrafları, poliçe numarası and hasar tutanağı talep edilir. Şehirlerarası operasyonel detaylarımız için <a href="/hizmetler/sehirlerarasi-evden-eve-nakliyat">Şehirlerarası Evden Eve Nakliyat</a> sayfamıza bakabilirsiniz.</p>
+      <p>Şehirlerarası taşımalarda eşyalarınız Anadolu Sigorta emtia poliçesiyle korunur. Kamyonun seyir halindeyken kaza yapması, devrilmesi veya yanması sonucu oluşan hasarların karşılanması için kaza tarihinden itibaren en geç 5 iş günü içerisinde sigorta acentesine ihbarda bulunulmalıdır. İhbar için kaza raporu, hasar fotoğrafları, poliçe numarası ve hasar tutanağı talep edilir. Şehirlerarası operasyonel detaylarımız için <a href="/hizmetler/sehirlerarasi-evden-eve-nakliyat">Şehirlerarası Evden Eve Nakliyat</a> sayfamıza bakabilirsiniz.</p>
 
       <h2>4. Ekspertiz İncelemesi ve Değer Tespiti</h2>
-      <p>Sigorta ihbarı sonrasında sigorta şirketi hasarın boyutunu belirlemek üzere bağımsız bir sigorta eksperi görevlendirir. Eksper eve gelerek eşyadaki hasarı inceler, faturalarını and satın alma belgelerini talep eder. Eksper raporu doğrultusunda belirlenen tazminat bedeli, sigortalının banka hesabına yatırılır.</p>
+      <p>Sigorta ihbarı sonrasında sigorta şirketi hasarın boyutunu belirlemek üzere bağımsız bir sigorta eksperi görevlendirir. Eksper eve gelerek eşyadaki hasarı inceler, faturalarını ve satın alma belgelerini talep eder. Eksper raporu doğrultusunda belirlenen tazminat bedeli, sigortalının banka hesabına yatırılır.</p>
 
       <h2>5. Tüketici Hakem Heyeti Başvuruları</h2>
       <p>Eğer nakliyat firması veya sigorta şirketi hasarı karşılamaktan kaçınırsa, yasal olarak Tüketici Hakem Heyetlerine başvurabilirsiniz. İl veya ilçe kaymakamlıklarında bulunan hakem heyetleri, belirli bir parasal sınıra kadar olan uyuşmazlıklarda mahkeme hükmünde bağlayıcı kararlar vermektedir. Başvuru için sözleşme, fatura, fotoğraf ve tutanaklar yeterlidir.</p>
@@ -769,11 +769,11 @@ export const blogDatabase: Record<string, BlogPostData> = {
 
 
       <h3>7. Uzun Yol Karayolu Taşımacılığı Güvenlik Kuralları</h3>
-      <p>Şehirlerarası taşımacılıkta kamyon şoförlerinin yasal sürüş sürelerine uyması zorunludur. Dinlenmiş şoförler kaza riskini minimuma indirir. Araçlarımızın tamamında takograf denetimi yapılmakta and şoförlerimiz düzenli molalar vermektedir. Detaylar için <a href="/hizmetler/sehirlerarasi-evden-eve-nakliyat">Şehirlerarası Nakliyat</a> sayfamıza bakabilirsiniz.</p>
+      <p>Şehirlerarası taşımacılıkta kamyon şoförlerinin yasal sürüş sürelerine uyması zorunludur. Dinlenmiş şoförler kaza riskini minimuma indirir. Araçlarımızın tamamında takograf denetimi yapılmakta ve şoförlerimiz düzenli molalar vermektedir. Detaylar için <a href="/hizmetler/sehirlerarasi-evden-eve-nakliyat">Şehirlerarası Nakliyat</a> sayfamıza bakabilirsiniz.</p>
       <h3>8. Eşyaların Kamyon İçinde Doğru İstiflenmesi</h3>
-      <p>Hasarların büyük kısmı yoldaki sarsıntılardan değil, kamyon içindeki yanlış istiflemeden kaynaklanır. Ağır eşyalar alt kısımlara, hassas koliler and beyaz eşyalar üst kısımlara yerleştirilmelidir. Mobilyalar kamyon kasasındaki sabitleme ipleriyle sıkıca bağlanmalıdır. Bu istifleme uzmanlık gerektiren bir iştir.</p>
+      <p>Hasarların büyük kısmı yoldaki sarsıntılardan değil, kamyon içindeki yanlış istiflemeden kaynaklanır. Ağır eşyalar alt kısımlara, hassas koliler ve beyaz eşyalar üst kısımlara yerleştirilmelidir. Mobilyalar kamyon kasasındaki sabitleme ipleriyle sıkıca bağlanmalıdır. Bu istifleme uzmanlık gerektiren bir iştir.</p>
       <h3>9. Yol Durumu ve Hava Şartları Takibi</h3>
-      <p>Şehirlerarası nakliyatta güzergah üzerindeki hava durumunu and yol çalışmalarını önceden takip ediyoruz. Kar yağışı, buzlanma veya heyelan riski olan yollarda ek güvenlik önlemleri alıyoruz. Kapalı kasa araçlarımız eşyalarınızı dış hava koşullarından (yağmur, kar, toz) tam olarak korur.</p>
+      <p>Şehirlerarası nakliyatta güzergah üzerindeki hava durumunu ve yol çalışmalarını önceden takip ediyoruz. Kar yağışı, buzlanma veya heyelan riski olan yollarda ek güvenlik önlemleri alıyoruz. Kapalı kasa araçlarımız eşyalarınızı dış hava koşullarından (yağmur, kar, toz) tam olarak korur.</p>
   
 
       <h3>Eskişehir Evden Eve Nakliyat İlçe Kılavuzu (Tepebaşı, Odunpazarı, Sivrihisar)</h3>
@@ -784,7 +784,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Firmamız, Karayolu Taşıma Kanunu kapsamında ulaştırma bakanlığından aldığı yasal yetki belgeleriyle hizmet sunar. Taşıma sırasında kullanılan tüm ambalaj malzemeleri (balonlu naylonlar, Kraft karton koliler, koruyucu köşe profilleri ve mukavva kutular) tek kullanımlık olup hijyen standartlarına uygundur. Mobilyalarınızın demontajı ve montajı, ekibimizde yer alan sertifikalı marangozlar tarafından gerçekleştirilir. Eşyalarınızın güvenle taşınması için Anadolu Sigorta güvencesiyle emtia yol sigortası yapılmakta, olası operasyonel hasarlar ise firmamız tarafından anında tazmin edilmektedir. Taşınma gününüzü planlamak ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilir, asansörlü çözümlerimiz için <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h3>Taşınma Günü Stressiz Geçiş İçin İpuçları</h3>
-      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su and doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu and önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
+      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su ve doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu ve önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
 `,
   },
 
@@ -800,7 +800,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
     faqs: [
       {
         question: "Ofis taşınırken evrak ve klasörler nasıl sınıflandırılmalıdır?",
-        answer: "Her departmanın evrakları renk kodlu ve numaralı kolilere konmalı, kolilerin üzerine departman adı, personel ismi and içerik listesi yapıştırılmalıdır."
+        answer: "Her departmanın evrakları renk kodlu ve numaralı kolilere konmalı, kolilerin üzerine departman adı, personel ismi ve içerik listesi yapıştırılmalıdır."
       },
       {
         question: "Bilgisayarlar ve sunucular (server) nasıl paketlenir?",
@@ -820,16 +820,16 @@ export const blogDatabase: Record<string, BlogPostData> = {
       }
     ],
     contentHtml: `
-      <p>Kurumsal şirketler için taşınma süreci, ev taşımacılığından çok daha farklı dinamiklere and risklere sahiptir. Bir işletmenin faaliyetlerine ara vermesi, müşterilerine hizmet sunamaması ve iş gücü kaybı yaşaması doğrudan ciro ve prestij kaybı anlamına gelir. Bu nedenle ofis taşımacılığında temel hedef "sıfır iş kaybı" ve "maksimum hız" olmalıdır. Profesyonelce planlanmış bir ofis lojistiği, cuma akşamı iş çıkış saatinde başlayıp pazartesi sabahı mesai başlangıcında yeni ofiste bilgisayarların çalışır durumda olmasıyla tamamlanmalıdır. Bu yazımızda, kurumsal firmaların iş kaybı yaşamadan hafta sonu nasıl taşınabileceğini, planlama ve etiketleme aşamalarıyla ele alacağız.</p>
+      <p>Kurumsal şirketler için taşınma süreci, ev taşımacılığından çok daha farklı dinamiklere ve risklere sahiptir. Bir işletmenin faaliyetlerine ara vermesi, müşterilerine hizmet sunamaması ve iş gücü kaybı yaşaması doğrudan ciro ve prestij kaybı anlamına gelir. Bu nedenle ofis taşımacılığında temel hedef "sıfır iş kaybı" ve "maksimum hız" olmalıdır. Profesyonelce planlanmış bir ofis lojistiği, cuma akşamı iş çıkış saatinde başlayıp pazartesi sabahı mesai başlangıcında yeni ofiste bilgisayarların çalışır durumda olmasıyla tamamlanmalıdır. Bu yazımızda, kurumsal firmaların iş kaybı yaşamadan hafta sonu nasıl taşınabileceğini, planlama ve etiketleme aşamalarıyla ele alacağız.</p>
 
       <h2>1. Adım Adım Ofis Taşınma Takvimi ve Zamanlama</h2>
       <p>Başarılı bir ofis nakliyesinin anahtarı, zamanlama planının en az 2 hafta öncesinden çizilmesidir. İşte sıfır kayıplı zamanlama tablosu:</p>
       <ul>
-        <li><strong>Taşınmadan 15 Gün Önce:</strong> Yeni ofisin tesisat, internet and network altyapı kurulumlarını tamamlayın. Taşınma günü hatların çalışır olması hayati önem taşır. Adres değişiklik bildirimlerini yapın.</li>
-        <li><strong>Taşınmadan 7 Gün Önce:</strong> Departman şefleriyle toplantı yaparak iş bölümü yapın. Arşiv and eski evrakları kolilemeye başlayın.</li>
+        <li><strong>Taşınmadan 15 Gün Önce:</strong> Yeni ofisin tesisat, internet ve network altyapı kurulumlarını tamamlayın. Taşınma günü hatların çalışır olması hayati önem taşır. Adres değişiklik bildirimlerini yapın.</li>
+        <li><strong>Taşınmadan 7 Gün Önce:</strong> Departman şefleriyle toplantı yaparak iş bölümü yapın. Arşiv ve eski evrakları kolilemeye başlayın.</li>
         <li><strong>Cuma Günü (Saat 18:00):</strong> Ofiste mesainin bitmesiyle birlikte nakliyat ekibi iş başı yapar. Bilgisayarlar sökülür, masalar demonte edilir ve ilk yükleme kamyonu yola çıkar. Detaylı ofis taşıma çözümlerimiz için <a href="/hizmetler/ofis-ve-isyeri-tasimaciligi">İşyeri ve Ofis Taşıma</a> hizmetimizi inceleyebilirsiniz.</li>
-        <li><strong>Cumartesi Günü:</strong> Ağır mobilyalar, sunucu kabinleri ve ana arşivler taşınır. Yeni ofiste montaj and yerleşim başlar.</li>
-        <li><strong>Pazar Günü:</strong> Bilgisayar and elektrik bağlantıları yapılır, koliler departman masalarına dağıtılır and temizlik tamamlanır. Pazartesi sabah 08:30'da ofis çalışmaya hazırdır.</li>
+        <li><strong>Cumartesi Günü:</strong> Ağır mobilyalar, sunucu kabinleri ve ana arşivler taşınır. Yeni ofiste montaj ve yerleşim başlar.</li>
+        <li><strong>Pazar Günü:</strong> Bilgisayar ve elektrik bağlantıları yapılır, koliler departman masalarına dağıtılır ve temizlik tamamlanır. Pazartesi sabah 08:30'da ofis çalışmaya hazırdır.</li>
       </ul>
 
       <h2>2. Departman Bazlı Renk Kodlu Etiketleme Sistemi</h2>
@@ -837,31 +837,31 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <ul>
         <li>Her departmana bir renk atanır (örn. Muhasebe: Kırmızı, Pazarlama: Mavi, İnsan Kaynakları: Yeşil).</li>
         <li>Kutular ve demonte edilen masalar bu renkli etiketlerle işaretlenir. Etiketin üzerine masa sahibinin ismi yazılır.</li>
-        <li>Yeni ofisin giriş kapısına ve odalarına da bu renkli şemalar asılır. Böylece taşıma personeli kırmızı etiketli bir koliyi gördüğünde, sormaya gerek kalmadan doğrudan muhasebe odasına götürür. Detaylı ambalajlama and kutulama standartlarımız için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamıza bakabilirsiniz.</li>
+        <li>Yeni ofisin giriş kapısına ve odalarına da bu renkli şemalar asılır. Böylece taşıma personeli kırmızı etiketli bir koliyi gördüğünde, sormaya gerek kalmadan doğrudan muhasebe odasına götürür. Detaylı ambalajlama ve kutulama standartlarımız için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamıza bakabilirsiniz.</li>
       </ul>
 
       <h2>3. Hassas Elektronik ve Sunucu (Server) Güvenliği</h2>
-      <p>Ofislerin en değerli donanımları sunucular, bilgisayarlar, yazıcılar and ağ cihazlarıdır. Bu cihazların hasarsız taşınması için antistatik hava kabarcıklı ambalaj malzemeleri kullanılır. Kabloların karışmaması için sökülmeden önce fotoğrafları çekilir ve her kablo seti ait olduğu bilgisayarın kasasına etiketle bağlanır. Sunucu kabinleri (rack kabinler) taşınmadan önce içindeki switch ve UPS'ler sökülerek ağırlık dengesi sağlanır. Şehirlerarası kurumsal lojistik hizmetlerimiz için <a href="/hizmetler/sehirlerarasi-evden-eve-nakliyat">Şehirlerarası Evden Eve Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
+      <p>Ofislerin en değerli donanımları sunucular, bilgisayarlar, yazıcılar ve ağ cihazlarıdır. Bu cihazların hasarsız taşınması için antistatik hava kabarcıklı ambalaj malzemeleri kullanılır. Kabloların karışmaması için sökülmeden önce fotoğrafları çekilir ve her kablo seti ait olduğu bilgisayarın kasasına etiketle bağlanır. Sunucu kabinleri (rack kabinler) taşınmadan önce içindeki switch ve UPS'ler sökülerek ağırlık dengesi sağlanır. Şehirlerarası kurumsal lojistik hizmetlerimiz için <a href="/hizmetler/sehirlerarasi-evden-eve-nakliyat">Şehirlerarası Evden Eve Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h2>4. Arşiv Klasörleri ve Gizlilik Standartları</h2>
-      <p>Muhasebe ve İK departmanlarına ait gizli personel dosyaları, finansal evraklar and ticari sözleşmeler özel numaralı kilitli plastik kasalarda taşınır. Taşıma öncesinde kasalar kilitlenerek yetkisiz kişilerin erişimi engellenir. Yeni ofiste ise ilgili müdür gözetiminde kasalar açılarak arşiv dolaplarına yerleştirilir.</p>
+      <p>Muhasebe ve İK departmanlarına ait gizli personel dosyaları, finansal evraklar ve ticari sözleşmeler özel numaralı kilitli plastik kasalarda taşınır. Taşıma öncesinde kasalar kilitlenerek yetkisiz kişilerin erişimi engellenir. Yeni ofiste ise ilgili müdür gözetiminde kasalar açılarak arşiv dolaplarına yerleştirilir.</p>
 
       <h2>5. Demontaj ve Yeniden Kurulum Süreci (Marangozluk)</h2>
-      <p>Ofis mobilyaları (L masalar, toplantı masaları, bölme paneller) ev mobilyalarından daha karmaşık montaj yapılarına sahiptir. Teknik ekiplerimizde yer alan profesyonel marangozlar, kablo kanallarını and montaj yuvalarını bozmadan demontaj yapar, yeni ofiste elektrik planına uygun olarak kurulumları gerçekleştirir.</p>
+      <p>Ofis mobilyaları (L masalar, toplantı masaları, bölme paneller) ev mobilyalarından daha karmaşık montaj yapılarına sahiptir. Teknik ekiplerimizde yer alan profesyonel marangozlar, kablo kanallarını ve montaj yuvalarını bozmadan demontaj yapar, yeni ofiste elektrik planına uygun olarak kurulumları gerçekleştirir.</p>
 
       <h2>6. Kurumsal BT (Bilişim Teknolojileri) Test ve Devreye Alma</h2>
-      <p>Pazar günü akşam saatlerinde kurumsal network sistem uzmanları tüm bilgisayarların internet bağlantısını, IP dağılımlarını and yazıcı paylaşımlarını test etmelidir. Pazartesi sabahı personelin iş başı yaptığında teknik aksaklıklar nedeniyle zaman kaybetmesinin önüne bu testlerle geçilir.</p>
+      <p>Pazar günü akşam saatlerinde kurumsal network sistem uzmanları tüm bilgisayarların internet bağlantısını, IP dağılımlarını ve yazıcı paylaşımlarını test etmelidir. Pazartesi sabahı personelin iş başı yaptığında teknik aksaklıklar nedeniyle zaman kaybetmesinin önüne bu testlerle geçilir.</p>
 
       <h2>7. Esen 26 Nakliyat Kurumsal Çözüm Ortaklığı</h2>
-      <p>Esen 26 Nakliyat olarak, Eskişehir'deki banka şubeleri, sigorta acenteleri, hukuk büroları and yazılım ofislerinin taşınmasını profesyonel koordinatörlerimiz eşliğinde gerçekleştiriyoruz. Kurumsal taşıma sigortası and faturalı hizmet sunuyoruz. Ücretsiz keşif and yerinde ekspertiz talebi oluşturmak için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> sayfamızı inceleyebilir, kurumsal fiyat teklifi almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilirsiniz.</p>
+      <p>Esen 26 Nakliyat olarak, Eskişehir'deki banka şubeleri, sigorta acenteleri, hukuk büroları ve yazılım ofislerinin taşınmasını profesyonel koordinatörlerimiz eşliğinde gerçekleştiriyoruz. Kurumsal taşıma sigortası ve faturalı hizmet sunuyoruz. Ücretsiz keşif ve yerinde ekspertiz talebi oluşturmak için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> sayfamızı inceleyebilir, kurumsal fiyat teklifi almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilirsiniz.</p>
 
 
       <h3>7. Bilgi Güvenliği ve KVKK Uyum Süreci</h3>
-      <p>Ofis taşımacılığında en hassas konulardan biri bilgi güvenliğidir. Personel dosyaları, müşteri verileri and bilgisayar diskleri yasal olarak KVKK kapsamında korunmalıdır. Bu cihazların ve evrakların taşınması esnasında kaybolmaması için özel kilitli kasalar kullanılır and taşıma personeline gizlilik taahhüdü imzalatılır.</p>
+      <p>Ofis taşımacılığında en hassas konulardan biri bilgi güvenliğidir. Personel dosyaları, müşteri verileri ve bilgisayar diskleri yasal olarak KVKK kapsamında korunmalıdır. Bu cihazların ve evrakların taşınması esnasında kaybolmaması için özel kilitli kasalar kullanılır ve taşıma personeline gizlilik taahhüdü imzalatılır.</p>
       <h3>8. Ofis Mobilyalarının Modüler Demontaj Hassasiyeti</h3>
-      <p>Modern ofis mobilyaları genellikle modüler yapıdadır and sökülmesi uzmanlık gerektirir. Vidaların and bağlantı aparatlarının kaybolmaması için etiketlenerek saklanması şarttır. Esen 26 Nakliyat bünyesindeki profesyonel marangozlar ofis mobilyalarınızı zarar vermeden söküp kurar. Detaylar için <a href="/hizmetler/ofis-ve-isyeri-tasimaciligi">Ofis Taşıma</a> sayfamıza bakın.</p>
+      <p>Modern ofis mobilyaları genellikle modüler yapıdadır ve sökülmesi uzmanlık gerektirir. Vidaların ve bağlantı aparatlarının kaybolmaması için etiketlenerek saklanması şarttır. Esen 26 Nakliyat bünyesindeki profesyonel marangozlar ofis mobilyalarınızı zarar vermeden söküp kurar. Detaylar için <a href="/hizmetler/ofis-ve-isyeri-tasimaciligi">Ofis Taşıma</a> sayfamıza bakın.</p>
       <h3>9. Yeni Ofisin Yerleşim Planı (Layout)</h3>
-      <p>Taşınma günü kargaşayı önlemek için yeni ofisin oturma planı (layout) önceden hazırlanmalı and duvarlara asılmalıdır. Her masanın and odanın numarası etiketlerle eşleştirilmelidir. Bu sayede nakliye personeli eşyaları doğrudan doğru masaya yerleştirir and montaj süreci hızlanır.</p>
+      <p>Taşınma günü kargaşayı önlemek için yeni ofisin oturma planı (layout) önceden hazırlanmalı ve duvarlara asılmalıdır. Her masanın ve odanın numarası etiketlerle eşleştirilmelidir. Bu sayede nakliye personeli eşyaları doğrudan doğru masaya yerleştirir ve montaj süreci hızlanır.</p>
   
 
       <h3>Eskişehir Evden Eve Nakliyat İlçe Kılavuzu (Tepebaşı, Odunpazarı, Sivrihisar)</h3>
@@ -872,7 +872,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Firmamız, Karayolu Taşıma Kanunu kapsamında ulaştırma bakanlığından aldığı yasal yetki belgeleriyle hizmet sunar. Taşıma sırasında kullanılan tüm ambalaj malzemeleri (balonlu naylonlar, Kraft karton koliler, koruyucu köşe profilleri ve mukavva kutular) tek kullanımlık olup hijyen standartlarına uygundur. Mobilyalarınızın demontajı ve montajı, ekibimizde yer alan sertifikalı marangozlar tarafından gerçekleştirilir. Eşyalarınızın güvenle taşınması için Anadolu Sigorta güvencesiyle emtia yol sigortası yapılmakta, olası operasyonel hasarlar ise firmamız tarafından anında tazmin edilmektedir. Taşınma gününüzü planlamak ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilir, asansörlü çözümlerimiz için <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h3>Taşınma Günü Stressiz Geçiş İçin İpuçları</h3>
-      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su and doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu and önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
+      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su ve doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu ve önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
 `,
   },
   'eskisehir-semt-rehberi': {
@@ -891,11 +891,11 @@ export const blogDatabase: Record<string, BlogPostData> = {
       },
       {
         question: "Odunpazarı ilçesinde oturulabilecek en nezih mahalleler hangileridir?",
-        answer: "Güzelyalı, Turgut Özal Bulvarı çevresi, Kurttepe, Belediye Evleri ve Karslılar mahallesi sosyal imkanları and yeşil alanlarıyla en çok tercih edilen bölgelerdir."
+        answer: "Güzelyalı, Turgut Özal Bulvarı çevresi, Kurttepe, Belediye Evleri ve Karslılar mahallesi sosyal imkanları ve yeşil alanlarıyla en çok tercih edilen bölgelerdir."
       },
       {
         question: "Sivrihisar ilçesinde konut projelerinin yapısı nasıldır?",
-        answer: "Sivrihisar, son yıllarda Eskişehir Bilim ve Teknoloji Üniversitesi and yeni stadyum çevresinde gelişen, yeni yönetmeliklere uygun modern ve güvenlikli site yapılarına sahiptir."
+        answer: "Sivrihisar, son yıllarda Eskişehir Bilim ve Teknoloji Üniversitesi ve yeni stadyum çevresinde gelişen, yeni yönetmeliklere uygun modern ve güvenlikli site yapılarına sahiptir."
       },
       {
         question: "Tepebaşı ilçesinde tarihi ve merkezi yaşamı sevenler nereyi tercih etmelidir?",
@@ -907,42 +907,42 @@ export const blogDatabase: Record<string, BlogPostData> = {
       }
     ],
     contentHtml: `
-      <p>Eskişehir'e iş, eğitim veya ailevi nedenlerle yeni taşınacak olan kişilerin en çok zorlandığı konulardan biri, şehrin hangi semtinde yaşamaları gerektiğine karar vermektir. Eskişehir, güneyden kuzeye doğru hızla gelişen ve her bölgesinde farklı sosyo-ekonomik and mimari yapılar barındıran büyük bir metropoldür. Tepebaşı'ın tarihi ve hareketli caddeleri, Odunpazarı'nın modern rezidansları and Sivrihisar'ın yeni gelişen konut projekleri farklı yaşam tarzlarına hitap eder. Bu yazıda Eskişehir'in merkez ilçelerindeki semtleri, konut yapıları, deprem güvenlikleri ve sosyal yaşam imkanları açısından detaylıca inceleyerek karar vermenizi kolaylaştıracağız.</p>
+      <p>Eskişehir'e iş, eğitim veya ailevi nedenlerle yeni taşınacak olan kişilerin en çok zorlandığı konulardan biri, şehrin hangi semtinde yaşamaları gerektiğine karar vermektir. Eskişehir, güneyden kuzeye doğru hızla gelişen ve her bölgesinde farklı sosyo-ekonomik ve mimari yapılar barındıran büyük bir metropoldür. Tepebaşı'ın tarihi ve hareketli caddeleri, Odunpazarı'nın modern rezidansları ve Sivrihisar'ın yeni gelişen konut projekleri farklı yaşam tarzlarına hitap eder. Bu yazıda Eskişehir'in merkez ilçelerindeki semtleri, konut yapıları, deprem güvenlikleri ve sosyal yaşam imkanları açısından detaylıca inceleyerek karar vermenizi kolaylaştıracağız.</p>
 
       <h2>1. Odunpazarı İlçesi: Yaşam Kalitesi ve Modern Konutlar</h2>
-      <p>Odunpazarı, Eskişehir'in kuzeyinde yer alan ve şehrin en yüksek yaşam standartlarına sahip olan modern yüzüdür. Genellikle geniş bulvarlar, parklar and baraj gölü manzaralı yüksek katlı sitelerden oluşur:</p>
+      <p>Odunpazarı, Eskişehir'in kuzeyinde yer alan ve şehrin en yüksek yaşam standartlarına sahip olan modern yüzüdür. Genellikle geniş bulvarlar, parklar ve baraj gölü manzaralı yüksek katlı sitelerden oluşur:</p>
       <ul>
-        <li><strong>Güzelyalı ve Huzurevleri:</strong> Turgut Özal Bulvarı çevresinde yer alan bu mahalleler, sosyal aktivite, kafe, restoran and alışveriş imkanları açısından şehrin merkezidir. Konut yaşları 10-25 yıl arasındadır.</li>
-        <li><strong>Karslılar ve Kurttepe:</strong> Eskişehir Baraj Gölü manzarasına hakim, lüks villaların ve yeni nesil rezidans projelerinin yer aldığı sakin and lüks yaşam bölgeleridir.</li>
+        <li><strong>Güzelyalı ve Huzurevleri:</strong> Turgut Özal Bulvarı çevresinde yer alan bu mahalleler, sosyal aktivite, kafe, restoran ve alışveriş imkanları açısından şehrin merkezidir. Konut yaşları 10-25 yıl arasındadır.</li>
+        <li><strong>Karslılar ve Kurttepe:</strong> Eskişehir Baraj Gölü manzarasına hakim, lüks villaların ve yeni nesil rezidans projelerinin yer aldığı sakin ve lüks yaşam bölgeleridir.</li>
         <li><strong>Deprem Güvenliği:</strong> Odunpazarı ilçesi, sert kayaç zemin yapısı (kireçtaşı ağırlıklı) nedeniyle deprem güvenliği açısından Eskişehir'in en avantajlı ilçelerinden biri olarak kabul edilir. Bu ilçeye ev taşıma hizmetlerimiz için <a href="/bolgeler/odunpazari-evden-eve-nakliyat">Odunpazarı Evden Eve Nakliyat</a> sayfamıza göz atabilirsiniz.</li>
       </ul>
 
       <h2>2. Tepebaşı İlçesi: Tarih, Kültür ve Şehir Merkezi</h2>
-      <p>Tepebaşı, Eskişehir'in en büyük, en kalabalık and tarihi merkezidir. Şehrin ticaret, finans and idari kalbi burada atar. Tepebaşı'da yaşamı tercih ederken güney ve kuzey semtleri arasındaki farkı bilmek gerekir:</p>
+      <p>Tepebaşı, Eskişehir'in en büyük, en kalabalık ve tarihi merkezidir. Şehrin ticaret, finans ve idari kalbi burada atar. Tepebaşı'da yaşamı tercih ederken güney ve kuzey semtleri arasındaki farkı bilmek gerekir:</p>
       <ul>
-        <li><strong>Reşatbey, Cemalpaşa ve Gazipaşa:</strong> Eskişehir'in en köklü, prestijli and elit semtleridir. Atatürk Parkı'na, Tepebaşı Nehri'ne ve merkez parkına yürüme mesafesindedirler. Sosyal ve kültürel hayatın içindedirler. Konut yapısı genellikle 20 yaş üzerindedir ancak kentsel dönüşümle yenilenen binalar mevcuttur.</li>
+        <li><strong>Reşatbey, Cemalpaşa ve Gazipaşa:</strong> Eskişehir'in en köklü, prestijli ve elit semtleridir. Atatürk Parkı'na, Tepebaşı Nehri'ne ve merkez parkına yürüme mesafesindedirler. Sosyal ve kültürel hayatın içindedirler. Konut yapısı genellikle 20 yaş üzerindedir ancak kentsel dönüşümle yenilenen binalar mevcuttur.</li>
         <li><strong>Güney Mahalleler:</strong> Alüvyon zemin yapısına sahip olan güney mahalleler, çarpık kentleşme ve eski yapı stoğu nedeniyle taşınma için daha az tercih edilmektedir. Tepebaşı'daki taşınma operasyonlarımız için <a href="/bolgeler/tepebasi-evden-eve-nakliyat">Tepebaşı Evden Eve Nakliyat</a> sayfamızı inceleyebilirsiniz.</li>
       </ul>
 
       <h2>3. Sivrihisar İlçesi: Hızlı Gelişim ve Yeni Konutlar</h2>
-      <p>Sivrihisar, son 5 yılda Eskişehir'in en hızlı büyüyen ve en çok göç alan ilçesidir. Odunpazarı Üniversitesi, Eskişehir Alparslan Türkeş Bilim ve Teknoloji Üniversitesi and yeni stadyum projelerinin bu bölgede yer alması, ilçeyi genç ve dinamik bir nüfusun odağı haline getirmiştir. Sivrihisar'da konutlar genellikle yeni deprem yönetmeliklerine uygun, havuzlu ve güvenlikli modern sitelerden oluşur. Kiralar ve konut fiyatları Odunpazarı'ya kıyasla daha uygundur. Zemin yapısı olarak tepelik and sağlam zeminlerden oluşur. Sivrihisar lojistik çözümlerimiz için <a href="/bolgeler/sivrihisar-evden-eve-nakliyat">Sivrihisar Evden Eve Nakliyat</a> sayfamıza bakabilirsiniz.</p>
+      <p>Sivrihisar, son 5 yılda Eskişehir'in en hızlı büyüyen ve en çok göç alan ilçesidir. Odunpazarı Üniversitesi, Eskişehir Alparslan Türkeş Bilim ve Teknoloji Üniversitesi ve yeni stadyum projelerinin bu bölgede yer alması, ilçeyi genç ve dinamik bir nüfusun odağı haline getirmiştir. Sivrihisar'da konutlar genellikle yeni deprem yönetmeliklerine uygun, havuzlu ve güvenlikli modern sitelerden oluşur. Kiralar ve konut fiyatları Odunpazarı'ya kıyasla daha uygundur. Zemin yapısı olarak tepelik ve sağlam zeminlerden oluşur. Sivrihisar lojistik çözümlerimiz için <a href="/bolgeler/sivrihisar-evden-eve-nakliyat">Sivrihisar Evden Eve Nakliyat</a> sayfamıza bakabilirsiniz.</p>
 
       <h2>4. Çifteler İlçesi: Sanayileşme ve Gelişen Konutlar</h2>
-      <p>Çifteler, Tepebaşı Nehri'nin doğusunda yer alan, sanayi siteleri, büyük hastaneler and Eskişehir Optimum AVM gibi büyük ticaret merkezlerini barındıran dinamik bir ilçedir. Sinanpaşa ve Yavuzlar gibi nehir kıyısındaki mahallelerde büyük kentsel dönüşüm projeleri devam etmektedir. Çifteler bölgesinde yeni yapılan siteler, Odunpazarı'ya kıyasla daha ekonomik konut seçenekleri sunmaktadır. Bu ilçedeki nakliye süreçlerimiz için <a href="/bolgeler/cifteler-evden-eve-nakliyat">Çifteler Evden Eve Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
+      <p>Çifteler, Tepebaşı Nehri'nin doğusunda yer alan, sanayi siteleri, büyük hastaneler ve Eskişehir Optimum AVM gibi büyük ticaret merkezlerini barındıran dinamik bir ilçedir. Sinanpaşa ve Yavuzlar gibi nehir kıyısındaki mahallelerde büyük kentsel dönüşüm projeleri devam etmektedir. Çifteler bölgesinde yeni yapılan siteler, Odunpazarı'ya kıyasla daha ekonomik konut seçenekleri sunmaktadır. Bu ilçedeki nakliye süreçlerimiz için <a href="/bolgeler/cifteler-evden-eve-nakliyat">Çifteler Evden Eve Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h2>5. Okul Olanakları ve Çocuklu Aileler İçin En İyi Bölgeler</h2>
-      <p>Çocuklu aileler için okul ve kreş olanakları semt seçiminde ilk sırada gelir. Eskişehir'in en iyi kolejleri and devlet okulları Odunpazarı ilçesinde yoğunlaşmıştır. Güzelyalı, Beyazevler and Reşatbey mahalleleri çocukların okula yürüme mesafesinde güvenle gidip gelebileceği sakin çevre koşullarına sahiptir.</p>
+      <p>Çocuklu aileler için okul ve kreş olanakları semt seçiminde ilk sırada gelir. Eskişehir'in en iyi kolejleri ve devlet okulları Odunpazarı ilçesinde yoğunlaşmıştır. Güzelyalı, Beyazevler ve Reşatbey mahalleleri çocukların okula yürüme mesafesinde güvenle gidip gelebileceği sakin çevre koşullarına sahiptir.</p>
 
       <h2>6. Esen 26 Nakliyat ile Eskişehir'in Her Semtine Güvenli Taşının</h2>
-      <p>Eskişehir'de hangi semte karar verirseniz verin, taşınma günü profesyonel bir ekiple çalışmak sürecin sorunsuz geçmesini sağlar. Tepebaşı, Odunpazarı ve Sivrihisar ilçelerindeki tüm adreslere modüler asansör kurulum desteği sunuyoruz. Yeni evinizi seçtikten sonra, eşyalarınızın güvenle taşınması için asansörlü nakliyat avantajlarımızı <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızdan inceleyebilir, ücretsiz keşif and sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilirsiniz.</p>
+      <p>Eskişehir'de hangi semte karar verirseniz verin, taşınma günü profesyonel bir ekiple çalışmak sürecin sorunsuz geçmesini sağlar. Tepebaşı, Odunpazarı ve Sivrihisar ilçelerindeki tüm adreslere modüler asansör kurulum desteği sunuyoruz. Yeni evinizi seçtikten sonra, eşyalarınızın güvenle taşınması için asansörlü nakliyat avantajlarımızı <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızdan inceleyebilir, ücretsiz keşif ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilirsiniz.</p>
 
 
       <h3>7. Sivrihisar Yeni Konut Projeleri Yaşam Standartları</h3>
-      <p>Sivrihisar ilçesi, son yıllarda Eskişehir'in en modern sitelerine ev sahipliği yapmaktadır. Havuzlu, güvenlikli, geniş yeşil alanlı siteler uygun fiyatlarla kiralanabilmektedir. Üniversiteye yakınlığı nedeniyle genç and dinamik bir nüfus yapısına sahiptir. Gelişmiş lojistik hizmetlerimiz için <a href="/bolgeler/sivrihisar-evden-eve-nakliyat">Sivrihisar Evden Eve Nakliyat</a> sayfamıza bakabilirsiniz.</p>
+      <p>Sivrihisar ilçesi, son yıllarda Eskişehir'in en modern sitelerine ev sahipliği yapmaktadır. Havuzlu, güvenlikli, geniş yeşil alanlı siteler uygun fiyatlarla kiralanabilmektedir. Üniversiteye yakınlığı nedeniyle genç ve dinamik bir nüfus yapısına sahiptir. Gelişmiş lojistik hizmetlerimiz için <a href="/bolgeler/sivrihisar-evden-eve-nakliyat">Sivrihisar Evden Eve Nakliyat</a> sayfamıza bakabilirsiniz.</p>
       <h3>8. Çifteler'de Devam Eden Kentsel Dönüşüm Projeleri</h3>
       <p>Çifteler, Eskişehir'in en eski yerleşim yerlerinden biri olup son yıllarda büyük bir dönüşüm geçirmektedir. Nehir kıyısındaki yeni konut projeleri lüks Odunpazarı sitelerine alternatif oluşturmaktadır. Hem sanayiye yakınlığı hem de nehir manzarasıyla tercih edilen bir bölgedir. Çifteler lojistik çözümlerimiz için <a href="/bolgeler/cifteler-evden-eve-nakliyat">Çifteler Evden Eve Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
       <h3>9. Ulaşım ve Metro Hatlarına Yakın Mahalleler</h3>
-      <p>Eskişehir'de metro hattı Tepebaşı and Odunpazarı ilçelerini birbirine bağlar. Turgut Özal Bulvarı, Yurt Mahallesi and Cemalpaşa gibi semtler metro istasyonlarına yürüme mesafesindedir. Trafik stresinden uzak durmak isteyenler için metro güzergahındaki mahalleler en ideal konut seçeneklerini sunar.</p>
+      <p>Eskişehir'de metro hattı Tepebaşı ve Odunpazarı ilçelerini birbirine bağlar. Turgut Özal Bulvarı, Yurt Mahallesi ve Cemalpaşa gibi semtler metro istasyonlarına yürüme mesafesindedir. Trafik stresinden uzak durmak isteyenler için metro güzergahındaki mahalleler en ideal konut seçeneklerini sunar.</p>
   
 
       <h3>Eskişehir Evden Eve Nakliyat İlçe Kılavuzu (Tepebaşı, Odunpazarı, Sivrihisar)</h3>
@@ -953,7 +953,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Firmamız, Karayolu Taşıma Kanunu kapsamında ulaştırma bakanlığından aldığı yasal yetki belgeleriyle hizmet sunar. Taşıma sırasında kullanılan tüm ambalaj malzemeleri (balonlu naylonlar, Kraft karton koliler, koruyucu köşe profilleri ve mukavva kutular) tek kullanımlık olup hijyen standartlarına uygundur. Mobilyalarınızın demontajı ve montajı, ekibimizde yer alan sertifikalı marangozlar tarafından gerçekleştirilir. Eşyalarınızın güvenle taşınması için Anadolu Sigorta güvencesiyle emtia yol sigortası yapılmakta, olası operasyonel hasarlar ise firmamız tarafından anında tazmin edilmektedir. Taşınma gününüzü planlamak ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilir, asansörlü çözümlerimiz için <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h3>Taşınma Günü Stressiz Geçiş İçin İpuçları</h3>
-      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su and doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu and önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
+      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su ve doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu ve önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
 `,
   },
   'kapora-tuzagi-ucuz-nakliyat': {
@@ -968,11 +968,11 @@ export const blogDatabase: Record<string, BlogPostData> = {
     faqs: [
       {
         question: "Bir nakliyat teklifinin korsan veya dolandırıcı olduğunu nasıl anlarız?",
-        answer: "Fiyatın piyasa ortalamasının yarı fiyatına olması, yazılı sözleşme and K3 belgesi sunamamaları, ödemenin tamamını veya yüksek kapora bedelini iş başlamadan istemeleri şüphe uyandırmalıdır."
+        answer: "Fiyatın piyasa ortalamasının yarı fiyatına olması, yazılı sözleşme ve K3 belgesi sunamamaları, ödemenin tamamını veya yüksek kapora bedelini iş başlamadan istemeleri şüphe uyandırmalıdır."
       },
       {
         question: "Taşınma günü ek ücret talepleriyle karşılaşmamak için ne yapılmalıdır?",
-        answer: "Taşınma öncesinde eşyaların listesi, kat durumları, asansör and paketleme şartları yazılı olarak sözleşmeye bağlanmalı, sabit fiyat garantisi taahhüdü alınmalıdır."
+        answer: "Taşınma öncesinde eşyaların listesi, kat durumları, asansör ve paketleme şartları yazılı olarak sözleşmeye bağlanmalı, sabit fiyat garantisi taahhüdü alınmalıdır."
       },
       {
         question: "Kapora dolandırıcılığı nasıl gerçekleşir?",
@@ -984,16 +984,16 @@ export const blogDatabase: Record<string, BlogPostData> = {
       },
       {
         question: "Korsan firmalara karşı hangi yasal haklarımız vardır?",
-        answer: "Sözleşmesiz and belgesiz taşımalarda hak iddia etmek zordur. Mağduriyet durumunda Cumhuriyet Başsavcılığı'na dolandırıcılık şikayeti yapılmalı, ulaştırma bakanlığına araç plakası ihbar edilmelidir."
+        answer: "Sözleşmesiz ve belgesiz taşımalarda hak iddia etmek zordur. Mağduriyet durumunda Cumhuriyet Başsavcılığı'na dolandırıcılık şikayeti yapılmalı, ulaştırma bakanlığına araç plakası ihbar edilmelidir."
       }
     ],
     contentHtml: `
-      <p>Ev taşımak ciddi bir maliyet ve organizasyon gerektirdiği için müşteriler haklı olarak en uygun fiyatlı teklifi bulmaya çalışırlar. Ancak evden eve nakliyat sektörü, denetimsiz korsan firmaların ve dolandırıcıların hedefi haline gelmiştir. İnternet aramalarında ve sosyal medyada "Eskişehir içi 3.000 TL'ye ev taşıma" gibi imkansız rakamlarla reklam veren şahıslar, müşterileri cezbeder. Fakat bu ucuz tekliflerin sonu neredeyse her zaman fahiş fiyat artışları, eşya hasarları and büyük psikolojik yıpranmalarla biter. Sektörde "kapora tuzağı" veya "taşınma günü şantajı" olarak bilinen bu dolandırıcılık yöntemlerinin nasıl çalıştığını ve kendinizi nasıl koruyacağınızı bu yazıda deşifre edeceğiz.</p>
+      <p>Ev taşımak ciddi bir maliyet ve organizasyon gerektirdiği için müşteriler haklı olarak en uygun fiyatlı teklifi bulmaya çalışırlar. Ancak evden eve nakliyat sektörü, denetimsiz korsan firmaların ve dolandırıcıların hedefi haline gelmiştir. İnternet aramalarında ve sosyal medyada "Eskişehir içi 3.000 TL'ye ev taşıma" gibi imkansız rakamlarla reklam veren şahıslar, müşterileri cezbeder. Fakat bu ucuz tekliflerin sonu neredeyse her zaman fahiş fiyat artışları, eşya hasarları ve büyük psikolojik yıpranmalarla biter. Sektörde "kapora tuzağı" veya "taşınma günü şantajı" olarak bilinen bu dolandırıcılık yöntemlerinin nasıl çalıştığını ve kendinizi nasıl koruyacağınızı bu yazıda deşifre edeceğiz.</p>
 
       <h2>1. Kapora Tuzağı Nedir ve Nasıl Çalışır?</h2>
       <p>Dolandırıcı nakliyat web siteleri ve ilanları, piyasa rayicinin (örneğin 15.000 TL olan bir işin) yarı fiyatına (7.000 TL) teklif sunarlar. Müşteri fiyatın cazibesine kapılarak rezervasyon yapmak istediğinde, firma "Günü kapatmak için" 2.000 TL - 3.000 TL gibi yüksek bir kapora talep eder:</p>
       <ul>
-        <li><strong>Senaryo A (Doğrudan Dolandırıcılık):</strong> Kapora hesaba yatırıldıktan sonra, taşınma günü nakliye kamyonu gelmez. Telefon numaraları engellenir and dolandırıcılar ortadan kaybolur.</li>
+        <li><strong>Senaryo A (Doğrudan Dolandırıcılık):</strong> Kapora hesaba yatırıldıktan sonra, taşınma günü nakliye kamyonu gelmez. Telefon numaraları engellenir ve dolandırıcılar ortadan kaybolur.</li>
         <li><strong>Senaryo B (Taşınma Günü Şantajı):</strong> Taşınma günü kamyon gelir, eşyaların bir kısmı yüklenir. Kamyon kapısı kapatıldıktan sonra şoför "Eşyalarınız söylenenden çokmuş, asansör sığmadı, merdiven dar" diyerek fiyatı 20.000 TL'ye çıkardığını söyler. Müşteri kabul etmezse eşyaları indirmeyeceğini ve kaporayı iade etmeyeceğini beyan ederek şantaj yapar.</li>
       </ul>
 
@@ -1004,25 +1004,25 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Sözleşmesiz ve yetki belgesiz korsan firmalarla çalışmanın maddi zararlarının yanı sıra şu riskleri de vardır:</p>
       <ul>
         <li><strong>Eşya Hasarlarında Muhatap Bulamama:</strong> Korsan firmalar eşyalarınızı ambalajlamadan taşır. Eşyalar kırıldığında veya çizildiğinde hiçbir sorumluluk kabul etmezler. Yasal hasar tazminat haklarınız hakkında bilgi için <a href="/blog/esya-paketleme-rehberi">Eşya Paketleme Rehberi</a> yazımızı okuyabilirsiniz.</li>
-        <li><strong>Aracın Bağlanması:</strong> Yol denetiminde K3 belgesi olmayan kamyon yakalandığında araç bağlanır and eşyalarınız yol ortasında kalır. Yasal yetki belgesi sorgulama adımları için <a href="/blog/k3-yetki-belgesi-nedir">K3 Yetki Belgesi Nedir</a> yazımıza bakabilirsiniz.</li>
+        <li><strong>Aracın Bağlanması:</strong> Yol denetiminde K3 belgesi olmayan kamyon yakalandığında araç bağlanır ve eşyalarınız yol ortasında kalır. Yasal yetki belgesi sorgulama adımları için <a href="/blog/k3-yetki-belgesi-nedir">K3 Yetki Belgesi Nedir</a> yazımıza bakabilirsiniz.</li>
       </ul>
 
       <h2>4. Tüketici Hakları Koruma Kanunu ve Şikayet Mercileri</h2>
       <p>Korsan nakliyat dolandırıcılığıyla karşılaştığınızda, yasal haklarınızı aramak için derhal Cumhuriyet Başsavcılığı'na dolandırıcılık iddiasıyla şikayet dilekçesi verin. Tüketici Hakem Heyetleri üzerinden ödediğiniz fahiş fiyat farkının iadesini talep edebilirsiniz. Ulaştırma Bakanlığı'na plaka ihbarı yaparak K3 belgesiz taşımacılıktan araca idari ceza uygulanmasını sağlayın.</p>
 
       <h2>5. Güvenli Bir Nakliyat Hizmetinin 3 Şartı</h2>
-      <p>Dolandırıcılardan korunmanın en güvenli 3 yolu: Yazılı ekspertiz raporu almak, yazılı sözleşme imzalamak and ödemeyi kesinlikle iş bitiminde, eşyalar yeni eve hasarsız kurulduktan sonra banka havalesiyle gerçekleştirmektir. İş öncesinde kapora olarak sembolik bir tutardan fazlasını asla göndermeyin.</p>
+      <p>Dolandırıcılardan korunmanın en güvenli 3 yolu: Yazılı ekspertiz raporu almak, yazılı sözleşme imzalamak ve ödemeyi kesinlikle iş bitiminde, eşyalar yeni eve hasarsız kurulduktan sonra banka havalesiyle gerçekleştirmektir. İş öncesinde kapora olarak sembolik bir tutardan fazlasını asla göndermeyin.</p>
 
       <h2>6. Esen 26 Nakliyat ile Sabit Fiyat Güvencesi</h2>
       <p>Esen 26 Nakliyat olarak, taşınma öncesinde ücretsiz ekspertiz desteği sunarak net fiyatı sözleşmeyle garanti altına alıyoruz. Sabit fiyat garantili hizmetimiz hakkında bilgi almak için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> sayfamızı inceleyebilir, güvenle teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilirsiniz.</p>
 
 
       <h3>7. Tüketici Hakem Heyeti Başvuru Yöntemleri</h3>
-      <p>Taşınma günü şantajla ek ücret ödemek zorunda kaldıysanız, ödeme yaptığınıza dair banka dekontu, nakliye sözleşmesi and yazışmaları kanıt olarak sunarak Tüketici Hakem Heyetine e-Devlet üzerinden (TÜBİS) ücretsiz başvurabilirsiniz. Hakem heyeti kararları mahkeme kararı hükmündedir and paranızı geri almanızı sağlar.</p>
+      <p>Taşınma günü şantajla ek ücret ödemek zorunda kaldıysanız, ödeme yaptığınıza dair banka dekontu, nakliye sözleşmesi ve yazışmaları kanıt olarak sunarak Tüketici Hakem Heyetine e-Devlet üzerinden (TÜBİS) ücretsiz başvurabilirsiniz. Hakem heyeti kararları mahkeme kararı hükmündedir ve paranızı geri almanızı sağlar.</p>
       <h3>8. Güvenilir Taşımacılıkta Yazılı Sözleşmenin Maddeleri</h3>
-      <p>İmzalayacağınız sözleşmede mutlaka şu maddelerin yer almasını talep edin: Taşınma tarihi, yükleme and boşaltma adresleri, asansör kullanım durumu, marangozluk hizmetinin kapsamı, net ücret (KDV dahil) and "hiçbir koşulda ek ücret talep edilemeyecektir" ibaresi. Ayrıntılar için <a href="/eskisehir-nakliyat-fiyatlari">Eskişehir ev taşıma tarifeleri</a> sayfamıza bakın.</p>
+      <p>İmzalayacağınız sözleşmede mutlaka şu maddelerin yer almasını talep edin: Taşınma tarihi, yükleme ve boşaltma adresleri, asansör kullanım durumu, marangozluk hizmetinin kapsamı, net ücret (KDV dahil) ve "hiçbir koşulda ek ücret talep edilemeyecektir" ibaresi. Ayrıntılar için <a href="/eskisehir-nakliyat-fiyatlari">Eskişehir ev taşıma tarifeleri</a> sayfamıza bakın.</p>
       <h3>9. Korsan Taşımacılığın Trafik Cezaları ve Araç Bağlama</h3>
-      <p>K3 belgesi olmayan kamyonlar yol kontrolünde yakalandığında araç bağlanarak otoparka çekilir and sürücüye idari para cezası kesilir. Bu durumda eşyalarınız yol ortasında kalır and büyük mağduriyet yaşarsınız. Bu risklerden kaçınmak için yasal belgesi tam olan Esen 26 Nakliyat'ı tercih edin. Detaylar için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> sayfamıza bakın.</p>
+      <p>K3 belgesi olmayan kamyonlar yol kontrolünde yakalandığında araç bağlanarak otoparka çekilir ve sürücüye idari para cezası kesilir. Bu durumda eşyalarınız yol ortasında kalır ve büyük mağduriyet yaşarsınız. Bu risklerden kaçınmak için yasal belgesi tam olan Esen 26 Nakliyat'ı tercih edin. Detaylar için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> sayfamıza bakın.</p>
   
 
       <h3>Eskişehir Evden Eve Nakliyat İlçe Kılavuzu (Tepebaşı, Odunpazarı, Sivrihisar)</h3>
@@ -1033,14 +1033,14 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Firmamız, Karayolu Taşıma Kanunu kapsamında ulaştırma bakanlığından aldığı yasal yetki belgeleriyle hizmet sunar. Taşıma sırasında kullanılan tüm ambalaj malzemeleri (balonlu naylonlar, Kraft karton koliler, koruyucu köşe profilleri ve mukavva kutular) tek kullanımlık olup hijyen standartlarına uygundur. Mobilyalarınızın demontajı ve montajı, ekibimizde yer alan sertifikalı marangozlar tarafından gerçekleştirilir. Eşyalarınızın güvenle taşınması için Anadolu Sigorta güvencesiyle emtia yol sigortası yapılmakta, olası operasyonel hasarlar ise firmamız tarafından anında tazmin edilmektedir. Taşınma gününüzü planlamak ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilir, asansörlü çözümlerimiz için <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h3>Taşınma Günü Stressiz Geçiş İçin İpuçları</h3>
-      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su and doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu and önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
+      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su ve doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu ve önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
 `,
   },
   'eskisehirda-tasinmak-icin-en-uygun-zaman': {
     id: 'eskisehirda-tasinmak-icin-en-uygun-zaman',
     title: "Eskişehir'de Taşınmak İçin En Uygun Zaman Hangisi?",
     desc: "Eskişehir'de taşınmak için en uygun zaman analizi. Yaz sıcakları, okul dönemleri, hafta içi/hafta sonu fiyat farkları ve taşınma tarihi seçimi tüyoları.",
-    excerpt: "Eskişehir'in aşırı yaz sıcaklarından kaçınmak, okulların açılış dönemleri and hafta içi taşınma avantajlarıyla bütçe dostu nakliyat tarihi belirleme rehberi.",
+    excerpt: "Eskişehir'in aşırı yaz sıcaklarından kaçınmak, okulların açılış dönemleri ve hafta içi taşınma avantajlarıyla bütçe dostu nakliyat tarihi belirleme rehberi.",
     date: '2026-08-05',
     author: 'Esen 26 Nakliyat Planlama Müdürü',
     image: '/img/esen-slayt-1.jpg',
@@ -1048,7 +1048,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
     faqs: [
       {
         question: "Eskişehir'de yaz aylarında taşınırken nelere dikkat edilmelidir?",
-        answer: "Temmuz and Ağustos aylarındaki 40 dereceyi aşan sıcaklar nedeniyle taşınma operasyonuna sabah çok erken saatlerde (07:00) başlanmalı, personelin dehidrasyon riskine karşı önlemler alınmalıdır."
+        answer: "Temmuz ve Ağustos aylarındaki 40 dereceyi aşan sıcaklar nedeniyle taşınma operasyonuna sabah çok erken saatlerde (07:00) başlanmalı, personelin dehidrasyon riskine karşı önlemler alınmalıdır."
       },
       {
         question: "Hafta içi taşınmak hafta sonuna göre daha ucuz mudur?",
@@ -1073,12 +1073,12 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <h2>1. Mevsimsel Analiz: Eskişehir Sıcaklarından Kaçınmak</h2>
       <p>Eskişehir iklimi denince akla ilk gelen unsur, Temmuz ve Ağustos aylarındaki aşırı sıcaklardır. Bu durum lojistik süreçleri de doğrudan etkiler:</p>
       <ul>
-        <li><strong>Yaz Sezonu (Haziran - Eylül):</strong> Okulların tatil olması and tayin dönemleri nedeniyle nakliyat sektörünün en yoğun olduğu dönemdir. Sıcaklığın gölgede 40 dereceyi aştığı bu aylarda taşınmak fiziksel olarak çok yıpratıcıdır. Eğer yazın taşınmak zorundaysanız, operasyona mutlaka sabah 07:00'de başlanmalıdır.</li>
-        <li><strong>En İdeal Dönem (Ekim - Mayıs):</strong> Eskişehir'de taşınmak için en konforlu aylar sonbahar and ilkbahar aylarıdır. Hava sıcaklığının 20-25 derece civarında seyrettiği bu dönemde hem taşıma ekibi yüksek performansla çalışır hem de eşyalarınız aşırı nem ve sıcaktan etkilenmez. Şehirlerarası uzun yol taşımalarında mevsim şartları hakkında bilgi edinmek için <a href="/hizmetler/sehirlerarasi-evden-eve-nakliyat">Şehirlerarası Evden Eve Nakliyat</a> sayfamıza göz atabilirsiniz.</li>
+        <li><strong>Yaz Sezonu (Haziran - Eylül):</strong> Okulların tatil olması ve tayin dönemleri nedeniyle nakliyat sektörünün en yoğun olduğu dönemdir. Sıcaklığın gölgede 40 dereceyi aştığı bu aylarda taşınmak fiziksel olarak çok yıpratıcıdır. Eğer yazın taşınmak zorundaysanız, operasyona mutlaka sabah 07:00'de başlanmalıdır.</li>
+        <li><strong>En İdeal Dönem (Ekim - Mayıs):</strong> Eskişehir'de taşınmak için en konforlu aylar sonbahar ve ilkbahar aylarıdır. Hava sıcaklığının 20-25 derece civarında seyrettiği bu dönemde hem taşıma ekibi yüksek performansla çalışır hem de eşyalarınız aşırı nem ve sıcaktan etkilenmez. Şehirlerarası uzun yol taşımalarında mevsim şartları hakkında bilgi edinmek için <a href="/hizmetler/sehirlerarasi-evden-eve-nakliyat">Şehirlerarası Evden Eve Nakliyat</a> sayfamıza göz atabilirsiniz.</li>
       </ul>
 
       <h2>2. Günlük Analiz: Hafta İçi Taşınmanın Bütçe Avantajı</h2>
-      <p>Müşterilerin büyük kısmı iş yerinden izin almamak adına cumartesi and pazar günlerini tercih ederler. Bu durum nakliyat firmalarında hafta sonu yoğunluk patlamasına neden olur:</p>
+      <p>Müşterilerin büyük kısmı iş yerinden izin almamak adına cumartesi ve pazar günlerini tercih ederler. Bu durum nakliyat firmalarında hafta sonu yoğunluk patlamasına neden olur:</p>
       <ul>
         <li>Hafta sonları araç ve ekip bulmak zorlaşır, dolayısıyla nakliye fiyatları zirveye ulaşır.</li>
         <li><strong>Hafta İçi Fırsatı:</strong> Salı, çarşamba veya perşembe günleri taşınmak, firmaların kapasitesinin boş olması nedeniyle %10 - %15 civarında fiyat indirimi almanızı sağlayabilir. Ayrıca ekip acelesi olmadan daha titiz bir çalışma gerçekleştirebilir. Fiyat bütçemizi görmek için <a href="/eskisehir-nakliyat-fiyatlari">Eskişehir eşya taşıma fiyatları matrisi</a> sayfamızı inceleyebilirsiniz.</li>
@@ -1088,7 +1088,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Kira sözleşmeleri ve memur tayin başlangıçları genellikle ayın 1'i veya 15'i civarındadır. Bu nedenle her ayın son 3 günü ile ilk 3 günü ve ayın 15'i nakliyat sektörünün en sıkışık günleridir. Ayın 10'u ile 20'si arasındaki dönemde ise talep azalır. Rezervasyonlarınızı ay ortasına denk getirebilirseniz, hem daha uygun fiyatlar alabilir hem de istediğiniz gün ve saatte taşıma kamyonunu kapınızda görebilirsiniz. Sorunsuz bir taşıma takvimi oluşturmak için interaktif <a href="/tasinma-kontrol-listesi">Taşınma Kontrol Listesi</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h2>4. Erken Rezervasyon ve Planlama</h2>
-      <p>Taşınma tarihiniz ne zaman olursa olsun, son dakikaya bırakmamak en önemli kuraldır. Rezervasyonunuzu erkenden yapmak, firmanın en deneyimli ekibini and en iyi kondisyondaki aracını sizin için ayırmasını sağlar. Esen 26 Nakliyat olarak, erken rezervasyon yapan müşterilerimize sabit fiyat güvencesi sunuyoruz. Ambalajlama kalitemiz hakkında bilgi için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı ziyaret edin. Taşınma gününüzü netleştirmek ve yerinde ücretsiz keşif hizmetimizden yararlanmak için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> talebi gönderebilir veya hemen <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilirsiniz.</p>
+      <p>Taşınma tarihiniz ne zaman olursa olsun, son dakikaya bırakmamak en önemli kuraldır. Rezervasyonunuzu erkenden yapmak, firmanın en deneyimli ekibini ve en iyi kondisyondaki aracını sizin için ayırmasını sağlar. Esen 26 Nakliyat olarak, erken rezervasyon yapan müşterilerimize sabit fiyat güvencesi sunuyoruz. Ambalajlama kalitemiz hakkında bilgi için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı ziyaret edin. Taşınma gününüzü netleştirmek ve yerinde ücretsiz keşif hizmetimizden yararlanmak için <a href="/hizmetler/ucretsiz-ekspertiz">Ücretsiz Ekspertiz</a> talebi gönderebilir veya hemen <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilirsiniz.</p>
     
 
       <h3>Eskişehir Evden Eve Nakliyat İlçe Kılavuzu (Tepebaşı, Odunpazarı, Sivrihisar)</h3>
@@ -1099,7 +1099,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Firmamız, Karayolu Taşıma Kanunu kapsamında ulaştırma bakanlığından aldığı yasal yetki belgeleriyle hizmet sunar. Taşıma sırasında kullanılan tüm ambalaj malzemeleri (balonlu naylonlar, Kraft karton koliler, koruyucu köşe profilleri ve mukavva kutular) tek kullanımlık olup hijyen standartlarına uygundur. Mobilyalarınızın demontajı ve montajı, ekibimizde yer alan sertifikalı marangozlar tarafından gerçekleştirilir. Eşyalarınızın güvenle taşınması için Anadolu Sigorta güvencesiyle emtia yol sigortası yapılmakta, olası operasyonel hasarlar ise firmamız tarafından anında tazmin edilmektedir. Taşınma gününüzü planlamak ve sabit fiyat garantili teklif almak için <a href="/teklif-al">Teklif Al</a> formumuzu doldurabilir, asansörlü çözümlerimiz için <a href="/hizmetler/asansorlu-evden-eve-nakliyat">Asansörlü Nakliyat</a> sayfamızı inceleyebilirsiniz.</p>
 
       <h3>Taşınma Günü Stressiz Geçiş İçin İpuçları</h3>
-      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su and doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu and önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
+      <p>Taşınma gününün sorunsuz geçmesi için bazı basit ama etkili önlemler alabilirsiniz. İlk olarak, taşınma gününden en az bir gün önce apartman yöneticisine bilgi vererek bina önündeki nakliye kamyonu park alanını ayırtın. İkinci olarak, elektrik, su ve doğalgaz vanalarını kapatarak sayaçların fotoğraflarını çekin. Üçüncü olarak, evdeki değerli eşyalarınızı (para, altın, tapu ve önemli evraklar) şahsi çantanıza alarak kendi aracınızda taşıyın. Paketleme kalitemizi görmek için <a href="/hizmetler/profesyonel-esya-paketleme">Profesyonel Eşya Paketleme</a> sayfamızı inceleyebilirsiniz. Dördüncü olarak, beyaz eşyaların yeni adrese ulaştıktan sonra kompresör yağının süzülmesi için en az 4 saat çalıştırılmaması gerektiğini unutmayın. Bu adımlar taşınma sürecinizi çok daha stressiz kılacaktır.</p>
 
       <h3>Eskişehir İçi Nakliyatta Zaman Planlamasının Önemi</h3>
       <p>Özellikle Eskişehir gibi sıcak iklimlerde, yaz aylarında taşınırken saat planlaması hayati önem taşır. Ekiplerimiz sabah saat 07:30'da iş başı yaparak günün en sıcak saatleri başlamadan önce yüklemeyi tamamlar. Bu sayede hem çalışanlarımız performans kaybı yaşamaz hem de eşyalarınız güneş altında kalarak zarar görmez. Detaylı zamanlama rehberimiz için <a href="/tasinma-kontrol-listesi">Taşınma Kontrol Listesi</a> sayfamızı ziyaret edebilirsiniz.
@@ -1108,7 +1108,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
       <p>Eskişehir şehir merkezindeki trafik yoğunluğu, özellikle mesai başlangıç ve bitiş saatlerinde (08:00 - 09:30 ve 17:00 - 18:30) en üst seviyeye ulaşır. Taşınma kamyonunun yolda vakit kaybetmemesi ve nakliye operasyonunun planlandığı gibi tamamlanması için bu saatlerin dikkate alınması son derece önemlidir. Ekiplerimiz, Tepebaşı ve Odunpazarı ilçeleri arasındaki en hızlı alternatif yolları kullanarak zamandan tasarruf sağlar. Ayrıca ani hava değişimlerinde eşyaların zarar görmemesi için araç kasasında koruyucu brandalar ve su geçirmez ambalajlar hazır bulundurulmaktadır. Bu profesyonel hazırlıklar taşınma gününün güvenliğini artırır.</p>
 
 
-<p>Böylece taşınma günü boyunca hem zamandan tasarruf etmiş olursunuz hem de hava and yol şartlarının getirebileceği her türlü olumsuzluğu önceden minimize ederek stressiz bir şekilde yeni evinize yerleşirsiniz.</p>
+<p>Böylece taşınma günü boyunca hem zamandan tasarruf etmiş olursunuz hem de hava ve yol şartlarının getirebileceği her türlü olumsuzluğu önceden minimize ederek stressiz bir şekilde yeni evinize yerleşirsiniz.</p>
 </p>
 `,
   }

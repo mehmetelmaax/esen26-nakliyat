@@ -136,7 +136,7 @@ export default function ParcaEsyaTasimaPage() {
               <span>Parça Eşya Taşırken Hasarsızlık Garantisi Nedir?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Az sayıda eşyanın taşınması, onların değersiz olduğu anlamına gelmez. Esen 26 Nakliyat olarak, parça taşıma operasyonlarında da komple ev taşıma standartlarımızı harfiyen uyguluyoruz. Taşınacak beyaz eşyanız veya mobilyanız, darbe emici kalın hava kabarcıklı balonlu patpat naylonlarla sarılır, köşeleri koruyucu mukavemet bantlarıyla sabitlenir. Kamyonet kasasına yerleştirilirken diğer eşyalara sürtünmemesi and yoldaki sarsıntılardan etkilenmemesi için araç içi sabitleme kayışlarıyla (spatula) bağlanır. Tüm transferlerimiz yasal K3 yetki belgemize kayıtlı kapalı kasa araçlarımızla, faturalı and sigortalı olarak yapılır.
+              Az sayıda eşyanın taşınması, onların değersiz olduğu anlamına gelmez. Esen 26 Nakliyat olarak, parça taşıma operasyonlarında da komple ev taşıma standartlarımızı harfiyen uyguluyoruz. Taşınacak beyaz eşyanız veya mobilyanız, darbe emici kalın hava kabarcıklı balonlu patpat naylonlarla sarılır, köşeleri koruyucu mukavemet bantlarıyla sabitlenir. Kamyonet kasasına yerleştirilirken diğer eşyalara sürtünmemesi ve yoldaki sarsıntılardan etkilenmemesi için araç içi sabitleme kayışlarıyla (spatula) bağlanır. Tüm transferlerimiz yasal K3 yetki belgemize kayıtlı kapalı kasa araçlarımızla, faturalı ve sigortalı olarak yapılır.
             </p>
           </div>
 
@@ -167,7 +167,7 @@ export default function ParcaEsyaTasimaPage() {
               <span>Sahibinden Kamyonet Kiralama ile Profesyonel Hizmet Farkı Nedir?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Esen 26 Nakliyat güvencesi olmadan, tüketicilerin bir kısmı parça eşyalarını taşımak için internetten veya sanayi sitelerinden şoförlü kamyonet kiralamayı tercih etmektedir. Ancak bu durum genellikle hasar ve yasal sorunlara yol açar. Kiralık kamyonet şoförleri eşya taşımaya, ambalajlamaya ve de-montaj işlemlerine yardımcı olmazlar, sadece aracı sürerler. Eşyaları merdivenden indirmek, sarmak ve araca yüklemek tamamen size kalır. Oysa Esen 26 Nakliyat parça eşya hizmetinde kendi kadrolu taşıma personeli, marangoz ustası, ambalaj malzemeleri and mobil dış cephe asansörüyle birlikte gelerek anahtar teslim taşımacılık gerçekleştirir.
+              Esen 26 Nakliyat güvencesi olmadan, tüketicilerin bir kısmı parça eşyalarını taşımak için internetten veya sanayi sitelerinden şoförlü kamyonet kiralamayı tercih etmektedir. Ancak bu durum genellikle hasar ve yasal sorunlara yol açar. Kiralık kamyonet şoförleri eşya taşımaya, ambalajlamaya ve de-montaj işlemlerine yardımcı olmazlar, sadece aracı sürerler. Eşyaları merdivenden indirmek, sarmak ve araca yüklemek tamamen size kalır. Oysa Esen 26 Nakliyat parça eşya hizmetinde kendi kadrolu taşıma personeli, marangoz ustası, ambalaj malzemeleri ve mobil dış cephe asansörüyle birlikte gelerek anahtar teslim taşımacılık gerçekleştirir.
             </p>
           </div>
 

@@ -1,7 +1,30 @@
 import React from 'react';
-import { FACTS } from '@/lib/facts';
+import { estimatePrice } from '@/lib/pricing';
 
 export default function PricingMatrix() {
+  const types: Array<{ name: string; key: '1+1' | '2+1' | '3+1' | '4+1+' }> = [
+    { name: '1+1 Daire', key: '1+1' },
+    { name: '2+1 Daire', key: '2+1' },
+    { name: '3+1 Daire', key: '3+1' },
+    { name: '4+1 Daire', key: '4+1+' },
+  ];
+
+  const getCellEstimate = (rooms: '1+1' | '2+1' | '3+1' | '4+1+', distanceType: 'sehirici' | 'ilceler' | 'sehirlerarasi', distanceKm?: number) => {
+    const est = estimatePrice({
+      rooms,
+      fromFloor: 1,
+      toFloor: 1,
+      fromElevator: false,
+      toElevator: false,
+      distanceType,
+      packing: false,
+      carpentry: false,
+      storage: false,
+      distanceKm
+    });
+    return `₺${est.min.toLocaleString('tr-TR')} - ₺${est.max.toLocaleString('tr-TR')}`;
+  };
+
   return (
     <div className="bg-white p-8 rounded-xl border border-gray-light shadow-sm space-y-6 overflow-hidden text-charcoal">
       <h2 className="font-display font-bold text-navy text-xl md:text-2xl border-b border-gray-light pb-3">
@@ -23,30 +46,14 @@ export default function PricingMatrix() {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-light">
-            <tr className="hover:bg-off-white/50">
-              <th scope="row" className="p-3 font-bold text-navy">1+1 Daire</th>
-              <td className="p-3">₺{FACTS.priceMin.toLocaleString('tr-TR')} - ₺10.000</td>
-              <td className="p-3">₺10.000 - ₺12.000</td>
-              <td className="p-3 font-semibold text-orange-text">₺20.000 - ₺24.000</td>
-            </tr>
-            <tr className="hover:bg-off-white/50">
-              <th scope="row" className="p-3 font-bold text-navy">2+1 Daire</th>
-              <td className="p-3">₺11.000 - ₺13.500</td>
-              <td className="p-3">₺13.000 - ₺15.500</td>
-              <td className="p-3 font-semibold text-orange-text">₺25.000 - ₺30.000</td>
-            </tr>
-            <tr className="hover:bg-off-white/50">
-              <th scope="row" className="p-3 font-bold text-navy">3+1 Daire</th>
-              <td className="p-3">₺15.000 - ₺17.500</td>
-              <td className="p-3">₺17.000 - ₺19.500</td>
-              <td className="p-3 font-semibold text-orange-text">₺32.000 - ₺38.000</td>
-            </tr>
-            <tr className="hover:bg-off-white/50">
-              <th scope="row" className="p-3 font-bold text-navy">4+1 Daire</th>
-              <td className="p-3">₺19.000 - ₺{FACTS.priceMax.toLocaleString('tr-TR')}</td>
-              <td className="p-3">₺21.000 - ₺24.000</td>
-              <td className="p-3 font-semibold text-orange-text">₺40.000 - ₺46.000</td>
-            </tr>
+            {types.map((type, idx) => (
+              <tr key={idx} className="hover:bg-off-white/50">
+                <th scope="row" className="p-3 font-bold text-navy">{type.name}</th>
+                <td className="p-3">{getCellEstimate(type.key, 'sehirici')}</td>
+                <td className="p-3">{getCellEstimate(type.key, 'ilceler')}</td>
+                <td className="p-3 font-semibold text-orange-text">{getCellEstimate(type.key, 'sehirlerarasi', 300)}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

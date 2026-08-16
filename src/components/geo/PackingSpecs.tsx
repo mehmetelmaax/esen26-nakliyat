@@ -7,7 +7,7 @@ export default function PackingSpecs() {
         Ev Taşıma Ambalaj Malzemeleri ve Teknik Özellikleri Nedir?
       </h2>
       <p className="text-xs md:text-sm leading-relaxed">
-        Esen 26 Nakliyat eşya paketleme işlemlerinde kullanılan koruyucu materyaller, yol hasarlarını sıfıra indirmek için özel üretilmiş katmanlı yapılardan oluşur. Eşyaların taşınması ve istiflenmesi sırasında darbe and çizikleri engellemek için kullanılan standart malzemeler şunlardır:
+        Esen 26 Nakliyat eşya paketleme işlemlerinde kullanılan koruyucu materyaller, yol hasarlarını sıfıra indirmek için özel üretilmiş katmanlı yapılardan oluşur. Eşyaların taşınması ve istiflenmesi sırasında darbe ve çizikleri engellemek için kullanılan standart malzemeler şunlardır:
       </p>
 
       <div className="overflow-x-auto">
@@ -42,7 +42,7 @@ export default function PackingSpecs() {
             </tr>
             <tr className="hover:bg-off-white/50">
               <th scope="row" className="p-3 font-bold text-navy">Streç Film (Endüstriyel)</th>
-              <td className="p-3">Kumaş koltukların toz and neme karşı sarılması, paketlerin sabitlenmesi</td>
+              <td className="p-3">Kumaş koltukların toz ve neme karşı sarılması, paketlerin sabitlenmesi</td>
               <td className="p-3">17 mikron esnek film</td>
               <td className="p-3 text-green-600 font-semibold">Toz, kir ve nem koruması</td>
             </tr>

@@ -15,7 +15,7 @@ import { ArrowRight, MapPin, Building, Shield, ClipboardList, Coins, HelpCircle 
 
 export const metadata: Metadata = {
   title: 'Mihalgazi Evden Eve Nakliyat | Esen 26 Nakliyat',
-  description: "Eskişehir Mihalgazi ilçesinde Cumhuriyet, Hürriyet mahallelerinde sigortalı marangozlu ev taşıma ve asansörlü nakliyat. Esen 26 ile güvenle taşının.",
+  description: "Eskişehir Mihalgazi ilçesinde Cumhuriyet, Hürriyet ve Dokuz Mayıs mahallelerinde Esen 26 ile güvenli ev taşıma hizmetleri.",
   alternates: {
     canonical: '/bolgeler/mihalgazi-evden-eve-nakliyat',
   },
@@ -27,26 +27,27 @@ export const metadata: Metadata = {
 
 export default function MihalgaziPage() {
   const name = 'Mihalgazi';
+  const experienceYears = new Date().getFullYear() - FACTS.foundedYear;
   const sss = [
     {
       question: `${genitive(name)} dar sokaklarında asansörlü taşıma aracı kurmak güvenli midir?`,
-      answer: `${locativeKi(name)} eski yerleşim alanlarında bulunan dar sokaklarda mobil eşya asansörümüzü kurmadan önce detaylı bir çevre emniyeti almaktayız. Kompakt yapılı hidrolik ayaklara sahip teleskopik nakliye asansörümüz, dar sokaklarda bile trafiği engellemeden en ideal açıyla konumlandırılarak eşyalarınızı pencerelerden hasarsız şekilde indirir.`
+      answer: `${locativeKi(name)} taşınma operasyonlarında güvenlik en ön planda tutulur. Cihazlarımızın ayakları zemin basıncını dağıtacak takozlarla desteklenerek kurulur. Mihalgazi vadisinde seracılık kaynaklı yüksek nem oranı sebebiyle mobilyalarınızın küflenmemesi adına hava kanallı koruyucu karton ambalajlar kullanmaktayız.`
     },
     {
-      question: `${name} ile Eskişehir merkez ofisiniz arasındaki nakliye kaç saat sürmektedir?`,
-      answer: `${name} ile Eskişehir merkez ofisimiz arasındaki mesafe ortalama 35 kilometredir. Eşyaların sökülmesi, paketlenmesi, taşınması ve kurulumu dahil tüm süreç yaklaşık 4 ila 6 saat sürer.`
+      question: `${name} ile Eskişehir merkez ofisiniz arasındaki nakliye ne kadar sürer?`,
+      answer: `${name} ile Eskişehir merkez ofisimiz arasındaki taşıma rotası 38 kilometredir. Mihalgazi ilçesi ile Eskişehir arası vadi yolları virajlı olduğundan 38 km'lik mesafe yaklaşık 1 saatlik güvenli sürüşle katedilir.`
     },
     {
       question: `${locativeKi(name)} ev taşımalarında mobilya montajını kim yapıyor?`,
-      answer: "Nakit ve kredi kartı ödemeleri dahil, Esen 26 Nakliyat ekipleri içerisinde yer alan profesyonel marangoz ustalarımız, gardıroplarınızı ve mobilyalarınızı demonte hale getirir. Yeni evinizde ise dilediğiniz yerleşim planına göre sıfırdan monte ederek teslim eder."
+      answer: "Tüm taşıma ekiplerimizin kadrosunda profesyonel mobilya marangoz ustalarımız bulunmaktadır. Gardırop, yatak odası takımı, yemek masası gibi demonte edilebilen tüm mobilyalarınızı özenle söker, ambalajlar ve yeni evinizde dilediğiniz odada sıfırdan kurarak kullanıma hazır teslim eder."
     },
     {
       question: "Taşıma esnasında eşyalarımın zarar görme ihtimaline karşı sigorta yapıyor musunuz?",
-      answer: "Evet. Mihalgazi lojistik operasyonlarımızın tamamında emtia nakliyat sigortası uygulamaktayız. Eskişehir genelinde taşınan eşyalarınız Anadolu Sigorta güvencesiyle koruma altındadır."
+      answer: "Evet, Esen 26 Nakliyat olarak gerçekleştirdiğimiz tüm ev ve ofis taşıma hizmetlerinde emtia nakliyat sigortası zorunludur. Taşınma gününden önce düzenlenen poliçeyle eşyalarınız Anadolu Sigorta güvencesiyle teminat altına alınır."
     },
     {
       question: "Asansörlü nakliye ücretleri asansörsüz taşımaya göre daha mı pahalıdır?",
-      answer: "Dış cephe nakliyat asansörü kurulumu, merdivenden taşımaya kıyasla gereken personel sayısını azalttığı için iş gücü maliyetini dengeler. Asansör kurulumu eşyaların apartman koridorlarında hasar görme riskini sıfırlar."
+      answer: "Dış cephe asansörü kullanımı, binadaki taşıma süresini neredeyse yarı yarıya azalttığı ve gereken personel gücünü dengelediği için genel nakliye maliyetini artırmaz. Aksine, eşyaların dar apartman merdivenlerinde çizilme veya kırılma riskini sıfıra indirerek olası hasar masraflarının önüne geçer."
     }
   ];
 
@@ -55,7 +56,7 @@ export default function MihalgaziPage() {
     '@graph': [
       serviceSchema({
         name: 'Mihalgazi Evden Eve Nakliyat',
-        description: "Eskişehir Mihalgazi ilçesinde Cumhuriyet, Hürriyet mahallelerinde sigortalı marangozlu ev taşıma ve asansörlü nakliyat. Esen 26 ile güvenle taşının.",
+        description: "Eskişehir Mihalgazi ilçesinde Cumhuriyet, Hürriyet ve Dokuz Mayıs mahallelerinde Esen 26 ile güvenli ev taşıma hizmetleri.",
         slug: 'bolgeler/mihalgazi-evden-eve-nakliyat',
         areaName: 'Mihalgazi'
       }),
@@ -68,7 +69,7 @@ export default function MihalgaziPage() {
     ]
   };
 
-  const mahalleler = ['Cumhuriyet', 'Hürriyet'];
+  const mahalleler = ['Cumhuriyet', 'Hürriyet', 'Dokuz Mayıs', 'Sarıcakaya', 'Alpagut'];
 
   return (
     <>
@@ -86,7 +87,7 @@ export default function MihalgaziPage() {
             Mihalgazi Evden Eve Nakliyat
           </h1>
           <p className="text-gray-300 text-sm md:text-base max-w-2xl mx-auto leading-relaxed px-4">
-            Eskişehir Mihalgazi bölgesinde K3 yetki belgeli kapalı kasa tır ve kamyon filomuz, sertifikalı marangoz ekiplerimiz and mobil eşya asansörlerimizle sigortalı ve profesyonel ev taşıma çözümleri üretiyoruz.
+            Sakarya Vadisi'nin sıcak mikro klima iklimine sahip Mihalgazi ilçesinde, yüksek sıcaklık ve neme karşı korumalı paketleme teknikleriyle nakliye yapmaktayız. Seralar ve kaplıcalar bölgesinde yer alan ilçemizde lojistik çözümler sunuyoruz.
           </p>
         </section>
 
@@ -95,29 +96,29 @@ export default function MihalgaziPage() {
           
           <div className="bg-white p-8 rounded-xl border border-gray-light shadow-sm space-y-4">
             <h2 className="font-display font-bold text-navy text-xl md:text-2xl flex items-center gap-2">
-              <MapPin className="text-orange-text" /> Mihalgazi Bölgesinde Güvenli Ev Taşıma Nasıl Yapılır?
+              <MapPin className="text-orange-text" /> ${name} Bölgesinde Güvenli Ev Taşıma Standartları
             </h2>
             <p className="text-gray-medium text-sm md:text-base leading-relaxed">
-              Esen 26 Nakliyat olarak Mihalgazi ilçesindeki tüm mahallelerde ve sokaklarda profesyonel evden eve nakliye hizmetleri sunmaktayız. Asansörlü nakliye araçlarımız sayesinde yüksek katlı binalardaki dairelerinize de hasarsız, hızlı ve sorunsuz nakliye sağlıyoruz.
+              Esen 26 Nakliyat olarak ${name} ilçesindeki tüm ev, ofis ve parça eşya lojistik taleplerinizde kurumsal ve yasal nakliye standartları uyguluyoruz. K3 yetki belgemiz altındaki araç filomuz ve kadrolu uzman kadromuz ile eşyalarınızı paketlemeden yeni yerleşim yerine kadar güvenle taşıyoruz.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-xl border border-gray-light shadow-sm space-y-4">
               <h3 className="font-display font-bold text-navy text-lg flex items-center gap-2">
-                <Building className="text-orange-text" /> Asansörlü Taşıma Teknolojisi
+                <Building className="text-orange-text" /> Dış Cephe Yük Asansörleri
               </h3>
               <p className="text-gray-medium text-sm leading-relaxed">
-                Dar apartman merdivenlerinde eşyalarınızın çizilmesini önleyen dış cephe mobil nakliyat asansörümüz ile mobilyalarınızı, beyaz eşyalarınızı pencerelerden veya balkonlardan kolayca indirip araca yüklüyoruz.
+                Dar apartman merdivenlerinde eşyalarınızın çizilmesini önleyen dış cephe mobil nakliyat asansörümüz ile mobilyalarınızı ve beyaz eşyalarınızı pencerelerden veya balkonlardan kolayca indirip araca yüklüyoruz.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-xl border border-gray-light shadow-sm space-y-4">
               <h3 className="font-display font-bold text-navy text-lg flex items-center gap-2">
-                <Shield className="text-orange-text" /> Anadolu Sigorta Güvencesi
+                <Shield className="text-orange-text" /> K3 Yetki Belgesi ve Sigorta
               </h3>
               <p className="text-gray-medium text-sm leading-relaxed">
-                Tüm eşyalarınız Eskişehir genelindeki lojistik intikal esnasında beklenmedik kaza ve hasar durumlarına karşı Anadolu Sigorta poliçesiyle tamamen teminat altına alınmaktadır.
+                Tüm lojistik operasyonlarımız yasal K3 taşıma yetki belgesi altında yürütülür. Taşınan eşyalarınız Eskişehir genelindeki lojistik intikal esnasında Anadolu Sigorta poliçesiyle tamamen teminat altına alınmaktadır.
               </p>
             </div>
           </div>
@@ -126,12 +127,12 @@ export default function MihalgaziPage() {
           <PricingMatrix />
 
           {/* Building Analysis */}
-          <BuildingAnalysis districtName="Mihalgazi" />
+          <BuildingAnalysis districtName="${name}" />
 
           {/* Neighborhoods List */}
           <div className="bg-white p-8 rounded-xl border border-gray-light shadow-sm space-y-6">
             <h3 className="font-display font-bold text-navy text-xl">
-              Mihalgazi Hizmet Verdiğimiz Mahalleler
+              ${name} Hizmet Verdiğimiz Başlıca Mahalleler
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {mahalleler.map((mah, idx) => (
@@ -142,6 +143,22 @@ export default function MihalgaziPage() {
               ))}
             </div>
           </div>
+
+          {/* Detailed Local SEO Narrative */}
+          <section className="py-12 bg-white rounded-xl border border-gray-light p-8 space-y-6">
+            <h2 className="font-display font-bold text-navy text-xl md:text-2xl">
+              ${name} İlçesinde Profesyonel Ev Taşıma Kılavuzu ve Yerel Lojistik Analizi
+            </h2>
+            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
+              Mihalgazi'nin nemli havası ve vadi içi dar yolları, nakliyede ekstra özen gerektirir. Eşyalarınızın nemlenmesini önlemek için plastik ambalajlar yerine hava alabilen katmanlı pamuklu ambalaj örtüleri tercih ediyoruz. Keskin vadi virajlarında araç içindeki eşya istifinin kaymaması için gerdirmeli barikatlar kurulur.
+            </p>
+            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
+              Esen 26 Nakliyat, Eskişehir il genelinde edindiği köklü tecrübeyle taşınma stresinizi en aza indirgemeyi amaçlar. Taşınma gününün sabahında uzman kadromuz adrese gelerek tüm hassas eşyalarınızı tek tek sarar. Özellikle mutfak eşyaları, cam ve kristal gibi kırılacak hassas malzemeler önce sülfit beyaz ambalaj kağıtlarına sarılır ve mukavemeti yüksek çift oluklu Kraft kolilere dik bir şekilde istiflenir.
+            </p>
+            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
+              İlçe genelindeki taşınma operasyonlarında, müşterilerimizin eşyalarının güvenli taşınabilmesi için modern ve kaliteli ambalajlama ekipmanları kullanmaktayız. Taşınma sırasında yaşanabilecek apartman içi veya bina yönetimi kısıtlamalarına karşı her zaman tedbirliyiz. Kendi mobil teleskopik asansör sistemlerimizle taşıma güvenliğini artırmakla kalmaz, aynı zamanda taşıma süresini kısaltarak zamandan tasarruf etmenizi sağlarız. Sektördeki ${experienceYears} yıllık tecrübemizle, yanınızdayız.
+            </p>
+          </section>
 
           {/* FAQ Section */}
           <div className="space-y-6">
@@ -165,7 +182,7 @@ export default function MihalgaziPage() {
           {/* CTA Box */}
           <div className="bg-navy rounded-2xl p-8 md:p-12 text-white text-center space-y-6">
             <h3 className="font-display font-black text-2xl md:text-3xl">
-              Mihalgazi Taşınma Fiyatınızı Şimdi Öğrenin
+              ${name} Taşınma Fiyatınızı Şimdi Öğrenin
             </h3>
             <p className="text-gray-300 max-w-xl mx-auto text-sm md:text-base">
               Eşyalarınızın miktarına ve taşınacağınız kat durumuna göre sabit fiyat garantisiyle teklif almak için teklif formumuzu doldurabilir veya doğrudan arayabilirsiniz.
@@ -180,36 +197,7 @@ export default function MihalgaziPage() {
             </div>
           </div>
 
-          
-          {/* Detailed SEO Content Block to reach 900+ words */}
-          <section className="py-12 bg-white rounded-xl border border-gray-light p-8 max-w-4xl mx-auto space-y-6">
-            <h2 className="font-display font-bold text-navy text-xl md:text-2xl">
-              Mihalgazi İlçesinde Profesyonel Ev Taşıma Kılavuzu Neler Sunuyor?
-            </h2>
-            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
-              Eskişehir’in en önemli bölgelerinden biri olan Mihalgazi ilçesinde evden eve nakliyat süreçleri, bölgenin mimari yapısı ve coğrafi özelliklerine göre özel bir planlama gerektirir. Esen 26 Nakliyat olarak, bu bölgede yıllardır edindiğimiz deneyimle taşınma sürecinizi stressiz ve sorunsuz hale getiriyoruz. İlçe genelinde gerek dar sokaklar gerekse modern yüksek katlı binalar için geliştirdiğimiz özel lojistik çözümlerimiz sayesinde eşyalarınız kırılma, çizilme veya kaybolma riski olmadan taşınır.
-            </p>
-            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
-              Taşınma öncesinde sunduğumuz ücretsiz ekspertiz hizmetimiz ile eşyalarınızın hacmini, ambalajlama ihtiyaçlarını ve bina konumunun mobil asansör kurulumuna uygunluğunu yerinde tespit ediyoruz. Böylece taşınma günü herhangi bir sürpriz ek ücretle karşılaşmazsınız. Profesyonel kadromuzda bulunan marangoz ustalarımız, büyük gardıroplarınızı, yatak odası takımlarınızı ve diğer mobilyalarınızı özenle demonte eder ve yeni adresinizde dilediğiniz şekilde monte ederek teslim eder.
-            </p>
-            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
-              Eşyalarınızın güvenliği bizim için ilk sıradadır. Bu nedenle, taşıma esnasında kullandığımız ambalaj malzemeleri birinci sınıf kalitede balonlu patpat naylonlar, özel karton kutular ve mukavva köşebentlerden oluşur. Eskişehir Mihalgazi nakliye operasyonlarımızın tamamında Anadolu Sigorta güvencesiyle emtia nakliyat sigortası uygulayarak eşyalarınızı yolculuk boyunca güvence altına alıyoruz.
-            </p>
-            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
-              Müşteri memnuniyetini en üst düzeyde tutmayı hedefleyen Esen 26 Nakliyat, Eskişehir il sınırları içerisinde K3 yetki belgesiyle yasal ve lisanslı taşımacılık hizmeti vermektedir. Eşyalarınız kapalı kasa, içi MDF kaplı ve sarsıntıyı önleyici özel süspansiyonlu araçlarımızla taşınarak hedefine güvenle ulaştırılır. Bütçenize en uygun ev taşıma fiyatları ve esnek ödeme seçeneklerimiz hakkında bilgi almak için bizimle iletişime geçebilirsiniz.
-            </p>
-            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
-              İlçe genelindeki taşınma operasyonlarında, müşterilerimizin eşyalarının güvenli taşınabilmesi için modern ve kaliteli ambalajlama ekipmanları kullanmaktayız. Taşınma gününün sabahında uzman kadromuz adrese gelerek tüm eşyalarınızı tek tek sarar. Özellikle mutfak eşyaları, cam ve kristal gibi kırılacak hassas malzemeler önce ambalaj kağıtlarına sarılır ve mukavemeti yüksek kolilere dik bir şekilde istiflenir. Bu sayede taşıma tırlarımızın hareketi esnasında oluşabilecek yol sarsıntılarından etkilenmezler.
-            </p>
-            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
-              Ayrıca, taşınma sırasında yaşanabilecek apartman içi veya bina yönetimi kısıtlamalarına karşı her zaman tedbirliyiz. Bina içinde yük asansörünün kullanımına izin verilmediği durumlarda, Eskişehir genelinde hizmet veren 25. kata kadar ulaşabilen kendi mobil teleskopik asansör sistemlerimizi devreye alıyoruz. Mobil asansör kullanımı sadece taşıma güvenliğini artırmakla kalmaz, aynı zamanda taşıma süresini neredeyse yarı yarıya kısaltarak iş gücü maliyetlerinden tasarruf etmenizi sağlar.
-            </p>
-            <p className="text-gray-medium text-sm md:text-base leading-relaxed">
-              Taşınma sürecinde eşyalarınızın güvenliği ve hasarsızlığı açısından, araç filomuzda yer alan kamyonlarımızın tamamı evden eve nakliyat lojistiğine uygun özel süspansiyon sistemlerine sahiptir. Böylece Eskişehir'in engebeli yollarında veya uzun seyahatlerde bile eşyalarınızın sarsıntılardan etkilenmesi minimum düzeyde kalır. Sektördeki 20 yıllık tecrübemiz ve güler yüzlü profesyonel ekibimizle, taşınma gününüzü tamamen keyifli ve konforlu bir deneyime dönüştürüyoruz.
-            </p>
-          </section>
-
-          <RelatedLinks currentSlug="mihalgazi-evden-eve-nakliyat" type="bolge" />
+          <RelatedLinks currentSlug="${d.slug}" type="bolge" />
         </section>
       </main>
     </>

@@ -23,7 +23,10 @@ export const QuoteFormSchema = z.object({
     message: 'Lütfen asansör seçeneği seçin.'
   }),
   
-  website: z.string().max(0, { message: 'Bot protection triggered.' }) // honeypot
+  website: z.string().max(0, { message: 'Bot protection triggered.' }).optional().default(''), // honeypot
+  kvkkOnay: z.literal(true, {
+    message: 'Lütfen KVKK Aydınlatma Metnini onaylayın.'
+  })
 });
 
 export type QuoteFormData = z.infer<typeof QuoteFormSchema>;

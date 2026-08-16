@@ -5,9 +5,20 @@
 
 export const IMAGE_BLURS: Record<string, string> = {
   "asansor-kurulum": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZwAARcVf4salw7ALEAAA/taujXs3M22+w9bfvyVnVBmM1BM/6H89Fkt8Jlq6wM7GOQpI5/cmbTgx0CAAAA==",
-  "marangozluk-v3": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoUAA0APzmEuVOvKKWisAgB4CcJYwCw7B/2iOkYTQuhesAA/tS2lvFaVQXWUCOpc6zkfoMqMVv2iSja+4+3mzycCM3Otpd6IJqbmFsgR9JQdxkujSYG4o9hqrLYAAAA",
+  "marangozluk-v3": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYwCw7B/2iOkYTQuhesAA/tS2lvFaVQXWUCOpc6zkfoMqMVv2iSja+4+3mzycCM3Otpd6IJqbmFsgR9JQdxkujSYG4o9hqrLYAAAA",
   "paketleme-detay-v3": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQAwCdASoUAA0APzmEuVOvKKWisAgB4CcJZgCdABtAESyjhkM4AP7ICOMHmSNA7lv4qTgjcIBCfl0qr520Qiw9wUnh+4MHYIv+/1gvRWd1PPim9rx/5EAqUXYAzeADDlQKwA6MAFfa4AAA",
-  "esen-slayt-1": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwAAWYK3HzNJXdPnGAAA/sXfIXuP/w5h6+yLe4w/nD4ZSPojET/Ff/b8pQkQNSeoD+CUedHjEZitX/V78zhvWV1wQJpwpJBkM0BoSKv3/5V87O0TStCgAAA=",
-  "esen-slayt-2": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBYdgxo73oYHv0BiYlwAAPyBo+PKMVAhgWvGIbjccPlEBL3AXDm6TsWk6fholxeENgcrlHoITE65zeT2uk6iWrAF3J4sARed9G4yegAAAA==",
-  "esen-slayt-3": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBOgAyWXI/sVQx9YvcAA/tO07WLQD9jL7veMLZVzSQ5en/ox9luevVagOig6Wt0MXnJQ+gyUDY2jQcrdEKK7ch416A6NjIxl0FAA"
+  "esen-slayt-1": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwAAWYK3HzN+GC8brQAA/sXfIXuP/w5h6+yLe4w/nD4ZSPojET/Ff/b8pQkQNSeoD+CUedHjEZitX/V7nFsEfjVcBtYmoxLMy3GKMxVU4AlolmlP9CgA",
+  "esen-slayt-2": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBYdgxo73oYIRiqEjTyAAPyBo+PKMVAhgWvGIbjccPlEBL3AXDm6TsWk6fholxeENgcrlHoITE65zeT2uk6iWrAF3J4sARed9G4yegAAAA==",
+  "esen-slayt-3": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBOgAyWXI/sVQx9YvcAA/tO07WLQD9jL7veMLZVzSQ5en/ox9luevVagOig6Wt0MXnJQ+gyUDY2jQcrdEKK7ch416A6NjIxl0FAA",
+  "arac-filosu-v3": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoUAA8APzmEuVOvKKWisAgB4CcJagCsABk3q47P8dn2NADeVx1XrEJlwqTTOKCUeD/uS39+TRdT9+9ya2vQwFBcwE23TQ/0jRFvflzfKAAAAA==",
+  "ekip-v3": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAwCdASoUAA4APzmEuVOvKKWisAgB4CcJbACw7AvsgO+vHRDzAADJXL/+F6OXjAWzSwq2PRT0xODbT/SgAST2ukzXUBDmxMCHm5frRqbi/hJJTGKCEMIcxYhLiw6gAAA=",
+  "esen-galeri-1": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBQCdASoUABsAPzmQvVevKaYjqAqp4CcJbAC7AAzf9OlDzQ7d/VQP3/0c0El+cJOSAADbopdmWQPF4HcuceKrTCtKePUl+6rH0Mz+SBba9S8109nd67a+JAA/+xjCqyCMZsIVcgBdmOyUzgK2DDbBdKtHbGFKS5Pmw1oQc9AAAA==",
+  "esen-galeri-2": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAADwBACdASoUABsAPzmQu1gvKaWjqAqp4CcJQBdgAaX1GfxRyk7s3cD01HVr+tleyAAA9r6cN+T+K+1Z6ah+sPC5iGjMuhYDkkifgSM/pOOklaNrNYckaPJYseOJpq7hSIun7qQGkpCpAbMFYULZrk62FLnu8w1a6ZL42/lzvOSuH/7a6mlD6D2fpqeYqsWn2n9blwlE3cNvOSLbRnAAAA==",
+  "eskisehir-nakliyat-faaliyet-1": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADQBACdASoUABsAPzmGvlavKCajsBgIAeAnCWIAwcwFa9Oo9jdVbN9/62B7DoEr0ADZIX1yK0heH2W8WUYff7XiRjP5IkV2RJqP6IcCyebGRG/mBS0ejYeCKEMfZswnu6r2pTiiZTH+wgg3Ns5g44jJZyfEAA==",
+  "eskisehir-nakliyat-faaliyet-2": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBQCdASoUABsAPzmQvFWvKqYjMBgIAeAnCUAXYAaNlss1iFmjSlvpaoHzXSfweeoAAP6uV9NW2Sp6CgSDDq9KpHKAEhtKyO3mutDmDL9i5fr0XeFD0dfVZLKQFywZYUQKWuSY2DzVAoHdcwAAAA==",
+  "eskisehir-nakliyat-faaliyet-3": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBQCdASoUABsAPzmKu1WvKSYjKA1R4CcJZQDHMC29I2kIbK1b107V8urWCQ+kGOPAAKkuhLU/6wOqclTCJJ6rNohyLv9Hdluq8cOimYQyduDoOBIgo0u7sMg4m5ve+fzyr9Gm0UO0II98gYmFDz3QjwAAAA==",
+  "eskisehir-nakliyat-faaliyet-4": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABwAwCdASoUAA4APzmEuVOvKKWisAgB4CcJbACw7AvRp9aeZAAAyVy//m4TZdSWZYVErxJVoK4Vy1MsHPVFN5E11AQ5sTAh6WE0p4AmIVbIvWQfSOJKQgouVKeppKiAAAA=",
+  "eskisehir-nakliyat-faaliyet-5": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwBACdASoUAA8APzmEuVOvKKWisAgB4CcJagCsAB8nsEpsWFvuZBOksAAA3lcdV65h4SiXklgdLTlK45BSm6yZ6BnHZM0mXXB7VD7Sl0qlMDVdJAAAAA==",
+  "eskisehir-nakliyat-faaliyet-6": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoUABsAPzmQu1WvKqYjMBgIAeAnCWQAnTLohPPR1ylYr5pO90lYjGAA/rCq+o/p0L6RDqH3XnhqrnzbqdHcwuPsWU7P8eh/GZT1X+kusb4HNfJNwb5XwacZJsaIl5Z4TdQywaLkwVs749hWGih/aNCGSGIMwH2nvlPf30XxEAAAAA==",
+  "eskisehir-nakliyat-faaliyet-7": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAwCdASoUAA8APzmEuVOvKKWisAgB4CcJZQDG9B8tJ7249mAEAADLKCEzrhYkkfQ/u6TuxUOUbCf8zR//F44C1E4oiyqXAJmZncMDrX2QXqheH2xZJqrcAAA="
 };

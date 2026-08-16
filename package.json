@@ -8,10 +8,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "audit": "npm run build && npm run verify:metadata && npm run verify:sitemap && npm run verify:schema",
+    "audit": "npm run build && npm run verify:metadata && npm run verify:sitemap && npm run verify:schema && npm run verify:content && npm run verify:pricing && npm run verify:duplication && npm run verify:orphans",
     "verify:sitemap": "node scripts/verify-sitemap.mjs",
     "verify:metadata": "node scripts/check-metadata.mjs",
     "verify:schema": "node scripts/check-schema.mjs",
+    "verify:content": "node scripts/check-content.mjs",
+    "verify:pricing": "node scripts/check-pricing.mjs",
+    "verify:duplication": "node scripts/check-duplication.mjs",
+    "verify:orphans": "node scripts/check-orphans.mjs",
     "optimize:images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Shield, Users, Award, Calendar, CheckCircle } from 'lucide-react';
 import { SITE } from '@/lib/site-config';
+import { FACTS } from '@/lib/facts';
 import JsonLd from '@/components/JsonLd';
 import { breadcrumbSchema } from '@/lib/schema';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -10,13 +11,14 @@ import K3InfoBlock from '@/components/geo/K3InfoBlock';
 
 export const metadata: Metadata = {
   title: 'Hakkımızda - Kurumsal | Esen 26 Nakliyat',
-  description: "2006 yılından beri Eskişehir Tepebaşı merkezli olarak K3 yetki belgesi ve özmal asansör filomuzla profesyonel evden eve nakliye hizmetleri sunuyoruz.",
+  description: `${FACTS.foundedYear} yılından beri Eskişehir Tepebaşı merkezli olarak K3 yetki belgesi ve özmal asansör filomuzla profesyonel evden eve nakliye hizmetleri sunuyoruz.`,
   alternates: {
     canonical: '/hakkimizda',
   },
 };
 
 export default function HakkimizdaPage() {
+  const experienceYears = new Date().getFullYear() - FACTS.foundedYear;
   const schema = breadcrumbSchema([
     { name: 'Ana Sayfa', url: '/' },
     { name: 'Hakkımızda', url: '/hakkimizda' }
@@ -40,7 +42,7 @@ export default function HakkimizdaPage() {
               Esen 26 Nakliyat
             </h1>
             <p className="text-gray-300 text-sm md:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-              2006 yılından bu yana Eskişehir genelinde K3 belgemiz, teleskopik mobil asansörlerimiz ve kendi kadrolu ekiplerimizle güven taşıyoruz.
+              {FACTS.foundedYear} yılından bu yana Eskişehir genelinde K3 belgemiz, teleskopik mobil asansörlerimiz ve kendi kadrolu ekiplerimizle güven taşıyoruz.
             </p>
           </div>
         </section>
@@ -50,7 +52,7 @@ export default function HakkimizdaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="space-y-1">
-                <span className="font-display font-black text-3xl md:text-4xl text-orange block">20+ Yıl</span>
+                <span className="font-display font-black text-3xl md:text-4xl text-orange block">{experienceYears}+ Yıl</span>
                 <span className="text-xs md:text-sm font-bold text-navy uppercase block">Sektör Tecrübesi</span>
               </div>
               <div className="space-y-1">
@@ -58,7 +60,7 @@ export default function HakkimizdaPage() {
                 <span className="text-xs md:text-sm font-bold text-navy uppercase block">Modern Filo</span>
               </div>
               <div className="space-y-1">
-                <span className="font-display font-black text-3xl md:text-4xl text-orange block">25. Kat</span>
+                <span className="font-display font-black text-3xl md:text-4xl text-orange block">{FACTS.maxFloor}. Kat</span>
                 <span className="text-xs md:text-sm font-bold text-navy uppercase block">Maksimum Erişim</span>
               </div>
               <div className="space-y-1">
@@ -85,7 +87,7 @@ export default function HakkimizdaPage() {
                   </h2>
                 </div>
                 <p className="text-charcoal text-sm md:text-base leading-relaxed">
-                  Esen 26 Nakliyat, 2006 yılında Tedik ailesi tarafından Eskişehir Tepebaşı merkezli olarak kurulmuş yasal bir ev taşıma şirketidir. Geçen 20 yıllık süre zarfında, Eskişehir şehir içi ve şehirlerarası güzergahlarda binlerce ailenin ev ve ofis taşıma lojistiğini başarıyla yönettik.
+                  Esen 26 Nakliyat, {FACTS.foundedYear} yılında Tedik ailesi tarafından Eskişehir Tepebaşı merkezli olarak kurulmuş yasal bir ev taşıma şirketidir. Geçen {experienceYears} yıllık süre zarfında, Eskişehir şehir içi ve şehirlerarası güzergahlarda binlerce ailenin ev ve ofis taşıma lojistiğini başarıyla yönettik.
                 </p>
                 <p className="text-charcoal text-sm md:text-base leading-relaxed">
                   İlkelerimizden ödün vermeden, tamamen şeffaf ve müşteri memnuniyeti odaklı çalışma prensiplerimiz sayesinde bugün Eskişehir'in en çok tavsiye edilen nakliyat markalarından biri olmanın gururunu yaşıyoruz.
@@ -191,6 +193,7 @@ export default function HakkimizdaPage() {
                   controls
                   muted
                   playsInline
+                  preload="none"
                   className="w-full h-full object-cover"
                   poster="/img/esen-slayt-1.jpg"
                 />

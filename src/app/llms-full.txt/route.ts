@@ -10,7 +10,7 @@ export function GET() {
 
   let fullContent = `# ${SITE.name} - Tam İçerik İndeksi (llms-full.txt)
 
-> ${SITE.name}, Eskişehir genelinde K3 yetki belgesiyle 2006 yılından bu yana asansörlü ve sigortalı evden eve nakliyat hizmeti vermektedir.
+> ${SITE.name}, Eskişehir genelinde K3 yetki belgesiyle ${FACTS.foundedYear} yılından bu yana asansörlü ve sigortalı evden eve nakliyat hizmeti vermektedir.
 
 ## 1. Temel Bilgiler
 - Kuruluş Yılı: ${FACTS.foundedYear}
@@ -73,7 +73,7 @@ export function GET() {
           .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
           .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '');
 
-        // Extract and clean clean text
+        // Extract ve clean clean text
         pageText = contentHtml
           .replace(/<[^>]*>/g, ' ') // Replace tags with space
           .replace(/&amp;/g, '&')

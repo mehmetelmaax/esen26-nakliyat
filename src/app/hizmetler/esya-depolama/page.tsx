@@ -94,7 +94,7 @@ export default function EsyaDepolamaPage() {
               <span>Eskişehir Eşya Depolama Hizmetinin Yasal ve Fiziki Güvenceleri Nelerdir?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Esen 26 Nakliyat, ev tadilatı, yurt dışı seyahatleri, evlilik öncesi çeyiz saklama veya fazla büro malzemelerinin muhafazası gibi ihtiyaçlara yönelik güvenli depolama çözümleri sunmaktadır. Emtia nakliyat sigortası, eşyaların taşıma ve depolama esnasında karşılaşabileceği kaza, yangın and hırsızlık gibi riskleri yasal teminat altına alan poliçe türüdür. Ekspertiz süreci, depolanacak eşyaların hacminin yerinde incelenerek bütçe ve konteyner boyutu tespiti yapılması sürecidir. Depolanacak tüm mobilya ve beyaz eşyalarınız, tecrübeli ambalajlama Esen 26 Nakliyat ekipleri tarafından de-monte edildikten sonra neme dayanıklı özel saklama naylonlarıyla paketlenir. Ardından kişiye özel tahsis edilen anahtarlı çelik konteyner depolarımıza yerleştirilir.
+              Esen 26 Nakliyat, ev tadilatı, yurt dışı seyahatleri, evlilik öncesi çeyiz saklama veya fazla büro malzemelerinin muhafazası gibi ihtiyaçlara yönelik güvenli depolama çözümleri sunmaktadır. Emtia nakliyat sigortası, eşyaların taşıma ve depolama esnasında karşılaşabileceği kaza, yangın ve hırsızlık gibi riskleri yasal teminat altına alan poliçe türüdür. Ekspertiz süreci, depolanacak eşyaların hacminin yerinde incelenerek bütçe ve konteyner boyutu tespiti yapılması sürecidir. Depolanacak tüm mobilya ve beyaz eşyalarınız, tecrübeli ambalajlama Esen 26 Nakliyat ekipleri tarafından de-monte edildikten sonra neme dayanıklı özel saklama naylonlarıyla paketlenir. Ardından kişiye özel tahsis edilen anahtarlı çelik konteyner depolarımıza yerleştirilir.
             </p>
           </div>
 
@@ -150,7 +150,7 @@ export default function EsyaDepolamaPage() {
               <span>Kiralık Nakliye Depolarında Nem ve Rutubet Koruması Nasıl Sağlanır?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Esen 26 Nakliyat depolama tesisleri, Akdeniz ikliminin yüksek nem oranlarına karşı klima ve nem alma üniteleri ile sürekli havalandırılmaktadır. Eşyaların aylarca depoda kapalı kalması durumunda ahşap kısımlarının küflenmemesi and beyaz eşyaların elektronik kartlarının bozulmaması için sıcaklık ve nem yalıtımı hayati önem taşır. Zeminler ve tavan kısımları ısı yalıtımlı poliüretan kaplamalardan oluşmaktadır. Ayrıca depolarımızda böcek, kemirgen ve diğer haşerelere karşı her ay periyodik ilaçlama yapılmaktadır.
+              Esen 26 Nakliyat depolama tesisleri, Akdeniz ikliminin yüksek nem oranlarına karşı klima ve nem alma üniteleri ile sürekli havalandırılmaktadır. Eşyaların aylarca depoda kapalı kalması durumunda ahşap kısımlarının küflenmemesi ve beyaz eşyaların elektronik kartlarının bozulmaması için sıcaklık ve nem yalıtımı hayati önem taşır. Zeminler ve tavan kısımları ısı yalıtımlı poliüretan kaplamalardan oluşmaktadır. Ayrıca depolarımızda böcek, kemirgen ve diğer haşerelere karşı her ay periyodik ilaçlama yapılmaktadır.
             </p>
           </div>
 
@@ -161,7 +161,7 @@ export default function EsyaDepolamaPage() {
               <span>Eşya Depolama Sürecinde Giriş ve Çıkış Prosedürleri Nasıl İşler?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Esen 26 Nakliyat barkodlu depo yönetim sistemi sayesinde, giriş and çıkış işlemlerinde her aşama yasal tutanaklarla belgelenmektedir. Eşyaların eksiksiz ve güvenle depolanması için giriş ve çıkış işlemlerinde şu yasal adımları uyguluyoruz:
+              Esen 26 Nakliyat barkodlu depo yönetim sistemi sayesinde, giriş ve çıkış işlemlerinde her aşama yasal tutanaklarla belgelenmektedir. Eşyaların eksiksiz ve güvenle depolanması için giriş ve çıkış işlemlerinde şu yasal adımları uyguluyoruz:
             </p>
             <div className="space-y-4 text-sm text-charcoal">
               <div className="flex gap-3">
@@ -186,7 +186,7 @@ export default function EsyaDepolamaPage() {
               <span>Eskişehir Eşya Depolama Fiyatları ve Ödeme Koşulları Nasıl Hesaplanır?</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Esen 26 Nakliyat depolama maliyetleri, kiralanan konteyner alanının m³ cinsinden boyutuna ve toplam kiralama süresine bağlı olarak belirlenir. 6 ay ve üzeri uzun süreli kiralamalarda net %15 peşin ödeme indirimi uygulanmaktadır. Depolama bedeline eşyalarınızın depoya taşınması (nakliyat) and marangoz söküm işçilikleri dahil değildir. Minimum kiralama süresi 1 aydır ve ödemeler her ayın başında otomatik kart çekimi veya havale ile tahsil edilmektedir.
+              Esen 26 Nakliyat depolama maliyetleri, kiralanan konteyner alanının m³ cinsinden boyutuna ve toplam kiralama süresine bağlı olarak belirlenir. 6 ay ve üzeri uzun süreli kiralamalarda net %15 peşin ödeme indirimi uygulanmaktadır. Depolama bedeline eşyalarınızın depoya taşınması (nakliyat) ve marangoz söküm işçilikleri dahil değildir. Minimum kiralama süresi 1 aydır ve ödemeler her ayın başında otomatik kart çekimi veya havale ile tahsil edilmektedir.
             </p>
           </div>
 
