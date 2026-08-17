@@ -1,4 +1,3 @@
-import { FACTS } from './facts';
 import { DISTRICTS } from './site-config';
 
 export interface PriceInput {
@@ -112,7 +111,7 @@ export function estimatePrice(input: PriceInput): PriceEstimate {
   };
 }
 
-export function calculateEstimateFromForm(rooms: string, elevator: string, fromDistrict: string, toDistrict: string) {
+export function calculateEstimateFromForm(rooms: '1+1' | '2+1' | '3+1' | '4+1+' | 'ofis', elevator: string, fromDistrict: string, toDistrict: string) {
   const isIntercity = 
     fromDistrict.includes('İl Dışı') || 
     toDistrict.includes('İl Dışı') || 
@@ -124,22 +123,22 @@ export function calculateEstimateFromForm(rooms: string, elevator: string, fromD
     distanceType = 'sehirlerarasi';
   } else {
     // Check if either is an outer district (requires checking DISTRICTS)
-    const fromConfig = DISTRICTS.find((d: any) => fromDistrict.includes(d.name));
-    const toConfig = DISTRICTS.find((d: any) => toDistrict.includes(d.name));
+    const fromConfig = DISTRICTS.find((d) => fromDistrict.includes(d.name));
+    const toConfig = DISTRICTS.find((d) => toDistrict.includes(d.name));
     if ((fromConfig && fromConfig.tier === 'ilce') || (toConfig && toConfig.tier === 'ilce')) {
       distanceType = 'ilceler';
     }
   }
 
   const priceInput: PriceInput = {
-    rooms: (rooms === 'ofis' || rooms === '1+1' || rooms === '2+1' || rooms === '3+1' || rooms === '4+1+') ? rooms as any : '2+1',
-    fromFloor: 3, // average floor surcharge estimation
-    toFloor: 3,
+    rooms,
+    fromFloor: 0,
+    toFloor: 0,
     fromElevator: elevator === 'evet',
-    toElevator: elevator === 'evet',
+    toElevator: false,
     distanceType,
-    packing: true,
-    carpentry: true,
+    packing: false,
+    carpentry: false,
     storage: false,
     distanceKm: distanceType === 'sehirlerarasi' ? 300 : undefined
   };

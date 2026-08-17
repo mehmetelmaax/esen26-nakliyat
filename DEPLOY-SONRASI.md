@@ -13,7 +13,7 @@ Canlıya alım bittikten sonra sitenin Google botları tarafından hızlıca ke�
 3. DNS sağlayıcınıza (örn. Cloudflare, GoDaddy) GSC panelinin verdiği TXT kaydını ekleyerek mülkü doğrulayın. (Alternatif olarak **"URL Öneki"** seçeneğiyle `.env.local` dosyasına eklediğiniz `NEXT_PUBLIC_GSC_VERIFICATION` meta tag doğrulamasını da kullanabilirsiniz).
 4. Sol menüden **"Site Haritaları" (Sitemaps)** sayfasına gidin.
 5. **"Yeni bir site haritası ekleyin"** kısmına `sitemap.xml` yazın ve **"Gönder"** butonuna basın.
-6. Gönderim sonrası durumun **"Başarılı"** olduğunu teyit edin. Haritada tam olarak **50 adet URL** listelenmelidir.
+6. Gönderim sonrası durumun **"Başarılı"** olduğunu teyit edin. Haritada tam olarak **49 adet URL** listelenmelidir.
 
 ---
 
@@ -23,7 +23,7 @@ Eskişehir yerel nakliyat aramalarında Yandex ve Bing kullanıcılarını çeke
 
 1. **Yandex Webmaster** paneline girin ([webmaster.yandex.com](https://webmaster.yandex.com)).
 2. Site adresini ekleyin ve doğrulamayı `.env.local` içindeki `NEXT_PUBLIC_YANDEX_VERIFICATION` anahtarıyla meta etiket üzerinden tamamlayın.
-3. Yandex sitemap alanına `https://esen26nakliyat.com/sitemap.xml` adresini gönderin.
+3. Yandex sitemap alanına `https://www.esen26nakliyat.com/sitemap.xml` adresini gönderin.
 4. **Bing Webmaster Tools** paneline girin ([bing.com/webmasters](https://www.bing.com/webmasters)).
 5. Google Search Console verilerinizi tek tıkla Bing paneline aktararak mülk doğrulamasını ve sitemap kayıtlarını otomatik senkronize edin.
 
@@ -34,10 +34,10 @@ Eskişehir yerel nakliyat aramalarında Yandex ve Bing kullanıcılarını çeke
 Yeni açılan 12 adet yüksek arama hacimli blog sayfası ve fiyat hesaplama sayfasının Google'da hızlı indeks alabilmesi için Search Console üzerinden manuel istek gönderin:
 
 1. GSC üst arama kutusuna (URL Denetimi) sırayla şu sayfaları girin:
-   - `https://esen26nakliyat.com/`
-   - `https://esen26nakliyat.com/eskisehir-nakliyat-fiyatlari`
-   - `https://esen26nakliyat.com/blog/eskisehir-tasinma-maliyeti-2026`
-   - `https://esen26nakliyat.com/blog/nakliyat-sigortasi-nedir`
+   - `https://www.esen26nakliyat.com/`
+   - `https://www.esen26nakliyat.com/eskisehir-nakliyat-fiyatlari`
+   - `https://www.esen26nakliyat.com/blog/eskisehir-tasinma-maliyeti-2026`
+   - `https://www.esen26nakliyat.com/blog/nakliyat-sigortasi-nedir`
 2. **"Dizin Oluşturulmasını Talep Et"** butonuna basarak botların sayfaları acilen taramasını sağlayın.
 
 ---
@@ -60,7 +60,7 @@ Yayım sonrasında sıralamaları ve site sağlığını korumak adına haftalı
 
 ### 1. Hafta Kontrolleri (İndeks Sağlığı)
 - GSC panelinde "Sayfa Sayısı / Dizin Oluşturma" raporunu inceleyin. Sayfaların kaç tanesinin indekse girdiğini görün.
-- `site:esen26nakliyat.com` araması yaparak Google indeks listesini manuel analiz edin.
+- `site:www.esen26nakliyat.com` araması yaparak Google indeks listesini manuel analiz edin.
 
 ### 2. Hafta Kontrolleri (Performans & CWV)
 - Search Console **"Önemli Web Verileri" (Core Web Vitals)** raporunu kontrol edin. Mobil ve masaüstü CLS/LCP/INP değerlerinde "Kırmızı" (Zayıf) uyarı var mı bakın.

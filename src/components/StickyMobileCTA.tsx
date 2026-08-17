@@ -41,7 +41,7 @@ export default function StickyMobileCTA() {
 
         {/* WhatsApp button */}
         <a
-          href={`${SITE.whatsappHref}?text=Merhaba,%20evimi%20taşımak%20istiyorum.%20Fiyat%20teklifi%20alabilir%20miyim?`}
+          href={SITE.whatsappDefaultHref}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackEvent('whatsapp_tikla', { konum: 'sticky', sayfa: window.location.pathname })}

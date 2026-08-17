@@ -53,7 +53,7 @@ const outfit = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: 'Eskişehir Evden Eve Nakliyat | Sabit Fiyatlı Asansörlü Taşımacılık',
+    default: 'Esen 26 Nakliyat | Eskişehir Evden Eve Nakliyat & Asansörlü Taşımacılık',
     template: '%s',
   },
   description: SITE.description,
@@ -68,13 +68,13 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     url: SITE.url,
     siteName: SITE.name,
-    title: 'Eskişehir Evden Eve Nakliyat | Sabit Fiyatlı Asansörlü Taşımacılık',
+    title: 'Esen 26 Nakliyat | Eskişehir Evden Eve Nakliyat & Asansörlü Taşımacılık',
     description: SITE.description,
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Esen 26 Nakliyat' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eskişehir Evden Eve Nakliyat | Sabit Fiyatlı Asansörlü Taşımacılık',
+    title: 'Esen 26 Nakliyat | Eskişehir Evden Eve Nakliyat & Asansörlü Taşımacılık',
     description: SITE.description,
     images: ['/opengraph-image'],
   },

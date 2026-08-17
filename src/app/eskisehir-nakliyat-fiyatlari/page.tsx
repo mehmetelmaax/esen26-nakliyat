@@ -284,26 +284,15 @@ export default function FiyatlarPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-light">
-                  <tr className="hover:bg-off-white/50">
-                    <th scope="row" className="p-3 font-bold text-navy">Eskişehir - Ankara Nakliyat</th>
-                    <td className="p-3">490 km</td>
-                    <td className="p-3 font-semibold text-orange-text">₺24.000 - ₺28.000</td>
-                  </tr>
-                  <tr className="hover:bg-off-white/50">
-                    <th scope="row" className="p-3 font-bold text-navy">Eskişehir - İstanbul Nakliyat</th>
-                    <td className="p-3">930 km</td>
-                    <td className="p-3 font-semibold text-orange-text">₺35.000 - ₺42.000</td>
-                  </tr>
-                  <tr className="hover:bg-off-white/50">
-                    <th scope="row" className="p-3 font-bold text-navy">Eskişehir - İzmir Nakliyat</th>
-                    <td className="p-3">900 km</td>
-                    <td className="p-3 font-semibold text-orange-text">₺34.000 - ₺40.000</td>
-                  </tr>
-                  <tr className="hover:bg-off-white/50">
-                    <th scope="row" className="p-3 font-bold text-navy">Eskişehir - Mersin Nakliyat</th>
-                    <td className="p-3">85 km</td>
-                    <td className="p-3 font-semibold text-orange-text">₺9.000 - ₺12.000</td>
-                  </tr>
+                  {ROUTES.map((route) => (
+                    <tr key={route.slug} className="hover:bg-off-white/50">
+                      <th scope="row" className="p-3 font-bold text-navy">Eskişehir - {route.city} Nakliyat</th>
+                      <td className="p-3">{route.distanceKm} km</td>
+                      <td className="p-3 font-semibold text-orange-text">
+                        ₺{route.priceRangeMin.toLocaleString('tr-TR')} - ₺{route.priceRangeMax.toLocaleString('tr-TR')}
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>

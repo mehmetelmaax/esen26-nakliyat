@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const projectRoot = 'C:/Users/mehme/.gemini/antigravity/scratch/esen26-nakliyat';
+const projectRoot = path.resolve(__dirname, '..');
 
 const serverAppDir = path.join(projectRoot, '.next', 'server', 'app');
 

@@ -1,3 +1,5 @@
+export const dynamic = 'force-static';
+
 import fs from 'fs';
 import path from 'path';
 import { SITE, SERVICES, DISTRICTS, ROUTES } from '@/lib/site-config';

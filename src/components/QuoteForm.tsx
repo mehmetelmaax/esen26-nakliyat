@@ -72,7 +72,7 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
   };
 
   const calculateEstimate = () => {
-    return calculateEstimateFromForm(formData.rooms, formData.elevator, formData.fromDistrict, formData.toDistrict);
+    return calculateEstimateFromForm(formData.rooms as any, formData.elevator, formData.fromDistrict, formData.toDistrict);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -84,11 +84,10 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
     // Zod Client-side Validation
     const validation = QuoteFormSchema.safeParse(formData);
     if (!validation.success) {
-      const fieldErrors = validation.error.flatten().fieldErrors;
+      const typedFieldErrors = validation.error.flatten().fieldErrors as Record<string, string[] | undefined>;
       const newErrors: { [key: string]: string } = {};
-      
-      Object.keys(fieldErrors).forEach((key) => {
-        newErrors[key] = (fieldErrors as any)[key]?.[0] || '';
+      Object.keys(typedFieldErrors).forEach((key) => {
+        newErrors[key] = typedFieldErrors[key]?.[0] || '';
       });
 
       setErrors(newErrors);

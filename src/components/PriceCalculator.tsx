@@ -24,25 +24,20 @@ export default function PriceCalculator() {
   const [carpentry, setCarpentry] = useState<boolean>(true);
   const [distanceKm, setDistanceKm] = useState<number>(300);
 
-  const [estimate, setEstimate] = useState<PriceEstimate | null>(null);
-
-  // Recalculate price whenever inputs change
-  useEffect(() => {
-    const input: PriceInput = {
-      rooms,
-      fromFloor,
-      toFloor,
-      fromElevator,
-      toElevator,
-      distanceType,
-      packing,
-      carpentry,
-      storage,
-      distanceKm: distanceType === 'sehirlerarasi' ? distanceKm : undefined
-    };
-    const res = estimatePrice(input);
-    setEstimate(res);
-  }, [rooms, fromFloor, toFloor, fromElevator, toElevator, distanceType, packing, carpentry, storage, distanceKm]);
+  // Derive price estimate directly on render from state variables
+  const input: PriceInput = {
+    rooms,
+    fromFloor,
+    toFloor,
+    fromElevator,
+    toElevator,
+    distanceType,
+    packing,
+    carpentry,
+    storage,
+    distanceKm: distanceType === 'sehirlerarasi' ? distanceKm : undefined
+  };
+  const estimate = estimatePrice(input);
 
   const handleNextStep = () => {
     setStep((prev) => (prev < 3 ? (prev + 1) as 1 | 2 | 3 : prev));

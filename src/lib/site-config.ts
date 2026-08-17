@@ -2,14 +2,18 @@ export const SITE = {
   name: 'Esen 26 Nakliyat',
   legalName: 'Esen Nakliyat & Temizlik & Kolileme',
   shortName: 'Esen Nakliyat',
-  url: 'https://esen26nakliyat.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 
+       (process.env.VERCEL_ENV === 'production' 
+         ? 'https://www.esen26nakliyat.com' 
+         : (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://www.esen26nakliyat.com')),
   locale: 'tr_TR',
-  description: "Eskişehir'de sabit fiyat garantili, K3 belgeli, sigortalı asansörlü evden eve nakliyat.",
+  description: "Eskişehir içi ve şehirlerarası asansörlü, sigortalı evden eve nakliyat, ofis taşıma ve profesyonel lojistik hizmetleri.",
   phone: '+905320126026',
   phoneDisplay: '0532 012 60 26',
   phoneHref: 'tel:+905320126026',
   whatsapp: '905320126026',
   whatsappHref: 'https://wa.me/905320126026',
+  whatsappDefaultHref: 'https://wa.me/905320126026?text=Merhaba,%20Esen%2026%20Nakliyat%20%C3%BCzerinden%20nakliyat%20teklifi%20almak%20istiyorum.',
   email: 'info@esen26nakliyat.com',
   address: {
     street: 'Çamlıca Mahallesi, Olgunluk Sokak, No: 50/6',
@@ -21,7 +25,7 @@ export const SITE = {
   geo: { lat: 39.7794044, lng: 30.4561791 },
   hours: { opens: '08:00', closes: '20:00' },
   foundingYear: 2015,
-  priceRange: '$$',
+  priceRange: '₺₺',
   social: {
     facebook: 'https://www.facebook.com/esen26nakliyat',
     instagram: 'https://www.instagram.com/esen26nakliyat',

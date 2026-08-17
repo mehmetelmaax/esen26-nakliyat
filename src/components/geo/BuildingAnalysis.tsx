@@ -1,5 +1,4 @@
 import React from 'react';
-import { DISTRICTS } from '@/lib/site-config';
 
 interface BuildingAnalysisProps {
   districtName: string;

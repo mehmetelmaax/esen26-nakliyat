@@ -23,7 +23,39 @@ function sanitizeHtml(str: string): string {
 
 export async function POST(req: NextRequest) {
   try {
-    // 1. Rate Limiting Check
+    // 1. Parse request body and sanitize strings
+    const rawBody = await req.json().catch(() => ({}));
+    const sanitizedBody = {
+      ...rawBody,
+      name: rawBody.name ? sanitizeHtml(rawBody.name) : rawBody.name,
+      fromDistrict: rawBody.fromDistrict ? sanitizeHtml(rawBody.fromDistrict) : rawBody.fromDistrict,
+      toDistrict: rawBody.toDistrict ? sanitizeHtml(rawBody.toDistrict) : rawBody.toDistrict,
+    };
+
+    // 2. Honeypot check (website must be empty)
+    if (sanitizedBody.website && sanitizedBody.website.trim().length > 0) {
+      console.warn('BOT_DETECTION: Honeypot filled by bot:', sanitizedBody.website);
+      // Return 200 silently to deceive the bot
+      return NextResponse.json({ ok: true });
+    }
+
+    // 3. Server-side validation using Zod
+    const validationResult = QuoteFormSchema.safeParse(sanitizedBody);
+    if (!validationResult.success) {
+      const fieldErrors = validationResult.error.flatten().fieldErrors;
+      // Get the first error message to display
+      const firstErrorKey = Object.keys(fieldErrors)[0];
+      const errorMessage = (fieldErrors as any)[firstErrorKey]?.[0] || 'Lütfen bilgilerinizi kontrol edin.';
+      
+      return NextResponse.json(
+        { ok: false, message: errorMessage, errors: fieldErrors },
+        { status: 400 }
+      );
+    }
+
+    // 4. Rate Limiting Check (Only increments for valid requests)
+    // NOTE: This in-memory Map rate limiter reset/lives within each serverless lambda instance.
+    // For a production-ready shared cluster deployment, use a centralized store like Upstash Redis or Vercel KV.
     cleanOldCache();
     const forwarded = req.headers.get('x-forwarded-for');
     const ip = forwarded ? forwarded.split(',')[0].trim() : (req.headers.get('x-real-ip') || '127.0.0.1');
@@ -41,36 +73,6 @@ export async function POST(req: NextRequest) {
         );
       }
       ipData.count++;
-    }
-
-    // 2. Parse request body and sanitize strings
-    const rawBody = await req.json().catch(() => ({}));
-    const sanitizedBody = {
-      ...rawBody,
-      name: rawBody.name ? sanitizeHtml(rawBody.name) : rawBody.name,
-      fromDistrict: rawBody.fromDistrict ? sanitizeHtml(rawBody.fromDistrict) : rawBody.fromDistrict,
-      toDistrict: rawBody.toDistrict ? sanitizeHtml(rawBody.toDistrict) : rawBody.toDistrict,
-    };
-
-    // 3. Honeypot check (website must be empty)
-    if (sanitizedBody.website && sanitizedBody.website.trim().length > 0) {
-      console.warn('BOT_DETECTION: Honeypot filled by bot:', sanitizedBody.website);
-      // Return 200 silently to deceive the bot
-      return NextResponse.json({ ok: true });
-    }
-
-    // 4. Server-side validation using Zod
-    const validationResult = QuoteFormSchema.safeParse(sanitizedBody);
-    if (!validationResult.success) {
-      const fieldErrors = validationResult.error.flatten().fieldErrors;
-      // Get the first error message to display
-      const firstErrorKey = Object.keys(fieldErrors)[0];
-      const errorMessage = (fieldErrors as any)[firstErrorKey]?.[0] || 'Lütfen bilgilerinizi kontrol edin.';
-      
-      return NextResponse.json(
-        { ok: false, message: errorMessage, errors: fieldErrors },
-        { status: 400 }
-      );
     }
 
     const leadData = validationResult.data;
@@ -92,7 +94,14 @@ export async function POST(req: NextRequest) {
     const notifyEmail = process.env.NOTIFY_EMAIL;
     const fromEmail = process.env.RESEND_FROM_EMAIL || 'Esen 26 Nakliyat <onboarding@resend.dev>';
 
-    if (apiKey && notifyEmail) {
+    if (!apiKey || !notifyEmail) {
+      if (process.env.NODE_ENV === 'production') {
+        console.error('RESEND_CRITICAL_ERROR: RESEND_API_KEY or NOTIFY_EMAIL is not configured in production environment!');
+        throw new Error('Mailing system configuration is missing.');
+      } else {
+        console.error('RESEND_WARNING: RESEND_API_KEY or NOTIFY_EMAIL is not set in env. Skipping email notification.');
+      }
+    } else {
       const emailContent = {
         from: fromEmail,
         to: notifyEmail,
@@ -160,7 +169,7 @@ export async function POST(req: NextRequest) {
         if (!response.ok) {
           const errText = await response.text();
           console.error('RESEND_ERROR: Email notification delivery failed:', errText);
-          console.warn('LEAD_CAPTURE_BACKUP_TRIGGERED:', JSON.stringify({
+          console.error('LEAD_CAPTURE_BACKUP_TRIGGERED:', JSON.stringify({
             status: 'FAILED_SENDING_EMAIL',
             error: errText,
             timestamp,
@@ -171,15 +180,13 @@ export async function POST(req: NextRequest) {
         }
       } catch (err: any) {
         console.error('RESEND_FATAL_ERROR: Unexpected error sending email notification:', err);
-        console.warn('LEAD_CAPTURE_BACKUP_TRIGGERED:', JSON.stringify({
+        console.error('LEAD_CAPTURE_BACKUP_TRIGGERED:', JSON.stringify({
           status: 'FATAL_EMAIL_ERROR',
           error: err.message || err,
           timestamp,
           lead: leadData
         }));
       }
-    } else {
-      console.warn('RESEND_WARNING: RESEND_API_KEY or NOTIFY_EMAIL is not set in env. Skipping email notification.');
     }
 
     // Return success to the user even if email delivery fails (the log backup is safe)

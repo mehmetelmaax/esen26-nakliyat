@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Phone, Menu, X, MessageCircle, Calculator, ChevronDown } from 'lucide-react';
+import { Phone, Menu, X, Calculator, ChevronDown } from 'lucide-react';
 import { SITE, DISTRICTS } from '@/lib/site-config';
 import { trackEvent } from '@/lib/analytics';
 

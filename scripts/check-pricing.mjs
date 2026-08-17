@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const projectRoot = 'C:/Users/mehme/.gemini/antigravity/scratch/esen26-nakliyat';
+const projectRoot = path.resolve(__dirname, '..');
 
 // Source paths
 const factsSrc = path.join(projectRoot, 'src', 'lib', 'facts.ts');
@@ -77,6 +77,58 @@ async function run() {
       console.log(`✅ Route "${route.slug}" is consistent (Min diff: ${(minDiff * 100).toFixed(1)}%, Max diff: ${(maxDiff * 100).toFixed(1)}%)`);
     }
   });
+
+  // 3. Verify hierarchy: Şehiriçi teklif < İlçe teklifi < Şehirlerarası teklif
+  console.log('\nChecking pricing hierarchy (Şehiriçi < İlçe < Şehirlerarası)...');
+  const sehiriciEstimate = estimatePrice({
+    rooms: '2+1',
+    fromFloor: 0,
+    toFloor: 0,
+    fromElevator: true,
+    toElevator: false,
+    distanceType: 'sehirici',
+    packing: false,
+    carpentry: false,
+    storage: false
+  });
+  
+  const ilceEstimate = estimatePrice({
+    rooms: '2+1',
+    fromFloor: 0,
+    toFloor: 0,
+    fromElevator: true,
+    toElevator: false,
+    distanceType: 'ilceler',
+    packing: false,
+    carpentry: false,
+    storage: false
+  });
+  
+  const sehirlerarasiEstimate = estimatePrice({
+    rooms: '2+1',
+    fromFloor: 0,
+    toFloor: 0,
+    fromElevator: true,
+    toElevator: false,
+    distanceType: 'sehirlerarasi',
+    packing: false,
+    carpentry: false,
+    storage: false,
+    distanceKm: 300
+  });
+
+  console.log(`- Şehiriçi (2+1, elevator): ₺${sehiriciEstimate.min} - ₺${sehiriciEstimate.max}`);
+  console.log(`- İlçe (2+1, elevator): ₺${ilceEstimate.min} - ₺${ilceEstimate.max}`);
+  console.log(`- Şehirlerarası (2+1, elevator, 300Km): ₺${sehirlerarasiEstimate.min} - ₺${sehirlerarasiEstimate.max}`);
+
+  if (sehiriciEstimate.min >= ilceEstimate.min) {
+    console.error('❌ Hierarchy error: Şehiriçi price is not less than İlçe price.');
+    hasErrors = true;
+  }
+  if (ilceEstimate.min >= sehirlerarasiEstimate.min) {
+    console.error('❌ Hierarchy error: İlçe price is not less than Şehirlerarası price.');
+    hasErrors = true;
+  }
   
   // Clean up temp files
   try {

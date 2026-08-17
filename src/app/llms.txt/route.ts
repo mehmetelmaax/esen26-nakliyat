@@ -1,3 +1,5 @@
+export const dynamic = 'force-static';
+
 import { SITE, SERVICES, DISTRICTS, ROUTES } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
 import { blogDatabase } from '@/lib/blog-data';

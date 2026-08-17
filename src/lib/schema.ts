@@ -59,12 +59,22 @@ export function organizationSchema() {
       'opens': SITE.hours.opens,
       'closes': SITE.hours.closes,
     },
-    'areaServed': DISTRICTS.map((district) => ({
-      '@type': 'AdministrativeArea',
-      'name': `${district.name}, Eskişehir`
-    })),
+    'areaServed': [
+      {
+        '@type': 'AdministrativeArea',
+        'name': 'Eskişehir'
+      },
+      {
+        '@type': 'AdministrativeArea',
+        'name': 'Türkiye'
+      },
+      ...DISTRICTS.map((district) => ({
+        '@type': 'AdministrativeArea',
+        'name': `${district.name}, Eskişehir`
+      }))
+    ],
     'foundingDate': `${FACTS.foundedYear}-03-15`,
-    'priceRange': '$$',
+    'priceRange': SITE.priceRange,
     'currenciesAccepted': 'TRY',
     'paymentAccepted': 'Nakit, Kredi Kartı, Havale/EFT',
     'knowsAbout': [
@@ -118,7 +128,7 @@ export function videoSchema() {
     'thumbnailUrl': `${SITE.url}/img/esen-slayt-1.jpg`,
     'uploadDate': '2026-08-09T18:00:00Z',
     'contentUrl': `${SITE.url}/img/esen-video.mp4`,
-    'duration': 'PT1M30S' // TODO(owner): video süresini netleştirin
+    'duration': 'PT17S'
   };
 }
 

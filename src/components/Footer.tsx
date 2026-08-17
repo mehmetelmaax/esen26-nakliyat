@@ -46,7 +46,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
-              {experienceYears} yıldır Eskişehir'de evden eve nakliyat, ofis taşımacılığı ve asansörlü nakliye hizmetleri vermekte olan yerel ve güvenilir taşımacılık ortağınız.
+              {experienceYears} yıldır Eskişehir&apos;de evden eve nakliyat, ofis taşımacılığı ve asansörlü nakliye hizmetleri vermekte olan yerel ve güvenilir taşımacılık ortağınız.
             </p>
           </div>
 

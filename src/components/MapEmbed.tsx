@@ -11,7 +11,9 @@ export default function MapEmbed() {
     // Check if cookie consent is already stored in localStorage
     const consent = localStorage.getItem('cookie-consent');
     if (consent === 'accepted') {
-      setHasConsent(true);
+      setTimeout(() => {
+        setHasConsent(true);
+      }, 0);
     }
   }, []);
 

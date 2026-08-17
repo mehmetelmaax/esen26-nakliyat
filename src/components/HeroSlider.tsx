@@ -55,7 +55,10 @@ export default function HeroSlider() {
   // Detect prefers-reduced-motion media query
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setPrefersReducedMotion(mediaQuery.matches);
+    const matches = mediaQuery.matches;
+    setTimeout(() => {
+      setPrefersReducedMotion(matches);
+    }, 0);
     const listener = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
     mediaQuery.addEventListener('change', listener);
     return () => mediaQuery.removeEventListener('change', listener);
@@ -150,7 +153,7 @@ export default function HeroSlider() {
                 fill
                 priority={idx === 0}
                 loading={idx === 0 ? undefined : 'lazy'}
-                fetchPriority={idx === 0 ? ("high" as any) : undefined}
+                fetchPriority={idx === 0 ? 'high' : undefined}
                 sizes="100vw"
                 quality={80}
                 placeholder={blurDataURL ? "blur" : undefined}
@@ -210,7 +213,7 @@ export default function HeroSlider() {
           {/* FIXED NON-ROTATING LAYER - CTAs: WhatsApp, Konum, Fiyat */}
           <div className="flex flex-wrap items-center gap-4 mt-2">
             <a
-              href={`${SITE.whatsappHref}?text=Merhaba,%20evimi%20taşımak%20istiyorum.%20Hızlı%20teklif%20alabilir%20miyim?`}
+              href={SITE.whatsappDefaultHref}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackEvent('whatsapp_tikla', { konum: 'hero_slider', sayfa: window.location.pathname })}

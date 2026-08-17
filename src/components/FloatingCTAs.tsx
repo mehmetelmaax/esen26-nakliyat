@@ -46,7 +46,7 @@ export default function FloatingCTAs() {
               <h4 className="font-display font-bold text-navy text-xs leading-snug">WhatsApp Destek</h4>
               <p className="text-[10px] text-charcoal leading-relaxed">Eşya fotoğraflarınızı atıp anında hızlı fiyat teklifi alabilirsiniz.</p>
               <a 
-                href={`${SITE.whatsappHref}?text=Merhaba,%20evimi%20taşımak%20istiyorum.%20Fiyat%20teklifi%20alabilir%20miyim?`}
+                href={SITE.whatsappDefaultHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {

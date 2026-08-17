@@ -34,7 +34,7 @@ export default function TrustStrip() {
               <div className="font-display font-black text-navy text-2xl md:text-3xl">{experienceYears} Yıl</div>
               <div className="text-orange-text font-bold text-xs uppercase tracking-wider mt-1">Eskişehir Yerel Tecrübesi</div>
               <p className="text-charcoal text-sm leading-relaxed mt-2">
-                {FACTS.foundedYear} yılından beri Tepebaşı merkezli olarak Eskişehir'in tüm bölgelerinde güvenli taşıma yapıyoruz.
+                {FACTS.foundedYear} yılından beri Tepebaşı merkezli olarak Eskişehir&apos;in tüm bölgelerinde güvenli taşıma yapıyoruz.
               </p>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function TrustStrip() {
               SÖZLEŞMELİ FİYAT GÜVENCESİ
             </span>
             <p className="text-white text-base md:text-lg lg:text-xl font-bold font-display leading-relaxed">
-              "Fiyatımız nettir. Yol bittiğinde, eşya kamyona yüklendiğinde ekstra ücret talep etmeyeceğimizi sözleşmeyle taahhüt ediyoruz."
+              &quot;Fiyatımız nettir. Yol bittiğinde, eşya kamyona yüklendiğinde ekstra ücret talep etmeyeceğimizi sözleşmeyle taahhüt ediyoruz.&quot;
             </p>
           </div>
         </div>

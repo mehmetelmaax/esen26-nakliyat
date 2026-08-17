@@ -1,19 +1,20 @@
 import { z } from 'zod';
 
 export const QuoteFormSchema = z.object({
-  name: z.string()
+  name: z.string({ error: 'Lütfen ad soyad girin.' })
     .min(2, { message: 'Ad soyad en az 2 karakter olmalıdır.' })
     .max(60, { message: 'Ad soyad en fazla 60 karakter olmalıdır.' })
-    .regex(/^[a-zA-ZÇŞĞÜÖİçşğüöı\s]+$/, { message: 'Ad soyad yalnızca harf ve boşluk içerebilir.' }),
+    .regex(/^[a-zA-ZÇŞĞÜÖİçşğüöı\s\-\.\']+$/, { message: 'Ad soyad yalnızca harf, boşluk, nokta ve tire içerebilir.' }),
     
-  phone: z.string()
+  phone: z.string({ error: 'Lütfen telefon numaranızı girin.' })
     .refine(val => {
       const clean = val.replace(/\D/g, '');
       return (clean.length === 10 && clean.startsWith('5')) || (clean.length === 11 && clean.startsWith('05'));
     }, { message: 'Lütfen geçerli bir cep telefonu girin (Örn: 532 123 45 67)' }),
     
-  fromDistrict: z.string().min(1, { message: 'Lütfen çıkış noktasını seçin.' }),
-  toDistrict: z.string().min(1, { message: 'Lütfen varış noktasını seçin.' }),
+  fromDistrict: z.string({ error: 'Lütfen çıkış noktasını seçin.' }).min(1, { message: 'Lütfen çıkış noktasını seçin.' }),
+  
+  toDistrict: z.string({ error: 'Lütfen varış noktasını seçin.' }).min(1, { message: 'Lütfen varış noktasını seçin.' }),
   
   rooms: z.enum(['1+1', '2+1', '3+1', '4+1+', 'ofis'], {
     message: 'Lütfen ev boyutu seçin.'

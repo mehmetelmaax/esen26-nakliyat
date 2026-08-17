@@ -30,11 +30,17 @@ try {
   const siteConfigContent = fs.readFileSync(siteConfigPath, 'utf8');
   
   // Extract url
+  let baseUrl = 'https://www.esen26nakliyat.com';
   const urlMatch = siteConfigContent.match(/url:\s*'([^']+)'/);
-  if (!urlMatch) {
-    throw new Error('Could not find SITE.url in site-config.ts');
+  if (urlMatch) {
+    baseUrl = urlMatch[1];
+  } else {
+    // If dynamic, look for fallback production URL string literal
+    const prodUrlMatch = siteConfigContent.match(/'https:\/\/www\.esen26nakliyat\.com'/);
+    if (prodUrlMatch) {
+      baseUrl = 'https://www.esen26nakliyat.com';
+    }
   }
-  const baseUrl = urlMatch[1];
   console.log(`Base URL parsed: ${baseUrl}`);
 
   // Extract services slugs
