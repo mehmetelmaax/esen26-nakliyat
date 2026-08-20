@@ -31,6 +31,7 @@ function cleanTs(content) {
     .replace(/as const;/g, ';')
     .replace(/from\s+'\.\/facts'/g, "from './temp-facts.mjs'")
     .replace(/from\s+'\.\/site-config'/g, "from './temp-site-config.mjs'")
+    .replace(/export type\s+[\s\S]*?;/g, '')
     .replace(/function\s+(\w+)\s*\(([\s\S]*?)\)\s*:\s*\w+/g, 'function $1($2)');
 }
 

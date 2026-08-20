@@ -104,10 +104,27 @@ const galleryItems: GalleryItem[] = [
 ];
 
 export default function GalleryPage() {
-  const schema = breadcrumbSchema([
-    { name: 'Ana Sayfa', url: '/' },
-    { name: 'Galeri', url: '/galeri' }
-  ]);
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      breadcrumbSchema([
+        { name: 'Ana Sayfa', url: '/' },
+        { name: 'Galeri', url: '/galeri' }
+      ]),
+      ...galleryItems.map((item) => ({
+        '@context': 'https://schema.org',
+        '@type': 'ImageObject',
+        'contentUrl': `${SITE.url}${item.src}`,
+        'caption': item.alt,
+        'name': item.title,
+        'description': item.desc,
+        'contentLocation': {
+          '@type': 'Place',
+          'name': 'Eskişehir, Türkiye'
+        }
+      }))
+    ]
+  };
 
   return (
     <>

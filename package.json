@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "audit": "npm run build && npm run verify:metadata && npm run verify:sitemap && npm run verify:schema && npm run verify:content && npm run verify:pricing && npm run verify:duplication && npm run verify:orphans && npm run verify:integrity",
+    "audit": "npm run build && npm run verify:metadata && npm run verify:sitemap && npm run verify:schema && npm run verify:content && npm run verify:pricing && npm run verify:duplication && npm run verify:orphans && npm run verify:integrity && npm run verify:nap",
     "verify:sitemap": "node scripts/verify-sitemap.mjs",
     "verify:metadata": "node scripts/check-metadata.mjs",
     "verify:schema": "node scripts/check-schema.mjs",
@@ -20,7 +20,8 @@
     "verify:duplication": "node scripts/check-duplication.mjs",
     "verify:orphans": "node scripts/check-orphans.mjs",
     "optimize:images": "node scripts/optimize-images.mjs",
-    "verify:integrity": "node scripts/check-integrity.mjs"
+    "verify:integrity": "node scripts/check-integrity.mjs",
+    "verify:nap": "node scripts/check-nap.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.30.0",

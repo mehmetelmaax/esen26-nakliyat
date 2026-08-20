@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { SITE, SERVICES, DISTRICTS, ROUTES } from '@/lib/site-config';
+import { SITE, SERVICES, DISTRICTS, ROUTES, NEIGHBORHOODS } from '@/lib/site-config';
 import { blogDatabase } from '@/lib/blog-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: staticDate,
     changeFrequency: 'weekly' as const,
     priority: 1.0,
+    images: [`${baseUrl}/img/esen-slayt-1.jpg`],
   };
 
   // 2. Fiyat Teklifi Al (0.9, monthly)
@@ -28,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(service.updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.9,
+    images: [`${baseUrl}/img/esen-slayt-1.jpg`],
   }));
 
   // 4. Bölgeler - Merkez (0.9, monthly)
@@ -36,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(district.updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.9,
+    images: [`${baseUrl}/img/banner-bg.jpg`],
   }));
 
   // 5. İletişim (0.8, monthly)
@@ -52,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(district.updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
+    images: [`${baseUrl}/img/banner-bg.jpg`],
   }));
 
   // 7. Blog List (0.7, weekly)
@@ -76,6 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: staticDate,
     changeFrequency: 'yearly' as const,
     priority: 0.6,
+    images: [`${baseUrl}/img/arac-filosu-v3.jpg`],
   };
 
   // 10. Galeri (0.5, monthly)
@@ -84,6 +89,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: staticDate,
     changeFrequency: 'monthly' as const,
     priority: 0.5,
+    images: [
+      `${baseUrl}/img/esen-slayt-1.jpg`,
+      `${baseUrl}/img/esen-slayt-2.jpg`,
+      `${baseUrl}/img/esen-slayt-3.jpg`
+    ],
   };
 
   // 11. Yasal Sayfalar (2 adet, 0.3, yearly)
@@ -122,6 +132,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(route.updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
+    images: [`${baseUrl}/img/banner-bg.jpg`],
+  }));
+
+  // 14. Hub Sayfaları (3 adet, 0.8, monthly)
+  const hubPages = [
+    {
+      url: `${baseUrl}/bolgeler`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/hizmetler`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/rotalar`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    }
+  ];
+
+  // 15. Bölgeler - Mahalle (16 adet, 0.7, monthly)
+  const mahallePages = NEIGHBORHOODS.filter(n => n.indexable).map((n) => ({
+    url: `${baseUrl}/bolgeler/${n.district}/${n.slug}`,
+    lastModified: new Date(n.updatedAt),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+    images: [`${baseUrl}/img/banner-bg.jpg`],
   }));
 
   return [
@@ -138,5 +180,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...yasalPages,
     ...additionalPages,
     ...routePages,
+    ...hubPages,
+    ...mahallePages,
   ];
 }

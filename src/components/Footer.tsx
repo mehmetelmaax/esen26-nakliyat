@@ -91,7 +91,10 @@ export default function Footer() {
                   <Link href="/hizmetler/ev-ve-ofis-temizligi" className="hover:text-orange transition-colors">10. Ev ve Ofis Temizliği</Link>
                 </li>
                 <li>
-                  <Link href="/hizmetler/sehirlerarasi-evden-eve-nakliyat#rotalar" className="text-orange hover:text-white transition-colors">➔ Şehirlerarası Lojistik Rotalar</Link>
+                  <Link href="/rotalar" className="text-orange hover:text-white transition-colors">➔ Şehirlerarası Lojistik Rotalar</Link>
+                </li>
+                <li>
+                  <Link href="/hizmetler" className="text-orange hover:text-white transition-colors">➔ Tüm Hizmetlerimiz</Link>
                 </li>
                 <li>
                   <Link href="/eskisehir-nakliyat-firmalari" className="text-orange hover:text-white transition-colors">➔ Eskişehir Nakliyat Firmaları</Link>
@@ -110,8 +113,8 @@ export default function Footer() {
 
             <nav aria-label="Footer Bölge Linkleri">
               <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-300 font-semibold mt-4 lg:mt-0">
-                <Link href="/hizmetler/sehirlerarasi-evden-eve-nakliyat" className="text-orange hover:underline col-span-2 font-bold">→ Şehirlerarası Taşımacılık</Link>
-                <Link href="/hizmetler/sehirlerarasi-evden-eve-nakliyat#rotalar" className="text-orange hover:underline col-span-2 border-b border-white/10 pb-1 font-bold">→ Şehirlerarası Lojistik Rotalar</Link>
+                <Link href="/bolgeler" className="text-orange hover:underline col-span-2 font-bold">→ Tüm Bölgelerimiz</Link>
+                <Link href="/rotalar" className="text-orange hover:underline col-span-2 border-b border-white/10 pb-1 font-bold">→ Şehirlerarası Lojistik Rotalar</Link>
                 {allRegions.map((reg, idx) => (
                   <Link key={idx} href={reg.href} className="hover:text-orange transition-colors">{reg.name}</Link>
                 ))}

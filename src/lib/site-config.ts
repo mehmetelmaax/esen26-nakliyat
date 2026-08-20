@@ -354,3 +354,152 @@ export const ROUTES = [
     updatedAt: '2026-08-16'
   }
 ] as const;
+
+export const NEIGHBORHOODS = [
+  {
+    slug: 'camlica-mahallesi-evden-eve-nakliyat',
+    name: 'Çamlıca Mahallesi',
+    district: 'tepebasi',
+    characteristics: '2010 sonrası yapılmış yüksek katlı modern siteler, geniş sokaklar, asansör kurulumuna oldukça elverişli dış cephe yapıları.',
+    landmarks: 'Çamlıca Parkı, Birlik Camii',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'batikent-mahallesi-evden-eve-nakliyat',
+    name: 'Batıkent Mahallesi',
+    district: 'tepebasi',
+    characteristics: 'Geniş villalar, yeni lüks konut projeleri, geniş sokaklar ve kamyon girişine tamamen uygun lojistik yollar.',
+    landmarks: 'Batıkent Metro, Migros',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'sirintepe-mahallesi-evden-eve-nakliyat',
+    name: 'Şirintepe Mahallesi',
+    district: 'tepebasi',
+    characteristics: 'Bitişik nizam eski yapılar, dar sokaklar, asansör kurulumunda ön veya arka cephe açısı tespiti gerektiren sokak dokusu.',
+    landmarks: 'Anadolu Üniversitesi Eczacılık Kapısı',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'hosnudiye-mahallesi-evden-eve-nakliyat',
+    name: 'Hoşnudiye Mahallesi',
+    district: 'tepebasi',
+    characteristics: 'Merkezi konumda çok katlı iş merkezleri ve konutlar, yoğun trafik, taşımanın erken saatlerde planlanması gereken arterler.',
+    landmarks: 'Cassaba Modern, Espark AVM',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'zincirlikuyu-mahallesi-evden-eve-nakliyat',
+    name: 'Zincirlikuyu Mahallesi',
+    district: 'tepebasi',
+    characteristics: 'Genellikle az katlı müstakil evler ve yeni yapılan bahçeli siteler, asansör ihtiyacının düşük olduğu taşıma koşulları.',
+    landmarks: 'Zincirlikuyu Toki Konutları',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'fatih-mahallesi-evden-eve-nakliyat',
+    name: 'Fatih Mahallesi',
+    district: 'tepebasi',
+    characteristics: 'Öğrenci apartları ve aile apartmanlarının yoğun olduğu 3-4 katlı yapılar, dar sokak geçişleri.',
+    landmarks: 'Fatih Camii, Gazi Yakup Satar Caddesi',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'eskibaglar-mahallesi-evden-eve-nakliyat',
+    name: 'Eskibağlar Mahallesi',
+    district: 'tepebasi',
+    characteristics: 'Yoğun öğrenci nüfusu, apart daireler, çok dar sokaklar ve kamyonların giriş çıkış saatlerinin kısıtlı olduğu resmi merkezi bölge.',
+    landmarks: 'Üniversite Caddesi, Haller Gençlik Merkezi',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'bahcelievler-mahallesi-evden-eve-nakliyat',
+    name: 'Bahçelievler Mahallesi',
+    district: 'tepebasi',
+    characteristics: 'Eski yerleşim yeri, bitişik nizam 4-5 katlı binalar, asansör kurulumunun hassas açı ölçümü gerektirdiği sokaklar.',
+    landmarks: 'Bahçelievler Parkı, Seylap Caddesi',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'emek-mahallesi-evden-eve-nakliyat',
+    name: 'Emek Mahallesi',
+    district: 'odunpazari',
+    characteristics: 'Yoğun nüfuslu büyük mahalle, 4-5 katlı apartmanlar ve geniş sokaklar, asansör kurulumuna genel olarak uygun cepheler.',
+    landmarks: 'Emek Aile Sağlığı Merkezi',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: '71-evler-mahallesi-evden-eve-nakliyat',
+    name: '71 Evler Mahallesi',
+    district: 'odunpazari',
+    characteristics: 'Yeni gelişen bölge, geniş cadde ve sokaklar, kamyon park alanları ve mobil asansör kurulumuna son derece elverişli siteler.',
+    landmarks: '71 Evler Camii, Şehir Hastanesi yakınları',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'akarbasi-mahallesi-evden-eve-nakliyat',
+    name: 'Akarbaşı Mahallesi',
+    district: 'odunpazari',
+    characteristics: 'Tarihi yapılara yakın yerleşim, dar ve engebeli caddeler, asansör kurulumunda belediye izin ve koordinasyonu gerektiren sokaklar.',
+    landmarks: 'Atatürk Bulvarı, Kanlıkavak Parkı',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'gokmeydan-mahallesi-evden-eve-nakliyat',
+    name: 'Gökmeydan Mahallesi',
+    district: 'odunpazari',
+    characteristics: 'Geniş caddeler, 2000ler sonrası yapılmış 5-8 katlı site apartmanları, taşımaya elverişli lojistik konum.',
+    landmarks: 'Gökmeydan Parkı, Kentpark',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'visnelik-mahallesi-evden-eve-nakliyat',
+    name: 'Vişnelik Mahallesi',
+    district: 'odunpazari',
+    characteristics: 'Geniş sokaklar, prestijli eski ve yeni apartmanlar, asansör kurulumunda ağaç dallarına dikkat edilmesi gereken yeşil sokak dokusu.',
+    landmarks: 'Vişnelik Tramvay Durağı, Dede Korkut Parkı',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'yildiztepe-mahallesi-evden-eve-nakliyat',
+    name: 'Yıldıztepe Mahallesi',
+    district: 'odunpazari',
+    characteristics: 'Yokuşlu sokaklar, az katlı binalar, kamyonların park freni güvenliğinin ve rampa lojistiğinin önceden planlanması gereken yollar.',
+    landmarks: 'Yıldıztepe Camii, Ali Rıza Efendi Caddesi',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'kirmizitoprak-mahallesi-evden-eve-nakliyat',
+    name: 'Kırmızıtoprak Mahallesi',
+    district: 'odunpazari',
+    characteristics: 'Porsuk çayı kenarında yerleşim, bitişik nizam apartmanlar, asansör kurulumunda arka bahçe geçişlerinin kullanıldığı dar sokaklar.',
+    landmarks: 'Kırmızıtoprak Parkı, Atatürk Stadyumu eski mevkii',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  },
+  {
+    slug: 'buyukdere-mahallesi-evden-eve-nakliyat',
+    name: 'Büyükdere Mahallesi',
+    district: 'odunpazari',
+    characteristics: 'Osmangazi Üniversitesi yakınları, öğrenci apartları ve yeni aile konutları, yokuşlu arazi yapısı.',
+    landmarks: 'Osmangazi Üniversitesi Kapısı, Büyükdere Tramvay Durağı',
+    indexable: true,
+    updatedAt: '2026-08-16'
+  }
+] as const;
+
+export type Neighborhood = (typeof NEIGHBORHOODS)[number];

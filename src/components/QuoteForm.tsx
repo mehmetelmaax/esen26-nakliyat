@@ -223,7 +223,7 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
             aria-describedby={errors.phone ? 'err-phone' : undefined}
             value={formData.phone}
             onChange={handleInputChange}
-            placeholder="Örn: 532 123 45 67"
+            placeholder="Örn: 0532 012 60 26"
             className={`w-full border rounded px-3 py-2 text-xs bg-off-white focus:outline-none ${
               errors.phone ? 'border-rose-500 bg-rose-50' : 'border-gray-light'
             }`}

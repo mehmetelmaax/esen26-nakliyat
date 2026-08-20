@@ -68,13 +68,14 @@ function run() {
 
   const pages = dirs.map(dir => {
     const filePath = path.join(bolgelerDir, dir, 'page.tsx');
+    if (!fs.existsSync(filePath)) return null;
     const source = fs.readFileSync(filePath, 'utf8');
     const cleanedText = cleanSource(source);
     return {
       name: dir,
       words: getWords(cleanedText)
     };
-  });
+  }).filter(Boolean);
 
   let hasErrors = false;
   const maxSimilarityThreshold = 0.70;

@@ -140,6 +140,7 @@ export default function Header() {
                   servicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                 }`}
               >
+                <Link role="menuitem" href="/hizmetler" className="text-orange-text hover:bg-white/5 block px-3 py-2 rounded text-xs font-bold border-b border-white/10 focus:outline-none focus:bg-white/5">→ Tüm Hizmetlerimiz</Link>
                 <Link role="menuitem" href="/hizmetler/sehirici-evden-eve-nakliyat" className="text-white hover:bg-white/5 hover:text-orange block px-3 py-2 rounded text-xs font-semibold focus:outline-none focus:bg-white/5">1. Şehiriçi Evden Eve Nakliyat</Link>
                 <Link role="menuitem" href="/hizmetler/sehirlerarasi-evden-eve-nakliyat" className="text-white hover:bg-white/5 hover:text-orange block px-3 py-2 rounded text-xs font-semibold focus:outline-none focus:bg-white/5">2. Şehirlerarası Evden Eve Nakliyat</Link>
                 <Link role="menuitem" href="/hizmetler/asansorlu-evden-eve-nakliyat" className="text-white hover:bg-white/5 hover:text-orange block px-3 py-2 rounded text-xs font-semibold focus:outline-none focus:bg-white/5">3. Asansörlü Evden Eve Nakliyat</Link>
@@ -178,7 +179,7 @@ export default function Header() {
                   districtsOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                 }`}
               >
-                <Link role="menuitem" href="/hizmetler/sehirlerarasi-evden-eve-nakliyat" className="text-orange-text hover:bg-white/5 block px-2.5 py-1.5 rounded text-[11px] font-bold col-span-2 border-b border-white/10 focus:outline-none focus:bg-white/5">→ Şehirlerarası Taşımacılık</Link>
+                <Link role="menuitem" href="/bolgeler" className="text-orange-text hover:bg-white/5 block px-2.5 py-1.5 rounded text-[11px] font-bold col-span-2 border-b border-white/10 focus:outline-none focus:bg-white/5">→ Tüm Bölgelerimiz</Link>
                 {DISTRICTS.map((d) => (
                   <Link
                     key={d.slug}
@@ -192,7 +193,7 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="/hizmetler/sehirlerarasi-evden-eve-nakliyat#rotalar" className="text-white hover:text-orange font-medium transition-colors text-sm focus-visible:ring-1 focus-visible:ring-orange rounded">Rotalar</Link>
+            <Link href="/rotalar" className="text-white hover:text-orange font-medium transition-colors text-sm focus-visible:ring-1 focus-visible:ring-orange rounded">Rotalar</Link>
             <Link href="/blog" className="text-white hover:text-orange font-medium transition-colors text-sm focus-visible:ring-1 focus-visible:ring-orange rounded">Blog</Link>
             <Link href="/galeri" className="text-white hover:text-orange font-medium transition-colors text-sm focus-visible:ring-1 focus-visible:ring-orange rounded">Galeri</Link>
             <Link href="/iletisim" className="text-white hover:text-orange font-medium transition-colors text-sm focus-visible:ring-1 focus-visible:ring-orange rounded">İletişim</Link>
@@ -239,6 +240,8 @@ export default function Header() {
         <div className="flex flex-col h-full justify-start items-center gap-5 px-6 overflow-y-auto pt-24 pb-10">
           <Link onClick={toggleMenu} href="/" className="text-white text-base font-bold hover:text-orange transition-colors">Ana Sayfa</Link>
           <Link onClick={toggleMenu} href="/hakkimizda" className="text-white text-base font-bold hover:text-orange transition-colors">Hakkımızda</Link>
+          <Link onClick={toggleMenu} href="/hizmetler" className="text-white text-base font-bold hover:text-orange transition-colors">Hizmetlerimiz</Link>
+          <Link onClick={toggleMenu} href="/bolgeler" className="text-white text-base font-bold hover:text-orange transition-colors">Bölgelerimiz</Link>
           <Link onClick={toggleMenu} href="/galeri" className="text-white text-base font-bold hover:text-orange transition-colors">Galeri</Link>
           
           {/* Collapsible Mobile Dropdown for Services ve Regions */}
@@ -274,7 +277,7 @@ export default function Header() {
                 <div className="space-y-1.5 pt-2 border-t border-white/5">
                   <span className="text-orange text-[9px] font-black tracking-wider block">HİZMET BÖLGELERİMİZ</span>
                   <div className="grid grid-cols-3 gap-1.5">
-                    <Link onClick={toggleMenu} href="/hizmetler/sehirlerarasi-evden-eve-nakliyat" className="text-white hover:text-orange text-[9px] font-semibold border border-white/10 rounded py-1 col-span-3">Şehirlerarası</Link>
+                    <Link onClick={toggleMenu} href="/bolgeler" className="text-white hover:text-orange text-[9px] font-semibold border border-white/10 rounded py-1 col-span-3">Tüm Bölgelerimiz</Link>
                     {DISTRICTS.slice(0, 9).map((d) => (
                       <Link
                         key={d.slug}
@@ -291,7 +294,7 @@ export default function Header() {
             )}
           </div>
 
-          <Link onClick={toggleMenu} href="/hizmetler/sehirlerarasi-evden-eve-nakliyat#rotalar" className="text-white text-base font-bold hover:text-orange transition-colors">Rotalar</Link>
+          <Link onClick={toggleMenu} href="/rotalar" className="text-white text-base font-bold hover:text-orange transition-colors">Rotalar</Link>
           <Link onClick={toggleMenu} href="/blog" className="text-white text-base font-bold hover:text-orange transition-colors">Blog</Link>
           <Link onClick={toggleMenu} href="/iletisim" className="text-white text-base font-bold hover:text-orange transition-colors">İletişim</Link>
 

@@ -10,7 +10,7 @@ export const QuoteFormSchema = z.object({
     .refine(val => {
       const clean = val.replace(/\D/g, '');
       return (clean.length === 10 && clean.startsWith('5')) || (clean.length === 11 && clean.startsWith('05'));
-    }, { message: 'Lütfen geçerli bir cep telefonu girin (Örn: 532 123 45 67)' }),
+    }, { message: 'Lütfen geçerli bir cep telefonu girin (Örn: 0532 012 60 26)' }),
     
   fromDistrict: z.string({ error: 'Lütfen çıkış noktasını seçin.' }).min(1, { message: 'Lütfen çıkış noktasını seçin.' }),
   
