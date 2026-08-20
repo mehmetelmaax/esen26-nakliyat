@@ -21,7 +21,7 @@ export default function IletisimPage() {
       <JsonLd data={localBusinessSchema()} />
       
       <main className="pt-24 bg-off-white">
-        <Breadcrumb items={[{ name: 'İletişim', url: '/iletisim' }]} className="pt-4" />
+        <Breadcrumb items={[{ name: 'İletişim', url: '/iletisim' }]} className="pt-4" emitSchema />
         {/* Intro */}
         <section className="py-16 bg-navy text-white text-center space-y-4">
           <span className="text-orange-text font-bold text-xs tracking-widest">

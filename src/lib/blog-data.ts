@@ -18,7 +18,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
     desc: "Eskişehir'de ev taşıma maliyetlerini etkileyen oda sayısı, kat yükseklikleri ve asansör gereksinimlerini detaylıca inceliyoruz.",
     excerpt: 'Ev taşıma maliyetlerini etkileyen oda sayısı, kat durumları, asansör kurulumu ve yol mesafesi gibi temel parametreleri inceliyoruz.',
     date: '2026-08-01',
-    author: 'Tedik Lojistik Ekibi',
+    author: 'Tanzer Pınar',
     image: '/img/esen-slayt-1.jpg',
     category: 'Fiyat',
     faqs: [

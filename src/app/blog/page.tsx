@@ -18,7 +18,7 @@ export default function BlogPage() {
   return (
     <>
       <main className="pt-24 bg-off-white">
-        <Breadcrumb items={[{ name: 'Blog', url: '/blog' }]} className="pt-4" />
+        <Breadcrumb items={[{ name: 'Blog', url: '/blog' }]} className="pt-4" emitSchema />
         {/* Intro */}
         <section className="py-16 bg-navy text-white text-center space-y-4">
           <span className="text-orange-text font-bold text-xs tracking-widest font-sans">

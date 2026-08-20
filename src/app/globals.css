@@ -124,3 +124,16 @@ body {
 .btn-premium:hover::after {
   height: 100%;
 }
+
+/* Page Banner/Hero Background Image & Overlay styling */
+main > section.bg-navy:first-of-type,
+main > section.bg-navy.py-20,
+main > section.bg-navy.py-24,
+main > section.bg-navy.py-16 {
+  position: relative;
+  background-image: linear-gradient(to top, rgba(7, 59, 120, 0.96) 0%, rgba(7, 59, 120, 0.90) 50%, rgba(7, 59, 120, 0.70) 100%), url('/img/banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}

@@ -113,7 +113,19 @@ export function organizationSchema() {
     ...(socialFiltered.length > 0 || true ? { 'sameAs': [
       ...socialFiltered,
       'https://maps.app.goo.gl/oZBkztaiuicPXVQT8'
-    ] } : {})
+    ] } : {}),
+    ...(process.env.NEXT_PUBLIC_K3_BELGE_NO ? {
+      'hasCredential': {
+        '@type': 'EducationalOccupationalCredential',
+        'name': 'K3 Yetki Belgesi',
+        'credentialCategory': 'certification',
+        'recognizedBy': {
+          '@type': 'GovernmentOrganization',
+          'name': 'T.C. Ulaştırma ve Altyapı Bakanlığı'
+        },
+        'credentialNumber': process.env.NEXT_PUBLIC_K3_BELGE_NO
+      }
+    } : {})
   };
 
   return organization;

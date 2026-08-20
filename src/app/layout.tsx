@@ -18,11 +18,6 @@ const inter = localFont({
       weight: '400',
       style: 'normal',
     },
-    {
-      path: '../../public/fonts/Inter-Bold.ttf',
-      weight: '700',
-      style: 'normal',
-    },
   ],
   variable: '--font-sans',
   display: 'swap',

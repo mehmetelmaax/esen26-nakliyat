@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function KVKKPage() {
   return (
     <main className="min-h-screen bg-off-white text-charcoal py-24 px-4 sm:px-6 lg:px-8">
-      <Breadcrumb items={[{ name: 'Yasal', url: '/yasal/kvkk' }, { name: 'KVKK Aydınlatma Metni', url: '/yasal/kvkk' }]} className="pt-4 max-w-3xl mx-auto px-0 mb-4" />
+      <Breadcrumb items={[{ name: 'Yasal', url: '/yasal/kvkk' }, { name: 'KVKK Aydınlatma Metni', url: '/yasal/kvkk' }]} className="pt-4 max-w-3xl mx-auto px-0 mb-4" emitSchema />
       <div className="max-w-3xl mx-auto bg-white p-8 border border-gray-light rounded-xl shadow-sm space-y-6">
         <Link href="/" className="text-orange-text font-bold text-sm hover:underline block mb-4">
           &larr; Ana Sayfaya Dön

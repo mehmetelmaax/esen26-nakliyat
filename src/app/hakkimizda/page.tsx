@@ -87,7 +87,7 @@ export default function HakkimizdaPage() {
                   </h2>
                 </div>
                 <p className="text-charcoal text-sm md:text-base leading-relaxed">
-                  Esen 26 Nakliyat, {FACTS.foundedYear} yılında Tedik ailesi tarafından Eskişehir Tepebaşı merkezli olarak kurulmuş yasal bir ev taşıma şirketidir. Geçen {experienceYears} yıllık süre zarfında, Eskişehir şehir içi ve şehirlerarası güzergahlarda binlerce ailenin ev ve ofis taşıma lojistiğini başarıyla yönettik.
+                  Esen 26 Nakliyat, {FACTS.foundedYear} yılında Tanzer Pınar tarafından Eskişehir Tepebaşı merkezli olarak kurulmuş yasal bir ev taşıma şirketidir. Geçen {experienceYears} yıllık süre zarfında, Eskişehir şehir içi ve şehirlerarası güzergahlarda binlerce ailenin ev ve ofis taşıma lojistiğini başarıyla yönettik.
                 </p>
                 <p className="text-charcoal text-sm md:text-base leading-relaxed">
                   İlkelerimizden ödün vermeden, tamamen şeffaf ve müşteri memnuniyeti odaklı çalışma prensiplerimiz sayesinde bugün Eskişehir'in en çok tavsiye edilen nakliyat markalarından biri olmanın gururunu yaşıyoruz.
