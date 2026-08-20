@@ -27,7 +27,13 @@ export const QuoteFormSchema = z.object({
   website: z.string().max(0, { message: 'Bot protection triggered.' }).optional().default(''), // honeypot
   kvkkOnay: z.literal(true, {
     message: 'Lütfen KVKK Aydınlatma Metnini onaylayın.'
-  })
+  }),
+  utm_source: z.string().optional(),
+  utm_medium: z.string().optional(),
+  utm_campaign: z.string().optional(),
+  utm_term: z.string().optional(),
+  utm_content: z.string().optional(),
+  referrer: z.string().optional()
 });
 
 export type QuoteFormData = z.infer<typeof QuoteFormSchema>;

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Send, Phone, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 import { SITE } from '@/lib/site-config';
@@ -22,6 +22,12 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
     elevator: 'evet',
     website: '', // honeypot
     kvkkOnay: false,
+    utm_source: '',
+    utm_medium: '',
+    utm_campaign: '',
+    utm_term: '',
+    utm_content: '',
+    referrer: '',
   });
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -31,6 +37,21 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
   
   // Track if form started event has been fired
   const formStartedRef = useRef(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      setFormData((prev) => ({
+        ...prev,
+        utm_source: params.get('utm_source') || '',
+        utm_medium: params.get('utm_medium') || '',
+        utm_campaign: params.get('utm_campaign') || '',
+        utm_term: params.get('utm_term') || '',
+        utm_content: params.get('utm_content') || '',
+        referrer: document.referrer || '',
+      }));
+    }
+  }, []);
 
   const districts = [
     'Tepebaşı',
@@ -146,6 +167,14 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
 
   const formFieldsHtml = (
     <form onSubmit={handleSubmit} className="space-y-4">
+      {/* Hidden UTM and Referrer parameters */}
+      <input type="hidden" name="utm_source" value={formData.utm_source} />
+      <input type="hidden" name="utm_medium" value={formData.utm_medium} />
+      <input type="hidden" name="utm_campaign" value={formData.utm_campaign} />
+      <input type="hidden" name="utm_term" value={formData.utm_term} />
+      <input type="hidden" name="utm_content" value={formData.utm_content} />
+      <input type="hidden" name="referrer" value={formData.referrer} />
+
       {/* Honeypot Input: Hidden from screen readers & users but filled by bots */}
       <input
         type="text"
@@ -166,6 +195,7 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
             id="name"
             name="name"
             required
+            autoComplete="name"
             aria-required="true"
             aria-invalid={!!errors.name}
             aria-describedby={errors.name ? 'err-name' : undefined}
@@ -186,6 +216,7 @@ export default function QuoteForm({ isInline = false }: QuoteFormProps) {
             id="phone"
             name="phone"
             inputMode="tel"
+            autoComplete="tel"
             required
             aria-required="true"
             aria-invalid={!!errors.phone}
