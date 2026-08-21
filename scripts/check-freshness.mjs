@@ -15,9 +15,10 @@ async function runFreshnessAudit() {
   }
 
   const content = fs.readFileSync(metadataPath, 'utf8');
-  const jsonStart = content.indexOf('{');
+  const metaIndex = content.indexOf('blogMetadata');
+  const jsonStart = content.indexOf('{', metaIndex);
   const jsonEnd = content.lastIndexOf('}');
-  if (jsonStart === -1 || jsonEnd === -1) {
+  if (metaIndex === -1 || jsonStart === -1 || jsonEnd === -1) {
     console.error('❌ Failed to parse blog-metadata.ts for freshness check.');
     process.exit(1);
   }
