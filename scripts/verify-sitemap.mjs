@@ -1,145 +1,109 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const ROOT = path.join(__dirname, '..');
+const APP_DIR = path.join(ROOT, '.next', 'server', 'app');
+const SITEMAP_PATH = path.join(APP_DIR, 'sitemap.xml.body');
 
-// Paths
-const projectRoot = path.join(__dirname, '..');
-const siteConfigPath = path.join(projectRoot, 'src', 'lib', 'site-config.ts');
-const blogDataPath = path.join(projectRoot, 'src', 'lib', 'blog-data.ts');
-const buildAppDir = path.join(projectRoot, '.next', 'server', 'app');
-
-// Helper to check if file exists
-function verifyFile(routePath) {
-  const normalizedPath = routePath === '/' ? 'index' : routePath.replace(/^\//, '');
-  const htmlFile = path.join(buildAppDir, `${normalizedPath}.html`);
-  if (!fs.existsSync(htmlFile)) {
-    console.error(`❌ Verification failed: Route "${routePath}" expected build file "${htmlFile}" but it does not exist.`);
-    return false;
-  }
-  console.log(`✅ Verified: Route "${routePath}" -> "${htmlFile}"`);
-  return true;
-}
-
-try {
-  console.log('Starting sitemap verification against Next.js build output...');
-
-  // 1. Parse site-config.ts using regex
-  const siteConfigContent = fs.readFileSync(siteConfigPath, 'utf8');
+function runSitemapVerification() {
+  console.log('--- RUNNING SITEMAP VERIFICATION ---');
   
-  // Extract url
-  let baseUrl = 'https://www.esen26nakliyat.com';
-  const urlMatch = siteConfigContent.match(/url:\s*'([^']+)'/);
-  if (urlMatch) {
-    baseUrl = urlMatch[1];
-  } else {
-    // If dynamic, look for fallback production URL string literal
-    const prodUrlMatch = siteConfigContent.match(/'https:\/\/www\.esen26nakliyat\.com'/);
-    if (prodUrlMatch) {
-      baseUrl = 'https://www.esen26nakliyat.com';
-    }
+  if (!fs.existsSync(SITEMAP_PATH)) {
+    console.error(`❌ sitemap.xml.body not found at ${SITEMAP_PATH}. Please run "npm run build" first.`);
+    process.exit(1);
   }
-  console.log(`Base URL parsed: ${baseUrl}`);
 
-  // Extract services slugs
-  const serviceRegex = /slug:\s*'([^']+)'/g;
-  const SERVICES_SLUGS = [];
+  const sitemapXml = fs.readFileSync(SITEMAP_PATH, 'utf8');
   
-  // Find SERVICES block first to avoid matching DISTRICTS
-  const servicesBlock = siteConfigContent.match(/export const SERVICES = \[([\s\S]+?)\] as const;/);
-  if (!servicesBlock) {
-    throw new Error('Could not find SERVICES array in site-config.ts');
-  }
+  // 1. Extract all URLs from sitemap
+  const locRegex = /<loc>([^<]+)<\/loc>/g;
+  const urls = [];
   let match;
-  while ((match = serviceRegex.exec(servicesBlock[1])) !== null) {
-    SERVICES_SLUGS.push(match[1]);
+  while ((match = locRegex.exec(sitemapXml)) !== null) {
+    urls.push(match[1]);
   }
-  console.log(`Services slugs parsed (${SERVICES_SLUGS.length}):`, SERVICES_SLUGS);
 
-  // Extract districts slugs
-  const districtsBlock = siteConfigContent.match(/export const DISTRICTS = \[([\s\S]+?)\] as const;/);
-  if (!districtsBlock) {
-    throw new Error('Could not find DISTRICTS array in site-config.ts');
+  console.log(`Parsed ${urls.length} URLs from sitemap.xml.body.`);
+
+  // Parse baseURL from first URL
+  if (urls.length === 0) {
+    console.error('❌ sitemap.xml.body has no URLs!');
+    process.exit(1);
   }
-  const DISTRICTS_SLUGS = [];
-  const districtRegex = /slug:\s*'([^']+)'[\s\S]*?indexable:\s*(true|false)/g;
-  while ((match = districtRegex.exec(districtsBlock[1])) !== null) {
-    if (match[2] === 'true') {
-      DISTRICTS_SLUGS.push(match[1]);
+  const urlObj = new URL(urls[0]);
+  const baseUrl = urlObj.origin;
+  console.log(`Base URL detected: ${baseUrl}`);
+
+  let hasError = false;
+  const sitemapRoutes = new Set();
+
+  // 2. Sitemap -> Build check (Verify all sitemap URLs exist as compiled HTML)
+  urls.forEach(url => {
+    const route = url.replace(baseUrl, '');
+    const cleanRoute = route === '' ? '/' : route;
+    sitemapRoutes.add(cleanRoute);
+
+    // Map route to html file path
+    const normalizedRoute = cleanRoute === '/' ? 'index' : cleanRoute.replace(/^\//, '');
+    const htmlFile = path.join(APP_DIR, `${normalizedRoute}.html`);
+
+    if (!fs.existsSync(htmlFile)) {
+      console.error(`❌ Sitemap URL "${url}" does not exist in build output at "${htmlFile}"`);
+      hasError = true;
+    } else {
+      // Check if this page has noindex in metadata
+      const htmlContent = fs.readFileSync(htmlFile, 'utf8');
+      const isNoIndex = /<meta\s+name=["']robots["']\s+content=["'][^"']*(noindex|none)[^"']*["']/i.test(htmlContent);
+      if (isNoIndex) {
+        console.error(`❌ Sitemap URL "${url}" has "noindex" robots tag in its HTML! (Sitemap vs Noindex conflict)`);
+        hasError = true;
+      }
     }
-  }
-  console.log(`Indexable districts slugs parsed (${DISTRICTS_SLUGS.length}):`, DISTRICTS_SLUGS);
-  // Extract routes slugs
-  const routesBlock = siteConfigContent.match(/export const ROUTES(?::\s*readonly\s*RouteConfig\[\])?\s*=\s*\[([\s\S]+?)\] as const;/);
-  const ROUTES_SLUGS = [];
-  if (routesBlock) {
-    const routeRegex = /slug:\s*'([^']+)'/g;
-    while ((match = routeRegex.exec(routesBlock[1])) !== null) {
-      ROUTES_SLUGS.push(match[1]);
-    }
-  }
-  console.log(`Routes slugs parsed (${ROUTES_SLUGS.length}):`, ROUTES_SLUGS);
-
-  // 2. Parse blog-data.ts using regex
-  const blogDataContent = fs.readFileSync(blogDataPath, 'utf8');
-  const BLOG_IDS = [];
-  const blogRegex = /'([^']+)':\s*\{/g;
-  while ((match = blogRegex.exec(blogDataContent)) !== null) {
-    if (match[1] !== 'question' && match[1] !== 'answer') {
-      BLOG_IDS.push(match[1]);
-    }
-  }
-  console.log(`Blog IDs parsed (${BLOG_IDS.length}):`, BLOG_IDS);
-
-  // 3. Define the exact sitemap URLs
-  const sitemapRoutes = [
-    '/',
-    '/teklif-al',
-    ...SERVICES_SLUGS.map(slug => `/hizmetler/${slug}`),
-    ...DISTRICTS_SLUGS.map(slug => `/bolgeler/${slug}`),
-    '/iletisim',
-    '/blog',
-    ...BLOG_IDS.map(id => `/blog/${id}`),
-    '/hakkimizda',
-    '/galeri',
-    '/yasal/gizlilik',
-    '/yasal/kvkk',
-    '/eskisehir-nakliyat-fiyatlari',
-    '/eskisehir-nakliyat-firmalari',
-    '/tasinma-kontrol-listesi',
-    ...ROUTES_SLUGS.map(slug => `/rotalar/${slug}`)
-  ];
-
-  console.log(`\nReconstructed sitemap routes (${sitemapRoutes.length} items):`);
-  sitemapRoutes.forEach((route, index) => {
-    console.log(`${index + 1}. ${baseUrl}${route}`);
   });
 
-  // Verify URL count dynamically
-  const expectedCount = 1 + 1 + SERVICES_SLUGS.length + DISTRICTS_SLUGS.length + 1 + 1 + BLOG_IDS.length + 1 + 1 + 2 + 3 + ROUTES_SLUGS.length;
-  if (sitemapRoutes.length !== expectedCount) {
-    throw new Error(`Sitemap verification failed: Expected exactly ${expectedCount} URLs, but sitemapRoutes contains ${sitemapRoutes.length} items.`);
+  // 3. Build -> Sitemap check (Verify all indexable build HTML files exist in sitemap)
+  function getHtmlFiles(dir, files = []) {
+    const list = fs.readdirSync(dir);
+    list.forEach(file => {
+      const filepath = path.join(dir, file);
+      const stat = fs.statSync(filepath);
+      if (stat.isDirectory()) {
+        getHtmlFiles(filepath, files);
+      } else if (stat.isFile() && file.endsWith('.html')) {
+        if (!file.includes('_not-found') && !file.includes('_error') && !file.includes('global-error')) {
+          files.push(filepath);
+        }
+      }
+    });
+    return files;
   }
 
-  // 4. Verify all routes exist in the build output
-  let hasErrors = false;
-  for (const route of sitemapRoutes) {
-    if (!verifyFile(route)) {
-      hasErrors = true;
-    }
+  if (fs.existsSync(APP_DIR)) {
+    const buildFiles = getHtmlFiles(APP_DIR);
+    buildFiles.forEach(file => {
+      const relative = path.relative(APP_DIR, file).replace('.html', '').replace(/\\/g, '/');
+      const route = relative === 'index' ? '/' : `/${relative}`;
+      
+      const htmlContent = fs.readFileSync(file, 'utf8');
+      const isNoIndex = /<meta\s+name=["']robots["']\s+content=["'][^"']*(noindex|none)[^"']*["']/i.test(htmlContent);
+
+      if (!isNoIndex && !sitemapRoutes.has(route)) {
+        console.error(`❌ Indexable route "${route}" is present in build output but missing from sitemap.xml!`);
+        hasError = true;
+      }
+    });
   }
 
-  if (hasErrors) {
+  if (hasError) {
     console.error('\n❌ Sitemap verification failed with errors.');
     process.exit(1);
   } else {
-    console.log(`\n✨ Sitemap verification complete: All ${expectedCount} routes verified against Next.js build output successfully!`);
+    console.log(`\n✅ Sitemap verification complete: All ${urls.length} URLs verified successfully (double-sided check passed).`);
     process.exit(0);
   }
-
-} catch (error) {
-  console.error('\n❌ Error during sitemap verification:', error.message);
-  process.exit(1);
 }
+
+runSitemapVerification();

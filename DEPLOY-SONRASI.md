@@ -1,6 +1,24 @@
-# Yayım Sonrası SEO ve Arama Motoru İşlemleri Kılavuzu (DEPLOY-SONRASI.md)
+# Canlı Öncesi ve Sonrası İşlemleri Kılavuzu (DEPLOY-SONRASI.md)
 
-Bu kılavuz, web sitesinin başarıyla canlı sunucuya (Vercel) aktarılmasından hemen sonra yapılması gereken **resmi arama motoru tescil, dizin (index) ekleme ve 4 haftalık periyodik kontrol** adımlarını içermektedir.
+## 0. Canlıya Geçiş (Production Deploy) Öncesi Kontrol Listesi
+
+Siteyi Vercel Production ortamında yayına almadan önce aşağıdaki yapılandırmaların eksiksiz girildiğinden emin olun:
+
+### Zorunlu Ortam Değişkenleri (Environment Variables):
+- `NEXT_PUBLIC_SITE_URL=https://www.esen26nakliyat.com` (Preview/Canonical URL çelişkilerini önlemek için)
+- `NEXT_PUBLIC_GA_ID` (Google Analytics 4 Ölçüm Kimliği)
+- `NEXT_PUBLIC_GSC_VERIFICATION` (Google Search Console Meta Doğrulama Kodu)
+- `RESEND_API_KEY` (Teklif formunun e-posta gönderebilmesi için zorunlu Resend API anahtarı)
+- `NOTIFY_EMAIL` (Tekliflerin iletileceği kurumsal alıcı e-posta adresi)
+- `RESEND_FROM_EMAIL` (Doğrulanmış alan adınızdan gönderilen gönderici adresi, örn. `teklif@esen26nakliyat.com`)
+
+### Önemli ve Opsiyonel Ortam Değişkenleri:
+- `NEXT_PUBLIC_K3_BELGE_NO` (T.C. Ulaştırma Bakanlığı K3 Yetki Belgesi numarası - E-E-A-T için çok kritiktir)
+- `KV_REST_API_URL` ve `KV_REST_API_TOKEN` (Form spam koruması rate-limit ve lead kalıcılığı için Vercel KV REST tanımları. Serverless mimaride in-memory limit koruma sağlamaz; Vercel KV mutlaka kurulmalıdır)
+
+### Alan Adı (Domain) ve Yönlendirmeler:
+- Vercel panelinde hem `esen26nakliyat.com` (apex) hem de `www.esen26nakliyat.com` alan adları eklenmeli ve apex domain otomatik olarak **www** mülküne (301 yönlendirmesiyle) bağlanmalıdır. Tüm canonical etiketleri `www` varyasyonuna işaret etmektedir.
+- SSL/HTTPS zorunludur. `next.config.ts` üzerinde HSTS preload ayarı aktiftir.
 
 ---
 
@@ -13,7 +31,7 @@ Canlıya alım bittikten sonra sitenin Google botları tarafından hızlıca ke�
 3. DNS sağlayıcınıza (örn. Cloudflare, GoDaddy) GSC panelinin verdiği TXT kaydını ekleyerek mülkü doğrulayın. (Alternatif olarak **"URL Öneki"** seçeneğiyle `.env.local` dosyasına eklediğiniz `NEXT_PUBLIC_GSC_VERIFICATION` meta tag doğrulamasını da kullanabilirsiniz).
 4. Sol menüden **"Site Haritaları" (Sitemaps)** sayfasına gidin.
 5. **"Yeni bir site haritası ekleyin"** kısmına `sitemap.xml` yazın ve **"Gönder"** butonuna basın.
-6. Gönderim sonrası durumun **"Başarılı"** olduğunu teyit edin. Haritada tam olarak **49 adet URL** listelenmelidir.
+6. Gönderim sonrası durumun **"Başarılı"** olduğunu teyit edin. Haritada sitemap.ts içindeki indexlenebilir rotalara göre (canlıya çıkış tarihi itibarıyla **72 adet URL**) listelenmelidir. Bu sayı sitede yeni içerik (blog, rota, mahalle vb.) yayınlandıkça dinamik olarak artacaktır.
 
 ---
 

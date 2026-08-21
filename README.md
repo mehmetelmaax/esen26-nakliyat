@@ -122,8 +122,7 @@ Sitenin dinamik ve ölçeklenebilir yapısı gereği, yeni rotalar (hizmetler, b
 
 Siteyi Vercel veya başka bir sunucuya yüklemeden önce son kontrolleri yapın:
 
-1. **Çevre Değişkenleri:** Canlı sunucu panelinde `RESEND_API_KEY`, `NEXT_PUBLIC_GA_ID` ve `NEXT_PUBLIC_CLARITY_ID` değerlerinin girildiğini doğrulayın.
-2. **Kriter Denetimi:** Yerelde `npm run audit` komutunu çalıştırarak tüm SEO, OpenGraph ve görsel optimizasyon denetimlerinin başarıyla geçtiğinden emin olun.
-3. **Resim Boyutları:** `node scripts/optimize-images.mjs` komutunu çalıştırarak tüm responsive görsellerin üretildiğini ve 200 KB alt sınırını koruduğunu teyit edin.
+1. **Yönlendirmeler (Redirects):** Yönlendirmeler `next.config.ts` içindeki `redirects()` fonksiyonuyla merkezi olarak yönetilmektedir. Eski platform kalıntıları (Netlify `_redirects` vb.) deponun taşınabilirliği açısından silinmiştir.
+2. **Çevre Değişkenleri:** Canlı sunucu panelinde `RESEND_API_KEY`, `NEXT_PUBLIC_GA_ID` ve `NEXT_PUBLIC_CLARITY_ID` değerlerinin girildiğini doğrulayın.
+3. **Kriter Denetimi:** Yerelde `npm run audit` komutunu çalıştırarak tüm SEO, OpenGraph ve görsel optimizasyon denetimlerinin başarıyla geçtiğinden emin olun.
 4. **Kod Derleme ve Tip Kontrolü:** `npx tsc --noEmit` ve `npm run build` komutlarının hatasız bittiğini görün.
-5. **SEO Rapor Üretimi:** `npm run build` sonrasında `node scripts/generate-seo-report.mjs` komutunu çalıştırarak güncel `SEO-DURUM.md` dosyasını oluşturun ve commit edin.
