@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "audit": "npm run build && npm run verify:metadata && npm run verify:sitemap && npm run verify:schema && npm run verify:content && npm run verify:pricing && npm run verify:duplication && npm run verify:orphans && npm run verify:integrity && npm run verify:nap && npm run verify:depth && npm run verify:vitals",
+    "audit": "npm run build && npm run verify:metadata && npm run verify:sitemap && npm run verify:schema && npm run verify:content && npm run verify:pricing && npm run verify:duplication && npm run verify:orphans && npm run verify:integrity && npm run verify:nap && npm run verify:depth && npm run verify:vitals && npm run verify:freshness",
     "verify:sitemap": "node scripts/verify-sitemap.mjs",
     "verify:metadata": "node scripts/check-metadata.mjs",
     "verify:schema": "node scripts/check-schema.mjs",
@@ -23,7 +23,8 @@
     "verify:integrity": "node scripts/check-integrity.mjs",
     "verify:nap": "node scripts/check-nap.mjs",
     "verify:depth": "node scripts/check-depth.mjs",
-    "verify:vitals": "node scripts/check-vitals.mjs"
+    "verify:vitals": "node scripts/check-vitals.mjs",
+    "verify:freshness": "node scripts/check-freshness.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.30.0",
