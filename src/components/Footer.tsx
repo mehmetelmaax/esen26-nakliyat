@@ -99,6 +99,18 @@ export default function Footer() {
                 <li>
                   <Link href="/eskisehir-nakliyat-firmalari" className="text-orange hover:text-white transition-colors">➔ Eskişehir Nakliyat Firmaları</Link>
                 </li>
+                <li>
+                  <Link href="/tasinma-maliyet-hesaplama" className="text-orange hover:text-white transition-colors">➔ Taşınma Maliyet Hesaplama</Link>
+                </li>
+                <li>
+                  <Link href="/eskisehir-ogrenci-evi-tasima" className="text-orange hover:text-white transition-colors">➔ Öğrenci Evi Taşıma Kılavuzu</Link>
+                </li>
+                <li>
+                  <Link href="/eskisehir-nakliyat-sozlesmesi" className="text-orange hover:text-white transition-colors">➔ Nakliyat Sözleşmesi Rehberi</Link>
+                </li>
+                <li>
+                  <Link href="/eskisehir-asansorsuz-bina-tasima" className="text-orange hover:text-white transition-colors">➔ Asansörsüz Bina Taşıma</Link>
+                </li>
               </ul>
             </nav>
           </div>

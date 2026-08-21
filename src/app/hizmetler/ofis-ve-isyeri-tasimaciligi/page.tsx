@@ -80,7 +80,7 @@ export default function OfisPage() {
               Kurumsal Ofis Taşıma Süreci Nasıl Planlanır?
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Esen 26 Nakliyat kurumsal ofis taşımacılığı işlemlerinde, tüm arşiv ve donanımlar numaralandırılmış 1 etiket sistemiyle sınıflandırılarak kolilenmektedir. Bu numaralandırma sistemi sayesinde, yeni ofiste hangi kutunun hangi masaya yerleştirileceği önceden planlanır ve iş gücü kaybı önlenir. Ekspertiz, taşınma öncesinde eşya hacmi, kat durumu ve asansör gereksinimlerinin yerinde incelenerek net bütçenin belirlenmesi sürecidir. 
+              Esen 26 Nakliyat kurumsal ofis taşımacılığı işlemlerinde, tüm arşiv ve donanımlar numaralandırılmış 1 etiket sistemiyle sınıflandırılarak kolilenmektedir. Bu numaralandırma sistemi sayesinde, yeni ofiste hangi kutunun hangi masaya yerleştirileceği önceden planlanır ve iş gücü kaybı önlenir. Ekspertiz, taşınma öncesinde eşya hacmi, kat durumu ve asansör gereksinimlerinin yerinde incelenerek net bütçenin belirlenmesi sürecidir. Detaylı planlama adımları için <Link href="/blog/ofis-tasima-plani" className="text-orange hover:underline font-semibold">ofis taşıma planı</Link> kılavuzumuzu inceleyebilirsiniz.
             </p>
             <div className="overflow-x-auto mt-6">
               <table className="w-full text-left border-collapse border border-gray-300">

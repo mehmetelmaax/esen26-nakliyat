@@ -104,7 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.3,
   }));
 
-  // 12. Rehber ve Yardımcı Sayfalar (3 adet, 0.8, monthly)
+  // 12. Rehber ve Yardımcı Sayfalar (7 adet, 0.8, monthly)
   const additionalPages = [
     {
       url: `${baseUrl}/eskisehir-nakliyat-fiyatlari`,
@@ -120,6 +120,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/tasinma-kontrol-listesi`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/tasinma-maliyet-hesaplama`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/eskisehir-ogrenci-evi-tasima`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/eskisehir-nakliyat-sozlesmesi`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/eskisehir-asansorsuz-bina-tasima`,
       lastModified: staticDate,
       changeFrequency: 'monthly' as const,
       priority: 0.8,

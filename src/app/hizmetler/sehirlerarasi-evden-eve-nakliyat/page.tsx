@@ -116,7 +116,7 @@ export default function SehirlerarasiPage() {
               Şehirlerarası Ev Taşıma Sigortası Neleri Kapsar?
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Esen 26 Nakliyat şehirlerarası ev taşıma hizmetlerinde, eşyalarınızın tamamı {FACTS.insurer} emtia nakliyat sigortasıyla yangın, kaza ve doğal afet hasarlarına karşı güvence altına alınmaktadır. Emtia nakliyat sigortası, eşyaların taşıma esnasında karşılaşabileceği kaza, yangın ve hırsızlık gibi riskleri yasal teminat altına alan poliçe türüdür. Bu sigorta poliçesi, kamyonun seyir halindeyken karşılaşabileceği fiziksel hasarları yasal olarak tazmin eder.
+              Esen 26 Nakliyat şehirlerarası ev taşıma hizmetlerinde, eşyalarınızın tamamı {FACTS.insurer} emtia nakliyat sigortasıyla yangın, kaza ve doğal afet hasarlarına karşı güvence altına alınmaktadır. Emtia nakliyat sigortası, eşyaların taşıma esnasında karşılaşabileceği kaza, yangın ve hırsızlık gibi riskleri yasal teminat altına alan poliçe türüdür. Bu sigorta poliçesi, kamyonun seyir halindeyken karşılaşabileceği fiziksel hasarları yasal olarak tazmin eder. Uzun yolda hasar risklerini minimuma indirme ve telafi koşulları hakkında ayrıntılı bilgi için <Link href="/blog/sehirlerarasi-tasimada-esya-hasari" className="text-orange hover:underline font-semibold">şehirlerarası taşımada eşya hasarı</Link> analizimizi inceleyebilirsiniz.
             </p>
             <div className="overflow-x-auto mt-6">
               <table className="w-full text-left border-collapse border border-gray-300">

@@ -6,7 +6,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
 import JsonLd from '@/components/JsonLd';
 import { serviceSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
-import { SITE } from '@/lib/site-config';
+import { SITE, NEIGHBORHOODS } from '@/lib/site-config';
 import React from 'react';
 import { locative, locativeKi, genitive } from '@/lib/slug';
 import type { Metadata } from 'next';
@@ -69,7 +69,7 @@ export default function TepebaşıPage() {
     ]
   };
 
-  const mahalleler = ['Batıkent', 'Çamlıca', 'Şirintepe', 'Uluönder', 'Eskibağlar', 'Yenibağlar', 'Sütlüce'];
+  const tepebasiMh = NEIGHBORHOODS.filter((n) => n.district === 'tepebasi');
 
   return (
     <>
@@ -132,14 +132,18 @@ export default function TepebaşıPage() {
           {/* Neighborhoods List */}
           <div className="bg-white p-8 rounded-xl border border-gray-light shadow-sm space-y-6">
             <h3 className="font-display font-bold text-navy text-xl">
-              ${name} Hizmet Verdiğimiz Başlıca Mahalleler
+              Tepebaşı Hizmet Verdiğimiz Başlıca Mahalleler
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {mahalleler.map((mah, idx) => (
-                <div key={idx} className="flex items-center gap-2 text-gray-medium text-sm">
+              {tepebasiMh.map((m) => (
+                <Link
+                  key={m.slug}
+                  href={`/bolgeler/tepebasi/${m.slug}`}
+                  className="flex items-center gap-2 text-gray-medium hover:text-orange-text text-sm transition-colors font-semibold"
+                >
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-text shrink-0" />
-                  <span>{mah} Mh.</span>
-                </div>
+                  <span>{m.name} Mh.</span>
+                </Link>
               ))}
             </div>
           </div>

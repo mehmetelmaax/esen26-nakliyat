@@ -92,7 +92,7 @@ export default function TasinmaListesiPage() {
               <span>Taşınma Sürecini Planlamanın Önemi</span>
             </h2>
             <p className="text-charcoal text-sm md:text-base leading-relaxed">
-              Taşınma süreci, hayatımızın en stresli dönemlerinden biri olabilir. Eşyaların tasnif edilmesi, doğru nakliyat firmasının bulunması, resmi kurumlarla olan abonelik işlemleri derken birçok detay gözden kaçabilmektedir. Süreci kaosa dönüştürmeden, sakin ve planlı bir şekilde tamamlamanın en kesin yolu profesyonel bir kontrol listesi (checklist) kullanmaktır. Esen 26 Nakliyat olarak, müşterilerimizin taşınma stresini yarıya indirecek bu interaktif planlayıcıyı hazırladık. Aşağıdaki maddeleri uygulayarak taşınma gününe tamamen hazır ve huzurlu bir şekilde girebilirsiniz.
+              Taşınma süreci, hayatımızın en stresli dönemlerinden biri olabilir. Eşyaların tasnif edilmesi, doğru nakliyat firmasının bulunması, resmi kurumlarla olan abonelik işlemleri derken birçok detay gözden kaçabilmektedir. Süreci kaosa dönüştürmeden, sakin ve planlı bir şekilde tamamlamanın en kesin yolu profesyonel bir kontrol listesi (checklist) kullanmaktır. Esen 26 Nakliyat olarak, müşterilerimizin taşınma stresini yarıya indirecek bu interaktif planlayıcıyı hazırladık. Aşağıdaki maddeleri uygulayarak taşınma gününe tamamen hazır ve huzurlu bir şekilde girebilirsiniz. Taşınmadan en az 4 hafta önce yapılması gereken hazırlıkların tam listesi için <Link href="/blog/tasinmadan-30-gun-once-hazirlik" className="text-orange hover:underline font-semibold">taşınmadan 30 gün önce hazırlık</Link> rehberimizi inceleyebilirsiniz.
             </p>
           </div>
 
