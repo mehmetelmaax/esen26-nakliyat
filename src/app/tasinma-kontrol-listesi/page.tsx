@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import MovingChecklist from '@/components/geo/MovingChecklist';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { faqSchema, breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { ArrowRight, HelpCircle, Shield, FileText, ClipboardList, Info } from 'lucide-react';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -14,6 +14,14 @@ export const metadata: Metadata = {
   description: "Eskişehir'de sorunsuz taşınmak için 30 günlük interaktif kontrol listesi. Adres değişikliği, internet, elektrik ve su abonelik nakil prosedürleri rehberi.",
   alternates: {
     canonical: '/tasinma-kontrol-listesi',
+  },
+  openGraph: {
+    title: 'İnteraktif Taşınma Kontrol Listesi ve Planlayıcı | Esen 26',
+    description: 'Eskişehir',
+    url: '/tasinma-kontrol-listesi',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'İnteraktif Taşınma Kontrol Listesi ve Planlayıcı | Esen 26' }],
   },
 };
 
@@ -48,6 +56,12 @@ export default function TasinmaListesiPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'İnteraktif Taşınma Kontrol Listesi ve Planlayıcı | Esen 26',
+        description: 'Eskişehir',
+        slug: '/tasinma-kontrol-listesi',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'İnteraktif Taşınma Kontrol Listesi',
         description: "Eskişehir'de sorunsuz taşınmak için 30 günlük interaktif kontrol listesi. Adres değişikliği, internet, elektrik ve su abonelik nakil prosedürleri rehberi.",

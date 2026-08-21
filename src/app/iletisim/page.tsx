@@ -1,9 +1,9 @@
-import { SITE } from '@/lib/site-config';
+import { SITE, STATIC_PAGES_CONFIG } from '@/lib/site-config';
 import React from 'react';
 import type { Metadata } from 'next';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 import JsonLd from '@/components/JsonLd';
-import { localBusinessSchema } from '@/lib/schema';
+import { localBusinessSchema, organizationSchema, webPageSchema } from '@/lib/schema';
 import Breadcrumb from '@/components/Breadcrumb';
 import MapEmbed from '@/components/MapEmbed';
 
@@ -16,9 +16,23 @@ export const metadata: Metadata = {
 };
 
 export default function IletisimPage() {
+  const graphSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      organizationSchema(),
+      localBusinessSchema(),
+      webPageSchema({
+        name: 'İletişim - Esen 26 Nakliyat Eskişehir',
+        description: "Esen 26 Nakliyat Tepebaşı ofis iletişim bilgileri. Fiyat teklifi almak, rezervasyon yapmak veya bilgi edinmek için bize ulaşın.",
+        slug: '/iletisim',
+        dateModified: STATIC_PAGES_CONFIG['/iletisim']
+      })
+    ]
+  };
+
   return (
     <>
-      <JsonLd data={localBusinessSchema()} />
+      <JsonLd data={graphSchema} />
       
       <main className="pt-24 bg-off-white">
         <Breadcrumb items={[{ name: 'İletişim', url: '/iletisim' }]} className="pt-4" emitSchema />

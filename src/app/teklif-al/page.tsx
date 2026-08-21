@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import QuoteForm from '@/components/QuoteForm';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema } from '@/lib/schema';
+import { faqSchema , webPageSchema } from '@/lib/schema';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   description: "Eskişehir'de ev taşıma maliyetlerini ücretsiz hesaplayın. Tepebaşı ve Odunpazarı ilçeleri için sabit fiyat garantili asansörlü nakliye teklifi alın.",
   alternates: {
     canonical: '/teklif-al',
+  },
+  openGraph: {
+    title: 'Evden Eve Nakliyat Fiyat Hesaplama | Esen 26',
+    description: 'Eskişehir',
+    url: '/teklif-al',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Evden Eve Nakliyat Fiyat Hesaplama | Esen 26' }],
   },
 };
 

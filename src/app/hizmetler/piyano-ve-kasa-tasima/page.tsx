@@ -9,7 +9,7 @@ import K3InfoBlock from '@/components/geo/K3InfoBlock';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { faqSchema, breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { ArrowRight, HelpCircle, Shield, Truck, Coins, CheckCircle2, AlertOctagon, Scale } from 'lucide-react';
 
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   description: "Eskişehir'de kuyruklu/duvar piyanosu, çelik para kasası ve hassas ağır yük taşımacılığı. Özel liftli araçlar ve askı sistemleriyle hasarsız transfer.",
   alternates: {
     canonical: '/hizmetler/piyano-ve-kasa-tasima',
+  },
+  openGraph: {
+    title: 'Eskişehir Piyano ve Kasa Taşıma | Esen 26 Nakliyat',
+    description: 'Eskişehir',
+    url: '/hizmetler/piyano-ve-kasa-tasima',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Piyano ve Kasa Taşıma | Esen 26 Nakliyat' }],
   },
 };
 
@@ -52,6 +60,12 @@ export default function PiyanoVeKasaTasimaPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Piyano ve Kasa Taşıma | Esen 26 Nakliyat',
+        description: 'Eskişehir',
+        slug: '/hizmetler/piyano-ve-kasa-tasima',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Eskişehir Piyano ve Kasa Taşıma',
         description: "Eskişehir'de kuyruklu/duvar piyanosu, çelik para kasası ve hassas ağır yük taşımacılığı. Özel liftli araçlar ve askı sistemleriyle hasarsız transfer.",

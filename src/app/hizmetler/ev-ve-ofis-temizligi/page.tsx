@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Sparkles, CheckCircle2, ShieldCheck, Clock, FileText } from 'lucide-react';
 import { SITE } from '@/lib/site-config';
 import JsonLd from '@/components/JsonLd';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema , webPageSchema } from '@/lib/schema';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -12,14 +12,33 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/hizmetler/ev-ve-ofis-temizligi',
   },
+  openGraph: {
+    title: 'Eskişehir Ev ve Ofis Temizliği Hizmeti | Esen 26',
+    description: 'Eskişehir',
+    url: '/hizmetler/ev-ve-ofis-temizligi',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Ev ve Ofis Temizliği Hizmeti | Esen 26' }],
+  },
 };
 
 export default function TemizlikHizmetiPage() {
-  const schema = breadcrumbSchema([
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      breadcrumbSchema([
     { name: 'Ana Sayfa', url: '/' },
     { name: 'Hizmetler', url: '#hizmetler' },
     { name: 'Ev ve Ofis Temizliği', url: '/hizmetler/ev-ve-ofis-temizligi' }
-  ]);
+  ]),
+      webPageSchema({
+        name: 'Eskişehir Ev ve Ofis Temizliği Hizmeti | Esen 26',
+        description: 'Eskişehir',
+        slug: '/hizmetler/ev-ve-ofis-temizligi',
+        dateModified: '2026-08-16'
+      })
+    ]
+  };
 
   return (
     <>

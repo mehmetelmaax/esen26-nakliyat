@@ -4,7 +4,7 @@ import Link from 'next/link';
 import PriceCalculator from '@/components/PriceCalculator';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
-import { breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Eskişehir Ev Taşıma Maliyeti Hesaplama | Esen 26',
@@ -12,12 +12,26 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/tasinma-maliyet-hesaplama',
   },
+  openGraph: {
+    title: 'Eskişehir Ev Taşıma Maliyeti Hesaplama | Esen 26',
+    description: 'Oda sayısı, kat yükseklikleri, asansör durumu ve yol mesafesine göre Eskişehir evden eve nakliyat maliyetini hesaplayın. Sabit fiyat garantisi.',
+    url: '/tasinma-maliyet-hesaplama',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Ev Taşıma Maliyeti Hesaplama | Esen 26' }],
+  },
 };
 
 export default function TasinmaMaliyetHesaplamaPage() {
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Ev Taşıma Maliyeti Hesaplama | Esen 26',
+        description: 'Oda sayısı, kat yükseklikleri, asansör durumu ve yol mesafesine göre Eskişehir evden eve nakliyat maliyetini hesaplayın. Sabit fiyat garantisi.',
+        slug: '/tasinma-maliyet-hesaplama',
+        dateModified: '2026-08-16'
+      }),
       breadcrumbSchema([
         { name: 'Ana Sayfa', url: '/' },
         { name: 'Taşınma Maliyet Hesaplama', url: '/tasinma-maliyet-hesaplama' }

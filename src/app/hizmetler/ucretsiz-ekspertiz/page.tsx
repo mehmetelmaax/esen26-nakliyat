@@ -2,7 +2,7 @@ import QuoteForm from '@/components/QuoteForm';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
 import JsonLd from '@/components/JsonLd';
-import { serviceSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { serviceSchema, breadcrumbSchema, faqSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 ﻿import React from 'react';
 import { FACTS } from '@/lib/facts';
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   description: "Eskişehir'de taşınma öncesinde eşya hacmini ve asansör kurulum açısını yerinde inceleyerek sabit fiyat teklifi çıkarma süreci.",
   alternates: {
     canonical: '/hizmetler/ucretsiz-ekspertiz',
+  },
+  openGraph: {
+    title: 'Ücretsiz Ekspertiz Hizmeti | Esen 26 Nakliyat',
+    description: 'Eskişehir',
+    url: '/hizmetler/ucretsiz-ekspertiz',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Ücretsiz Ekspertiz Hizmeti | Esen 26 Nakliyat' }],
   },
 };
 
@@ -40,6 +48,12 @@ export default function EkspertizPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Ücretsiz Ekspertiz Hizmeti | Esen 26 Nakliyat',
+        description: 'Eskişehir',
+        slug: '/hizmetler/ucretsiz-ekspertiz',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Ücretsiz Ekspertiz Hizmeti',
         description: "Eskişehir'de taşınma öncesinde eşya hacmini ve asansör kurulum açısını yerinde inceleyerek sabit fiyat teklifi çıkarma süreci.",

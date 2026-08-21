@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PriceCalculator from '@/components/PriceCalculator';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { faqSchema, breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 import { SITE, ROUTES } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
 import { estimatePrice } from '@/lib/pricing';
@@ -17,6 +17,14 @@ export const metadata: Metadata = {
   description: "Eskişehir'de ev taşıma maliyetlerini ücretsiz hesaplayın. Tepebaşı, Odunpazarı oda sayıları ve kat durumlarına göre güncel asansörlü nakliye fiyat listesi.",
   alternates: {
     canonical: '/eskisehir-nakliyat-fiyatlari',
+  },
+  openGraph: {
+    title: 'Eskişehir Ev Taşıma Fiyatları 2026 | Esen 26 Nakliyat',
+    description: 'Eskişehir',
+    url: '/eskisehir-nakliyat-fiyatlari',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Ev Taşıma Fiyatları 2026 | Esen 26 Nakliyat' }],
   },
 };
 
@@ -83,6 +91,12 @@ export default function FiyatlarPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Ev Taşıma Fiyatları 2026 | Esen 26 Nakliyat',
+        description: 'Eskişehir',
+        slug: '/eskisehir-nakliyat-fiyatlari',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Eskişehir Evden Eve Nakliyat Fiyatları',
         description: "Eskişehir'de ev taşıma maliyetlerini ücretsiz hesaplayın. Tepebaşı, Odunpazarı oda sayıları ve kat durumlarına göre güncel asansörlü nakliye fiyat listesi.",

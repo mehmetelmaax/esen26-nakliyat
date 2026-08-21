@@ -1,14 +1,14 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { SITE, DISTRICTS } from '@/lib/site-config';
+import { SITE, DISTRICTS, STATIC_PAGES_CONFIG } from '@/lib/site-config';
 import HeroSlider from '@/components/HeroSlider';
 import TrustStrip from '@/components/TrustStrip';
 import ServicesGrid from '@/components/ServicesGrid';
 import FAQAccordion from '@/components/FAQAccordion';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, videoSchema } from '@/lib/schema';
+import { faqSchema, videoSchema, organizationSchema, webPageSchema } from '@/lib/schema';
 import { faqs } from '@/lib/faq-data';
 import { Star, ShieldAlert, BadgeCheck, Users2, Building2, CheckCircle2, ArrowRight } from 'lucide-react';
 import { reviewsDatabase as reviews } from '@/lib/reviews';
@@ -33,6 +33,13 @@ export default function Home() {
   const graphSchema = {
     '@context': 'https://schema.org',
     '@graph': [
+      organizationSchema(),
+      webPageSchema({
+        name: 'Eskişehir Evden Eve Nakliyat | Esen 26 Nakliyat Sabit Fiyat',
+        description: "Eskişehir'de taşınma günü ek ücret çıkarmayan, sabit fiyat garantili asansörlü evden eve nakliyat firması. Tepebaşı ve Odunpazarı'nda sigortalı taşıma.",
+        slug: '/',
+        dateModified: STATIC_PAGES_CONFIG['/']
+      }),
       faqSchema(faqs),
       videoSchema()
     ]

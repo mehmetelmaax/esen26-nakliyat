@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { faqSchema, breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { ArrowRight, GraduationCap, Clock, ShieldCheck, HeartHandshake, HelpCircle } from 'lucide-react';
 
@@ -12,6 +12,14 @@ export const metadata: Metadata = {
   description: 'Eskişehir Anadolu ve Osmangazi Üniversitesi öğrencilerine özel indirimli, asansörlü apart taşıma ve parça eşya nakliyat fiyatları ve rehberi.',
   alternates: {
     canonical: '/eskisehir-ogrenci-evi-tasima',
+  },
+  openGraph: {
+    title: 'Eskişehir Öğrenci Evi Taşıma ve Parça Nakliye | Esen 26',
+    description: 'Eskişehir Anadolu ve Osmangazi Üniversitesi öğrencilerine özel indirimli, asansörlü apart taşıma ve parça eşya nakliyat fiyatları ve rehberi.',
+    url: '/eskisehir-ogrenci-evi-tasima',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Öğrenci Evi Taşıma ve Parça Nakliye | Esen 26' }],
   },
 };
 
@@ -34,6 +42,12 @@ export default function OgrenciEviTasimaPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Öğrenci Evi Taşıma ve Parça Nakliye | Esen 26',
+        description: 'Eskişehir Anadolu ve Osmangazi Üniversitesi öğrencilerine özel indirimli, asansörlü apart taşıma ve parça eşya nakliyat fiyatları ve rehberi.',
+        slug: '/eskisehir-ogrenci-evi-tasima',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Eskişehir Öğrenci Evi Taşıma Hizmeti',
         description: 'Eskişehir üniversite öğrencilerine özel, indirimli apart taşıma, parça eşya nakliyesi ve asansörlü lojistik desteği.',

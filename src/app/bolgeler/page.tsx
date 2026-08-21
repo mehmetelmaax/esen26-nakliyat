@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { SITE, DISTRICTS, NEIGHBORHOODS } from '@/lib/site-config';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema , webPageSchema } from '@/lib/schema';
 import { MapPin, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -13,13 +13,32 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/bolgeler',
   },
+  openGraph: {
+    title: 'Hizmet Bölgelerimiz | Esen 26 Nakliyat Eskişehir',
+    description: 'Esen 26 Nakliyat olarak Eskişehir Tepebaşı, Odunpazarı ve tüm ilçelerinde asansörlü, sigortalı evden eve nakliyat hizmetleri sunuyoruz.',
+    url: '/bolgeler',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Hizmet Bölgelerimiz | Esen 26 Nakliyat Eskişehir' }],
+  },
 };
 
 export default function BolgelerHubPage() {
-  const schema = breadcrumbSchema([
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      breadcrumbSchema([
     { name: 'Ana Sayfa', url: '/' },
     { name: 'Bölgelerimiz', url: '/bolgeler' }
-  ]);
+  ]),
+      webPageSchema({
+        name: 'Hizmet Bölgelerimiz | Esen 26 Nakliyat Eskişehir',
+        description: 'Esen 26 Nakliyat olarak Eskişehir Tepebaşı, Odunpazarı ve tüm ilçelerinde asansörlü, sigortalı evden eve nakliyat hizmetleri sunuyoruz.',
+        slug: '/bolgeler',
+        dateModified: '2026-08-16'
+      })
+    ]
+  };
 
   const tepebasiMh = NEIGHBORHOODS.filter((n) => n.district === 'tepebasi');
   const odunpazariMh = NEIGHBORHOODS.filter((n) => n.district === 'odunpazari');

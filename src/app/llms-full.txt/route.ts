@@ -33,6 +33,12 @@ export function GET() {
   const routesList = [
     { route: '/', name: 'Ana Sayfa', filePath: 'index.html' },
     { route: '/eskisehir-nakliyat-fiyatlari', name: 'Fiyat Rehberi', filePath: 'eskisehir-nakliyat-fiyatlari.html' },
+    { route: '/tasinma-maliyet-hesaplama', name: 'Taşınma Maliyet Hesaplayıcı', filePath: 'tasinma-maliyet-hesaplama.html' },
+    { route: '/eskisehir-nakliyat-firmalari', name: 'Firma Seçim Rehberi', filePath: 'eskisehir-nakliyat-firmalari.html' },
+    { route: '/eskisehir-nakliyat-sozlesmesi', name: 'Yasal Nakliyat Sözleşmesi Rehberi', filePath: 'eskisehir-nakliyat-sozlesmesi.html' },
+    { route: '/tasinma-kontrol-listesi', name: 'Ev Taşıma Kontrol Listesi', filePath: 'tasinma-kontrol-listesi.html' },
+    { route: '/eskisehir-ogrenci-evi-tasima', name: 'Öğrenci Evi Taşıma Rehberi', filePath: 'eskisehir-ogrenci-evi-tasima.html' },
+    { route: '/eskisehir-asansorsuz-bina-tasima', name: 'Asansörsüz Bina Taşıma Rehberi', filePath: 'eskisehir-asansorsuz-bina-tasima.html' },
     ...SERVICES.map(s => ({
       route: `/hizmetler/${s.slug}`,
       name: s.name,

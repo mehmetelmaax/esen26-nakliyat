@@ -5,7 +5,7 @@ import { FACTS } from '@/lib/facts';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
 import JsonLd from '@/components/JsonLd';
-import { serviceSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { serviceSchema, breadcrumbSchema, faqSchema, webPageSchema } from '@/lib/schema';
 import { SITE, NEIGHBORHOODS } from '@/lib/site-config';
 import React from 'react';
 import type { Metadata } from 'next';
@@ -33,15 +33,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!n) return {};
 
   const districtName = ilce === 'tepebasi' ? 'Tepebaşı' : 'Odunpazarı';
+  const title = `${n.name} Evden Eve Nakliyat | Esen 26`;
+  const description = `Eskişehir ${districtName} ${n.name} mahallesinde asansörlü taşıma, ambalajlama ve marangoz montaj dahil sigortalı evden eve nakliye hizmetleri.`;
+  const canonical = `/bolgeler/${ilce}/${n.slug}`;
+
   return {
-    title: `${n.name} Evden Eve Nakliyat | Esen 26`,
-    description: `Eskişehir ${districtName} ${n.name} mahallesinde asansörlü taşıma, ambalajlama ve marangoz montaj dahil sigortalı evden eve nakliye hizmetleri.`,
+    title,
+    description,
     alternates: {
-      canonical: `/bolgeler/${ilce}/${n.slug}`,
+      canonical,
     },
     robots: {
       index: n.indexable,
       follow: true,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: 'article',
+      modifiedTime: `${n.updatedAt}T08:00:00+03:00`,
+      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: title }],
     },
   };
 }
@@ -83,6 +95,12 @@ export default async function NeighborhoodPage({ params }: PageProps) {
         description: `Eskişehir ${districtName} ${n.name} mahallesinde asansörlü taşıma, ambalajlama ve marangoz montaj dahil sigortalı evden eve nakliye hizmetleri.`,
         slug: `bolgeler/${ilce}/${n.slug}`,
         areaName: `${n.name}, ${districtName}`
+      }),
+      webPageSchema({
+        name: `${n.name} Evden Eve Nakliyat | Esen 26`,
+        description: `Eskişehir ${districtName} ${n.name} mahallesinde asansörlü taşıma, ambalajlama ve marangoz montaj dahil sigortalı evden eve nakliye hizmetleri.`,
+        slug: `bolgeler/${ilce}/${n.slug}`,
+        dateModified: n.updatedAt
       }),
       breadcrumbSchema([
         { name: 'Ana Sayfa', url: '/' },

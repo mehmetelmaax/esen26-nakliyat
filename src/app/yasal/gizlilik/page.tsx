@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/yasal/gizlilik',
   },
+  openGraph: {
+    title: 'Gizlilik Politikası | Esen 26 Nakliyat',
+    description: '${SITE.legalName} gizlilik, çerez yönetimi ve kişisel verilerin güvenliği politikaları hakkında bilgilendirme sayfası.',
+    url: '/yasal/gizlilik',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Gizlilik Politikası | Esen 26 Nakliyat' }],
+  },
   robots: {
     index: true,
     follow: true,

@@ -5,7 +5,7 @@ import { Shield, Users, Award, Calendar, CheckCircle } from 'lucide-react';
 import { SITE } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
 import JsonLd from '@/components/JsonLd';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema, webPageSchema, videoSchema } from '@/lib/schema';
 import Breadcrumb from '@/components/Breadcrumb';
 import K3InfoBlock from '@/components/geo/K3InfoBlock';
 
@@ -15,14 +15,34 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/hakkimizda',
   },
+  openGraph: {
+    title: 'Hakkımızda - Kurumsal | Esen 26 Nakliyat',
+    description: '${FACTS.foundedYear} yılından beri Eskişehir Tepebaşı merkezli olarak K3 yetki belgesi ve özmal asansör filomuzla profesyonel evden eve nakliye hizmetleri sunuyoruz.',
+    url: '/hakkimizda',
+    type: 'article',
+    modifiedTime: '2026-08-21T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Hakkımızda - Kurumsal | Esen 26 Nakliyat' }],
+  },
 };
 
 export default function HakkimizdaPage() {
   const experienceYears = new Date().getFullYear() - FACTS.foundedYear;
-  const schema = breadcrumbSchema([
-    { name: 'Ana Sayfa', url: '/' },
-    { name: 'Hakkımızda', url: '/hakkimizda' }
-  ]);
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      breadcrumbSchema([
+        { name: 'Ana Sayfa', url: '/' },
+        { name: 'Hakkımızda', url: '/hakkimizda' }
+      ]),
+      webPageSchema({
+        name: 'Hakkımızda - Kurumsal | Esen 26 Nakliyat',
+        description: `${FACTS.foundedYear} yılından beri Eskişehir Tepebaşı merkezli olarak K3 yetki belgesi ve özmal asansör filomuzla profesyonel evden eve nakliye hizmetleri sunuyoruz.`,
+        slug: '/hakkimizda',
+        dateModified: '2026-08-21'
+      }),
+      videoSchema()
+    ]
+  };
 
   return (
     <>
@@ -104,8 +124,11 @@ export default function HakkimizdaPage() {
             </div>
 
             {/* K3 Authorization block */}
-            <div className="max-w-3xl mx-auto">
-              <K3InfoBlock />
+            <div className="max-w-3xl mx-auto space-y-4">
+              <K3InfoBlock licenseNumber={process.env.NEXT_PUBLIC_K3_BELGE_NO} />
+              <p className="text-center text-xs text-charcoal font-semibold">
+                Firmamız yasal U-NET sistemine kayıtlı K3 Yetki Belgesi ({process.env.NEXT_PUBLIC_K3_BELGE_NO || "26.K3.xxxx"}) ile taşıma yapmakta olup, tüm taşımalarımız Anadolu Sigorta poliçesi kapsamında güvence altındadır.
+              </p>
             </div>
 
             {/* Block 2: Personnel Structure (Image Left, Text Right) */}

@@ -5,7 +5,7 @@ import { FACTS } from '@/lib/facts';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
 import JsonLd from '@/components/JsonLd';
-import { serviceSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { serviceSchema, breadcrumbSchema, faqSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import React from 'react';
 import { locative, locativeKi, genitive } from '@/lib/slug';
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   description: "Eskişehir Günyüzü ilçesinde Sümer, Yeni ve Gümüşkonak mahallelerinde Esen 26 ile sigortalı marangozlu evden eve taşımacılık.",
   alternates: {
     canonical: '/bolgeler/gunyuzu-evden-eve-nakliyat',
+  },
+  openGraph: {
+    title: 'Günyüzü Evden Eve Nakliyat | Esen 26 Nakliyat',
+    description: 'Eskişehir Günyüzü ilçesinde Sümer, Yeni ve Gümüşkonak mahallelerinde Esen 26 ile sigortalı marangozlu evden eve taşımacılık.',
+    url: '/bolgeler/gunyuzu-evden-eve-nakliyat',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Günyüzü Evden Eve Nakliyat | Esen 26 Nakliyat' }],
   },
   robots: {
     index: false,
@@ -54,6 +62,12 @@ export default function GünyüzüPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Günyüzü Evden Eve Nakliyat | Esen 26 Nakliyat',
+        description: 'Eskişehir Günyüzü ilçesinde Sümer, Yeni ve Gümüşkonak mahallelerinde Esen 26 ile sigortalı marangozlu evden eve taşımacılık.',
+        slug: '/bolgeler/gunyuzu-evden-eve-nakliyat',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Günyüzü Evden Eve Nakliyat',
         description: "Eskişehir Günyüzü ilçesinde Sümer, Yeni ve Gümüşkonak mahallelerinde Esen 26 ile sigortalı marangozlu evden eve taşımacılık.",

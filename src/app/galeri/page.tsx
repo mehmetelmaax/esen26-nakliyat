@@ -4,7 +4,7 @@ import GalleryGrid from '@/components/GalleryGrid';
 import { Camera } from 'lucide-react';
 import { SITE } from '@/lib/site-config';
 import JsonLd from '@/components/JsonLd';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema , webPageSchema } from '@/lib/schema';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -12,6 +12,14 @@ export const metadata: Metadata = {
   description: "Esen 26 Nakliyat asansörlü taşıma araçları, paketleme işlemleri ve ekip çalışmalarına ait gerçek operasyon fotoğrafları galerisi.",
   alternates: {
     canonical: '/galeri',
+  },
+  openGraph: {
+    title: 'Hizmet Faaliyet Galerimiz | Esen 26 Nakliyat',
+    description: 'Esen 26 Nakliyat asansörlü taşıma araçları, paketleme işlemleri ve ekip çalışmalarına ait gerçek operasyon fotoğrafları galerisi.',
+    url: '/galeri',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Hizmet Faaliyet Galerimiz | Esen 26 Nakliyat' }],
   },
 };
 
@@ -107,6 +115,12 @@ export default function GalleryPage() {
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Hizmet Faaliyet Galerimiz | Esen 26 Nakliyat',
+        description: 'Esen 26 Nakliyat asansörlü taşıma araçları, paketleme işlemleri ve ekip çalışmalarına ait gerçek operasyon fotoğrafları galerisi.',
+        slug: '/galeri',
+        dateModified: '2026-08-16'
+      }),
       breadcrumbSchema([
         { name: 'Ana Sayfa', url: '/' },
         { name: 'Galeri', url: '/galeri' }

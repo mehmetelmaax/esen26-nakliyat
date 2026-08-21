@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog',
   },
+  openGraph: {
+    title: 'Lojistik İpuçları ve Blog | Esen 26 Nakliyat',
+    description: 'Eskişehir',
+    url: '/blog',
+    type: 'article',
+    modifiedTime: '2026-08-21T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Lojistik İpuçları ve Blog | Esen 26 Nakliyat' }],
+  },
 };
 
 const posts = Object.values(blogMetadata);

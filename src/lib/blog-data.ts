@@ -144,7 +144,7 @@ export const blogDatabase: Record<string, BlogPostData> = {
     title: "Eskişehir Taşınma Maliyeti 2026: Fiyatlar & Masraflar",
     desc: "Eskişehir evden eve nakliyat fiyatları 2026 maliyet rehberi. Tepebaşı ve Odunpazarı taşınma giderleri, asansör kiralama ve gizli nakliye masrafları dökümü.",
     excerpt: "2026 yılı Eskişehir evden eve nakliyat fiyatları, gizli masraflar, asansör kurulum maliyetleri ve taşınma bütçesi hazırlama rehberi.",
-    date: '2026-02-10',
+    date: '2026-08-21',
     author: 'Esen 26 Lojistik Editör',
     image: '/img/esen-slayt-1.jpg',
     category: 'Fiyat',

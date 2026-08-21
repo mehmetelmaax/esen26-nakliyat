@@ -41,7 +41,8 @@ function runIntegrityCheck() {
     const typeCounts = {
       BreadcrumbList: 0,
       FAQPage: 0,
-      Organization: 0
+      Organization: 0,
+      WebPage: 0
     };
 
     const countTypes = (obj) => {
@@ -52,10 +53,12 @@ function runIntegrityCheck() {
         if (type === 'BreadcrumbList') typeCounts.BreadcrumbList++;
         if (type === 'FAQPage') typeCounts.FAQPage++;
         if (type === 'Organization') typeCounts.Organization++;
+        if (type === 'WebPage') typeCounts.WebPage++;
       } else if (Array.isArray(type)) {
         if (type.includes('BreadcrumbList')) typeCounts.BreadcrumbList++;
         if (type.includes('FAQPage')) typeCounts.FAQPage++;
         if (type.includes('Organization')) typeCounts.Organization++;
+        if (type.includes('WebPage')) typeCounts.WebPage++;
       }
     };
 
@@ -87,6 +90,9 @@ function runIntegrityCheck() {
     if (typeCounts.Organization > 1) {
       pageIssues.push(`Duplicate Organization schema found (${typeCounts.Organization} instances)`);
     }
+    if (typeCounts.WebPage > 1) {
+      pageIssues.push(`Duplicate WebPage schema found (${typeCounts.WebPage} instances)`);
+    }
 
     if (pageIssues.length > 0) {
       errors += pageIssues.length;
@@ -103,7 +109,7 @@ function runIntegrityCheck() {
     console.error(`\nIntegrity check failed with ${errors} issue(s). Duplicate schemas are not allowed!`);
     process.exit(1);
   } else {
-    console.log('✅ Integrity check passed: All pages contain at most one instance of BreadcrumbList, FAQPage, and Organization schemas.');
+    console.log('✅ Integrity check passed: All pages contain at most one instance of BreadcrumbList, FAQPage, Organization, and WebPage schemas.');
     process.exit(0);
   }
 }

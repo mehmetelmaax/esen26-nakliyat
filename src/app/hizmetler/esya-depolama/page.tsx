@@ -5,7 +5,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { faqSchema, breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
 import { HelpCircle, Shield, Warehouse, Building, ClipboardCheck, Scale, AlertOctagon, CheckCircle2 } from 'lucide-react';
@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   description: "Eskişehir'de aylık kiralık eşya depolama çözümleri. Güvenlik kameralı, rutubetsiz ve sigortalı konteyner depolarımızda eşyalarınızı güvenle saklayın.",
   alternates: {
     canonical: '/hizmetler/esya-depolama',
+  },
+  openGraph: {
+    title: 'Eskişehir Eşya Depolama Hizmeti | Esen 26 Depolama',
+    description: 'Eskişehir',
+    url: '/hizmetler/esya-depolama',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Eşya Depolama Hizmeti | Esen 26 Depolama' }],
   },
 };
 
@@ -49,6 +57,12 @@ export default function EsyaDepolamaPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Eşya Depolama Hizmeti | Esen 26 Depolama',
+        description: 'Eskişehir',
+        slug: '/hizmetler/esya-depolama',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Eskişehir Eşya Depolama Hizmeti',
         description: "Eskişehir'de aylık kiralık eşya depolama çözümleri. Güvenlik kameralı, rutubetsiz ve sigortalı konteyner depolarımızda eşyalarınızı güvenle saklayın.",

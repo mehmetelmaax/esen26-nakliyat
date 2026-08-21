@@ -2,8 +2,8 @@ import QuoteForm from '@/components/QuoteForm';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
 import JsonLd from '@/components/JsonLd';
-import { breadcrumbSchema, faqSchema } from '@/lib/schema';
-import { SITE } from '@/lib/site-config';
+import { breadcrumbSchema, faqSchema, webPageSchema } from '@/lib/schema';
+import { SITE, ROUTES } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
 import { routesDatabase } from '@/lib/routes-data';
 import { notFound } from 'next/navigation';
@@ -27,11 +27,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const route = routesDatabase[slug];
   if (!route) return {};
 
+  const configRoute = ROUTES.find((r) => r.slug === slug);
+  const updatedAt = configRoute?.updatedAt || '2026-08-16';
+
+  const title = `Eskişehir ${route.city} Evden Eve Nakliyat | Esen 26`;
+  const description = `Eskişehir'den ${route.city}'e sigortalı, marangozlu ve K3 belgeli şehirlerarası evden eve nakliyat. Sabit fiyat garantisiyle güvenle taşının.`;
+  const canonical = `/rotalar/${route.slug}`;
+
   return {
-    title: `Eskişehir ${route.city} Evden Eve Nakliyat | Esen 26`,
-    description: `Eskişehir'den ${route.city}'e sigortalı, marangozlu ve K3 belgeli şehirlerarası evden eve nakliyat. Sabit fiyat garantisiyle güvenle taşının.`,
+    title,
+    description,
     alternates: {
-      canonical: `/rotalar/${route.slug}`,
+      canonical,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: 'article',
+      modifiedTime: `${updatedAt}T08:00:00+03:00`,
+      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: title }],
     },
   };
 }
@@ -43,6 +58,9 @@ export default async function RoutePage({ params }: PageProps) {
   if (!route) {
     notFound();
   }
+
+  const configRoute = ROUTES.find((r) => r.slug === slug);
+  const updatedAt = configRoute?.updatedAt || '2026-08-16';
 
   const schemas = {
     '@context': 'https://schema.org',
@@ -68,6 +86,12 @@ export default async function RoutePage({ params }: PageProps) {
         ],
         'url': `${SITE.url}/rotalar/${route.slug}`
       },
+      webPageSchema({
+        name: `Eskişehir ${route.city} Evden Eve Nakliyat | Esen 26`,
+        description: `Eskişehir'den ${route.city}'e sigortalı, marangozlu ve K3 belgeli şehirlerarası evden eve nakliyat. Sabit fiyat garantisiyle güvenle taşının.`,
+        slug: `rotalar/${route.slug}`,
+        dateModified: updatedAt
+      }),
       breadcrumbSchema([
         { name: 'Ana Sayfa', url: '/' },
         { name: 'Şehirlerarası Rotalar', url: '/rotalar' },

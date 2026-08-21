@@ -3,7 +3,7 @@ import QuoteForm from '@/components/QuoteForm';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
 import JsonLd from '@/components/JsonLd';
-import { serviceSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { serviceSchema, breadcrumbSchema, faqSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
 import React from 'react';
@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   description: "Eskişehir'de kurumsal ofis, arşiv, büro ve işyeri taşıma hizmeti. Numaralı etiketli kutulama, asansörlü taşıma ve sigorta güvencesiyle sıfır kayıp.",
   alternates: {
     canonical: '/hizmetler/ofis-ve-isyeri-tasimaciligi',
+  },
+  openGraph: {
+    title: 'Eskişehir Ofis ve İşyeri Taşıma | Esen 26 Nakliyat',
+    description: 'Eskişehir',
+    url: '/hizmetler/ofis-ve-isyeri-tasimaciligi',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Ofis ve İşyeri Taşıma | Esen 26 Nakliyat' }],
   },
 };
 
@@ -38,6 +46,12 @@ export default function OfisPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Ofis ve İşyeri Taşıma | Esen 26 Nakliyat',
+        description: 'Eskişehir',
+        slug: '/hizmetler/ofis-ve-isyeri-tasimaciligi',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Ofis ve İşyeri Taşımacılığı',
         description: "Eskişehir'de kurumsal ofis, arşiv, büro ve işyeri taşıma hizmeti. Numaralı etiketli kutulama, asansörlü taşıma ve sigorta güvencesiyle sıfır kayıp.",

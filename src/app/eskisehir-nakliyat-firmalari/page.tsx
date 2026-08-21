@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { faqSchema, breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
 import { ArrowRight, HelpCircle, Shield, FileText, ClipboardList, CheckCircle2, AlertOctagon, Scale } from 'lucide-react';
@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   description: "Eskişehir'de ev taşırken korsan ve yetkisiz firmalardan korunma yolları. K3 yetki belgesi sorgulama, sigorta poliçesi doğrulama ve 12 altın kural.",
   alternates: {
     canonical: '/eskisehir-nakliyat-firmalari',
+  },
+  openGraph: {
+    title: 'Eskişehir En İyi Evden Eve Nakliyat Firmaları Seçim Rehberi',
+    description: 'Eskişehir',
+    url: '/eskisehir-nakliyat-firmalari',
+    type: 'article',
+    modifiedTime: '2026-08-21T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir En İyi Evden Eve Nakliyat Firmaları Seçim Rehberi' }],
   },
 };
 
@@ -52,6 +60,12 @@ export default function FirmalarRehberiPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir En İyi Evden Eve Nakliyat Firmaları Seçim Rehberi',
+        description: 'Eskişehir',
+        slug: '/eskisehir-nakliyat-firmalari',
+        dateModified: '2026-08-21'
+      }),
       serviceSchema({
         name: 'Eskişehir Nakliyat Firmaları Seçim Rehberi',
         description: "Eskişehir'de ev taşırken korsan ve yetkisiz firmalardan korunma yolları. K3 yetki belgesi sorgulama, sigorta poliçesi doğrulama ve 12 altın kural.",
@@ -134,7 +148,12 @@ export default function FirmalarRehberiPage() {
           </div>
 
           {/* Section 3: K3 Belgesi Sorgulama */}
-          <K3InfoBlock />
+          <div className="space-y-4">
+            <K3InfoBlock licenseNumber={process.env.NEXT_PUBLIC_K3_BELGE_NO} />
+            <p className="text-center text-xs text-charcoal font-semibold">
+              Firmamız yasal U-NET sistemine kayıtlı K3 Yetki Belgesi ({process.env.NEXT_PUBLIC_K3_BELGE_NO || "26.K3.xxxx"}) ile taşıma yapmakta olup, tüm taşımalarımız Anadolu Sigorta poliçesi kapsamında güvence altındadır.
+            </p>
+          </div>
 
           {/* Section 3b: Contract Checklist */}
           <ContractChecklist />

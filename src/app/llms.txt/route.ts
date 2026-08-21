@@ -25,16 +25,24 @@ export function GET() {
 ## Hizmetler
 ${SERVICES.map(s => `- [${s.name}](${SITE.url}/hizmetler/${s.slug}): ${s.description}`).join('\n')}
 
-## Hizmet Bölgeleri
-${indexableDistricts.map(d => `- [${d.name} Evden Eve Nakliyat](${SITE.url}/bolgeler/${d.slug}): ${d.name} ilçesinde asansörlü ve sigortalı ev taşıma hizmetleri.`).join('\n')}
-
-## Şehirlerarası Rotalar
-${ROUTES.map(r => `- [Eskişehir - ${r.city} Nakliyat](${SITE.url}/rotalar/${r.slug}): Mesafe yaklaşık ${r.distanceKm} km, ortalama seyahat süresi ${r.durationHours} saattir.`).join('\n')}
+## Hesaplama ve Seçim Rehberleri
+- [Taşınma Maliyet Hesaplayıcı](${SITE.url}/tasinma-maliyet-hesaplama): Eskişehir şehiriçi ve şehirlerarası taşınma maliyetlerini oda sayısına ve kat durumuna göre hesaplayan robot.
+- [Eskişehir Nakliyat Firmaları Seçim Rehberi](${SITE.url}/eskisehir-nakliyat-firmalari): Korsan ve yetkisiz taşımacılardan korunma yolları ve K3 sorgulama rehberi.
+- [Taşınma Öncesi Kontrol Listesi](${SITE.url}/tasinma-kontrol-listesi): Taşınırken yapılması gereken resmi işlemler, paketleme adımları ve 30 günlük plan.
+- [Eskişehir Nakliyat Sözleşmesi ve Şablonu](${SITE.url}/eskisehir-nakliyat-sozlesmesi): Haklarınızı koruma altına alacak yasal ve ıslak imzalı ev taşıma sözleşmesi örneği.
+- [Öğrenci Evi Taşıma Kılavuzu](${SITE.url}/eskisehir-ogrenci-evi-tasima): Eskişehir öğrenci evi taşıma, parça eşya nakliye ve asansörlü kamyonet çözümleri.
+- [Asansörsüz Bina Taşıma Rehberi](${SITE.url}/eskisehir-asansorsuz-bina-tasima): Eskişehir asansörsüz bina taşıma fiyatları, merdivenle taşınma ipuçları ve personel planlama.
 
 ## Fiyat Bilgisi
 Fiyatlandırma detayları ve anlık maliyet hesaplama robotu için [Eskişehir Evden Eve Nakliyat Fiyatları](${SITE.url}/eskisehir-nakliyat-fiyatlari) sayfamızı ziyaret edin. Sitedeki standart şehiriçi ev taşıma bütçesi ortalama ₺${FACTS.priceMin} ile ₺${FACTS.priceMax} aralığındadır.
 
-## Rehber İçerikler
+## Şehirlerarası Rotalar
+${ROUTES.map(r => `- [Eskişehir - ${r.city} Nakliyat](${SITE.url}/rotalar/${r.slug}): Mesafe yaklaşık ${r.distanceKm} km, ortalama seyahat süresi ${r.durationHours} saattir.`).join('\n')}
+
+## Hizmet Bölgeleri
+${indexableDistricts.map(d => `- [${d.name} Evden Eve Nakliyat](${SITE.url}/bolgeler/${d.slug}): ${d.name} ilçesinde asansörlü ve sigortalı ev taşıma hizmetleri.`).join('\n')}
+
+## Rehber İçerikler (Blog)
 ${blogs.map(b => `- [${b.title}](${SITE.url}/blog/${b.id}): ${b.desc}`).join('\n')}
 
 ## İletişim

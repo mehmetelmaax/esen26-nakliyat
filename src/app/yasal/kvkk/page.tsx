@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/yasal/kvkk',
   },
+  openGraph: {
+    title: 'KVKK Aydınlatma Metni | Esen 26 Nakliyat',
+    description: '${SITE.legalName} Kişisel Verilerin Korunması Kanunu (KVKK) uyarınca veri sorumlusu aydınlatma metnimiz ve yasal haklarınız.',
+    url: '/yasal/kvkk',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'KVKK Aydınlatma Metni | Esen 26 Nakliyat' }],
+  },
   robots: {
     index: true,
     follow: true,

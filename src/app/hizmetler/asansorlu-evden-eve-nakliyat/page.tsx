@@ -3,7 +3,7 @@ import QuoteForm from '@/components/QuoteForm';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
 import JsonLd from '@/components/JsonLd';
-import { serviceSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { serviceSchema, breadcrumbSchema, faqSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
 import React from 'react';
@@ -14,6 +14,14 @@ export const metadata: Metadata = {
   description: `Eskişehir'de yüksek katlı daireler için ${FACTS.maxFloor}. kata kadar ulaşan mobil dış cephe eşya asansörü kiralama ve güvenli asansörlü evden eve nakliye hizmeti.`,
   alternates: {
     canonical: '/hizmetler/asansorlu-evden-eve-nakliyat',
+  },
+  openGraph: {
+    title: 'Eskişehir Asansörlü Ev Taşıma | Esen 26 Nakliyat',
+    description: 'Eskişehir\'de yüksek katlı daireler için ${FACTS.maxFloor}. kata kadar ulaşan mobil dış cephe eşya asansörü kiralama ve güvenli asansörlü evden eve nakliye hizmeti.',
+    url: '/hizmetler/asansorlu-evden-eve-nakliyat',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Asansörlü Ev Taşıma | Esen 26 Nakliyat' }],
   },
 };
 
@@ -36,6 +44,12 @@ export default function AsansorluPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Asansörlü Ev Taşıma | Esen 26 Nakliyat',
+        description: 'Eskişehir\'de yüksek katlı daireler için ${FACTS.maxFloor}. kata kadar ulaşan mobil dış cephe eşya asansörü kiralama ve güvenli asansörlü evden eve nakliye hizmeti.',
+        slug: '/hizmetler/asansorlu-evden-eve-nakliyat',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Asansörlü Evden Eve Nakliyat',
         description: `Eskişehir'de yüksek katlı daireler için ${FACTS.maxFloor}. kata kadar ulaşan mobil dış cephe eşya asansörü kiralama ve güvenli asansörlü evden eve nakliye hizmeti.`,

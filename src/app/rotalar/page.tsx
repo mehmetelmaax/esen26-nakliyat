@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { SITE, ROUTES } from '@/lib/site-config';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema , webPageSchema } from '@/lib/schema';
 import { ArrowRight, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -13,13 +13,32 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/rotalar',
   },
+  openGraph: {
+    title: 'Şehirlerarası Taşımacılık Rotalarımız | Esen 26 Nakliyat',
+    description: 'Eskişehir çıkışlı şehirlerarası evden eve nakliyat rotalarımız. Ankara, İstanbul, İzmir, Bursa ve Antalya şehirlerarası taşımacılık detayları.',
+    url: '/rotalar',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Şehirlerarası Taşımacılık Rotalarımız | Esen 26 Nakliyat' }],
+  },
 };
 
 export default function RotalarHubPage() {
-  const schema = breadcrumbSchema([
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      breadcrumbSchema([
     { name: 'Ana Sayfa', url: '/' },
     { name: 'Şehirlerarası Rotalarımız', url: '/rotalar' }
-  ]);
+  ]),
+      webPageSchema({
+        name: 'Şehirlerarası Taşımacılık Rotalarımız | Esen 26 Nakliyat',
+        description: 'Eskişehir çıkışlı şehirlerarası evden eve nakliyat rotalarımız. Ankara, İstanbul, İzmir, Bursa ve Antalya şehirlerarası taşımacılık detayları.',
+        slug: '/rotalar',
+        dateModified: '2026-08-16'
+      })
+    ]
+  };
 
   return (
     <>

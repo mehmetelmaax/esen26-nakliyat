@@ -88,15 +88,6 @@ export function organizationSchema() {
       'eşya depolama',
       'ücretsiz ekspertiz'
     ],
-    'makesOffer': SERVICES.map((service) => ({
-      '@type': 'Offer',
-      'itemOffered': {
-        '@type': 'Service',
-        'name': service.name,
-        'description': service.description,
-        'url': `${SITE.url}/hizmetler/${service.slug}`
-      }
-    })),
     'hasOfferCatalog': {
       '@type': 'OfferCatalog',
       'name': `${SITE.name} Hizmetleri`,
@@ -136,7 +127,7 @@ export function videoSchema() {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
     'name': `${SITE.name} Operasyon Faaliyet Videosu`,
-    'description': `${SITE.name} asansörlü taşıma kurulumu, ambalajlama ve taşımacılık süreçlerimizi gösteren operasyon videosu.`,
+    'description': `${SITE.name} asansörlü taşıma kurulumu, ambalajlama and taşımacılık süreçlerimizi gösteren operasyon videosu.`,
     'thumbnailUrl': `${SITE.url}/img/esen-slayt-1.jpg`,
     'uploadDate': '2026-08-09T18:00:00Z',
     'contentUrl': `${SITE.url}/img/esen-video.mp4`,
@@ -217,5 +208,36 @@ export function localBusinessSchema() {
     'mainEntity': {
       '@id': `${SITE.url}/#organization`
     }
+  };
+}
+
+export function webPageSchema({
+  name,
+  description,
+  slug,
+  dateModified
+}: {
+  name: string;
+  description: string;
+  slug: string;
+  dateModified: string;
+}) {
+  const cleanSlug = slug.startsWith('/') ? slug : `/${slug}`;
+  const url = `${SITE.url}${cleanSlug === '/' ? '' : cleanSlug}`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${url}#webpage`,
+    'url': url,
+    'name': name,
+    'description': description,
+    'isPartOf': {
+      '@id': `${SITE.url}/#website`
+    },
+    'about': {
+      '@id': `${SITE.url}/#organization`
+    },
+    'inLanguage': 'tr-TR',
+    'dateModified': `${dateModified}T08:00:00+03:00`
   };
 }

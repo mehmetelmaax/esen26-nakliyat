@@ -9,7 +9,7 @@ import K3InfoBlock from '@/components/geo/K3InfoBlock';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { faqSchema, breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { ArrowRight, HelpCircle, Shield, Truck, Package, CheckCircle2, BadgeAlert, Scale } from 'lucide-react';
 
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   description: "Eskişehir'de tek parça, az eşya veya öğrenci evi taşımacılığı. Uygun fiyatlı parça eşya nakliye tır ve kamyonetlerimizle hızlı taşıma hizmeti.",
   alternates: {
     canonical: '/hizmetler/parca-esya-tasima',
+  },
+  openGraph: {
+    title: 'Eskişehir Parça Eşya Taşıma | Esen 26 Nakliyat',
+    description: 'Eskişehir',
+    url: '/hizmetler/parca-esya-tasima',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Parça Eşya Taşıma | Esen 26 Nakliyat' }],
   },
 };
 
@@ -52,6 +60,12 @@ export default function ParcaEsyaTasimaPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Parça Eşya Taşıma | Esen 26 Nakliyat',
+        description: 'Eskişehir',
+        slug: '/hizmetler/parca-esya-tasima',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Eskişehir Parça Eşya Taşıma',
         description: "Eskişehir'de tek parça, az eşya veya öğrenci evi taşımacılığı. Uygun fiyatlı parça eşya nakliye tır ve kamyonetlerimizle hızlı taşıma hizmeti.",

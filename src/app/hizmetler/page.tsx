@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { SITE, SERVICES } from '@/lib/site-config';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema , webPageSchema } from '@/lib/schema';
 import { ArrowRight, Truck, Globe, ArrowUpRight, Building2, ShieldCheck, FileText, Warehouse, Package, Boxes, Sparkles } from 'lucide-react';
 
 const iconMap: Record<string, React.ComponentType<any>> = {
@@ -26,13 +26,32 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/hizmetler',
   },
+  openGraph: {
+    title: 'Profesyonel Nakliyat Hizmetlerimiz | Esen 26 Nakliyat',
+    description: 'Esen 26 Nakliyat olarak Eskişehir genelinde sunduğumuz evden eve nakliyat, asansörlü taşıma, ofis nakliyesi ve eşya depolama hizmetleri detayları.',
+    url: '/hizmetler',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Profesyonel Nakliyat Hizmetlerimiz | Esen 26 Nakliyat' }],
+  },
 };
 
 export default function HizmetlerHubPage() {
-  const schema = breadcrumbSchema([
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      breadcrumbSchema([
     { name: 'Ana Sayfa', url: '/' },
     { name: 'Hizmetlerimiz', url: '/hizmetler' }
-  ]);
+  ]),
+      webPageSchema({
+        name: 'Profesyonel Nakliyat Hizmetlerimiz | Esen 26 Nakliyat',
+        description: 'Esen 26 Nakliyat olarak Eskişehir genelinde sunduğumuz evden eve nakliyat, asansörlü taşıma, ofis nakliyesi ve eşya depolama hizmetleri detayları.',
+        slug: '/hizmetler',
+        dateModified: '2026-08-16'
+      })
+    ]
+  };
 
   return (
     <>

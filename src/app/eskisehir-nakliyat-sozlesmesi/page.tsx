@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { faqSchema, breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { ArrowRight, FileText, CheckCircle2, ShieldCheck, HelpCircle } from 'lucide-react';
 import ContractChecklist from '@/components/geo/ContractChecklist';
@@ -13,6 +13,14 @@ export const metadata: Metadata = {
   description: 'Resmi ve yazılı evden eve nakliyat sözleşmesinde olması gereken maddeler, fiyat sabitleme kuralları ve resmi nakliye sözleşmesi örneği rehberi.',
   alternates: {
     canonical: '/eskisehir-nakliyat-sozlesmesi',
+  },
+  openGraph: {
+    title: 'Eskişehir Nakliyat Sözleşmesi Örneği ve Rehberi | Esen 26',
+    description: 'Resmi ve yazılı evden eve nakliyat sözleşmesinde olması gereken maddeler, fiyat sabitleme kuralları ve resmi nakliye sözleşmesi örneği rehberi.',
+    url: '/eskisehir-nakliyat-sozlesmesi',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Nakliyat Sözleşmesi Örneği ve Rehberi | Esen 26' }],
   },
 };
 
@@ -35,6 +43,12 @@ export default function NakliyatSozlesmesiPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Nakliyat Sözleşmesi Örneği ve Rehberi | Esen 26',
+        description: 'Resmi ve yazılı evden eve nakliyat sözleşmesinde olması gereken maddeler, fiyat sabitleme kuralları ve resmi nakliye sözleşmesi örneği rehberi.',
+        slug: '/eskisehir-nakliyat-sozlesmesi',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Eskişehir Evden Eve Nakliyat Sözleşmesi Rehberi',
         description: 'Fiyat sabitleme garantisi sağlayan resmi yazılı nakliyat sözleşmesi maddeleri ve yasal rehberi.',

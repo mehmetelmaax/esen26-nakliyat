@@ -3,7 +3,7 @@ import QuoteForm from '@/components/QuoteForm';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedLinks from '@/components/RelatedLinks';
 import JsonLd from '@/components/JsonLd';
-import { serviceSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { serviceSchema, breadcrumbSchema, faqSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { FACTS } from '@/lib/facts';
 import React from 'react';
@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   description: "Eskişehir merkez ilçelerinde aynı gün içinde asansörlü, sigortalı ve marangoz montaj dahil şehir içi evden eve nakliyat hizmeti. Hemen sabit fiyat alın.",
   alternates: {
     canonical: '/hizmetler/sehirici-evden-eve-nakliyat',
+  },
+  openGraph: {
+    title: 'Eskişehir Şehir İçi Ev Taşıma | Esen 26 Nakliyat',
+    description: 'Eskişehir merkez ilçelerinde aynı gün içinde asansörlü, sigortalı ve marangoz montaj dahil şehir içi evden eve nakliyat hizmeti. Hemen sabit fiyat alın.',
+    url: '/hizmetler/sehirici-evden-eve-nakliyat',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Şehir İçi Ev Taşıma | Esen 26 Nakliyat' }],
   },
 };
 
@@ -38,6 +46,12 @@ export default function SehiriciPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Şehir İçi Ev Taşıma | Esen 26 Nakliyat',
+        description: 'Eskişehir merkez ilçelerinde aynı gün içinde asansörlü, sigortalı ve marangoz montaj dahil şehir içi evden eve nakliyat hizmeti. Hemen sabit fiyat alın.',
+        slug: '/hizmetler/sehirici-evden-eve-nakliyat',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Şehiriçi Evden Eve Nakliyat',
         description: "Eskişehir merkez ilçelerinde aynı gün içinde asansörlü, sigortalı ve marangoz montaj dahil şehir içi evden eve nakliyat hizmeti. Hemen sabit fiyat alın.",

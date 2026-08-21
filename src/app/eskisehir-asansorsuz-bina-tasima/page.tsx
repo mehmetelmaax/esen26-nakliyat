@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema, serviceSchema } from '@/lib/schema';
+import { faqSchema, breadcrumbSchema, serviceSchema , webPageSchema } from '@/lib/schema';
 import { SITE } from '@/lib/site-config';
 import { ArrowRight, Building, Hammer, ShieldAlert, BadgeInfo, HelpCircle } from 'lucide-react';
 
@@ -12,6 +12,14 @@ export const metadata: Metadata = {
   description: 'Eskişehir genelinde yük asansörü kurulumuna elverişsiz veya asansörsüz binalarda güvenli, hasarsız insan gücüyle ev taşıma yöntemleri ve ipuçları.',
   alternates: {
     canonical: '/eskisehir-asansorsuz-bina-tasima',
+  },
+  openGraph: {
+    title: 'Eskişehir Asansörsüz Bina Ev Taşıma Kılavuzu | Esen 26',
+    description: 'Eskişehir genelinde yük asansörü kurulumuna elverişsiz veya asansörsüz binalarda güvenli, hasarsız insan gücüyle ev taşıma yöntemleri ve ipuçları.',
+    url: '/eskisehir-asansorsuz-bina-tasima',
+    type: 'article',
+    modifiedTime: '2026-08-16T08:00:00+03:00',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eskişehir Asansörsüz Bina Ev Taşıma Kılavuzu | Esen 26' }],
   },
 };
 
@@ -34,6 +42,12 @@ export default function AsansorsuzBinaTasimaPage() {
   const schemas = {
     '@context': 'https://schema.org',
     '@graph': [
+      webPageSchema({
+        name: 'Eskişehir Asansörsüz Bina Ev Taşıma Kılavuzu | Esen 26',
+        description: 'Eskişehir genelinde yük asansörü kurulumuna elverişsiz veya asansörsüz binalarda güvenli, hasarsız insan gücüyle ev taşıma yöntemleri ve ipuçları.',
+        slug: '/eskisehir-asansorsuz-bina-tasima',
+        dateModified: '2026-08-16'
+      }),
       serviceSchema({
         name: 'Eskişehir Asansörsüz Bina Ev Taşıma Hizmeti',
         description: 'Dış cephe yük asansörü kurulamayan binalarda profesyonel insan gücü ve sırt askı aparatlarıyla hasarsız ev taşıma çözümleri.',

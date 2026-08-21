@@ -503,3 +503,24 @@ export const NEIGHBORHOODS = [
 ] as const;
 
 export type Neighborhood = (typeof NEIGHBORHOODS)[number];
+
+export const STATIC_PAGES_CONFIG = {
+  '/': '2026-08-21',
+  '/hakkimizda': '2026-08-21',
+  '/galeri': '2026-08-16',
+  '/iletisim': '2026-08-16',
+  '/tasinma-kontrol-listesi': '2026-08-16',
+  '/tasinma-maliyet-hesaplama': '2026-08-16',
+  '/teklif-al': '2026-08-16',
+  '/yasal/gizlilik': '2026-08-16',
+  '/yasal/kvkk': '2026-08-16',
+  '/blog': '2026-08-21',
+  '/bolgeler': '2026-08-16',
+  '/rotalar': '2026-08-16',
+  '/hizmetler': '2026-08-16',
+  '/eskisehir-nakliyat-firmalari': '2026-08-21',
+  '/eskisehir-nakliyat-fiyatlari': '2026-08-16',
+  '/eskisehir-ogrenci-evi-tasima': '2026-08-16',
+  '/eskisehir-asansorsuz-bina-tasima': '2026-08-16',
+  '/eskisehir-nakliyat-sozlesmesi': '2026-08-16'
+} as const;

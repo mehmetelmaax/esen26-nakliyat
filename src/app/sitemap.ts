@@ -1,15 +1,14 @@
 import { MetadataRoute } from 'next';
-import { SITE, SERVICES, DISTRICTS, ROUTES, NEIGHBORHOODS } from '@/lib/site-config';
+import { SITE, SERVICES, DISTRICTS, ROUTES, NEIGHBORHOODS, STATIC_PAGES_CONFIG } from '@/lib/site-config';
 import { blogDatabase } from '@/lib/blog-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE.url;
-  const staticDate = new Date('2026-08-16');
 
   // 1. Ana Sayfa (1.0, weekly)
   const mainPage = {
     url: `${baseUrl}`,
-    lastModified: staticDate,
+    lastModified: new Date(STATIC_PAGES_CONFIG['/']),
     changeFrequency: 'weekly' as const,
     priority: 1.0,
     images: [`${baseUrl}/img/esen-slayt-1.jpg`],
@@ -18,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 2. Fiyat Teklifi Al (0.9, monthly)
   const teklifPage = {
     url: `${baseUrl}/teklif-al`,
-    lastModified: staticDate,
+    lastModified: new Date(STATIC_PAGES_CONFIG['/teklif-al']),
     changeFrequency: 'monthly' as const,
     priority: 0.9,
   };
@@ -29,7 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(service.updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.9,
-    images: [`${baseUrl}/img/esen-slayt-1.jpg`],
   }));
 
   // 4. Bölgeler - Merkez (0.9, monthly)
@@ -38,13 +36,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(district.updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.9,
-    images: [`${baseUrl}/img/banner-bg.jpg`],
   }));
 
   // 5. İletişim (0.8, monthly)
   const iletisimPage = {
     url: `${baseUrl}/iletisim`,
-    lastModified: staticDate,
+    lastModified: new Date(STATIC_PAGES_CONFIG['/iletisim']),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   };
@@ -55,13 +52,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(district.updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
-    images: [`${baseUrl}/img/banner-bg.jpg`],
   }));
 
   // 7. Blog List (0.7, weekly)
   const blogPage = {
     url: `${baseUrl}/blog`,
-    lastModified: staticDate,
+    lastModified: new Date(STATIC_PAGES_CONFIG['/blog']),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   };
@@ -77,7 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 9. Hakkımızda (0.6, yearly)
   const hakkimizdaPage = {
     url: `${baseUrl}/hakkimizda`,
-    lastModified: staticDate,
+    lastModified: new Date(STATIC_PAGES_CONFIG['/hakkimizda']),
     changeFrequency: 'yearly' as const,
     priority: 0.6,
     images: [`${baseUrl}/img/arac-filosu-v3.jpg`],
@@ -86,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 10. Galeri (0.5, monthly)
   const galeriPage = {
     url: `${baseUrl}/galeri`,
-    lastModified: staticDate,
+    lastModified: new Date(STATIC_PAGES_CONFIG['/galeri']),
     changeFrequency: 'monthly' as const,
     priority: 0.5,
     images: [
@@ -99,7 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 11. Yasal Sayfalar (2 adet, 0.3, yearly)
   const yasalPages = ['gizlilik', 'kvkk'].map((slug) => ({
     url: `${baseUrl}/yasal/${slug}`,
-    lastModified: staticDate,
+    lastModified: new Date(STATIC_PAGES_CONFIG[`/yasal/${slug}` as keyof typeof STATIC_PAGES_CONFIG] || '2026-08-16'),
     changeFrequency: 'yearly' as const,
     priority: 0.3,
   }));
@@ -108,43 +104,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const additionalPages = [
     {
       url: `${baseUrl}/eskisehir-nakliyat-fiyatlari`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/eskisehir-nakliyat-fiyatlari']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/eskisehir-nakliyat-firmalari`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/eskisehir-nakliyat-firmalari']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/tasinma-kontrol-listesi`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/tasinma-kontrol-listesi']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/tasinma-maliyet-hesaplama`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/tasinma-maliyet-hesaplama']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/eskisehir-ogrenci-evi-tasima`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/eskisehir-ogrenci-evi-tasima']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/eskisehir-nakliyat-sozlesmesi`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/eskisehir-nakliyat-sozlesmesi']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/eskisehir-asansorsuz-bina-tasima`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/eskisehir-asansorsuz-bina-tasima']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     }
@@ -156,26 +152,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(route.updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
-    images: [`${baseUrl}/img/banner-bg.jpg`],
   }));
 
   // 14. Hub Sayfaları (3 adet, 0.8, monthly)
   const hubPages = [
     {
       url: `${baseUrl}/bolgeler`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/bolgeler']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hizmetler`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/hizmetler']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/rotalar`,
-      lastModified: staticDate,
+      lastModified: new Date(STATIC_PAGES_CONFIG['/rotalar']),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     }
@@ -187,7 +182,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(n.updatedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
-    images: [`${baseUrl}/img/banner-bg.jpg`],
   }));
 
   return [

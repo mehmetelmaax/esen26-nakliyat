@@ -9,7 +9,7 @@ import Analytics from '@/components/Analytics';
 import CookieBanner from '@/components/CookieBanner';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
 import JsonLd from '@/components/JsonLd';
-import { organizationSchema, websiteSchema } from '@/lib/schema';
+import { websiteSchema } from '@/lib/schema';
 
 const inter = localFont({
   src: [
@@ -118,7 +118,6 @@ export default function RootLayout({
   const globalSchema = {
     '@context': 'https://schema.org',
     '@graph': [
-      organizationSchema(),
       websiteSchema(),
     ]
   };
