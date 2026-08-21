@@ -14,35 +14,47 @@ import { organizationSchema, websiteSchema } from '@/lib/schema';
 const inter = localFont({
   src: [
     {
-      path: '../../public/fonts/Inter-Regular.ttf',
+      path: '../../public/fonts/Inter-Regular.woff2',
       weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Inter-SemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Inter-SemiBold.woff2',
+      weight: '700',
       style: 'normal',
     },
   ],
   variable: '--font-sans',
   display: 'swap',
+  adjustFontFallback: 'Arial',
 });
 
 const outfit = localFont({
   src: [
     {
-      path: '../../public/fonts/Outfit-Regular.ttf',
+      path: '../../public/fonts/Outfit-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../../public/fonts/Outfit-Bold.ttf',
+      path: '../../public/fonts/Outfit-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../../public/fonts/Outfit-Black.ttf',
+      path: '../../public/fonts/Outfit-Black.woff2',
       weight: '900',
       style: 'normal',
     },
   ],
   variable: '--font-display',
   display: 'swap',
+  adjustFontFallback: 'Arial',
 });
 
 export const metadata: Metadata = {
