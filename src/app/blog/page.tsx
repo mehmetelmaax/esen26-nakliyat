@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { blogDatabase } from '@/lib/blog-data';
+import { blogMetadata } from '@/lib/blog-metadata';
 import Breadcrumb from '@/components/Breadcrumb';
 import BlogClient from './BlogClient';
 
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
 };
 
-const posts = Object.values(blogDatabase);
+const posts = Object.values(blogMetadata);
 
 export default function BlogPage() {
   return (

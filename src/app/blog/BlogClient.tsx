@@ -4,17 +4,20 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, User, ArrowRight, Grid, Filter } from 'lucide-react';
-import type { BlogPostData } from '@/lib/blog-data';
-
-interface BlogClientProps {
-  posts: BlogPostData[];
+export interface SimplifiedBlogPost {
+  id: string;
+  title: string;
+  desc: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  image: string;
+  category: 'Fiyat' | 'Rehber' | 'Yasal' | 'Teknik' | 'Bölge';
+  readingTime: number;
 }
 
-function calculateReadingTime(html: string): number {
-  const text = html.replace(/<[^>]*>/g, ''); // strip HTML tags
-  const words = text.trim().split(/\s+/).length;
-  const wordsPerMinute = 200; // average reading speed
-  return Math.max(1, Math.ceil(words / wordsPerMinute));
+interface BlogClientProps {
+  posts: SimplifiedBlogPost[];
 }
 
 const CATEGORIES = ['Tümü', 'Fiyat', 'Rehber', 'Yasal', 'Teknik', 'Bölge'] as const;
@@ -99,7 +102,7 @@ export default function BlogClient({ posts }: BlogClientProps) {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {paginatedPosts.map((post) => {
-            const readingTime = calculateReadingTime(post.contentHtml);
+            const readingTime = post.readingTime;
             const badgeColor = getCategoryColor(post.category);
 
             return (

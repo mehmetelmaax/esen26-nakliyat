@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { SERVICES, DISTRICTS } from '@/lib/site-config';
-import { blogDatabase } from '@/lib/blog-data';
+import { blogMetadata } from '@/lib/blog-metadata';
 
 interface RelatedLinksProps {
   currentSlug: string;
@@ -77,7 +77,7 @@ export default function RelatedLinks({ currentSlug, type, title }: RelatedLinksP
       });
     });
 
-    const blogs = Object.values(blogDatabase).slice(0, 2);
+    const blogs = Object.values(blogMetadata).slice(0, 2);
     blogs.forEach((b, idx) => {
       links.push({
         href: `/blog/${b.id}`,
@@ -143,7 +143,7 @@ export default function RelatedLinks({ currentSlug, type, title }: RelatedLinksP
       });
     });
 
-    const otherBlogs = Object.values(blogDatabase).filter(b => b.id !== currentSlug).slice(0, 2);
+    const otherBlogs = Object.values(blogMetadata).filter(b => b.id !== currentSlug).slice(0, 2);
     otherBlogs.forEach((b, idx) => {
       links.push({
         href: `/blog/${b.id}`,
